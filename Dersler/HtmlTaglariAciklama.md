@@ -12,3 +12,13 @@
     Sayfa içersine link eklemek için kullanılıyor. href özel parametresi vardır. buraya gideceği link koyuyoruz.
 ## (strong) tag
     Kelime içersinde  kalın olarak belirlemek istediğimiz kelimeyi içersine yazarak kelimenin kalın olarak yazmasını sağlıyor. 
+
+## (ol) tag
+
+    Sıralı listemele için kullanılıyor ol tagının içersinde koyduğumuz her bir liste elemanına sıraya koyar.
+
+## (ul) tag
+    Sırasız Listemele için kullanılıyor. ul tagı içersinde bulunan liste elemanlarını sıra numarası vermeden ekleme yapar.
+
+## (li) tag
+    Liste elemanıdır sayafa eklediğini listenin alt elemanı olduğunu belirler. 
