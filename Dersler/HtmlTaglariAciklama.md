@@ -10,3 +10,5 @@
 ## (a) tag
 
     Sayfa içersine link eklemek için kullanılıyor. href özel parametresi vardır. buraya gideceği link koyuyoruz.
+## (strong) tag
+    Kelime içersinde  kalın olarak belirlemek istediğimiz kelimeyi içersine yazarak kelimenin kalın olarak yazmasını sağlıyor. 
