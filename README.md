@@ -9,4 +9,5 @@ Prettier
 Html CSS Support
 Auto Rename Tag
 Auto Close Tag
-
+GitLens
+GitHistory
