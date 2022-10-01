@@ -22,3 +22,9 @@
 
 ## (li) tag
     Liste elemanıdır sayafa eklediğini listenin alt elemanı olduğunu belirler. 
+
+## (b) tag
+    Kelime içersinde  kalın olarak belirlemek istediğimiz kelimeyi içersine yazarak kelimenin kalın olarak yazmasını sağlıyor.
+
+## (br) 
+    Alt satır da olacak şekilde boşluk eklemesini sağlar. 
