@@ -1,0 +1,82 @@
+body {
+  background: rgb(255, 97, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 97, 226, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+nav {
+  padding: 20px;
+}
+
+.bFloat {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bNavbar {
+  background-color: #e4e4e4;
+  margin: 0 auto;
+  padding: 10px;
+  height: 50px;
+  width: 75%;
+}
+.bShadow {
+  box-shadow: 4px 4px 8px 4px #acbed8;
+}
+.bRadius {
+  border-radius: 15px;
+}
+.bTextCenter {
+  text-align: center;
+}
+.bTextRight {
+  text-align: right;
+}
+.bTextWhite {
+  margin: 10px;
+  color: #2c4870;
+  text-decoration: none;
+}
+#sag {
+  margin: 15px;
+}
+.bContainer{
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 60%;
+    background-color: #e4e4e4;
+}
+.bProfilePhoto{
+    margin: 10px;
+    border-radius: 100px;
+}
+.bImageSize{
+    border-radius: 150px;
+    margin: 5px;
+    box-shadow: 0px 4px 12px 2px #2c4870;
+    padding: 2px;
+    width: 250px;
+    height: 250px;
+}
+.bFormGroup{
+    width: 98%;
+    padding: 5px;
+}
+.bFontFamily{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bButton{
+
+  background: rgb(255, 97, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 97, 226, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: #2c4870 ;
+}
