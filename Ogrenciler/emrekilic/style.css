@@ -5,7 +5,9 @@
 .backgroundimage {
     background-image: url("https://i.etsystatic.com/15464183/r/il/0ed3df/1277846775/il_794xN.1277846775_qltg.jpg");
     height: 100px;
-    background-size: cover;
+    weight: 100px;
+    background-size: contain;
+    ;
 
 }
 
