@@ -1,0 +1,33 @@
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+  font-size: 8px;
+}
+.backgroundColor {
+  background-color: beige;
+}
+.text {
+  color: #4a586b;
+}
+.div1 {
+  color: #4a586b;
+}
+.textFontSize {
+  background-color: #4a586b;
+  color: aliceblue;
+  margin: 20px 10px 15px 30px;
+  padding: 20px;
+  
+  font-size: 20px;
+}
+div .textFontSize p {
+  margin: 0;
+}
+#Paragraf {
+  color: rgba(82, 182, 242, 0.95);
+  font-size: 32px;
+}
+
+/* Yorum satırıdır. */
