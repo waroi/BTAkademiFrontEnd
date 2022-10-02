@@ -12,7 +12,7 @@
     </style>
   </head>
   <body>
-    <h1>Bu bir başlık</h1>
+    <!-- <h1>Bu bir başlık</h1>
     <hr />
     <p class="text">
       Lorem ipsum dolor sit amet <em>consectetur adipisicing elit</em>. Saepe
@@ -62,11 +62,28 @@
       <option value="mercedes">Mercedes</option>
       <option value="bugatti">Bugatti</option>
     </select>
-    <hr />
+    <hr /> -->
 
-    <script>
+    <form>
+      <label for="name">İsminizi girin</label>
+      <input type="text" placeholder="İsim" id="name" name="name" /> <br />
+      <label for="password">Şifrenizi girin</label>
+      <input type="password" placeholder="İsim" id="password" name="password" />
+      <br />
+      <label for="Cars">Marka Seçin</label>
+      <select name="Cars" id="Cars">
+        <option value="volvo">Volvo</option>
+        <option value="audi">Audi</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="bugatti">Bugatti</option>
+      </select>
+      <input type="submit" value="Gönder" />
+    </form>
+    <!--<hr />
+     <script>
       console.log("Merhaba console");
       document.write("Merhaba Döküman");
-    </script>
+    </script> -->
   </body>
 </html>
