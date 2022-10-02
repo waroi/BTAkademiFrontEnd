@@ -31,3 +31,7 @@
     background-size: contain;
 
 }   
+
+.float{
+    float: left;
+}

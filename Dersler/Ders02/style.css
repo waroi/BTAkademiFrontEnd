@@ -45,6 +45,11 @@ div #Paragraf #denemeText {
   height: 100px;
   background-size: contain;
 }
-
+.float{
+  float: left;
+}
+.clear {
+  clear:both;
+}
 /* yorum satırı */
 

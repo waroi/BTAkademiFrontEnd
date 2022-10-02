@@ -1,0 +1,22 @@
+div {
+  background-color: aqua;
+}
+
+.backimg {
+  background-image: url(https://scoop-cms.s3-eu-west-1.amazonaws.com/55e853c7ca2f3a596c8b4568/reshot-min.jpg);
+  background-size: contain;
+  height: 150px;
+  text-align: center;
+
+}
+
+.ksari {
+  text-align: center;
+  font-size: 20pt;
+  background-color: gray;
+  color: rgb(114, 114, 13);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
