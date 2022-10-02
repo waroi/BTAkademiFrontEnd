@@ -1,0 +1,41 @@
+.text {
+    color: aqua
+}
+
+.div1 {
+    color:blueviolet
+}
+
+.textFontSize {
+    font-size: 20px;
+}
+
+#Paragraf {
+    font-size: 40px; color: blue;
+}
+
+#denemeText {
+    color: yellow;
+}
+
+div #Paragraf #denemeText {
+    color: hotpink;
+}
+
+.fontSize {
+    font-size: 50px;
+}
+
+#paragraf {
+    font-size: 50px;
+}
+
+.divMargin {
+    margin: 10px;
+}
+
+.backgroudImage {
+    background-image: url();
+    height: 100px;
+    background-size: contain;
+}
