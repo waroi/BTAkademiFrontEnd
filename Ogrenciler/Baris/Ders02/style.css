@@ -36,4 +36,8 @@ div .textFontSize p {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.float{
+    float: left;
+}
 /* Yorum satırıdır. */
