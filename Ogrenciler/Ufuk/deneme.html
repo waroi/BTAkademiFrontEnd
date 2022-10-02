@@ -2,10 +2,83 @@
     <head>
         <title>Html Giriş Dersi</title>
     </head>
-    <body>
+    <>
         <h1>bu bir başlık</h1>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aliquid adipisci fugit unde tempora aliquam voluptatum eius odit ab amet, perferendis a sed excepturi architecto debitis tempore iure, doloribus reiciendis.
         </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Başlık 1</th>
+                    <th>Başlık 2</th>
+                    <th>Başlık 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>İçerik 1</td>
+                    <td>İçerik 2</td>
+                    <td>İçerik 3</td>
+                </tr>
+                <tr>
+                    <td>İçerik 1</td>
+                    <td>İçerik 2</td>
+                    <td>İçerik 3</td>
+                </tr>
+                <tr>
+                    <td>İçerik 1</td>
+                    <td>İçerik 2</td>
+                    <td>İçerik 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <label for="name">Isminizi girin</label>
+        <input type="text" placeholder="isim" id="Name"/>
+        <br />
+        <br />
+        <input type="password" />
+        <br>
+        <br>
+        <input type="phone" />
+        <br>
+        <br>
+        <textarea name="" id="" cols="30" rows="5"></textarea> 
+        <br>
+        <br>
+        <label for="Cinsiyet">Cinsiyet seçiniz</label>
+        <input type="checkbox" id="Cinsiyet" />
+        <br> <br>
+        <label for="Secenek">Cinsiyet seçiniz:</label>
+        <select name="Cars" id="Cars">
+            <option value="volvo">Volvo</option>
+            <option value="audi">audi</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="bugatti">bugatti</option>
+        </select>
+        <hr/>
+        <script>
+            console.log("Merhaba console");
+            document.write("Merhaba doküman");
+        </script>
+
+
+        <form>
+            <label for="name">İsminizi girin</label>
+            <input type="text" placeholder="İsim" id="name" name="name" /> <br>
+            <label for="password">Şifrenizi girin</label>
+            <input type="password" placeholder="password" name="password"/> <br>
+            <select name="Cars" id="Cars">
+                <option value="volvo">Volvo</option>
+                <option value="audi">audi</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="bugatti">bugatti</option>
+            </select>
+            <input type="submit" value="Gönder"/>
+        </form>
+
     </body>
 </html>
