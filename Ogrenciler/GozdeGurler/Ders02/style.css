@@ -22,14 +22,16 @@
     height: 75px;
     width: 300px;
     margin: 50px 25px;
+    float: left;
   }
 
   .divB {
     background-color: rgb(17, 104, 43);
     height: 75px;
     width: 300px;
-    padding: 25px 10px 10 25px 10px;
-    margin: 25px;
+    
+    margin: 50px 25px;
+    float: left;
   }
 
   .textA {
@@ -40,5 +42,6 @@
     height: 200px;
     background-image:url(https://picsum.photos/id/237/200/300);
     background-size:contain;
+    clear: both;
     
   }
