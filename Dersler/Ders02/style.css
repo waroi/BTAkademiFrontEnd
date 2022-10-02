@@ -1,0 +1,50 @@
+html, body, div {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+/* .backroundColor{
+  background-color: bisque;
+}
+.divMargin{
+  margin: 10px;
+} */
+div{
+  margin: 5px;
+}
+.text {
+  color: #db6a07;
+}
+.div1{
+  color: blueviolet;
+}
+div .textFontSize{
+  font-size: 20px;
+  background-color: darkgray;
+  /* margin: 20px 10px 15px 30px;
+  padding: 20px 10px 15px 30px; */
+  margin: 30px 10px;
+  padding: 10px 30px;
+  text-align: center;
+  height: 200px;
+}
+div .textFontSize p {
+  margin: 0;
+}
+#Paragraf{
+  font-size: 40px; color: blue;
+}
+#denemeText{
+  color: rgba(91, 153, 234, 0.92);
+}
+div #Paragraf #denemeText {
+  color: hsl(7,42%,61%);
+}
+.backroundimage{
+  background-image: url("https://upload.wikimedia.org/wikipedia/tr/thumb/a/a8/Taz.jpg/800px-Taz.jpg");
+  height: 100px;
+  background-size: contain;
+}
+
+/* yorum satırı */
+
