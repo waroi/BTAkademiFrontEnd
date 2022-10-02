@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Bu bir başlıktır</h1>
+    <!-- <h1>Bu bir başlıktır</h1>
     <hr />
     <p>
       <strong>Lorem ipsum dolor sit amet</strong>
@@ -35,9 +35,69 @@
       fugiat, adipisci quidem debitis voluptates reiciendis! Eum beatae,
       distinctio esse repellat porro voluptates. Enim fugiat unde hic sunt nam?
     </p>
+    <hr width="70%" size="5" noshade="" />
+    <label for="Name">İsminizi giriniz: </label>
+    <input type="text" placeholder="İsim" id="Name" />
+    <br />
+    <br />
+    <input type="password" />
+    <br />
+    <br />
+    <input type="email" />
+    <br />
+    <br />
+    <input type="phone" />
+    <br />
+    <br />
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br />
+    <br />
+    <h2>Almak istediğiniz dersleri seçiniz:</h2>
+    <label for="">Matematik</label>
+    <input type="checkbox" id="Mat" />
+
+    <label for="">Türkçe</label>
+    <input type="checkbox" name="" id="Tur" />
+    <br />
+    <br />
+    <h2>Kabul ediyor musunuz?</h2>
+    <label for="">Evet</label>
+    <input type="radio" name="" id="Evet" />
+    <label for="">Hayır</label>
+    <input type="radio" name="" id="Hayır" />
+    <br />
+    <br />
+    <label for="Cars">Marka seçiniz:</label>
+    <select name="Cars" id="Cars">
+      <option value="volvo">Volvo</option>
+      <option value="audi">Audi</option>
+      <option value="vw">VW</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="renault">Renault</option>
+    </select>
     <script>
       console.log("Merhaba dünya!");
       document.write("Merhaba dünya!");
-    </script>
+    </script> -->
+    <form action="">
+      <label for="">İsminizi giriniz:</label>
+      <input type="text" placeholder="İsim" id="Name" name="name" /><br />
+      <label for="">Şifrenizi giriniz:</label>
+      <input
+        type="password"
+        placeholder="Şifre"
+        id="Sifre"
+        name="sifre"
+      /><br />
+      <label for="Cars">Marka seçiniz:</label>
+      <select name="Cars" id="Cars">
+        <option value="volvo">Volvo</option>
+        <option value="audi">Audi</option>
+        <option value="vw">VW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="renault">Renault</option>
+      </select>
+      <input type="submit" value="Gönder" />
+    </form>
   </body>
 </html>
