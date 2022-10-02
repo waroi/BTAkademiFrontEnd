@@ -23,7 +23,7 @@ nav {
   margin: 0 auto;
   padding: 10px;
   height: 50px;
-  width: 75%;
+  width: 85%;
 }
 .bShadow {
   box-shadow: 4px 4px 8px 4px #acbed8;
@@ -47,9 +47,9 @@ nav {
 }
 .bContainer{
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 10px;
-    width: 60%;
+    width: 80%;
     background-color: #e4e4e4;
 }
 .bProfilePhoto{
