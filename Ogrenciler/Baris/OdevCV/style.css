@@ -81,3 +81,12 @@ nav {
   );
   color: #2c4870 ;
 }
+
+.bPadding{
+  padding: 5px;
+}
+
+table{
+  margin: 0 auto;
+  width: 20%;
+}
