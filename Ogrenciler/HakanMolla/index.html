@@ -1,47 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tablolar</title>
-  </head>
-  <body>
-    <!-- Tablo yaratma işlemi -->
-    <table border="1 solid">
-      <!-- Tabloya düz çizgi ile çerçeve ekleme -->
-      <thead>
-        <!-- Tablonun başlığı -->
-        <tr>
-          <th><a href="https://www.facebook.com/" target="_blank">Facebook</a></th>
-          <th><a href="https://www.instagram.com/" target="_blank">Instagram</a></th>
-          <th><a href="https://twitter.com/" target="_blank">Twitter</a></th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Tablo İçeriği -->
-        <tr>
-          <td>
-            
-            <img
-              src="https://i1.wp.com/christcentergj.com/wp-content/uploads/2015/04/facebook-logo-png.png?ssl=1"
-              alt="Facebook" width="100" height="100"
-            >
-          </td>
-          <td>
-            <img
-              src="https://allfacebook.de/wp-content/uploads/2016/05/Instagram_AppIcon_Aug2017.png"
-              alt="Instagram" width="100" height="100"
-            />
-          </td>
-          <td>
-            <img
-              src="https://www.bluestarprogramme.ie/wp-content/uploads/2019/08/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.jpg"
-              alt="Twitter" width="100" height="100"
-            />
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Bu Bir başlık</h1>
+    <hr>
+    <p class="text">Lorem ipsum dolor sit, amet consectetur <b> adipisicing elit.</b> Temporibus quam nesciunt ipsum voluptas! 
+        Quas praesentium ipsam dolorum numquam accusantium. Magni amet ratione dicta qui natus libero culpa perspiciatis, repellat dolorum!</p>
+        <hr>
+    <p class="text">Lorem ipsum dolor sit, <em> amet consectetur adipisicing elit.</em> Temporibus quam nesciunt ipsum voluptas! 
+        Quas praesentium ipsam dolorum numquam accusantium. Magni amet ratione dicta qui natus libero culpa perspiciatis, repellat dolorum!</p>
+        <hr>
+    <p>Lorem ipsum dolor sit, <i></i> amet consectetur adipisicing elit.</i> Temporibus quam nesciunt ipsum voluptas! 
+        Quas praesentium ipsam dolorum numquam accusantium. Magni amet ratione dicta qui natus libero culpa perspiciatis, repellat dolorum!</p>
+        <hr>
+    
+
+        <label for="name">İsminizi girin</label>
+        <input type="text" placeholder="İsim" id="name">
+        <br> <br>
+        <input type="password" name="" id="">
+        <br> <br>
+        <input type="email" name="" id="">
+        <br> <br>
+       <textarea name="" id="" cols="30" rows="10"></textarea>
+<br><br>
+<label for="cinsiyet">cinsiyet seciniz</label>
+        <input type="checkbox" name="" id="cinsiyet">
+        <br><br>
+
+        <label for="secim"> seciniz</label>
+        <input type="radio" name="" id="secim">
+        <br><br>
+
+        <br><br>
+<hr>
+        <label for="Cars">MArka Seciniz :</label>
+        <select name="Cars" id="Cars">
+            <option value="volvo">Volvo</option>
+            <option value="audio">Audio</option>
+            <option value="ferrai">Ferrari</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="bugatti">Bugatti</option>
+        </select> -->
+<!-- 
+<hr>
+<form action="">
+    <label for="name">İsminizi Giriniz :</label>
+    <input type="text" placeholder="İsim" id="name" name="name"> <br><br>
+    <label for="password">Şifre Giriniz  :</label>
+        <input type="password" placeholder="password" id="password"> <br><br>
+        <label for="Cars">Marka Seciniz :</label>
+        <select name="Cars" id="Cars">
+            <option value="volvo">Volvo</option>
+            <option value="audio">Audio</option>
+            <option value="ferrai">Ferrari</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="bugatti">Bugatti</option>
+        </select> 
+        <input type="submit" value="Gönder">
+</form> -->
+<hr>
+
+
+
+<form action="">
+
+    <label for="name">Ad ,Soyad :</label>
+    <input type="text" placeholder="Ad ve Soy ad Giriniz." id="name" name="name"> <br><br>
+    <label for="email">Email Adresi :</label>
+    <input type="email" placeholder="Email Adresi Giriniz" id="email" name="email"> <br><br>
+    <label for="phone">Telefon Numarası :</label>
+    <input type="phone" placeholder="Telefon Giriniz" id="phone" name="phone"> <br><br>
+    <label for="konu">Konu:</label>
+    <input type="text" placeholder="Konu Giriniz." id="konu" name="konu"> <br><br>
+    <label for="cinsiyet"> cinsiyet</label>
+    <input type="radio" name="cinsiyet" id="Erkek"><label for="Erkek">Erkek:</label>
+    <input type="radio" name="cinsiyet" id="Kadın"><label for="Kadın">Kadın:</label>
+    <input type="radio" name="cinsiyet" id="Diğer"><label for="Diğer">Diğer:</label>
+    <br><br>
+    <label for="dil">Bildiğiniz Diller</label>
+        <input type="checkbox" name="dil" value="İngilizce" id="dilingilizce"><label for="dilingilizce">İngilizce:</label>
+        <input type="checkbox" name="dil" value="Türkçe" id="dilturkce"><label for="dilturkce">Türkçe:</label>
+        <input type="checkbox" name="dil" value="İtalyanca" id="dilitalyanca"><label for="dilitalyanca">İtalyanca:</label>
+        <br><br>
+        <label for="Mesaj"> Mesajınız :</label>
+    <textarea name="" id="Mesaj" cols="30" rows="10"></textarea> <br><br><br>
+    <input type="submit" name="" value="Gönder"id="">
+
+
+
+
+</form>
+
+
+
+        <!-- <script>
+            console.log("Merhaba Console");
+            document.write("Merhaba Dökuman");
+        </script> -->
+</body>
 </html>
