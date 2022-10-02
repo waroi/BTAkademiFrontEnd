@@ -1,0 +1,36 @@
+.text {
+    color: aqua;
+}
+
+.backgroundimage {
+    background-image: url("https://i.etsystatic.com/15464183/r/il/0ed3df/1277846775/il_794xN.1277846775_qltg.jpg");
+    height: 100px;
+    background-size: cover;
+
+}
+
+
+div {}
+
+.div1 {
+    background-color: grey;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border-bottom: 1px solid white;
+    color: rgb(255, 0, 64);
+    text-align: left;
+
+}
+
+div .textfontsize {
+    font-size: 20px;
+    background-color: blueviolet;
+
+}
+
+
+#denemetext {
+    color: rgba(91, 153, 234, 0.92);
+    font-size: 30px;
+    height: 200px;
+}
