@@ -5,11 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html Etiketleri</title>
-    <style>
+    <!-- <style>
       .text {
         color: aqua;
       }
-    </style>
+      .div1{
+        color: blueviolet;
+      }
+      .textFontSize{
+        font-size: 20px;
+      }
+      #Paragraf{
+        font-size: 40px; color: blue;
+      }
+      #denemeText{
+        color: yellow;
+      }
+      div #Paragraf #denemeText {
+        color: hotpink;
+      }
+    </style> -->
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- <h1>Bu bir başlık</h1>
@@ -63,7 +79,6 @@
       <option value="bugatti">Bugatti</option>
     </select>
     <hr /> -->
-
     <!-- <form>
       <label for="name">İsminizi girin</label>
       <input type="text" placeholder="İsim" id="name" name="name" /> <br />
@@ -85,30 +100,42 @@
       console.log("Merhaba console");
       document.write("Merhaba Döküman");
     </script> -->
-
     <div>
       <div>
-        <div>
-          <p>
+        <div class="backroundColor divMargin float">
+           <p style="color: red"> <!-- inline css -->
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
             praesentium?
           </p>
         </div>
-        <div>
-          <p>
+        <div class="backroundimage divMargin float">
+          <p class="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
             praesentium?
           </p>
         </div>
+        <div class="clear"></div>
       </div>
       <div>
-        <div>
+        <div class="div1 textFontSize">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
             praesentium?
           </p>
         </div>
-        <div>
+        <div class="div1 backroundColor divMargin">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+            praesentium?
+          </p>
+        </div>
+        <div id="Paragraf" class="div1 backroundColor divMargin">
+          <p id="denemeText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+            praesentium?
+          </p>
+        </div>
+        <div class="backroundColor divMargin">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
             praesentium?
@@ -116,9 +143,26 @@
         </div>
       </div>
     </div>
-    <video width="320" height="240" controls>
+    <!-- <video width="320" height="240" controls>
       <source src="video.mp4" type="video/mp4" />
-    </video>
+    </video> -->
     <!-- <canvas id="CizimAlani"></canvas> -->
+
+    <!-- <div id="nav">
+      <a href="#">Html</a>
+      <a href="#">Css</a>
+      <a href="#">Javascript</a>
+      <a href="#">React</a>
+    </div>
+    <nav>
+      <a href="#">Html</a>
+      <a href="#">Css</a>
+      <a href="#">Javascript</a>
+      <a href="#">React</a>
+    </nav>
+    <div id="age"></div>
+    <div class="name"></div>
+
+    <div class="deneme name age" id="idDeneme"></div> -->
   </body>
 </html>

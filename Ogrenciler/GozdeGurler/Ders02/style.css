@@ -1,0 +1,47 @@
+
+.div1 {
+    color: cornflowerblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+  }
+  .textColor {
+    color: rgba(179, 45, 45, 0.747);
+  }
+
+  .pColor {
+    color: hsl(2, 78%, 58%);
+  }
+  /* Yorum 
+  Satırı 
+  1
+  2
+  */
+
+  .divA {
+    background-color: rgba(74, 206, 188, 0.466);
+    height: 75px;
+    width: 300px;
+    margin: 50px 25px;
+    float: left;
+  }
+
+  .divB {
+    background-color: rgb(17, 104, 43);
+    height: 75px;
+    width: 300px;
+    
+    margin: 50px 25px;
+    float: left;
+  }
+
+  .textA {
+    text-align: center;
+  }
+
+  .divC {
+    height: 200px;
+    background-image:url(https://picsum.photos/id/237/200/300);
+    background-size:contain;
+    clear: both;
+    
+  }
