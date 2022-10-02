@@ -1,0 +1,2 @@
+# Ödev
+Bir protfolyo yada CV sayfası yapağız, örnek resimdeki gibi; resminiz başlık, kısa bir info, çalışmalarınızın görseller, iş deneyimleriniz, eğitim bilgileriniz ve en altta bir iletişim formu yapmanızı istiyorum, tasarım tamamen size ait örnek resim sadece konuyu anlamanız için.
