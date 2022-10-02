@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ders 02 - HTML Etiketleri</title>
-    <style>
-      .text {
+    <!-- <style>
+      /* .text {
         color: red;
       }
-    </style>
+      .div1{
+        color: blueviolet;
+      }
+      .textFontSize{
+        font-size: 20px;
+      }
+      #Paragraf{
+        font-size: 32px;
+      } */
+    </style> -->
+
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- <p class="text">
@@ -46,7 +57,7 @@
         <option value="audi">Audi</option>
 
     </select> -->
-<!-- 
+    <!-- 
     <form>
       <label for="name">İsim girin:</label>
       <input id="name" type="text" placeholder="İsim" />
@@ -75,25 +86,37 @@
     <div>
       <div>
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eligendi.</p>
+          <p style="color: #d8c621;"> <!-- inline css -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            eligendi.
+          </p>
         </div>
         <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eligendi.</p>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            eligendi.
+          </p>
         </div>
       </div>
       <div>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eligendi.</p>
+        <div class="div1 textFontSize">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            eligendi.
+          </p>
         </div>
-        <div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eligendi.</p>
+        <div id="Paragraf" class="div1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            eligendi.
+          </p>
         </div>
       </div>
     </div>
-    <video width="320" height="240" controls>
-      <source src="/Dersler/Ders02/video.mp4" type="video/mp4">
-      <!-- <source src="../../../Dersler/Ders02/video.mp4" type="video/mp4"> -->
-    </video>
+    <!-- <video width="320" height="240" controls>
+      <source src="/Dersler/Ders02/video.mp4" type="video/mp4" />
+      <source src="../../../Dersler/Ders02/video.mp4" type="video/mp4"> 
+    </video> -->
 
     <!-- 
       HTML 5 ile gelen taglar
@@ -106,9 +129,21 @@
       article>> içerik kısmı
       section>> içerik içerisindeki bölümlendirme
 
-     -->
+    -->
 
-
-
+    <!-- <div id="nav">
+      <a href="#">HTML</a>
+      <a href="#">Css</a>
+      <a href="#">JavaScript</a>
+      <a href="#">ReactJS</a>
+    </div>
+    <nav>
+      <a href="#">HTML</a>
+      <a href="#">Css</a>
+      <a href="#">JavaScript</a>
+      <a href="#">ReactJS</a>
+    </nav>
+    <div id="age"></div>
+    <div class="name"></div> -->
   </body>
 </html>
