@@ -5,6 +5,7 @@ body {
     rgba(255, 97, 226, 1) 0%,
     rgba(148, 187, 233, 1) 100%
   );
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 nav {
