@@ -12,21 +12,7 @@
     </style>
   </head>
   <body>
-    <h1>Bu bir başlıktır</h1>
-    <hr />
-    <p class="text">
-      Lorem ipsum dolor sit amet <em>consectetur adipisicing elit</em> . Aperiam
-      repellendus, est quasi sed odio animi! Consectetur, voluptatem repudiandae
-      debitis sapiente deleniti quod fugiat ducimus quo accusamus perferendis
-      quos provident suscipit.
-    </p>
-    <p class="text">
-      Lorem ipsum dolor sit amet <i> consectetur adipisicing elit</i>. Aperiam
-      repellendus, est quasi sed odio animi! Consectetur, voluptatem repudiandae
-      debitis sapiente deleniti quod fugiat ducimus quo accusamus perferendis
-      quos provident suscipit.
-    </p>
-    <p class="text">
+    <!-- <p class="text">
       Lorem ipsum dolor sit amet <u>consectetur adipisicing elit</u>. Aperiam
       repellendus, est quasi sed odio animi! Consectetur, voluptatem repudiandae
       debitis sapiente deleniti quod fugiat ducimus quo accusamus perferendis
@@ -51,11 +37,39 @@
     <label for="Secenek">Secenek</label>
     <input type="radio" name="Secenek" id="Secenek" />
 
-    <hr width="70%" size="3" noshade/>
+    <hr>
+    <label for="Cars">Marka Seçin</label>
+    <select name="Cars" id="Cars">
+        <option value="volvo">Volvo</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="audi">Audi</option>
 
+    </select> -->
+
+    <form>
+      <label for="name">İsim girin:</label>
+      <input id="name" type="text" placeholder="İsim" />
+      <br />
+      <label for="Password">Parola girin:</label>
+      <input id="Password" type="password" />
+      <br />
+      <label for="Cars">Marka Seçin:</label>
+      <select name="Cars" id="Cars">
+        <option value="volvo">Volvo</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="ferrari">Ferrari</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br />
+      <input type="submit" value="Gönder" />
+    </form>
+
+    <hr width="70%" size="3" noshade />
+    <!-- 
     <script>
       console.log("Merhaba console!");
       document.write("Merhaba Döküman");
-    </script>
+    </script> -->
   </body>
 </html>
