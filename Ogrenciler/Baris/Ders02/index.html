@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ders 02 - HTML Etiketleri</title>
+    <style>
+      .text {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bu bir başlıktır</h1>
+    <hr />
+    <p class="text">
+      Lorem ipsum dolor sit amet <em>consectetur adipisicing elit</em> . Aperiam
+      repellendus, est quasi sed odio animi! Consectetur, voluptatem repudiandae
+      debitis sapiente deleniti quod fugiat ducimus quo accusamus perferendis
+      quos provident suscipit.
+    </p>
+    <p class="text">
+      Lorem ipsum dolor sit amet <i> consectetur adipisicing elit</i>. Aperiam
+      repellendus, est quasi sed odio animi! Consectetur, voluptatem repudiandae
+      debitis sapiente deleniti quod fugiat ducimus quo accusamus perferendis
+      quos provident suscipit.
+    </p>
+    <p class="text">
+      Lorem ipsum dolor sit amet <u>consectetur adipisicing elit</u>. Aperiam
+      repellendus, est quasi sed odio animi! Consectetur, voluptatem repudiandae
+      debitis sapiente deleniti quod fugiat ducimus quo accusamus perferendis
+      quos provident suscipit.
+    </p>
+    <hr />
+    <label for="name">İsminizi girin:</label>
+    <input id="name" type="text" placeholder="İsim" />
+
+    <hr />
+    <label for="Password">Şifre</label>
+    <input type="password" name="Password" id="Password" />
+    <hr />
+    <label for="Eposta">Eposta</label>
+    <input type="email" name="Eposta" id="Eposta" />
+    <hr />
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <hr />
+    <label for="Cinsiyet">Cinsiyet</label>
+    <input type="checkbox" name="Cinsiyet" id="Cinsiyet" />
+    <hr />
+    <label for="Secenek">Secenek</label>
+    <input type="radio" name="Secenek" id="Secenek" />
+
+    <hr width="70%" size="3" noshade/>
+
+    <script>
+      console.log("Merhaba console!");
+      document.write("Merhaba Döküman");
+    </script>
+  </body>
+</html>
