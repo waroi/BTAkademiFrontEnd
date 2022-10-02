@@ -1,0 +1,19 @@
+.text {
+  color: aqua;
+}
+.div1 {
+  color: purple;
+}
+.textFontSize {
+  font-size: 40px;
+}
+.deneme {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#deneme2 {
+  font-size: 35px;
+}
+.deneme {
+  background-image: url("https://www.aramamotoru.com/wp-content/uploads/2016/06/arama-motorlarinda-gorsel-arama-nasil-yapilir.jpg");
+  height: 200px;
+}
