@@ -1,0 +1,86 @@
+
+
+body {
+    background-color: rgba(209, 207, 207, 0.973) !important;
+    font-family: 'Noto Sans Mono', monospace !important;
+}
+
+.photo1 {
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    margin-top:30px;
+}
+
+.photo1:hover {
+ box-shadow:0 0 5px 5px rgba(7, 41, 53, 0.164);
+}
+
+.title{
+    text-align: center;
+    
+}
+
+.div1 {
+    height: 100px;
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.textProperties {
+    font-style: italic;
+    color: rgb(100, 98, 98);
+
+}
+
+.collapsedMenu {
+   text-align: center;
+   
+}
+
+.listType {
+    list-style-type: circle;
+    color: rgb(17, 20, 20);
+}
+
+.divHeight {
+    height: 250px;
+    width: 250px;
+}
+
+.cardHeight {
+    height: 100px;
+    width: 100px;
+}
+
+.card-img-top {
+    height: 300px;
+    width: 100%;
+}
+
+.buttonCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-group {
+    
+    border-bottom: 4px groove;
+    border-top: 4px groove;
+}
+
+.title1 {
+    margin-left: 10rem;
+}
+
+.contact {
+    
+    height: 50%;
+    width: 30%;
+    margin-left: 10rem;
+}
