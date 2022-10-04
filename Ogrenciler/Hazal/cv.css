@@ -1,0 +1,9 @@
+
+.left-image{
+    position:relative;
+}
+.left-image h2{
+    position: absolute;
+    left: 2rem;
+    bottom:0;
+}

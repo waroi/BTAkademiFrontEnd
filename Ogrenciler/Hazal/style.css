@@ -1,0 +1,28 @@
+.text {
+    color: darkolivegreen;
+
+  }
+  .div1 {
+    color: rgb(246, 73, 11);
+  }
+  .textFontSize {
+    font-size: 20px;
+  }
+  #Paragraf {
+    font-size: 32px;
+  }
+  .div4 {
+    color: rgba(red, green, blue, alpha)
+  }
+  div .textFontSize {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+  }
+ 
+  div .backgroundimage{
+    background-image: url("https://upload.wikimedia.org/wikipedia/tr/thumb/a/a8/Taz.jpg/800px-Taz.jpg");
+    height: 100px;
+    background-size: contain;
+  }
