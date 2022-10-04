@@ -1,5 +1,5 @@
 ## (H1-H2-H3-H4-H5-H6) Tagları
-    Sayfa içersindeki başlıklardır. her H* boyutu farklıdır. CEO için her sayfda bir adet H1 tagın olması gerekmektedir.
+    Sayfa içersindeki başlıklardır. her H* boyutu farklıdır. SEO için her sayfda bir adet H1 tagın olması gerekmektedir.
 ## (P) Tag
     Paragaf tagıdır bunun içersinde yazdığımız herşey Düze metin olarak görnmektedir.
 
