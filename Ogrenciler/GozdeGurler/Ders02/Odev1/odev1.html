@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gözde Gürler</title>
+  </head>
+  <body>
+    <img class="photo1" src="photo.jpeg" alt="Fotoğraf" width="100px" />
+    <h1 class="title">Gözde Gürler</h1>
+    <div class="div1">
+      <!--INFO-->
+      <p class="textProperties">
+        I studied philosophy at Boğaziçi University and graduated in 2020.
+        Experienced in e-commerce sector, especially in marketplace operations
+        for process improvements and project management. Now, I'm interested in
+        front-end development to make my childhood dream come true.
+      </p>
+    </div>
+    <!--MAIN PART I-->
+    <article>
+      <p class="collapsedMenu mt-5">
+        <a
+          class="btn btn-dark"
+          data-bs-toggle="collapse"
+          href="#multiCollapseExample1"
+          role="button"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample1"
+          >Education</a
+        >
+        <button
+          class="btn btn-dark"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#multiCollapseExample2"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample2"
+        >
+          Work Experience
+        </button>
+      </p>
+
+      <div class="row">
+        <div class="col-5 offset-1">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              <ul class="listType">
+                <li>Kagıthane Gultepe High School (2008-2012)</li>
+                <hr />
+                <li>Boğaziçi University - Philosophy (2014-2020)</li>
+                <hr />
+                <li>Istanbul University - Computer Programming (2022-2024)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              <ul class="listType">
+                <li>Assistant Editor at Sincap Kitap (2020)</li>
+                <hr />
+                <li>
+                  Business Development Assistant at Çiçeksepeti.com (2021)
+                </li>
+                <hr />
+                <li>
+                  Listing Quality Specialist at eBay/Gittigidiyor.com (2022)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--MAIN PART II-->
+    <article>
+      <h3 class="title mt-3">Portfolio</h3>
+      <div class="card-group col-sm-10 offset-1">
+        <div class="card me-2">
+          <img src="photo3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Medium Clone</h5>
+            <a
+              href="https://github.com/GzdeGrlr/medium-clone"
+              class="btn btn-secondary btn-sm"
+              target="_blank"
+              >Check it on Github!</a
+            >
+          </div>
+        </div>
+        <div class="card me-2">
+          <img src="photo2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Coffee Shop</h5>
+            <a
+              href="https://github.com/GzdeGrlr/freeCodeCampExercises/tree/master/project1"
+              class="btn btn-secondary btn-sm"
+              target="_blank"
+              >Check it on Github!</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img src="photo4.png" width="100%" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Mobile Games</h5>
+            <a href="#" class="btn btn-secondary btn-sm" target="_blank"
+              >Check it on Github!</a
+            >
+          </div>
+        </div>
+      </div>
+    </article>
+    <!--CONTACT-->
+    <p class="mt-5 collapsedMenu">
+      <button
+        class="btn btn-dark"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseWidthExample"
+        aria-expanded="false"
+        aria-controls="collapseWidthExample"
+      >
+        Contact <img src="icons8-mail-50.png" alt="" />
+      </button>
+    </p>
+    <div style="min-height: 120px">
+      <div class="collapse collapse-horizontal div1" id="collapseWidthExample">
+        <div class="card card-body" style="width: 600px">
+          <h6>Let's talk about more!</h6>
+
+          <form class="form">
+            <input type="text" id="name" placeholder="Name" />
+            <br />
+            <br />
+
+            <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            <br />
+            <br />
+
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Subject"
+            ></textarea>
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
