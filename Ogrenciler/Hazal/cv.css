@@ -20,6 +20,7 @@ main{
     display:grid;
     grid-template-columns: 20%;
     padding: 0;
+    grid-gap: rem;
     
 }
 .personal,.skills, .languages{
@@ -29,6 +30,7 @@ main{
 }
 .left{
     background-color: rgb(112, 39, 34);
+    float: left;
 }
 
 
@@ -43,4 +45,8 @@ main{
     position: absolute;
     left: 2rem;
     bottom:0;
+}
+.right{
+    position:inherit;
+    float: left;
 }
