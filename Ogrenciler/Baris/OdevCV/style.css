@@ -1,11 +1,6 @@
 body {
-  background: rgb(255, 97, 226);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 97, 226, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
-  font-family:Arial, Helvetica, sans-serif;
+  background-color: #2c4870;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -45,48 +40,42 @@ nav {
 #sag {
   margin: 15px;
 }
-.bContainer{
-    margin: 0 auto;
-    margin-top: 15px;
-    padding: 10px;
-    width: 80%;
-    background-color: #e4e4e4;
+.bContainer {
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 10px;
+  width: 80%;
+  background-color: #e4e4e4;
 }
-.bProfilePhoto{
-    margin: 10px;
-    border-radius: 100px;
+.bProfilePhoto {
+  margin: 10px;
+  border-radius: 100px;
 }
-.bImageSize{
-    border-radius: 150px;
-    margin: 5px;
-    box-shadow: 0px 4px 12px 2px #2c4870;
-    padding: 2px;
-    width: 250px;
-    height: 250px;
+.bImageSize {
+  border-radius: 150px;
+  margin: 5px;
+  box-shadow: 0px 4px 12px 2px #2c4870;
+  padding: 2px;
+  width: 250px;
+  height: 250px;
 }
-.bFormGroup{
-    width: 98%;
-    padding: 5px;
+.bFormGroup {
+  width: 98%;
+  padding: 5px;
 }
-.bFontFamily{
-    font-family: Arial, Helvetica, sans-serif;
+.bFontFamily {
+  font-family: Arial, Helvetica, sans-serif;
 }
-.bButton{
-
-  background: rgb(255, 97, 226);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 97, 226, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
-  color: #2c4870 ;
+.bButton {
+  background-color: #2c4870;
+  color: #ffff;
 }
 
-.bPadding{
+.bPadding {
   padding: 5px;
 }
 
-table{
+table {
   margin: 0 auto;
   width: 20%;
 }
