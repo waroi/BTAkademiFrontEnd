@@ -20,7 +20,7 @@ main{
     display:grid;
     grid-template-columns: 20%;
     padding: 0;
-    grid-gap: rem;
+    grid-gap: 1rem;
     
 }
 .personal,.skills, .languages{
