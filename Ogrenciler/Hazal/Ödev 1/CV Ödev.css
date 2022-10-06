@@ -30,7 +30,7 @@ main{
 }
 .left{
     background-color: rgb(112, 39, 34);
-    float: left;
+  
 }
 
 
@@ -46,7 +46,4 @@ main{
     left: 2rem;
     bottom:0;
 }
-.right{
-    position:inherit;
-    float: left;
-}
+
