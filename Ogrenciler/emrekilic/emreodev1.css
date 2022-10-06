@@ -1,0 +1,177 @@
+body {
+    background-color: rgb(247, 247, 247);
+    padding-top: 30px;
+}
+
+
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.link {
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+
+.link:hover {
+    color: rgb(214, 18, 149);
+}
+
+.link:visited {
+    color: black;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile {
+    border-radius: 30%;
+    width: 120px;
+    height: 180px;
+    align-self: center;
+    object-fit: cover;
+
+}
+
+.firstparagraf {
+    margin: 50px auto;
+    text-align: center;
+    word-spacing: 5px;
+
+}
+
+
+.line {
+    background-color: rgb(124, 124, 202);
+
+
+}
+
+.line.bold {
+    height: 4px;
+}
+
+.line.thin {
+    height: 2px;
+}
+
+.div2 {
+    display: flex;
+    margin-left: 100px;
+
+    text-align: left;
+
+
+
+}
+
+table {
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+
+th {
+    text-align: left;
+}
+
+td {
+    width: 50%;
+}
+
+.lessons {
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.lessons li {
+    padding: 10px 10px 10px 0px;
+
+}
+
+.Job {
+    padding: 0px 15px;
+}
+
+.yanyana {
+    display: flex;
+}
+
+.yanyana li {
+    padding-right: 25px;
+}
+
+.resim {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.fix {
+    height: 200px;
+    width: 280px;
+    object-fit: cover;
+
+}
+
+.yolla {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 50px 0px;
+
+
+}
+
+.altalta {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.dark-bg {
+    background-color: rgb(0 188 212 / 15%);
+}
+
+.button {
+    border-radius: 20%;
+}
+
+.button:hover {
+    background-color: rgba(155, 12, 14, 0.692);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.social {
+
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+.footer__social--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    border: 2px solid #a5bbbe;
+    margin: 15px 10px;
+}
