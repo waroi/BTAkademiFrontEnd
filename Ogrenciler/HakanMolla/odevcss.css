@@ -1,0 +1,35 @@
+html, div{
+
+    background-color: #434A54;
+    margin: 10px;
+    padding: 10px;
+}
+
+.sutun1{
+
+    background-color: #434A54;
+    
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+p{
+    color:white
+}
+h2{
+    color:white
+}
+
+.h2o{
+    color: black;
+    text-align: left;
+}
+label{
+    align:center
+
+}
+

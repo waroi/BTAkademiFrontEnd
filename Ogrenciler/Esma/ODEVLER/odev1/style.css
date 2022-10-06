@@ -1,0 +1,80 @@
+p {
+  font-size: 20px;
+}
+
+.profil {
+  border-radius: 50%;
+  border-color: yellowgreen;
+  border-style: groove;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.isim {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-color: yellowgreen;
+  border-radius: 30%;
+  border-style: groove; /* ????burada border'ı yazı boyutuna getirebilmek için en sıradan yöntem hangisidir? */
+  margin-left: 600px;
+  margin-right: 600px;
+}
+
+.icerik {
+  text-align: center;
+  display: block;
+  margin-left: 300px;
+  margin-right: 300px;
+  border: 3px black solid;
+  margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav {
+  display: block;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+nav li {
+  font-size: 110%;
+  display: inline;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10%;
+  border-color: black;
+  border-width: 3px;
+  background-color: yellowgreen;
+}
+
+li a {
+  text-decoration: black none;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.genelimg {
+  height: 350px;
+  padding: 0px;
+  display: inline;
+  align-items: center;
+}
+
+  .fotos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  table, th, td, tr {
+    border: 1px dotted black;
+    width:50%;
+    margin: auto;
+    margin-bottom:8px;  }

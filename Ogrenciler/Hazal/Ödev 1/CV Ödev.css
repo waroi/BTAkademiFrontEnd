@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* 
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+color: rgba(212, 207, 206, 0.893);
+font-size: 14px;
+background-color: rgb(251, 243, 232);
+}
+
+ul{
+    list-style: none;
+}
+main{
+    margin: 1rem;
+    display:grid;
+    grid-template-columns: 20%;
+    padding: 0;
+    grid-gap: 1rem;
+    
+}
+.personal,.skills, .languages{
+    padding: 1rem;
+    line-height: 2rem;
+    
+}
+.left{
+    background-color: rgb(112, 39, 34);
+  
+}
+
+
+.left-image{
+    position:relative;
+
+}
+.left-image img{
+    width: 100%;
+}
+.left-image h2{
+    position: absolute;
+    left: 2rem;
+    bottom:0;
+}
+
