@@ -158,8 +158,7 @@ td {
 .social {
 
     display: flex;
-    justify-content: space-evenly;
-    margin: 30px 300px;
+    justify-content: center;
 
 
 
@@ -167,7 +166,12 @@ td {
 
 
 .footer__social--link {
-    width: 20px;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
     border: 2px solid #a5bbbe;
+    margin: 15px 10px;
 }
