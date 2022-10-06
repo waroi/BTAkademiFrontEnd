@@ -1,0 +1,69 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1rem
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p{
+    line-height: 1.5;
+}
+html {
+    color: rgba(2, 3, 3, 0.845);
+}
+
+section + section {
+    margin-top: 2rem;
+}
+li + li {
+
+    margin-top: 1rem;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.profile{
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 9999px;
+    width: 13rem;
+    height: 13rem;
+
+}
+
+.profile p{
+    color: rgb(31, 15, 46);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+
+.contact li {
+    text-align:right;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    color: 888;
+
+}
