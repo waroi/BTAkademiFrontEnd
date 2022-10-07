@@ -1,0 +1,21 @@
+
+.tamami {width: 1025px; height: 1357px; border:5px; border-color: black;}
+.birincikisim {width: 1025px; height:100px}
+.solust {width: 120px; height:100px; background-color:#5a6470; float: left;}
+.ince1 {width: 10px; height: 100px; background-color: black; float: left;}
+.ustbosluk {width: 895px; height: 100px; background:whitesmoke ; float: left;}
+.ince2 {width:1025px; height: 10px; background-color: black;}
+.ikincikisim {width: 1025px; height:252px}
+.solorta {width: 120px; height: 252px; background-color: #2f4050; float: left;}
+.ince3 {width: 10px; height: 252px; background-color: black; float: left;}
+.ortabosluk {width: 895px; height: 252px; background:#d3d3d3; float: left;}
+.ucuncukisim {width: 1025px; height:985px}
+.solalt {width: 120px; height:985px; background-color:#5a6470; float: left;}
+.ince4 {width: 10px; height: 985px; background-color: black; float: left;}
+.altbosluk {width: 895px; height: 985px; background:whitesmoke; float: left;}
+.foto {width:180px; height: 222px; float: left; margin: 15px; background-color:#d3d3d3;} 
+.bilgiler {width: 300px; height: 222px; margin: 15px; float: left; color: black; font: bold 20px arial; }
+.cv {width: 300px; height: 222px; margin: 0 auto; float: left; color: black; font: lighter 222px calibri;  }
+.altbosluk1 {width: 895px; height: 650px;  background:whitesmoke; float: left;}
+.altbosluk2 {width: 865px; height: 280px; padding-left: 30px;  background:whitesmoke; float: left;}
+.altbosluk3 {width: 895px; height: 20px; padding-bottom: 5px; margin: 0 auto;  background:whitesmoke; float: left; color: black; font: italic 20px arial;}
