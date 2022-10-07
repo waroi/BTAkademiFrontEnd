@@ -10,6 +10,7 @@ font-family: 'Roboto', sans-serif;
 color: rgba(212, 207, 206, 0.893);
 font-size: 14px;
 background-color: rgb(251, 243, 232);
+width: 100;
 }
 
 ul{
@@ -30,6 +31,8 @@ main{
 }
 .left{
     background-color: rgb(112, 39, 34);
+    width: 100%;
+    float: left;
   
 }
 
@@ -47,3 +50,17 @@ main{
     bottom:0;
 }
 
+//.right{
+   
+    text-align: right;
+}
+
+.i{
+    width: 100%;
+}
+
+.both{
+    display: flex;
+    justify-content: space-between;
+    gap: 350px;
+}
