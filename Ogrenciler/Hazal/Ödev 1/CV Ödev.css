@@ -50,7 +50,17 @@ main{
     bottom:0;
 }
 
-.right{
+//.right{
    
     text-align: right;
+}
+
+.i{
+    width: 100%;
+}
+
+.both{
+    display: flex;
+    justify-content: space-between;
+    gap: 350px;
 }

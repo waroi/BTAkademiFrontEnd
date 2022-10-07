@@ -9,10 +9,9 @@ h1 {
     text-transform: uppercase;
 }
 
-h2 {
+.contact , .experience h2 {
     font-size: 1.1rem;
     border-top: 1px solid #888;
-    border-bottom: 1px solid #888;
     padding: 0.75rem 0;
     text-transform: uppercase;
 }
@@ -48,11 +47,14 @@ a{
 
 ul {
 list-style: none;
-
+margin: 1rem;
 }
 
+.lineheight{
 
-
+    line-height: 25px;
+    
+}
 
 
 .profile{
@@ -117,5 +119,12 @@ padding-top: 1rem;
     grid-gap: 4rem;
     background-color: antiquewhite;
    padding: 3rem;
+
+}
+
+.list{
+
+    margin-bottom: 8px;
+
 
 }
