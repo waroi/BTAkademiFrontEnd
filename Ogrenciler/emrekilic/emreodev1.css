@@ -13,8 +13,8 @@ body {
 
 
 .link {
-    display: inline-block;
-    margin-bottom: 10px;
+    display: block;
+    margin: 10px 0;
 
 }
 
@@ -32,10 +32,9 @@ body {
 }
 
 .profile {
-    border-radius: 30%;
+    border-radius: 40%;
     width: 120px;
     height: 180px;
-    align-self: center;
     object-fit: cover;
 
 }
@@ -62,15 +61,9 @@ body {
     height: 2px;
 }
 
-.div2 {
-    display: flex;
-    margin-left: 100px;
-
-    text-align: left;
 
 
 
-}
 
 table {
     margin-top: 15px;
