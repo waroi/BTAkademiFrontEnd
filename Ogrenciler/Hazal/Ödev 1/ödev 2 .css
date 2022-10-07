@@ -74,9 +74,10 @@ list-style: none;
 
 
 .contact li {
-    text-align:right;
+    text-align:left;
     text-transform: uppercase;
     padding: 1rem;
+    margin-left: -1rem;
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
     color: 888;
