@@ -4,16 +4,21 @@ body{
 }
 header{
     width: 100%;
-    height: 50px;
+    height: 100px;
     margin: 0;
     padding: 0;
    
 }
+article{
+    width: 100%;
+    margin:auto;
+}
 .navbar{
     margin: 0;
     width: 100%;
-    height: 50px;
-    
+    height: 100px;
+    background-color: #3c3c3c;
+    border-radius: 100px 0 0 100px;
     
 }
 .logo{
@@ -24,20 +29,19 @@ header{
 }
 .menu{
     padding: 1em;
-    width: 90%;
     height: 10%;
     float: left;
     text-align: right;
+    min-width: 90%;
 }
 
 div a{
     padding-left: 0.5em;
     text-decoration: none;
-    color: #3c3c3c;
+    color: #fff;
 }
 .container{
     width: 85%;
-    height: 100%;
     margin:auto;
     padding: 5px;
 }
@@ -47,7 +51,7 @@ div a{
     padding:0;
     margin:1.5em;
     float: left;
-    width: 30%;
+    width: 28%;
 }
 .card-context{
     padding: 1em;
@@ -119,4 +123,12 @@ div a{
     }
 
     
+<<<<<<< HEAD
+=======
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+>>>>>>> daf4075d45f14bbbe7b2780035a9cd54fc2b7261
 }
