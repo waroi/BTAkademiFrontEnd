@@ -18,7 +18,8 @@ html, div{
     border-radius: 50%;
   }
 p{
-    color:white
+    color:white;
+    line-height: 2em;
 }
 h2{
     color:white
