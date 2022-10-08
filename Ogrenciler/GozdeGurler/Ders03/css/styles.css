@@ -1,0 +1,22 @@
+
+body{
+    font-size: 15px;
+}
+
+p {
+    font-size: 2em;
+}
+
+@media only screen and (max-width:480px) {
+    p {
+        font-size: 1em;
+    }
+
+}
+
+.box {
+    width: 250px;
+    height: 300px;
+    background: yellowgreen;
+    background: linear-gradient(to bottom left, rgb(179, 24, 24), rgb(223, 223, 23));
+}

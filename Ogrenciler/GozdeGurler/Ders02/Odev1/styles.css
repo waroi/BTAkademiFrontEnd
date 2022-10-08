@@ -62,11 +62,11 @@ body {
     width: 100%;
 }
 
-.buttonCenter {
+/*.buttonCenter {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .card-group {
     

@@ -1,0 +1,175 @@
+body {
+    background: rgb(143, 51, 230);
+    background: linear-gradient(to bottom left,rgb(143, 51, 230), rgb(77, 156, 202) );
+}
+
+@media only screen and (max-width:1500px) {
+    .item1, .item2 {
+      margin-bottom: 25px;
+    }
+  
+  }
+
+h6 {
+    background: linear-gradient(to bottom left,rgb(242, 239, 245), rgb(77, 156, 202) );
+    width: 80px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.item1 {
+    display: inline;
+    float: left;
+    margin-right: 25px;
+    
+    width: 400px;
+    background-color: aliceblue;
+    border-radius: 3%;
+    
+}
+
+.item2 {
+    display: inline;
+    float: left;
+    margin-right: 25px;
+    width: 400px;
+    
+    background-color: aliceblue;
+    border-radius: 3%;
+}
+
+.item3 {
+    display: inline-block;
+    width: 400px;
+    
+    background-color: aliceblue;
+    border-radius: 3%;
+    
+}
+
+.container {
+    margin-top: 10%;
+    margin-left: 18%;
+    margin-bottom: 10%;
+
+}
+
+.altresim {
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.buyukResim {
+    border-radius: 3%;
+    border-end-end-radius: 0%;
+    border-end-start-radius: 0%;
+    width: 100%;
+    height: 350px;
+}
+
+p {
+    margin-left: 10px;
+    font-size: 18px;
+   
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+.renk1 {
+    background: linear-gradient(to bottom left,rgb(201, 26, 26), rgb(224, 233, 238) );
+}
+
+.renk2 {
+    background: linear-gradient(to bottom left,rgb(222, 236, 24), rgb(224, 233, 238) );
+}
+
+
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+.header {
+    width: 75%;
+    height: 150px;
+   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerPicture {
+    border-radius: 50%;
+    height:120px;
+    width: 120px;
+   
+}
+
+
+.anasayfa {
+    display: inline;
+    float: left;
+
+}
+
+.contact {
+    display: inline;
+    float: left;
+}
+
+.news {
+    display: inline;
+    float: left;
+}
+
+.topnav {
+    float: right;
+    margin-right: 50px;
+
+}
+
+.topnav a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+    margin-top: 45px;
+    
+  }
+
+  .header1 {
+    float: left;
+    margin-left: 10%;
+    margin-top: 1%;
+  }
+
+  .mainTitle {
+    float: left;
+    padding-top: 30px;
+    margin-left: 25px;
+  }
+
+  hr.new3 {
+    border-top: 1px dotted rgba(209, 200, 198, 0.74);
+    width: 75%;
+  }
+
+  /* .a1 {
+    background: linear-gradient(to bottom left,rgb(64, 73, 201), rgb(224, 233, 238) );
+    border-radius: 20%;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 17px;
+
+
+  } */
