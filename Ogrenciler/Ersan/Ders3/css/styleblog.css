@@ -1,0 +1,138 @@
+@media only screen and (max-width: 720px) {
+}
+
+@media only screen and (min-width: 720px) {
+  .clear {
+    clear: both;
+  }
+
+  .box1 {
+    float: left;
+  }
+  .box2 {
+    float: none;
+  }
+  .box3 {
+    float: right;
+  }
+}
+
+.header {
+  text-align: center;
+}
+
+.box1 {
+  border-radius: 50½;
+  width: 300px;
+  height: 450px;
+  background-color: rgb(229, 229, 229);
+  margin-left: 250px;
+}
+
+.box2 {
+  width: 300px;
+  height: 450px;
+  background-color: rgb(229, 229, 229);
+  margin-left: 585px;
+  margin-top: 250px;
+}
+
+.box3 {
+  width: 300px;
+  height: 450px;
+  background-color: rgb(229, 229, 229);
+  margin-right: 250px;
+  margin-top: -450px;
+}
+
+.name {
+  padding-top: 65px;
+  padding-left: 50px;
+  line-height: 2px;
+  margin-left: 20px;
+}
+.profile img {
+  margin-top: 80px;
+  float: left;
+  margin-left: 10px;
+  border: 2px silver;
+  border-radius: 30px;
+}
+
+.box1,
+.box2,
+.box3 {
+  border: 2px silver;
+  border-radius: 30px;
+}
+
+.image img {
+  border: 2px silver;
+  border-radius: 30px;
+}
+
+.body1 {
+  background: linear-gradient(to left, blueviolet, #55a1f2);
+}
+
+.box1 h2 {
+  text-align: center;
+}
+
+.lor {
+  margin-left: 20px;
+}
+
+.name2 {
+  padding-top: 65px;
+  padding-left: 50px;
+  line-height: 2px;
+  margin-left: 20px;
+}
+.profile2 img {
+  margin-top: 80px;
+  float: left;
+  margin-left: 10px;
+  border: 2px silver;
+  border-radius: 30px;
+}
+
+.image2 img {
+  border: 2px silver;
+  border-radius: 30px;
+}
+
+.box2 h2 {
+  text-align: center;
+}
+
+.lor2 {
+  margin-left: 20px;
+}
+
+.name3 {
+  padding-top: 65px;
+  padding-left: 50px;
+  line-height: 2px;
+  margin-left: 20px;
+}
+.profile3 img {
+  margin-top: 80px;
+  float: left;
+  margin-left: 10px;
+  border: 2px silver;
+  border-radius: 30px;
+}
+
+.image3 img {
+  border: 2px silver;
+  border-radius: 30px;
+}
+
+.box3 h2 {
+  text-align: center;
+}
+
+.lor3 {
+  margin-left: 20px;
+}
