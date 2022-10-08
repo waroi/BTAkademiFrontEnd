@@ -1,0 +1,20 @@
+html, body{
+  font-size: 20px;
+}
+.paragraf1{
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 720px) {
+  html,
+    body {
+      font-size: 10px;
+    }
+}
+
+.box{
+  width: 250px;
+  height: 300px;
+  background: blueviolet;
+  background: linear-gradient(to bottom left, blueviolet, #55a1f2);
+}

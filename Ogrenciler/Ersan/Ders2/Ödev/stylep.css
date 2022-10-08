@@ -1,0 +1,52 @@
+body {
+  background-color: ghostwhite;
+}
+
+.baslik {
+  font-size: 36px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: darkgreen;
+  text-align: center;
+}
+
+.text {
+  color: darkolivegreen;
+  text-align: center;
+  font-size: 25px;
+}
+
+.text1 {
+  color: darkgreen;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+.ref1 {
+  text-align: left;
+  color: darkolivegreen;
+}
+
+.div3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ta1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
