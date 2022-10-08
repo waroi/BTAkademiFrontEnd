@@ -1,0 +1,170 @@
+html,body{
+    font-size: 20px;
+    background: blueviolet;
+background: linear-gradient(to left, rgb(104, 149, 190), #7517ac);
+}
+
+.paragraf1{
+
+    font-size: 2em;
+}
+
+@media screen and (max-width:720px) {
+    
+    html,body{
+        font-size: 16px;
+    }
+    .divsize{
+        width: 300px;
+        height: 500px;
+        background-color: white;
+       
+        clear:both;
+        
+        align-self: center;
+        margin-right: auto;
+        margin-left: auto;
+    
+    }
+
+    .divphone{
+       /* align-items: center;*/
+        align-self: auto;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+
+    .div1{
+   
+        width: margin-left: auto; margin-right: auto;
+    }
+
+}
+
+
+div{
+  /*  margin-top: 10px ;
+    padding: 10px;*/
+    
+}
+.div1{
+   
+    width:960px; margin-left: auto; margin-right: auto;
+}
+.divsize{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    margin-right: 5px;
+
+}
+
+img2{
+    width:100% ;
+}
+.box{
+
+
+background: blueviolet;
+background: linear-gradient(to bottom, blueviolet, #55a1f2);
+}
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+
+  .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+
+  .column {
+    float: left;
+    /*padding: 10px*/;
+  }
+
+  .column2 {
+    float: right;
+    padding: 15px;
+  }
+
+  .profile {
+    border-radius: 6%;
+ 
+  }
+  .footer {
+
+   /*display: flex;*/
+ 
+  
+ margin-left: auto;
+ margin-right: auto;
+ width: 300px;
+
+
+
+}
+
+
+.footer__social--link {
+    float: right;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    border: 2px solid #a5bbbe;
+    margin: 15px 10px;
+    padding-top:10px;
+}
+
+.clear {
+    clear:both;
+  }
+
+
+
+  .button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .span2 {
+    align-self: center;
+    background-color: rgb(90, 90, 230); 
+    color: white; 
+    border: 1px ;
+    border-radius: 14%;
+    padding: 8px 20px;
+    margin: 4px 2px;
+    
+  }
+  
+ 
+  
