@@ -1,6 +1,7 @@
 body{
     background: linear-gradient(to left,#0ff, #8a2be2);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
 }
 header{
     width: 100%;
@@ -42,7 +43,9 @@ div a{
 }
 .container{
     width: 85%;
-    margin:auto;
+    float: left;
+    margin-left:150px;
+    margin-right:150px;
     padding: 5px;
 }
 .card{
@@ -120,6 +123,8 @@ div a{
     }
     .container{
         width: 100%;
+        float: none;
+        margin: auto;
     }
 
 }
