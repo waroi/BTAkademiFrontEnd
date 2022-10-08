@@ -2,6 +2,8 @@ body{
     background: linear-gradient(to left,#0ff, #8a2be2);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 header{
     width: 100%;
@@ -29,11 +31,10 @@ article{
     float: left;
 }
 .menu{
-    padding: 1em;
     height: 10%;
-    float: left;
-    text-align: right;
-    min-width: 90%;
+    float: right;
+    min-width: 10%;
+    width: 50%;
 }
 
 div a{
@@ -125,6 +126,9 @@ div a{
         width: 100%;
         float: none;
         margin: auto;
+    }
+    .menu{
+        width: 20%;
     }
 
 }
