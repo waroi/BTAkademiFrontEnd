@@ -1,25 +1,42 @@
 body {
-     width:1000px;
+    width: 100%;
      height: 900px;
      background: rgb(168, 224, 16);
    background: linear-gradient(to bottom right, rgb(214, 180, 54), rgb(169, 49, 28));
     
     }
-    @media only screen and (max-width: 600px) {
-        html,
-          body {
-            font-size: 20px;
-          }
-      }
+
+
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: auto) {
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+
 
 
 header {
     color: black;
     font-size: bold 40px arial;
-    margin: 0 0 0 450px;
+    margin: 0 0 0 570px;
 }
 section {
-    width: 1200px;
+    width: 980px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -131,7 +148,7 @@ height: 40px;
  .altyazi {
     width:140px;
     height: 30px;
-    float: left;
+  
     font: 10px arial;
 }
 
