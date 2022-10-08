@@ -17,7 +17,7 @@ body {
 
 .box{
     width: 250px;
-    height: 300px;
+    height: 250px;
     background: brown;
     background: linear-gradient(to top right, brown,#3c3c3c);
 }
