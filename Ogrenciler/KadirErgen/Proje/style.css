@@ -37,6 +37,7 @@ div a{
 }
 .container{
     width: 85%;
+    height: 100%;
     margin:auto;
     padding: 5px;
 }
