@@ -8,3 +8,4 @@ https://caniuse.com/ - bir özelliğin hangi tarayıcılarda desteklendiğini g�
 https://www.w3schools.com/cssref/css_units.asp - Css Size Units
 https://fontawesome.com/icons - Hazır iconlar
 https://cdnjs.com/libraries/font-awesome - fontawesome CDN
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#top-of-site - Flex için görsel bir anlatım
