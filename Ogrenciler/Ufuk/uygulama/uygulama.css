@@ -1,15 +1,57 @@
+body {
+    font-family: "Roboto",sans-serif;
+}
+
+
 .container {
     display: flex;
- 
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover !important;
 }
 
 .menu {
    display: flex;
-   
+   margin-left: 100px;
 
 }
 
 li {
     list-style: none;
     display: flex;
+    margin: 0 25px;
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
 }
+
+.icon {
+    background: white;
+}
+
+.title {
+    color: white;
+    margin-top:  250px;
+    font-size: 32px !important;
+    margin-left: 25px;
+}
+
+.launch {
+    font-size: 17px; 
+    width:600px;
+    color: rgba(255, 255, 255, 0.869)!important
+}
+
+.btn {
+    
+    padding: 8px 20px;
+    outline: none;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    border-radius: 6px;
+ }
