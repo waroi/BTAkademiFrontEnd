@@ -2,7 +2,7 @@ h1{
   text-align: center;
 }
 p{
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 span{
   text-decoration: line-through;
@@ -54,4 +54,29 @@ li:nth-child(odd) {
 .text::before {
   content: "Paragraf Öncesi Deneme Yazısı";
   color: rgb(23, 193, 77);
+}
+/* Table - Tablo */
+table,tr,td,th{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table{
+  width: 40%;
+  margin: 0 auto;
+}
+th,td{
+  padding: 10px;
+}
+thead tr {
+  background: olivedrab;
+}
+tbody tr{
+  text-align: center;
+}
+tbody tr:nth-child(even){
+  background: #dedede;
+}
+tbody tr:hover{
+  background: rgb(158, 158, 158);
+  cursor: pointer;
 }
