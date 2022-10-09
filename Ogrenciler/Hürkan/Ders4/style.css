@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    letter-spacing: 1px;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: underline;
+}
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+.link:hover {
+    color: greenyellow;
+}
