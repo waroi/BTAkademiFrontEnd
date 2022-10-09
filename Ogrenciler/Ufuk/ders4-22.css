@@ -1,0 +1,27 @@
+.firstOuter {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(94, 168, 243);
+    position: relative;
+}
+
+.secondOuter {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(94, 188, 243);
+    position: relative;
+}
+
+.thirdOuter {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(165, 165, 165);
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+
+
+
+

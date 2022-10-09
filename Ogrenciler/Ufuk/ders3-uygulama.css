@@ -1,0 +1,30 @@
+table, tr, td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 40%;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+}
+
+thead tr {
+    background: olivedrab;
+}
+
+tbody tr {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #dedede;
+}
+
+tbody tr:hover {
+    background: rgb(158,158,158);
+    cursor: pointer;
+}
