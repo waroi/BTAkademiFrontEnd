@@ -6,3 +6,5 @@ https://github.com - Github
 https://github.com/waroi/BTAkademiFrontEnd - Bizim proje
 https://caniuse.com/ - bir özelliğin hangi tarayıcılarda desteklendiğini gösterir
 https://www.w3schools.com/cssref/css_units.asp - Css Size Units
+https://fontawesome.com/icons - Hazır iconlar
+https://cdnjs.com/libraries/font-awesome - fontawesome CDN
