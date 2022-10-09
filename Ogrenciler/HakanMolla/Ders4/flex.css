@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 16px;
+}
+p{
+    font-size: 12px;
+}
+.container{
+    width: 75%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: rgb(136, 136, 135);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    
+}
+.box{
+    width: 100px;
+    border: 1px solid black;
+    background-color: aquamarine;
+    flex-grow: 1;
+}
+
+.box2{
+    /* align-self: flex-start; */
+  /*  flex-grow: 2;*/
+  order: 1;
+} 
+.box3{
+order: 2;
+}
+
+.box1{
+    order: 3;
+    }
+    
