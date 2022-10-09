@@ -7,10 +7,59 @@ p {
 span {
   text-decoration: line-through;
 }
-a {
-  text-decoration: none;
-}
 body {
   font-family: 'Oswald', sans-serif;
 }
 
+i{
+    color: brown;
+}
+
+/* Psuedo Class */
+
+.link{
+    font-size: 24px;
+    
+}
+.link:hover{
+    color:red;
+    font-size: 32px;
+    font-weight: 700;
+}
+.link:visited{
+    color:orangered;
+}
+.link:active{
+    color:greenyellow;
+}
+.link:link{
+    color:deeppink;
+}
+
+li:first-child{
+    color:blue;
+}
+li:last-child{
+    color: blue;
+}
+li:nth-child(even){
+    background-color: gray;
+}
+
+/* Pseudo Elements */
+
+.text::first-line{
+    color:pink
+}
+.text::after{
+    content: "Paragraf sonrası deneme yazısı";
+    color:red;
+}
+.text::before{
+
+    content: "Paragraf öncesi deneme yazısı";
+    color:green;
+}
+.text::first-letter{
+    font-size:48px;
+}
