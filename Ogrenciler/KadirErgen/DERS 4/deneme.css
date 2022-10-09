@@ -1,0 +1,63 @@
+/*table-tablo*/
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse;
+}
+table{
+    width: 40%;
+    margin:0% auto
+}
+th,td{
+    padding: 10px;
+}
+thead tr{
+    background: red;
+}
+tbody tr{
+    text-align: center;
+}
+tbody tr:nth-child(even){
+    background: #dedede;
+}
+tbody tr:hover{
+    background: rgb(158, 158,158);
+    cursor: pointer;
+}
+.paragraf{
+    width: 300px;
+    height: 300px;
+    background-color:#dedede ;
+    overflow: auto;
+}
+.en-outer{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    position: relative;
+    
+}
+.outer{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: aqua;
+    top: 20px;
+    left: 20px;
+}
+.inner{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.fixed{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    bottom: 0px;
+    right: 0px;
+
+}
