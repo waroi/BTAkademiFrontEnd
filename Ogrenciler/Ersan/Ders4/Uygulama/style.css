@@ -1,0 +1,147 @@
+.header1 {
+  height: 75px;
+  width: 100½;
+  margin: auto;
+  display: flex;
+  /* position: fixed; */
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  background-color: rgb(238, 236, 236);
+  margin-bottom: 0 auto;
+}
+
+.header1 a {
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+}
+
+.header1 a:hover {
+  color: orangered;
+}
+
+.body1 {
+  margin: 0;
+}
+
+.section1 {
+  margin-top: 0 auto;
+  height: 800px;
+  width: 100½;
+  background-image: url(https://shreethemes.in/upstart/layouts/images/bg/1.jpg);
+  /* background-size: 1500px; */
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  padding-top: 250px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.baslik1 {
+  margin-left: 200px;
+}
+
+.baslik2 {
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  font-size: 40px;
+}
+.p1 {
+  color: rgb(225, 225, 225);
+  font-size: 20px;
+}
+
+.gs {
+  width: 130px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  background-color: orangered;
+  border: 1px solid rgb(118, 87, 87, 0);
+  border-radius: 7px;
+}
+
+.gs:hover {
+  background-color: rgb(187, 51, 1);
+  cursor: pointer;
+}
+
+.section2 {
+  margin-top: 0;
+  background-color: rgb(243, 243, 243);
+  height: 750px;
+}
+
+.img2 {
+  width: 450px;
+
+  border-style: 1px solid;
+  border-color: #000000;
+  border-radius: 0.8rem;
+}
+
+.section3 {
+  padding-top: 30px;
+  padding-left: 200px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 70px;
+}
+
+.section2 p {
+  width: 600px;
+  color: rgb(102, 120, 139);
+}
+
+.section2 h3 {
+  color: orangered;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 55px;
+  height: 200px;
+  background-color: #ffffff;
+}
+
+.section4 p {
+  width: 500px;
+  color: rgb(102, 120, 139);
+}
+
+.section4 h4 {
+  color: orangered;
+}
+.section4 h3 {
+  font-size: 30px;
+}
+
+.hh {
+  padding-top: 60px;
+}
+
+.p3 {
+  padding-top: 60px;
+}
+
+.section5 i {
+  font-size: 30px;
+  color: orangered;
+  background-color: rgb(238, 224, 193);
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(121, 43, 43, 0);
+  border-radius: 10px;
+  text-align: center;
+}
+.box1 {
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+}
