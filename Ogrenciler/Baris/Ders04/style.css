@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+p {
+  letter-spacing: 3px;
+}
+span {
+  text-decoration: line-through;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
