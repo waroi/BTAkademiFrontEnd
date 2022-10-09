@@ -1,0 +1,22 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+p {
+    letter-spacing: 5px;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+
+i {
+    color: blueviolet;
+}
