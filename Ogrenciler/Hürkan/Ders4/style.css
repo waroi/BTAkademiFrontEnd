@@ -1,21 +1,95 @@
-h1 {
+h1{
     text-align: center;
-}
-
-p {
-    letter-spacing: 1px;
-}
-
-span {
+  }
+  p{
+    letter-spacing: 5px;
+  }
+  span{
     text-decoration: line-through;
-}
-
-a {
-    text-decoration: underline;
-}
-body {
-    font-family: 'Exo 2', sans-serif;
-}
-.link:hover {
+  }
+  body{
+    font-family: 'Oswald', sans-serif;
+  }
+  i{
+    color: blueviolet;
+  }
+  
+  /* Pseudo Class - Ektileşim */
+  
+  .link{
+    font-size: 24px;
+  }
+  .link:hover{
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .link:visited{
+    color: orangered;
+  }
+  .link:active{
     color: greenyellow;
-}
+  }
+  .link:link{
+    color: deeppink;
+  }
+  /* li:last-child{
+    color: blue;
+  } */
+  li:nth-child(even){
+    color: aqua;
+  }
+  li:nth-child(odd) {
+    color: #5599fe;
+  }
+  /* Pseudo Elements - Ektileşim */
+  
+  .text::first-line{
+    color: orange;
+  }
+  .text::after{
+    content: "Paragraf Sonrası Deneme Yazısı";
+    color: blueviolet;
+  }
+  .text::before {
+    content: "Paragraf Öncesi Deneme Yazısı";
+    color: rgb(23, 193, 77);
+  }
+
+
+  table, tr, td, th {
+border: 1px solid blue;
+border-collapse: collapse;
+  } 
+  table {
+    width: 35%;
+    margin: 0 auto;
+  }
+  th, td {
+padding: 22px;
+  }
+  thead, tr {
+ background:  rgb(23, 193, 77);
+  }
+  tbody tr {
+    text-align: center;
+  }
+  tbody, tr:nth-child(even) {
+    background: #dedede;
+  }
+  tbody, tr:nth-child(odd) {
+    background: #a1a1a1;
+  }
+  tbody tr:hover {
+    background: green;
+    cursor: pointer
+  }
+
+  .paragraf {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: #dedede;
+    overflow: auto;
+  }
+  
