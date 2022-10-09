@@ -1,0 +1,21 @@
+{@media screen only and (max-width: 720px;)
+    
+}
+
+.p{
+    font-size: 1em;
+}
+
+.h2{
+    font-size: 2em;
+}
+.box{
+
+width: 100px;
+height: 100px;
+background-color: aliceblue;
+background: linear-gradient(to right, violet, darkred);
+   
+}
+
+ 
