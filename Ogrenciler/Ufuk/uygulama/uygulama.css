@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+ 
+}
+
+.menu {
+   display: flex;
+   
+
+}
+
+li {
+    list-style: none;
+    display: flex;
+}
