@@ -63,3 +63,32 @@ li:nth-child(even){
 .text::first-letter{
     font-size:48px;
 }
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse; /* Borderın arasındaki boşlukları almak için */
+
+}
+table{
+    width: 50%;
+    margin: 0 auto;
+}
+th,td{
+    padding:10px;
+}
+thead tr{
+    background: #c2c0c0;
+}
+
+tbody tr{
+    text-align: center;
+}
+
+tbody tr:nth-child(odd){
+    background-color: bisque;
+}
+tbody tr:hover{
+    background-color: #3c3c3c;
+    color:white;
+    cursor: pointer;
+}
+
