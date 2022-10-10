@@ -4,9 +4,6 @@
   box-sizing: border-box;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-body {
-  background-color: #343f4b;
-}
 /* RENK AYARLARI */
 .button-group {
   width: 75%;
@@ -110,15 +107,20 @@ nav {
 
 /* CONTAİNER AYARLARI */
 
+section:nth-child(odd) {
+    background-color: #303841;
+}
+
 .container {
-  width: 85%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
 }
 .container-lg {
   width: 100%;
@@ -128,7 +130,6 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
 }
 .card {
   margin: 0 auto;
@@ -137,10 +138,9 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   transition: 0.3s;
-
 }
 .card-img {
   background: url("https://themesdesign.in/styza/layout/images/service/bomb.png");
@@ -150,21 +150,32 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  
 }
 
 .card-info {
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
 }
-.card-info h3{
-    margin-bottom: .5em;
+
+.card-info h5 {
+  margin-bottom: 0.5em;
 }
-.card-info p{
-    margin-bottom: 1em;
+.card-info h4 {
+  margin-bottom: 0.5em;
+}
+.card-info h3 {
+  margin-bottom: 0.5em;
+}
+.card-info h2 {
+  margin-bottom: 0.5em;
+}
+.card-info h1 {
+  margin-bottom: 0.5em;
+}
+.card-info p {
+  margin-bottom: 1em;
 }
 .card-text-center {
   display: flex;
@@ -172,8 +183,11 @@ nav {
   align-items: center;
 }
 
+.overflow {
+  overflow-y: hidden;
+}
+
 .row {
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -184,25 +198,26 @@ nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
-.img-w-25 {
-  width: 25%;
-}
-.img-w-33 {
-  width: 33%;
-}
-.img-w-66 {
-  width: 66%;
-}
+
 .img-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.w-66 {
+  width: 66%;
+}
 .w-33 {
   width: 33%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-50 {
+  width: 50%;
 }
 .w-25 {
   width: 25%;
@@ -211,8 +226,8 @@ nav {
 .mt-1 {
   margin-top: 0.5em;
 }
-.m-1 {
-  margin: 0;
+.m-x {
+  margin: 0 auto;
 }
 .rounded {
   border-radius: 16px;
@@ -221,19 +236,26 @@ nav {
   background-color: #465464;
 }
 
-.mr-1{
-    margin-left: 0;
+.mr-1 {
+  margin-left: 0;
 }
 
-.avatar-sm{
-    margin: 1em 0;
-    background-color: #114d64;
-    border-radius: 50%;
-    width: 3em;
-    height: 3em;
-    display: flex;
-    flex-direction: row;
-    align-items: center ;
-    justify-content: center;
-    
+.avatar-sm {
+  margin: 1em 0;
+  background-color: #114d64;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
 }
