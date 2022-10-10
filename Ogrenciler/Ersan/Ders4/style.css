@@ -1,0 +1,112 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: blueviolet;
+}
+
+.link:visited {
+  color: orangered;
+}
+
+.link:active {
+  color: greenyellow;
+}
+
+.link:link {
+  color: deeppink;
+}
+
+li:nth-child(even) {
+  color: aqua;
+}
+
+li:nth-child(odd) {
+  color: red;
+}
+
+.text::first-letter {
+  font-size: large;
+}
+.text::first-line {
+  color: orangered;
+}
+
+.text::after {
+  content: "Paragraf sonrası deneme yazısı";
+  color: blueviolet;
+}
+
+.text::before {
+  content: "Paragraf öncesi deneme yazısı";
+  color: chocolate;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  width: 40½;
+  margin: 0 auto;
+}
+th,
+td {
+  padding: 10px;
+}
+thead tr {
+  background: olivedrab;
+}
+tbody,
+tr {
+  text-align: center;
+}
+tbody tr:nth-child(even) {
+  background: #dedede;
+}
+tbody tr:hover {
+  background: rgb(158, 158, 158);
+  cursor: pointer;
+}
+
+.en-outer {
+  width: 400px;
+  height: 400px;
+  background-color: aquamarine;
+  position: relative;
+}
+
+.outer {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(63, 118, 100);
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.inner {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(156, 95, 203);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.fixed {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(210, 171, 241);
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}

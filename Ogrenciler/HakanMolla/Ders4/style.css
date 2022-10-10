@@ -1,166 +1,156 @@
-h1 {
+h1{
     text-align: center;
-}
-
-p {
-    letter-spacing: 2px;
-}
-
-span {
+  }
+  p{
+    letter-spacing: 5px;
+  }
+  span{
     text-decoration: line-through;
-}
-
-body {
+  }
+  body{
     font-family: 'Oswald', sans-serif;
-}
-
-i {
+  }
+  i{
     color: blueviolet;
-}
-
-/* Pseudo Class - Ektileşim */
-
-.link {
+  }
+  
+  /* Pseudo Class - Ektileşim */
+  
+  .link{
     font-size: 24px;
-}
-
-.link:hover {
+  }
+  .link:hover{
     color: red;
     font-size: 30px;
     font-weight: 700;
-}
-
-.link:visited {
+  }
+  .link:visited{
     color: orangered;
-}
-
-.link:active {
+  }
+  .link:active{
     color: greenyellow;
-}
-
-.link:link {
+  }
+  .link:link{
     color: deeppink;
-}
-
-/* li:last-child{
+  }
+  /* li:last-child{
     color: blue;
   } */
-li:nth-child(even) {
+  li:nth-child(even){
     color: aqua;
-}
-
-li:nth-child(odd) {
+  }
+  li:nth-child(odd) {
     color: #5599fe;
-}
-
-/* Pseudo Elements - Ektileşim */
-
-.text::first-line {
+  }
+  /* Pseudo Elements - Ektileşim */
+  
+  .text::first-line{
     color: orange;
-}
-
-.text::after {
+  }
+  .text::after{
     content: "Paragraf Sonrası Deneme Yazısı";
     color: blueviolet;
-}
-
-.text::before {
+  }
+  .text::before {
     content: "Paragraf Öncesi Deneme Yazısı";
     color: rgb(23, 193, 77);
-}
+  }
+  
 
-/* Table - Tablo */
-table,
-tr,
-td,
-th {
+  /* table -tablo*/
+
+
+table,tr,td,th{
     border: 1px solid black;
     border-collapse: collapse;
-}
 
-table {
-    width: 40%;
-    margin: 0 auto;
-}
+  }
 
-th,
-td {
+  table{
+        width: 40%;
+        margin: 0 auto;
+
+  }
+  th,td{
     padding: 10px;
-}
-
-thead tr {
+  }
+  thead tr{
     background: olivedrab;
-}
+  }
 
-tbody tr {
+  tbody tr{
     text-align: center;
-}
-
-tbody tr:nth-child(even) {
+  }
+  tbody tr:nth-child(even){
     background: #dedede;
-}
+  }
 
-tbody tr:hover {
+  tbody tr:hover{
     background: rgb(158, 158, 158);
     cursor: pointer;
+  }
+  .paragraf{
+width: 300px;
+height: 300px;
+border: 1px solid black;
+overflow: auto;
 }
 
-.paragraf {
-    width: 300px;
-    height: 300px;
-    border: 1px solid black;
-    background-color: #dedede;
-    overflow: auto;
-}
-
-.red {
+.red{
     width: 100px;
     height: 100px;
     background-color: red;
-    position: absolute;
+    position: relative;
     top: 20px;
-    left: 30px;
+    left: 30 px;
+
 }
 
-.blue {
+
+.blue{
     width: 100px;
     height: 100px;
     background-color: blue;
     position: relative;
     top: 25px;
-    left: 35px;
+    left: 35 px;
+
 }
 
-.en-outer {
+.en-outer{
     width: 400px;
     height: 400px;
-    background-color: rgb(94, 188, 243);
+    background-color: rgb(85, 163, 236);
     position: relative;
 }
 
-.outer {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(165, 165, 165);
+.outer{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(158, 158, 158);
     position: relative;
     top: 20px;
     left: 20px;
+
 }
 
-.inner {
+.inner{
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color:red;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 10 px;
+    left: 10 px;
+
+
 }
 
-.fixed {
+.fixed{
     position: fixed;
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color:red;
     bottom: 0px;
-    right: 0px;
+    left: 0px;
+
 }
