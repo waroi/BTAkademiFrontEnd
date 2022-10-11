@@ -186,6 +186,7 @@ section:nth-child(even) {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  
 }
 
 .card-info {
@@ -193,6 +194,7 @@ section:nth-child(even) {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
 }
 
 .card-info h5 {
