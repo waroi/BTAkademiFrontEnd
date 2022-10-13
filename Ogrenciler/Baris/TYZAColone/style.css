@@ -233,6 +233,10 @@ section:nth-child(even) {
   align-items: center;
 }
 
+#services .row .card:nth-child(even){
+  box-shadow: 0 2px 4px 1px #333333;
+}
+
 .image-group {
   width: 100%;
   display: flex;
@@ -249,7 +253,7 @@ section:nth-child(even) {
 .pricing-card {
   padding-bottom: 2em;
   border-radius: 15px;
-  box-shadow: 0 0 2px 1px #444444;
+  box-shadow: 0 2px 4px 1px #333333;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
