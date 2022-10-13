@@ -40,6 +40,9 @@ body{
  color: rgb(255, 255, 255);
  align-items: center;
  display: flex;
+ flex-direction: column;
+ margin-top: 200px;
+ text
 }
 
 .part-1 p{
