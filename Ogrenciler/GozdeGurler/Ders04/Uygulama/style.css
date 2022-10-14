@@ -310,6 +310,7 @@ ul {
   display: flex;
   gap: 20px;
   justify-content: center;
+  padding-bottom:60px ;
 }
 
 .button1 {
@@ -323,11 +324,105 @@ ul {
 }
 
 .box1 {
-  border: 1px solid gray;
+  border: 1px solid rgb(226, 225, 225);
   width: 300px;
-  height: 400px;
+  height: 450px;
 }
 
 .text3 {
   padding-left: 40px;
+}
+
+.box1:hover {
+  box-shadow: 5px 5px 5px rgb(196, 194, 194);
+}
+
+.text3 span {
+  font-size: 40px;
+}
+
+.text3 h5 {
+  font-size: 20px;
+}
+
+.images5 {
+  display: flex;
+  gap: 250px;
+  margin-left: 80px;
+}
+.box2 {
+  width: 200px;
+  height: 300px;
+}
+
+/* @media only screen and (max-width: 1000px) {
+  .box2 {
+    width: 100px;
+    height: 200px;
+  }
+} */
+
+.box2:hover {
+  filter:grayscale(100%);
+}
+
+.box2 h3 {
+  text-align: center;
+  margin-left: 150px;
+  font-size:30px ;
+  margin-bottom: 0;
+}
+
+.box2 p { 
+  text-align: center;
+  margin-left: 150px;
+  margin-top: 0;
+}
+
+.icons {
+  display: flex;
+  font-size: 40px;
+  color: gray;
+  gap: 250px;
+  justify-content: center;
+
+}
+
+.section10 {
+  background-color: rgb(243, 243, 243);
+}
+
+.section11 .mail label {
+  margin-left: 0;
+}
+
+.mail1 {
+  width: 800px;
+  
+}
+.side1 {
+  margin-top: 15px;
+}
+.side1 li {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.side1 p {
+  font-size: 16px;
+  font-weight: lighter;
+  color: gray;
+}
+
+.mail {
+  display: flex;
+  justify-content: center;
+}
+
+.section11 {
+  background-color: rgb(243, 243, 243);
+}
+
+.mail1  {
+  margin-top: 30px ;
 }
