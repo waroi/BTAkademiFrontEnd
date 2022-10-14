@@ -239,21 +239,24 @@
   
 }
 
-table,td,tr,th {
+table {
   border-collapse: collapse;
- 
+  border: 0;
   background-color: rgb(255, 255, 255);
-  
+  /* border-style: hidden; */
 }
+
+table td, th {
+  border-right: 1px dashed gray;
+}
+
+
 
 th {
   font-weight: normal;
 }
 
-th, td {
-  border-right: 2px dashed gray;
-  border-left:  2px dashed gray;
-}
+
 
 .right {
   text-align: end;
@@ -266,10 +269,65 @@ th, td {
   
 }
 
-/* th .left {
+thead {
   border-right: none !important;
-} */
+}
 
 table p {
   color: rgb(102, 120, 139);
+}
+
+.section8 {
+  background-color: rgb(243, 243, 243);
+  margin-top: 10%;
+  padding-bottom: 75px;
+
+}
+.textProp {
+  text-align: center;
+  padding-top: 5%;
+  
+}
+
+.images, .images1 {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  column-gap: 20px;
+  padding-left: 75px;
+  padding-top: 15px;
+}
+
+.section9 {
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.threeBox {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.button1 {
+  background-color: rgba(245, 211, 199, 0.95);
+  color: orangered;
+  border-radius: 5px;
+  border: 1px solid rgba(245, 211, 199, 0.95);
+  height: 50px;
+  width: 250px;
+  margin-left: 25px;
+}
+
+.box1 {
+  border: 1px solid gray;
+  width: 300px;
+  height: 400px;
+}
+
+.text3 {
+  padding-left: 40px;
 }
