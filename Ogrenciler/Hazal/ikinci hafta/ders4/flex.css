@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+font-size: 14px;
+
+}
+.container{
+    width: 75%;
+    height:400px;
+    margin: 0 auto;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box{
+    width: 100px;
+    border: 1px solid black;
+    background-color: rgb(220, 20, 70);
+}
+.box2{
+    order:1;
+}
+.box3{
+    order: 2;
+}
+.box1{
+    order:3;
+}

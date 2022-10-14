@@ -20,6 +20,8 @@ p{
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    z-index: 2;
+    position: fixed;
     
 }
 .box{

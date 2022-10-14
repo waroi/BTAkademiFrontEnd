@@ -1,0 +1,58 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+nav {
+    justify-content: space-around;
+    padding-top: 10px;
+    position: fixed top;
+    background-color: beige;
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+
+}
+
+.menu a {
+
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    margin: 5px;
+}
+
+.container {
+    gap: 300px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+
+    background-color: darkslategrey;
+    width: 75%;
+
+}
+
+.resim {}
+
+.info {}
+
+.contentcard {
+    display: flex;
+    background-color: darkslategrey;
+    width: 75%;
+
+
+}
