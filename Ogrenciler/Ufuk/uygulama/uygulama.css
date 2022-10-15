@@ -1,12 +1,22 @@
 body {
     font-family: "Roboto",sans-serif;
 }
+.first{
+  
+  background-image:url("https://shreethemes.in/upstart/layouts/images/bg/1.jpg");
+   background-size: cover;
+    background-position-x: center;
+    width: 100%;
+    height: 800px;
+    background-position-y: bottom;}
+.logo{
 
+}
 
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-size: cover !important;
 }
 
@@ -57,4 +67,45 @@ li {
     background-color: #ff5714 !important;
     border: 1px solid #ff5714 !important;
     color: #fff !important;
+ }
+.second{
+    background-color: #f8f9fc !important;
+}
+.yazi{
+
+    padding-left: 50px;
+    font-family: "Roboto",sans-serif;
+
+}
+ .yazi h1{
+    color:#ff5714;
+    font-size: 14px;
+ }
+ .yazi h2{
+
+    font-size: 30px;
+ }
+ .text{
+    color: #8492a6 !important;
+    line-height: 1.6;
+ }
+ .position-relative{
+
+    position:relative!important;
+    padding-top: 100px;
+    padding-left: 70px;
+    
+ }
+ .img{
+    border-radius: 10px;
+    width: 450px;
+ }
+
+ .ucuncu{
+    margin-top: 100px;
+ }
+ 
+ .ucuncu-baslık-sol h2{
+color: #ff5714;
+font-size: 14px;
  }
