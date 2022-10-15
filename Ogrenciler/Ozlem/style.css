@@ -1,0 +1,11 @@
+html, body {front-size: 20px;
+}
+.paragraf1{
+  front-size:2em;
+}
+
+@media only screen and (max-with: 720px) {
+  html, 
+   body{}
+  
+}
