@@ -1,0 +1,81 @@
+body {
+    font-family: 'Abyssinica SIL', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+letter-spacing: 1px;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+.text::first-line {
+    color: burlywood;
+    font-size: 18px;
+}
+
+.text::first-letter {
+    font-size: 24px;
+}
+
+li:first-child {
+    color: blue;
+}
+
+li:last-child {
+    color: blue;
+}
+
+table,tr,td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background: linear-gradient(to bottom left, rgb(185, 24, 24), rgb(209, 209, 61));
+}
+
+tbody tr:hover{
+    background: gray;
+}
+
+.outer {
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    position:relative;
+    top: 25px;
+    left: 25px;
+}
+
+.inner {
+    width: 75px;
+    height: 75px;
+    background-color: aqua;
+    position:absolute;
+    top: 60px;
+    left: 60px;   
+}
+
+.fix {
+    width: 75px;
+    height: 75px;
+    background-color: brown;
+    position: fixed;
+    left:75%;
+}
