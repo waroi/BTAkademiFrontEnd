@@ -1,19 +1,29 @@
 .header1 {
-  height: 75px;
-  width: 100½;
+  /* height: 75px; */
+  width: 100%;
   /* margin: auto; */
   display: flex;
   flex-direction: row;
   /* position: fixed; */
-  justify-content: center;
+  justify-content: space-around;
   justify-items: center;
   align-items: center;
-  gap: 30px;
+  /* gap: 30px; */
   background-color: rgb(238, 236, 236);
   /* margin-bottom: 0 auto; */
   flex-wrap: wrap;
 }
 
+@media only screen and (max-width:860px) {
+ .body1 .header1 .navList {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .navList li {
+  display: none;
+ }
+}
 .header1 a {
   text-decoration: none;
   color: rgb(42, 42, 42);
@@ -25,6 +35,7 @@
 
 .header1 i {
   color: orangered;
+  
 }
 
 .header1 ul {
@@ -34,9 +45,14 @@
   gap: 20px;
 }
 
-.body1 {
-  margin: 0;
+.headerIcon {
+  display: flex;
+  gap: 10px;
 }
+
+/* .body1 {
+  margin: 0;
+} */
 
 .section1 {
   margin: 0;
@@ -45,21 +61,24 @@
   background-image: url(https://shreethemes.in/upstart/layouts/images/bg/1.jpg);
   /* background-size: 1500px; */
   background-repeat: no-repeat;
-  background-size: 100%;
+  /* background-size: 100%; */
   background-blend-mode: darken;
   /* padding-top: 150px;
   padding-left: 80px; */
+  /* position: relative; */
 }
 
 .baslik1 {
   margin-left: 200px;
   padding-top: 200px;
+ 
 }
 
 .baslik2 {
   color: rgb(255, 255, 255);
   margin-top: 0;
   font-size: 40px;
+
 }
 .p1 {
   color: rgb(225, 225, 225);
@@ -86,10 +105,30 @@
   height: 750px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+@media only screen and (max-width:1200px) {
+  .section2 {
+   height: 1000px;
+   text-align: center;
+   padding-left: 20px;
+  }
+ }
+
+
+.container4 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
 }
 
 .img2 {
-  width: 25½;
+  width: 300px;
 
   border-style: 1px solid;
   border-color: #000000;
@@ -118,6 +157,9 @@
   color: orangered;
 }
 
+.container5 {
+  position: relative;
+}
 .section4 {
   display: flex;
   flex-direction: row;
@@ -126,8 +168,18 @@
   gap: 55px;
   height: 200px;
   background-color: #ffffff;
+  position: relative;
 }
 
+@media only screen and (max-width:1200px) {
+  .section4 {
+    display: block;
+    flex-direction: column;
+  }
+ }
+/* .p3 {
+  position: absolute;
+} */
 .section4 p {
   width: 500px;
   color: rgb(102, 120, 139);
@@ -157,6 +209,7 @@
   justify-content: center;
   gap: 10px;
   background-color: white;
+  position: relative;
 }
 .section5 i,
 .section6 i {
@@ -296,8 +349,8 @@ table p {
   justify-content: center; */
 
 .allimages {
-  width: 100½;
-  padding-left: 180px;
+  width: 100%;
+  padding-left: 20px;
 }
 
 .images,
@@ -309,8 +362,28 @@ table p {
   column-gap: 20px;
   /* padding-left: 100px; */
   padding-top: 15px;
+  /* flex-wrap: wrap; */
+}
+@media only screen and (max-width:1200px) {
+  .images ,
+.images1  {
+    display: block;
+    flex-direction: column;
+    
+  }
+  .images img, 
+.images1 img {
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  display: none;
+  
+  
 }
 
+ }
+
+ 
 .section9 {
   margin-top: 10px;
 }
@@ -324,6 +397,7 @@ ul {
   gap: 20px;
   justify-content: center;
   padding-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 .button1 {
@@ -360,6 +434,7 @@ ul {
 
 .images5 {
   display: flex;
+  flex-wrap: wrap;
   gap: 150px;
   margin-left: 80px;
 }
@@ -372,12 +447,7 @@ ul {
   height: 300px;
 }
 
-/* @media only screen and (max-width: 1000px) {
-  .box2 {
-    width: 100px;
-    height: 200px;
-  }
-} */
+
 
 .box2:hover {
   filter: grayscale(100%);
@@ -400,7 +470,7 @@ ul {
   display: flex;
   font-size: 40px;
   color: gray;
-  gap: 250px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -462,6 +532,11 @@ ul {
 
 .icons2 {
   color: #ffffff;
+  
+}
+
+.icons2 i {
+  margin-right: 10px;
 }
 
 header {
