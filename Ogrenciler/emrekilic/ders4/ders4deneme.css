@@ -196,14 +196,14 @@ a:hover {
 }
 
 .story_photo {
-    max-width: 42%;
+    width: 42%;
 
 
 
 }
 
 .story_right {
-    max-width: 52%;
+    width: 52%;
 
 
 }
@@ -211,7 +211,7 @@ a:hover {
 .about_photo {
     border-radius: 10px;
     border: 1px solid white;
-    max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -261,13 +261,13 @@ h3 {
 }
 
 .perfect {
-    max-width: 50%;
+    width: 50%;
 }
 
 
 .right_text {
     text-align: left;
-    max-width: 50%;
+    width: 50%;
 
 
 }
@@ -279,7 +279,7 @@ h3 {
 }
 
 .feature_box {
-    max-width: 33.33%;
+    width: 33.33%;
     margin-top: 50px;
     padding: 2.5rem;
     justify-content: space-between;
@@ -347,12 +347,12 @@ a h4:hover {
 }
 
 .process_left {
-    max-width: 50%;
+    width: 50%;
 
 }
 
 .process_right {
-    max-width: 50%;
+    width: 50%;
 }
 
 .border {
@@ -408,7 +408,7 @@ a h4:hover {
 }
 
 .portfolio_box {
-    max-width: 25%;
+    width: 25%;
     margin-top: 1.5rem;
     padding-top: 0.5rem;
     padding-right: 1.5rem;
@@ -417,7 +417,7 @@ a h4:hover {
 
 
 .portfolio_photo {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     transition: all 0.5s ease;
     border-radius: 10px;
@@ -425,7 +425,7 @@ a h4:hover {
 }
 
 .section6 {
-    max-width: 100%;
+
     padding: 100px 0px;
     background-image: url(cta.png);
     background-position: center;
@@ -456,7 +456,7 @@ a h4:hover {
 }
 
 .plan_box {
-    max-width: 33.33%;
+    width: 33.33%;
 
 
     padding-top: 0.5rem;
@@ -575,8 +575,8 @@ a h4:hover {
 }
 
 .team_box {
-    max-width: 25%;
-    box-sizing: border-box;
+    width: 25%;
+
 }
 
 .names {
@@ -608,7 +608,7 @@ a h4:hover {
 }
 
 .blog_box {
-    max-width: 33.33%;
+    width: 33.33%;
     margin-top: 1.5rem;
     padding-left: 1em;
     padding-right: 1em;
@@ -617,7 +617,7 @@ a h4:hover {
 }
 
 .blog_photo {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -776,6 +776,13 @@ input.button {
     .header_container {
         flex-direction: column;
         align-items: center;
+
+    }
+
+
+    .header {
+        background-color: #564d4d;
+        opacity: 0.9;
     }
 
     .ustsatir {
@@ -792,8 +799,9 @@ input.button {
         font-size: 10px;
     }
 
-    social {
-        font-size: 70px;
+    .social {
+        padding: 0px;
+
     }
 
     .brand_box {
@@ -845,8 +853,7 @@ input.button {
     .other_paragraph {
         letter-spacing: 0px;
         text-align: center;
-        margin-left: 100px;
-        margin-right: 100px;
+
     }
 
     .story_right .button_box {
@@ -856,12 +863,12 @@ input.button {
     .story_photo,
     .story_right,
     .feature_box {
-        max-width: 75%;
+        width: 75%;
         text-align: center;
     }
 
     .portfolio_box {
-        max-width: 50%;
+        width: 50%;
     }
 
     .section6 h2 {
@@ -871,7 +878,7 @@ input.button {
 
     .plan_box,
     .blog_box {
-        max-width: 75%;
+        width: 75%;
 
     }
 
@@ -890,26 +897,17 @@ input.button {
 
 
     .team_box {
-        max-width: 50%;
-    }
-
-
-    .team {
-        flex-direction: column;
-        align-items: center;
-
+        width: 50%;
+        text-align: center;
     }
 
 
 
-    .brand {
-        flex-direction: column;
-        align-items: center;
-    }
+
 
     .brand_box {
-        max-width: 50%;
-        text-align: center;
+        width: 50%;
+        justify-content: center;
 
     }
 
@@ -919,6 +917,25 @@ input.button {
         flex-direction: column;
         align-items: center;
     }
+
+    .process_header p {
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+
+    .portfolio_header p {
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+
+    .plans_header p {
+        margin-left: 100px;
+        margin-right: 100px;
+
+    }
+
 
 
 
