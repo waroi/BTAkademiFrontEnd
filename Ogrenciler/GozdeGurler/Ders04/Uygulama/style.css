@@ -35,13 +35,13 @@
   height: 700px;
   width: 100%;       /*??????? Background image'in filter brightness ile karanlık yapıp yazıyı nasıl parlak yaparız??*/
   background-image: url(https://shreethemes.in/upstart/layouts/images/bg/1.jpg);
-  /* background-size: 1500px; */
+  background-size: 1500px;
   background-repeat: no-repeat;
   background-size: 100%; 
   background-blend-mode: darken;
-  /* padding-top: 250px;
-  padding-left: 100px;
-  position: relative; */
+  padding-top: 150px;
+  padding-left: 80px;
+  
   
 }
 
@@ -98,6 +98,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   gap: 70px;
 }
 
@@ -288,13 +289,20 @@ table p {
   padding-top: 5%;
   
 }
+/* 
+.allimages {
+  /* display: flex;
+  justify-content: center; */
+ 
+
 
 .images, .images1 {
   display: flex;
+ 
   width: 200px;
   height: 200px;
   column-gap: 20px;
-  padding-left: 75px;
+  padding-left: 400px;
   padding-top: 15px;
 }
 
