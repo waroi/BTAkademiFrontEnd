@@ -50,7 +50,9 @@ button {
 
   font-size: large;
 }
-
+.flex-container:nth-child(odd){
+  background-color:#0e2436;
+}
 .part-1 {
   color: rgb(255, 255, 255);
   align-items: center;
@@ -77,6 +79,8 @@ button {
   flex-direction: column;
 }
 .flex-container {
+  margin: 0;
+  margin-top: 3em;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -85,7 +89,18 @@ button {
 .w-25 {
   width: 25%;
 }
-
+.w-30 {
+  width: 30%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-75 {
+  width: 75%;
+}
 .icon {
   position: fixed;
   top: 40%;
@@ -100,6 +115,7 @@ button {
 }
 
 .part {
+  margin-top: 3em;
   color: #57abef;
   align-items: center;
   display: flex;
@@ -107,7 +123,7 @@ button {
   text-align: justify;
   font-family: monospace !important;
   font-size: 14px;
-  gap: 3em;
+  
 }
 .part h1 {
   font-size: 2em;
@@ -162,6 +178,7 @@ button {
 }
 
 .row {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -183,7 +200,25 @@ button {
 .w-45{
   width: 45%;
 }
+.gap-3 {
+  display: flex; 
+  gap: 3em;
+}
+.p-1{
+  margin: 1em;
+}
+.rounded-circle {
+  border-radius: 50%;
+}
+justify-content-left {
 
+display: flex;
+justify-content: flex-start !important;
+align-items: center;
+}
+.rounded-half {
+  border-radius: 12px 0 0 12px;
+}
 @media screen and (max-width:720px) {
   .flex-container {
     width: 100%;
@@ -235,4 +270,7 @@ button {
 
     width: 100%;
   }
+
 }
+
+
