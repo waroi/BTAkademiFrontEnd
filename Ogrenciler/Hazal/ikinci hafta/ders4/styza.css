@@ -1,4 +1,5 @@
 
+
 * {
     padding: 0;
     margin: 0;
@@ -49,3 +50,82 @@ body{
 
 opacity: 0.5;
 }
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+}
+
+.photo2{
+
+display: flex;
+align-items:baseline;
+justify-content: space-around;
+flex-direction: column;
+
+}
+.flex-container{
+ 
+  display: flex;
+ justify-content: space-around;
+ 
+}
+.icon {
+
+  display: flex;
+  flex-direction: column;
+  color: rgba(240, 248, 255, 0.663);
+  gap: 20px;
+  padding: 150px;
+  
+  }
+
+  .part2{
+    color:#57abef;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-family: monospace;
+    font-size: 14px;
+    line-height:60px;
+    
+  }
+ .part2 h1{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto",sans-serif;
+  
+} 
+
+.part2 p{
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto",sans-serif;
+}
+
+.bomb{
+  
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 100px;
+ text-align:start;
+ align-items: center;
+
+}
+
+.box1 .box2 .box3{
+
+  background-color: rgb(234, 234, 234);
+  border-radius: 1em;
+  padding: 0;
+  margin: 1.5em;
+  width: 28%;
+  justify-content: center;
+
+}
+
