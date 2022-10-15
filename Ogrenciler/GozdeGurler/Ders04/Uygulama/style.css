@@ -3,6 +3,7 @@
   width: 100½;
   /* margin: auto; */
   display: flex;
+  flex-direction: row;
   /* position: fixed; */
   justify-content: center;
   justify-items: center;
@@ -23,32 +24,36 @@
 }
 
 .header1 i {
-    color: orangered;
+  color: orangered;
+}
+
+.header1 ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .body1 {
-  margin:0;
+  margin: 0;
 }
 
 .section1 {
   margin: 0;
   height: 700px;
-  width: 100%;       /*??????? Background image'in filter brightness ile karanlık yapıp yazıyı nasıl parlak yaparız??*/
+  width: 100%; /*??????? Background image'in filter brightness ile karanlık yapıp yazıyı nasıl parlak yaparız??*/
   background-image: url(https://shreethemes.in/upstart/layouts/images/bg/1.jpg);
   /* background-size: 1500px; */
   background-repeat: no-repeat;
-  background-size: 100%; 
+  background-size: 100%;
   background-blend-mode: darken;
-  /* padding-top: 250px;
-  padding-left: 100px;
-  position: relative; */
-  
+  /* padding-top: 150px;
+  padding-left: 80px; */
 }
 
 .baslik1 {
   margin-left: 200px;
   padding-top: 200px;
- 
 }
 
 .baslik2 {
@@ -79,10 +84,12 @@
   margin-top: 0;
   background-color: rgb(243, 243, 243);
   height: 750px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .img2 {
-  width: 450px;
+  width: 25½;
 
   border-style: 1px solid;
   border-color: #000000;
@@ -98,6 +105,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   gap: 70px;
 }
 
@@ -113,6 +121,7 @@
 .section4 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 55px;
   height: 200px;
@@ -139,17 +148,18 @@
   padding-top: 120px; /*h3 ile hizalandı*/
 }
 
-.section5, .section6{
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    justify-content: center;
-    gap: 10px;
-    background-color:white;
-    
+.section5,
+.section6 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
 }
-.section5 i , .section6 i{
-  
+.section5 i,
+.section6 i {
   color: orangered;
   background-color: rgb(238, 224, 193);
   width: 80px;
@@ -159,16 +169,12 @@
   padding-bottom: 0;
   display: flex;
   justify-content: center;
-  align-items: center;   /* ORTALAMA BAŞARILI*/
+  align-items: center; /* ORTALAMA BAŞARILI*/
 }
 
 .fa-solid {
-    font-size: 30px;
-    text-align: center;
-    
-    
-    
-
+  font-size: 30px;
+  text-align: center;
 }
 .box {
   width: 300px;
@@ -182,28 +188,31 @@
 }
 
 .box:hover {
-    box-shadow:5px 5px 5px rgb(196, 194, 194);
+  box-shadow: 5px 5px 5px rgb(196, 194, 194);
 }
 
 .text1 {
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none !important;
-    color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none !important;
+  color: black;
 }
 
-.section5 p, .section6 p {
-    color: rgb(102, 120, 139);
+.section5 p,
+.section6 p {
+  color: rgb(102, 120, 139);
 }
 
-.section5 a, .section6 a {
-    text-decoration: none;
-    color: black;
+.section5 a,
+.section6 a {
+  text-decoration: none;
+  color: black;
 }
 
-.section5 a:hover , .section6 a:hover{
-    text-decoration: underline;
-    color: orangered;
+.section5 a:hover,
+.section6 a:hover {
+  text-decoration: underline;
+  color: orangered;
 }
 
 .section7 {
@@ -231,12 +240,11 @@
 .table {
   width: 100%;
   height: 600px;
-  
+
   /* justify-content: center;
   align-items: center;
   align-content: center; */
   /* background-color: rgb(248, 248, 248); */
-  
 }
 
 table {
@@ -246,17 +254,14 @@ table {
   /* border-style: hidden; */
 }
 
-table td, th {
+table td,
+th {
   border-right: 1px dashed gray;
 }
-
-
 
 th {
   font-weight: normal;
 }
-
-
 
 .right {
   text-align: end;
@@ -266,7 +271,6 @@ th {
 .left {
   text-align: left;
   padding-left: 20px;
-  
 }
 
 thead {
@@ -281,20 +285,29 @@ table p {
   background-color: rgb(243, 243, 243);
   margin-top: 10%;
   padding-bottom: 75px;
-
 }
 .textProp {
   text-align: center;
   padding-top: 5%;
-  
+}
+/* 
+.allimages {
+  /* display: flex;
+  justify-content: center; */
+
+.allimages {
+  width: 100½;
+  padding-left: 180px;
 }
 
-.images, .images1 {
+.images,
+.images1 {
   display: flex;
+
   width: 200px;
   height: 200px;
   column-gap: 20px;
-  padding-left: 75px;
+  /* padding-left: 100px; */
   padding-top: 15px;
 }
 
@@ -310,7 +323,7 @@ ul {
   display: flex;
   gap: 20px;
   justify-content: center;
-  padding-bottom:60px ;
+  padding-bottom: 60px;
 }
 
 .button1 {
@@ -347,9 +360,13 @@ ul {
 
 .images5 {
   display: flex;
-  gap: 250px;
+  gap: 150px;
   margin-left: 80px;
 }
+.box2 img {
+  width: 300px;
+}
+
 .box2 {
   width: 200px;
   height: 300px;
@@ -363,17 +380,17 @@ ul {
 } */
 
 .box2:hover {
-  filter:grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .box2 h3 {
   text-align: center;
   margin-left: 150px;
-  font-size:30px ;
+  font-size: 30px;
   margin-bottom: 0;
 }
 
-.box2 p { 
+.box2 p {
   text-align: center;
   margin-left: 150px;
   margin-top: 0;
@@ -385,7 +402,6 @@ ul {
   color: gray;
   gap: 250px;
   justify-content: center;
-
 }
 
 .section10 {
@@ -398,7 +414,6 @@ ul {
 
 .mail1 {
   width: 800px;
-  
 }
 .side1 {
   margin-top: 15px;
@@ -423,6 +438,34 @@ ul {
   background-color: rgb(243, 243, 243);
 }
 
-.mail1  {
-  margin-top: 30px ;
+.mail1 {
+  margin-top: 30px;
+}
+
+.section12 {
+  background-color: rgb(21, 51, 88);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+}
+
+.section12 img {
+  height: 30px;
+}
+
+.section12 p {
+  color: #ffffff;
+}
+
+.icons2 {
+  color: #ffffff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
