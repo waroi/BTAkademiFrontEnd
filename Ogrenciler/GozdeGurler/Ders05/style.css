@@ -1,0 +1,11 @@
+.container {
+    position: relative;
+    background-color: aqua;
+    height: 800px;
+    width: 800px;
+}
+
+.absolute {
+    position: absolute;
+    padding-top: 80%;
+}
