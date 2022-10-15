@@ -246,7 +246,9 @@ BACKGROUND COLOR
     height: 250px;
     width: 250px;
   }
-
+  a {
+    text-decoration: none;
+   }
 
   .btn-orange2{
     color: #fff;
@@ -441,6 +443,7 @@ BACKGROUND COLOR
         font: 300 18px 'Lato', sans-serif;
         letter-spacing: 1.9px;
         color: #bbb;
+        
       }
       
       .place {
@@ -469,7 +472,7 @@ BACKGROUND COLOR
         background-color: rgb(23, 14, 104);
       }
 
-      
+
     .pbeyaz{
 
         color: white;
