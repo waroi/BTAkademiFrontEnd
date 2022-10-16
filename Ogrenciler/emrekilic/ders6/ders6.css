@@ -1,0 +1,29 @@
+.container {
+
+    background-color: aliceblue;
+    padding: 20px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.item {
+    background-color: blue;
+    padding: 20px;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+-->.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    grid-template-areas: "header header header"
+        "sidebar content content"
+        "sidebar . ."
+        "box1 box2 box3"
+        "footer footer footer"
+}

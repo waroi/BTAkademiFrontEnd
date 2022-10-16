@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: #034f84;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr 2fr;
+}
+
+.item {
+  background-color: #f7786b;
+  padding: 20px;
+  margin: 20px;
+  color: #fff;
+  font-size: 25px;
+}
