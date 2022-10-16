@@ -1,0 +1,31 @@
+.container{
+    display:grid;
+    
+    gap:2px;
+    grid-template-areas: "header header header" 
+                         "resim blog blog"
+                         "resim footer footer";
+ 
+    
+}
+.resim{
+    grid-area: resim;
+    background-color: antiquewhite;
+}
+.blog{
+    grid-area: blog;
+    background-color: blueviolet;
+}
+.footer{
+    grid-area: footer;
+    background-color: aqua;
+}
+.header{
+    grid-area: header;
+    background-color: brown;
+}
+
+.header, .footer, .resim, .blog{
+    border:1px solid coral;
+
+}
