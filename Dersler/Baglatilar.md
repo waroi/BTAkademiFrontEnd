@@ -9,3 +9,5 @@ https://www.w3schools.com/cssref/css_units.asp - Css Size Units
 https://fontawesome.com/icons - Hazır iconlar
 https://cdnjs.com/libraries/font-awesome - fontawesome CDN
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/#top-of-site - Flex için görsel bir anlatım
+https://www.w3schools.com/css/css_grid.asp - w3Schools Grid
+https://css-tricks.com/snippets/css/complete-guide-grid/ Grid
