@@ -1,0 +1,39 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+.nav {
+    
+
+    background-color: rgb(226, 205, 180);
+}
+
+    .nav ul{
+ margin-top: 50px;  
+display: flex;
+flex-direction: row;
+justify-content: center;
+list-style: none;
+gap: 2em;
+
+
+    }
+    a:visited {
+        color: rgb(236, 234, 234);
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+    .nav  ul a {
+        text-decoration: none;
+      }
+.nav ul .search {
+
+    display: flex;
+    flex-wrap: wrap;
+    
+  
+}
