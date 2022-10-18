@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+}
+.bg-image{
+    background:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.blogenium.com%2Fwp-content%2Fuploads%2F2019%2F08%2Fblogenium-sports-hd-wallpapers-8.jpg&f=1&nofb=1&ipt=a5bf673753776318191c11e8db86992d287856442893a567966f3080a3183f56&ipo=images");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto  !important;
+    color: #3c3c3c;
+}
+.nav-link{
+    text-decoration: none;
+    color: #3c3c3c;
+    padding: 0.5em 1em;
+}
+.nav-link:active{
+    background-color: rgb(255, 115, 0) ;
+    border-radius: 0.5em;
+    color: #fff;
+}
+.socialmedia a{
+    font-size: 2em;
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1em;
+}
+.col{
+    
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1em;
+}
+.col-4{
+    display: grid;
+    grid-template-columns: repeat(4, 25%) ;
+    gap: 1em;
+}
+
+
+.btn-orange{
+    padding: 1em 1.5em;
+    text-decoration: none;
+    background-color: rgb(255, 115, 0);
+    color: #fff;
+}
+.badge{
+    border-radius: 2em;
+    padding: 0.5em;
+}
+.badge-green{
+    background-color: rgb(0, 163, 136);
+    color: #fff;
+}
+.badge-red{
+    background-color: rgb(138, 0, 0);
+    color: #fff;
+}
+.content{
+    margin: 4em 14em;
+}
+.header{
+    display: flex;
+    align-items: center;
+
+}
+.header-info{
+    padding: 6em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+.header-info h1, .header-info p ,.header-info div{
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    background-color: #a5a5a5;
+    color: #fff;
+}
+
+.footer{
+    padding: 2em;
+}
+.link-decoration-none{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+.footer li{
+    border-bottom: 1px dotted #fff;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    box-shadow: 0 0 12px 0 #cccccc;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 0.5em 0.5em 0 0 ;
+}
+.card h4, .card p{
+    margin: 0;
+    padding: 0;
+}
+
+form input[type="email"], form a{
+    padding: .5em;
+    
+}
+form a{
+    background-color: rgb(255, 115, 0);
+    text-decoration: none;
+    color: #fff;
+}
+.text-white{
+    color: #fff;
+}
+.copyright{
+    color: white;
+    padding: 1em;
+    text-align: center;
+    background-color: #3c3c3c;
+}
+@media (max-width:720px) {
+    .content{
+        margin: 4em;
+    }
+    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .navbar .socialmedia{
+        display: none;
+    }
+}
+
+@media (max-width:470px) {
+    .row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .socialmedia{
+        display: none;
+    }
+}
