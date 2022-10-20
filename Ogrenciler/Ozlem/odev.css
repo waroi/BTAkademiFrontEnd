@@ -1,16 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .container{
     display:grid;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     
-    gap:2px;
-    grid-template-areas: "header header header" 
-                         "resim blog blog"
-                         "resim footer footer";
- 
-    
+    grid-template-areas: "header" 
+                         "resim"
+                         "blog"
+                         "footer";
+
+   
 }
+.header{
+    grid-area: header;
+    background-color: rgb(245, 245, 245);
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+
+}
+.navbar{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0,1em;
+    height: 100%;
+    width: 100%;
+
+}
+.navmenu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0,1em;
+    height: 100%;
+    width: 60%;
+
+}
+
+.navimg{
+    height: 35%;
+    width: 35%;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+.navbar ul li:hover{
+    background-color: rgb(58, 180, 180);
+    border-radius: 2px;
+}
+
+.navicon{
+    display: flex;
+    height: 30px;
+    width: 15%;
+    color: grey;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 10px;
+}
+
+
+
+
+
+
 .resim{
     grid-area: resim;
+    height: 35vh;
     background-color: antiquewhite;
+    background-image: url("https://cdn.pixabay.com/photo/2016/09/18/14/21/swimmer-1678307_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
 }
 .blog{
     grid-area: blog;
@@ -20,12 +121,19 @@
     grid-area: footer;
     background-color: aqua;
 }
-.header{
-    grid-area: header;
-    background-color: brown;
-}
+
 
 .header, .footer, .resim, .blog{
     border:1px solid coral;
 
+}
+.metin{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    color: rgb(235, 131, 131);
+    font-size: 25px;
+    
 }
