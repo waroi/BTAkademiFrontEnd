@@ -9,11 +9,11 @@
     "footer footer footer";
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .footer1 {
     display: block;
   }
-}
+} */
 
 @media (max-width: 860px) {
   .container {
@@ -22,6 +22,7 @@
     grid-template-areas:
       "header"
       "carousel"
+      "main"
       "main"
       "main"
       "main"
@@ -49,17 +50,30 @@
   div .title {
     width: 250px;
     position: absolute;
-    top: 5%;
-    left: 5%;
+    /* top: 5%;
+    left: 5%; */
   }
 
-  .icon-text,
-  .txt1,
-  .links,
-  .icon {
-    display: block;
+  main .card .img,
+  main .card .images1 {
+    display: inline-block;
     flex-direction: column;
-    margin: 10px;
+  }
+
+  main {
+    padding: 5%;
+  }
+
+  main h2 {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  footer .footer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 5%;
   }
 }
 
@@ -67,6 +81,8 @@ html,
 body {
   height: 100%;
   margin: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .header {
@@ -140,7 +156,7 @@ body {
 .title {
   color: rgb(244, 244, 244);
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 10%;
   font-size: 24px;
   width: 500px;
@@ -166,6 +182,7 @@ body {
 .main {
   grid-area: main;
   background-color: rgb(250, 249, 238);
+  padding-bottom: 5%;
 }
 
 .main h2 {
@@ -195,14 +212,15 @@ div .images a {
   background-color: rgb(224, 151, 32);
   color: white;
   border-radius: 5px;
+  padding: 5px;
 }
 
 .footer {
   grid-area: footer;
+  background-color: rgb(114, 108, 108);
 }
 
 .footer1 {
-  background-color: rgb(114, 108, 108);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -236,4 +254,13 @@ div .images a {
 .icon a i {
   color: rgb(226, 221, 221);
   margin-left: 5px;
+}
+
+footer .subtext {
+  background-color: rgba(33, 27, 27, 0.708);
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  text-align: center;
 }
