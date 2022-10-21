@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display:grid;
+    
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    grid-template-areas: "header" 
+                         "resim"
+                         "blog"
+                         "footer";
+
+   
+}
+.header{
+    grid-area: header;
+    background-color: rgb(245, 245, 245);
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+
+}
+.navbar{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0,1em;
+    height: 100%;
+    width: 100%;
+
+}
+.navmenu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0,1em;
+    height: 100%;
+    width: 60%;
+
+}
+
+.navimg{
+    height: 35%;
+    width: 35%;
+    color: rgb(212, 143, 39);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(24, 19, 19);
+    font-weight: bold;
+
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+.navbar ul li:hover{
+    background-color: rgb(58, 180, 180);
+    border-radius: 2px;
+}
+
+.navicon{
+    display: flex;
+    height: 30px;
+    width: 15%;
+    color: rgb(38, 30, 30);
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 10px;
+}
+
+
+
+.resim{
+    grid-area: resim;
+    height: 35vh;
+    background-color: rgb(14, 9, 2);
+    background-image: url("https://ychef.files.bbci.co.uk/1600x900/p0d6dqzq.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+/* .blog{
+    grid-area: blog;
+    background-color: blueviolet;
+} */
+
+.box1, .box2, .box3, .box4, .box5, .box6{
+
+    background-color: rgb(247, 247, 247);
+    border-radius: 1em;
+    padding: 0;
+    margin: 1.5em;
+    width: 20%;
+   justify-content: center;
+    border: 15px solid rgb(253, 253, 253);
+   
+} 
+
+ .btn {
+    display: block;
+    top: 30%;
+    border-radius: 0.5em;
+    border-style: none;
+    
+}
+
+.metin{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    color: rgb(35, 33, 33);
+    font-size: 25px;
+    
+}
+.blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    grid-area: footer;
+    background-color: rgb(21, 33, 33);
+    color: aliceblue;
+    gap: 150px;
+
+}
+.navbarlogoalt {
+
+    width: 25%;
+    height: 25%;
+   
+}
+.navbaralt p{
+    color: aliceblue;
+   
+}
+
+.btn-footer{
+   display: block;
+    top: 30%;
+    padding: 10px;
+    
+
+}
+/* .link-footer{
+    
+    display: flex;
+    flex-direction: row;
+} */
+.link-footer a{
+    text-decoration: none;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.media-icons {
+   display: flex;
+   
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 10px;
+}
+.h2{
+    /* display: flex;
+    flex-direction: row; */
+  margin-right: 20px; 
+  padding-right: 20px;
+}
+.footerimg{
+    background-color:aliceblue;
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+}
