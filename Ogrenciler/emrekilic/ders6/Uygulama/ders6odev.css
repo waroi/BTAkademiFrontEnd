@@ -1,48 +1,357 @@
-.header {
-  background-color: aqua;
-  grid-template-columns: 1fr 3fr 1fr;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+
+}
+
+.header_box {
+  grid-template-columns: 0.5fr 3fr 1fr;
   grid-template-areas: "logo navList icons";
   display: grid;
-  grid-area: header;
+
 }
+
+
 
 
 
 
 .logo {
   grid-area: logo;
-  background-color: blue;
+
+
 }
 
-.header li {
+.header_box li {
   list-style: none;
 }
 
-.header ul {
+.header_box .navList {
+  display: flex;
+
+
+
+}
+
+.header_box ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   grid-area: navList;
-  background-color: blueviolet;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+
+
 }
+
+
+.header_box ul li a {
+  text-decoration: none;
+  padding: 5px 5px;
+  color: rgb(134, 124, 124);
+  font-weight: bold;
+  font-size: 20px;
+
+
+}
+
+.header_box ul li {
+  margin: 0 10px;
+
+
+
+}
+
+
+.header_box ul li a:hover {
+  background-color: rgb(201, 70, 23);
+  color: aliceblue;
+  border-radius: 10px;
+  transition: 0.3s;
+
+
+
+}
+
+
 
 .icons {
   grid-area: icons;
-  background-color: cadetblue;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
 }
+
+.social i {
+  color: grey;
+  font-size: 20px;
+
+}
+
+.social {
+  margin: 0px 5px;
+
+}
+
+
+
+
+
+
+.flex {
+  display: flex;
+}
+
+
 
 .topSection {
-  background-color: beige;
+  background-image: url(main.webp);
+  background-size: cover;
   grid-area: topSection;
+  align-items: center;
+  height: 400px;
+
 }
 
+.etiket {
+  background-color: rgb(121, 169, 214);
+  border-radius: 30px;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.topSection h1 {
+  color: aliceblue;
+  font-size: 24px;
+  margin-bottom: 20px;
+
+}
+
+.topSection p {
+  color: rgb(102, 100, 100);
+  max-width: 500px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.read {
+  padding: 5px 5px;
+  background-color: rgb(201, 70, 23);
+  color: aliceblue;
+  text-decoration: none;
+
+}
+
+
+
+
 .midSection {
-  background-color: black;
+
   grid-area: midSection;
 }
 
+.divide {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+
+}
+
+.box img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.box h3 {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+
 .footer {
-  background-color: brown;
-  grid-area: footer;
+  background-color: rgb(134, 130, 130);
+  overflow: hidden;
+}
+
+
+
+.divide2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding-top: 10px;
+
+}
+
+
+.footer p {
+  color: aliceblue;
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+.footer h4 {
+  color: aliceblue;
+}
+
+.button {
+
+  margin-top: 10px;
+  width: 100%;
+  background-color: rgb(201, 70, 23);
+  color: aliceblue;
+  border: none;
+  height: 28px;
+  cursor: pointer;
+}
+
+
+form .email {
+  width: 100%;
+  height: 24px;
+
+}
+
+
+
+.footer i {
+  color: aliceblue;
+}
+
+.footer ul {
+  margin-top: 10px;
+  list-style: none;
+
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 32px;
+
+}
+
+
+.footer ul li {
+  border-bottom: 1px solid rgb(116, 101, 101);
+}
+
+.footer_items a:first-child {
+  margin-left: 0px;
+}
+
+.footer_items a:last-child {
+  margin-right: 0px;
+}
+
+.divide2 :nth-child(4) h4 {
+  margin-bottom: 10px;
+}
+
+
+.copyright {
+  text-align: center;
+  color: gray;
+  background-color: rgb(66, 62, 62);
+  margin-bottom: 10px;
+  padding: 5px;
+
+}
+
+.border {
+  display: none;
+}
+
+
+
+/*           media                */
+
+@media (max-width: 400px) {
+
+  .header_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .topSection .container p {
+    color: aliceblue;
+  }
+
+  .border {
+    margin-top: 10px;
+    border: dashed 1px;
+    color: rgb(184, 156, 156);
+    display: block;
+  }
+
+  .block {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .footer_items i {
+    font-size: 24px;
+  }
+
+
+
+
+
+
+
+  .container {
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+
+  }
+
+  .header_box ul {
+    margin-bottom: 10px;
+  }
+
+
+  .icons {
+    display: none;
+
+
+  }
+
+  .divide {
+    grid-template-columns: 1fr;
+  }
+
+
+  .divide2 {
+    grid-template-columns: 1fr;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
