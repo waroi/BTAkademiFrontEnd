@@ -125,7 +125,7 @@ a{
     width: 20%;
    justify-content: center;
     border: 15px solid rgb(253, 253, 253);
-   
+   flex-wrap: wrap;
 } 
 
  .btn {
@@ -187,11 +187,13 @@ a{
     flex-direction: row;
 } */
 .link-footer a{
-    text-decoration: none;
+    
     padding: 10px;
     color: aliceblue;
 }
-
+.link-footer ul {
+    text-decoration: none;
+}
 .media-icons {
    display: flex;
    
@@ -204,8 +206,7 @@ a{
 .h2{
     /* display: flex;
     flex-direction: row; */
-  margin-right: 20px; 
-  padding-right: 20px;
+ 
 }
 .footerimg{
     background-color:aliceblue;
