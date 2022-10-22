@@ -22,7 +22,7 @@ body{
   /* animation-delay: 2s; */
   /* animation-direction: alternate-reverse; */
   /* animation-timing-function: ease-in-out; */
-  /* animation: aaa 3s forwards 0s ease-in-out; */
+  /* animation: aaa 4s forwards 0s ease-in-out; */
 }
 
 .box:hover{
@@ -38,7 +38,7 @@ body{
   animation-duration: 2s;
 }
 
-/* @keyframes aaa{
+ /* @keyframes aaa{
   25%{
     width: 50px;
   }
@@ -51,4 +51,4 @@ body{
   100% {
     width: 200px;
   }
-} */
+}  */
