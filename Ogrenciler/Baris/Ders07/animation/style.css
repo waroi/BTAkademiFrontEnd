@@ -37,7 +37,16 @@ body{
 }
 
 @keyframes aaa{
-    to{
-        width: 300px;
+    25%{
+        width: 50px;
+    }
+    50%{
+        width: 150px;
+    }
+    75%{
+        width: 75px;
+    }
+    100%{
+        width: 200px;
     }
 }
