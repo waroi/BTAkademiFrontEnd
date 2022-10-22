@@ -11,13 +11,23 @@ body{
       /* grid-template-columns: 1fr 3fr  ;
       grid-template-rows: 1fr 2fr; */
 /* grid-template-columns: repeat(6,1fr); */
-grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+/* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+grid-template-columns: repeat(3,20%);
+grid-template-rows: repeat(2,20%);
 
+        gap:10px;
+        height: 600px;
+        background-color: rgb(122,233,213);
+        justify-content: center;
+        align-content: center;
+        align-items: flex-end;
 
-        gap:10px
+        
 
 }
-
+.item:first-child{
+    align-self: flex-start;
+}
 .item{
 
     background-color: #f7786b;
