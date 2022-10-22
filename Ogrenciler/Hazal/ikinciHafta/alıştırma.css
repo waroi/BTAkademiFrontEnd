@@ -19,7 +19,7 @@ body{
     margin: 1.5em;
     width: 28%;
     justify-content: center;
-  
+    border: 15px solid green;
 }
 
 .photo img{
