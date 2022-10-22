@@ -1,0 +1,37 @@
+.container{
+    display: grid;   
+    grid-template-columns: repeat(3 1fr);
+    gap: 5px;
+    grid-template-areas: "header header header"
+                         "sidebar content content" 
+                          "sidebar . ."
+                           "box1 box1 box1"
+                           "footer footer footer";
+   }
+   
+   .header, .content, .sidebar, .bo-1, .box-22, .box-33, .footer {
+       border: 1px solid wheat;
+   }
+   .header{
+       grid-area: header;
+       background-color: brown;
+   }
+   .sidebar{
+       grid-area: sidebar;
+       background-color: rgb(42, 165, 147);
+   }
+   .content{
+       grid-area: content;
+       background-color: rgb(130, 45, 106);
+   }
+   
+   .box1{
+       grid-area: box-1;
+       background-color: rgb(165, 119, 25);
+   
+   }
+   .footer{
+       grid-area: footer;
+       background-color: rgb(151, 64, 17);
+   
+   }

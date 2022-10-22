@@ -14,7 +14,7 @@ html{
 
 .container{
     display:grid;
-    height: 100%;
+    
     width: 100%;
     margin: 0;
     padding: 0;
@@ -64,11 +64,12 @@ html{
 .navimg{
     height: 35%;
     width: 35%;
+    color: rgb(212, 143, 39);
 }
 
 a{
     text-decoration: none;
-    color: grey;
+    color: rgb(24, 19, 19);
     font-weight: bold;
 
 }
@@ -92,7 +93,7 @@ a{
     display: flex;
     height: 30px;
     width: 15%;
-    color: grey;
+    color: rgb(38, 30, 30);
     align-items: center;
     justify-content: center;
     font-size: 25px;
@@ -101,39 +102,115 @@ a{
 
 
 
-
-
-
 .resim{
     grid-area: resim;
     height: 35vh;
-    background-color: antiquewhite;
-    background-image: url("https://cdn.pixabay.com/photo/2016/09/18/14/21/swimmer-1678307_960_720.jpg");
+    background-color: rgb(14, 9, 2);
+    background-image: url("https://ychef.files.bbci.co.uk/1600x900/p0d6dqzq.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
 }
-.blog{
+/* .blog{
     grid-area: blog;
     background-color: blueviolet;
-}
-.footer{
-    grid-area: footer;
-    background-color: aqua;
+} */
+
+.box1, .box2, .box3, .box4, .box5, .box6{
+
+    background-color: rgb(247, 247, 247);
+    border-radius: 1em;
+    padding: 0;
+    margin: 1.5em;
+    width: 20%;
+   justify-content: center;
+    border: 15px solid rgb(253, 253, 253);
+   flex-wrap: wrap;
+} 
+
+ .btn {
+    display: block;
+    top: 30%;
+    border-radius: 0.5em;
+    border-style: none;
+    
 }
 
-
-.header, .footer, .resim, .blog{
-    border:1px solid coral;
-
-}
 .metin{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 10px;
-    color: rgb(235, 131, 131);
+    color: rgb(35, 33, 33);
     font-size: 25px;
     
+}
+.blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    grid-area: footer;
+    background-color: rgb(21, 33, 33);
+    color: aliceblue;
+    gap: 150px;
+
+}
+.navbarlogoalt {
+
+    width: 25%;
+    height: 25%;
+   
+}
+.navbaralt p{
+    color: aliceblue;
+   
+}
+
+.btn-footer{
+   display: block;
+    top: 30%;
+    padding: 10px;
+    
+
+}
+/* .link-footer{
+    
+    display: flex;
+    flex-direction: row;
+} */
+.link-footer a{
+    
+    padding: 10px;
+    color: aliceblue;
+}
+.link-footer ul {
+    text-decoration: none;
+}
+.media-icons {
+   display: flex;
+   
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 10px;
+}
+.h2{
+    /* display: flex;
+    flex-direction: row; */
+ 
+}
+.footerimg{
+    background-color:aliceblue;
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
 }
