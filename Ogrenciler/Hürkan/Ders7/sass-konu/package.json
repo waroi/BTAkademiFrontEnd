@@ -1,5 +1,5 @@
 {
-  "name": "sas-konu",
+  "name": "sass-konu",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "sass": "node-sass -w sass -o css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Hurkan Unlu",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^7.0.3"
