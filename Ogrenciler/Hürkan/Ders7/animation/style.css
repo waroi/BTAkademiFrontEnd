@@ -1,31 +1,65 @@
 body {
-  margin: 0;
+background-color: gray;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
 }
 
-.container {
-  background-color: #7d7d7d;
-  padding: 20px;
-  display: grid;
-  /*grid-template-columns: 1fr 3fr 1fr 1fr;*/
-  grid-template-columns: repeat(6,1fr);
-  gap: 10px;
+.box {
+background-color: orangered;
+width: 100px;
+height : 100px;
+
+/* TRANSITION KISMI */
+
+/*transition-property: background-color;
+transition-duration: 2s;
+transition-timing-function: ease-in-out; */
+/*transition: background-color 2S, border-radius 1s ease-in-out; */
+/* transition: all 2s ease-in-out; */
+
+
+/* ANIMATION KISMI */
+animation-name: aaa;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+/* animation-iteration-count: 2; */
+/* animation-iteration-count: infinite; */
+/* animation-delay: 2s; */
+/* animation-direction: alternate-reverse; */
+/*animation-timing-function: ease-in-out; */
+animation: aaa 3s forwards 1s ease-in-out;
+
+}
+.box:hover {
+/*background-color: greenyellow; */
+/* border-radius: 50px; */
+/*transform: scale(2); */
+/* transform: skew(30deg); */
+/* transform: translateX(-100px); */
+/* transform: translateY(-100px); */
+/* transform: translate(100px, -100px); */
+/* transform: rotate(180deg); */
+animation:animate__flip;
+animation-duration: 2s;
 }
 
-.item {
-  background-color: #f7786b;
-  padding: 20px;
-  margin: 20px;
-  color: #fff;
-  font-size: 25px;
-}
+/*
+@keyframes aaa {
 
-.item:first-child { 
-/* grid-column-start: 2;
-grid-column-end: 4;
-grid-column: 2 / 5;
-grid-row-start: 2;
-grid-row-end: 4;
-grid-row: 2 / 4;
-grid-column: 2 / span 3; */
-grid-area: 1 / 2 / span 2 / span 4;
+25%{
+    width: 50px;
+  }
+  50%{
+    width: 150px;
+  }
+  75%{
+    width: 75px;
+  }
+    100%{
+    width: 20px;
+  }
+
 }
+*/
