@@ -38,7 +38,7 @@ ul{
     @include box(50px,100px,$orangeColor);
 }
 .box3{
-    @include box(200px,50px,$blackColor);
+    @extend .box2;
 }
 
 

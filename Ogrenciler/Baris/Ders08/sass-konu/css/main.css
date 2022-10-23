@@ -19,12 +19,7 @@ ul {
   height: 150px;
   background-color: #257563; }
 
-.box2 {
+.box2, .box3 {
   width: 50px;
   height: 100px;
   background-color: #ff9900; }
-
-.box3 {
-  width: 200px;
-  height: 50px;
-  background-color: black; }
