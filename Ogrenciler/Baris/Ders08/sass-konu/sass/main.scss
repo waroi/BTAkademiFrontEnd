@@ -1,0 +1,44 @@
+// DEĞİŞKENLER
+$orangeColor: #ff9900;
+$blackColor:black;
+$boxColor:#257563;
+
+h2{
+    color: $orangeColor;
+}
+
+ul{
+    list-style: none;
+    li{
+        display: inline-block;
+        color: $orangeColor;
+        a{
+            text-decoration: none;
+            color:$blackColor;
+        }
+    }
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+}
+
+// FONKSİYONEL YAZIM
+@mixin box($w, $h, $bgColor){
+    width: $w;
+    height: $h;
+    background-color: $bgColor;
+    
+}
+.box1{
+    @include box(100px,150px,$boxColor);
+}
+.box2{
+    @include box(50px,100px,$orangeColor);
+}
+.box3{
+    @include box(200px,50px,$blackColor);
+}
+
+
