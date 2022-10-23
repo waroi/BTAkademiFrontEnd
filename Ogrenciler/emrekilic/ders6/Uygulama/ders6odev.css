@@ -42,11 +42,12 @@
 }
 
 .header_box ul {
-  display: flex;
+  display: grid;
   flex-direction: row;
   grid-area: navList;
   justify-content: flex-start;
   align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
 
 }
@@ -84,10 +85,10 @@
 
 .icons {
   grid-area: icons;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
 
 }
 
@@ -98,7 +99,7 @@
 }
 
 .social {
-  margin: 0px 5px;
+  margin-left: 10px;
 
 }
 

@@ -1,0 +1,26 @@
+h2 {
+  color: #1f1fdf; }
+
+ul {
+  list-style: none; }
+  ul li {
+    display: inline-block;
+    color: #1f1fdf; }
+
+.container {
+  display: flex;
+  gap: 10px; }
+
+.box1 {
+  width: 100px;
+  height: 50px;
+  background-color: #e63838; }
+
+.box2, .box3 {
+  width: 200px;
+  height: 150px;
+  background-color: #cccc2b;
+  padding: 10px; }
+
+.box3 {
+  padding: 20px; }

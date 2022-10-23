@@ -1,0 +1,28 @@
+h2 {
+  color: #dd6706; }
+
+ul {
+  list-style: none; }
+  ul li {
+    display: inline-block;
+    color: #dd6706; }
+    ul li a {
+      text-decoration: none; }
+
+.container {
+  display: flex;
+  gap: 10px; }
+
+.box1 {
+  width: 100px;
+  height: 150px;
+  background-color: #257563; }
+
+.box2, .box3 {
+  width: 50px;
+  height: 100px;
+  background-color: #dd6706;
+  padding: 10px; }
+
+.box3 {
+  padding: 20px; }

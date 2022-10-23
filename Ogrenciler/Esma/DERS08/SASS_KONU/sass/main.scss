@@ -1,0 +1,102 @@
+$bgcolor: #3c3c3c;
+$bgcolor-blue: blue;
+$bgcolor-white: white;
+$textwhite: white;
+
+@mixin ortala( $jc, $ai)
+{
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai; 
+}
+
+body{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  @include ortala(center,center );
+}
+
+.section1 { 
+  padding-bottom: 200px;
+}
+.row {
+  @include ortala(center, center );
+  margin-top:-100px;
+  
+}
+.col1 {
+  ul {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include ortala(center, center );
+    flex-direction: column;
+
+  }
+  .imgbg {
+    width: 30%;
+    padding: 2em;
+    img { width: 100%;}
+    border-radius: 50%;
+    background-color:$bgcolor-blue;
+  
+  }
+  @include ortala(center, center);
+  flex-direction: column;
+  gap: 5px;
+  width: 35%;
+}
+
+.col2 {
+  @extend .col1;
+}
+
+.col3 {
+  @extend .col1;
+  
+}
+footer {
+  a{
+    color: #ccc;
+  }
+  background-color: $bgcolor;
+  color: $textwhite;
+  @include ortala(center,center);
+
+}
+
+.section2 {
+  background-color: $bgcolor-blue;
+
+}
+
+.bgwhite {
+  background-color: $bgcolor-white;
+}
+
+@media (  max-width: 750px)
+{ 
+  .row {
+    flex-direction: column;
+  }
+  
+  
+  .col1 {
+    
+    img {
+      width: 50%;
+    }
+  width: 100%; 
+  padding: 1em;
+  
+}
+  .col3 {
+    div {
+      padding: 2em;
+    }
+  }
+}

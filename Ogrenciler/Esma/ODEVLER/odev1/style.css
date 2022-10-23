@@ -26,8 +26,8 @@ p {
 .icerik {
   text-align: center;
   display: block;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 200px;
+  margin-right: 200px;
   border: 3px black solid;
   margin-top: 50px;
     margin-bottom: 50px;
@@ -36,8 +36,8 @@ p {
 nav {
   display: block;
   text-align: center;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 nav li {
   font-size: 110%;
@@ -69,8 +69,8 @@ li a {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
   
   table, th, td, tr {
