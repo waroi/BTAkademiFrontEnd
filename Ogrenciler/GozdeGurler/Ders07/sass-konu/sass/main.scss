@@ -1,0 +1,46 @@
+$textColor:rgb(49, 101, 170);
+$boxColor:rgb(231, 231, 225);
+$color2:rgb(226, 172, 71);
+
+
+h2 {
+    color: $textColor;
+    background-color: beige;
+} 
+
+
+ul {
+    list-style: none;
+    li {
+        display: inline-block;
+        color: $textColor;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+@mixin deneme($w,$h,$bgColor) {
+    width: $w;
+    height: $h;
+    background-color: $bgColor;
+}
+
+.box1 {
+    @include deneme(100px,150px,$boxColor)
+}
+
+.box2{
+    @include deneme(50px,100px,$textColor);
+    padding:10px;
+}
+
+.box3{
+    @extend .box2;
+    padding: 30px;
+}

@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(211, 208, 205);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  background-color: brown;
+  width: 100px;
+  height: 100px;
+  /* transition-property: background-color;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out; */
+  /* transition: background-color 2s, border-radius 1s ease-in-out; */
+  /* transition: all 2s, border-radius 1s ease-in-out; */
+  /* animation-name: aaa;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 2; */
+  /* animation-iteration-count: infinite; */
+  /* animation-delay: 1s;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out; */
+  animation: aaa 2s forwards 0s ease-in-out;
+}
+
+.box:hover {
+  /* background-color: bisque;
+  border-radius: 50%; */
+  /* transform: scale(2); */
+  /* transform: skew(30deg); */
+  /* transform: translateX(100px); */
+  /* transform: translateY(-100px); */
+  /* transform: translate(-100px, -100px); */
+  /* transform: rotate(180deg); */
+}
+
+/* @keyframes aaa {
+  from {
+
+  }
+  to {
+    width: 200px;
+  }
+} */
+
+@keyframes aaa {
+  25% {
+    width: 50px;
+  }
+
+  50% {
+    width: 150px;
+  }
+
+  75% {
+    width: 75px;
+  }
+
+  100% {
+    width: 200px;
+  }
+}
