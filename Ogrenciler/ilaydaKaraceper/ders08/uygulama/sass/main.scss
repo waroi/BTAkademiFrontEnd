@@ -1,0 +1,107 @@
+$w150: 150px;
+$w100: 100px;
+$borderColor: #555;
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    font-size: 25px;
+  
+
+}
+.header{
+    font-size: 50px;
+
+
+}
+.baslik{
+
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    padding: 40px;
+    font-size: 50px;
+    gap: 40px;
+    
+}
+.metin{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    gap: 20px;
+
+
+}
+.fotograf{
+
+    width: $w150;
+    height: $w150;
+    border: 5px solid $borderColor;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 120px;
+    
+}
+
+.ikon{
+    display: flex;
+    font-size: $w100;
+    flex-direction: row;
+    gap: 225px;
+    justify-content: center;
+    
+}
+.kücükBasliklar{
+    font-size: 25px;
+}
+.kücükAciklamalar{
+    font-size: 20px;
+}
+
+@mixin box {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+}
+.box1{
+    @include box;
+    ul{
+        list-style: none;
+        margin: 0%;
+        padding: 0%;     
+    }
+    
+}
+.box2{
+    @extend .box1;
+
+}
+.box3 {
+    @extend .box1;
+}
+@media (max-width: 720px) {
+
+    
+    
+}
