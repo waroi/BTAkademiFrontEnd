@@ -1,0 +1,48 @@
+$textcolor: #998b25;
+$boxcolor: #356874;
+$color2: red;
+h2{
+color:$textcolor;
+}
+
+ul{
+
+    list-style: none;
+    li{
+
+        display: inline-block;
+        color:$textcolor;
+    }
+    li{
+
+        display: inline-block;
+        color:$textcolor;
+        a{
+            text-decoration: none;
+        }
+      }  
+    }
+
+    .container{
+
+        display: flex;
+        gap: 10px;
+    }
+    
+    @mixin deneme($w,$h,$bgColor) {
+        width: $w;
+        height: $h;
+        background-color: $bgColor;
+    }
+
+.box1{
+@include deneme(100px,150px,$boxcolor)
+}
+.box2{
+    @include deneme(50px,100px,$textcolor)
+    }
+    .box3{
+        @extend .box2;
+        padding: 20px;
+        }
+       

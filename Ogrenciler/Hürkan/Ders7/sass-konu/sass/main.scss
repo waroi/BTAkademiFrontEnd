@@ -1,0 +1,40 @@
+$textcolor: red;
+$boxcolor: rgb(16, 177, 16);
+$color2: rgb(223, 223, 8);
+
+h2 {
+color:$textcolor;
+}
+
+ul {
+list-style: none;
+li {
+    display: inline-block;
+    color: $textcolor;
+    a{
+        text-decoration: none;
+    } 
+   }
+  }
+.container {
+    display:flex;
+    gap:10px;
+}
+
+@mixin deneme($w,$h,$bgcolor) {
+   width: $w;
+   height: $h;
+   background-color: $bgcolor;
+}
+
+.box1 {
+    @include deneme(100px,150px,$boxcolor);
+}
+.box2 {
+    @include deneme(50px,100px,$textcolor);
+    padding: 10px;
+}
+.box3 {
+    @extend .box2;  /* extend = miras alma işlemi */
+    padding:20px;   /*yukarıdan miras alma işlemini yeni bir değer girerek ezmiş oluruz.*/
+}
