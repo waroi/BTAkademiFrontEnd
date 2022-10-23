@@ -1,6 +1,6 @@
-$textcolor: #1f1fdf;
-$bgColor: #e63838;
-$color2: #cccc2b;
+$textcolor: orange;
+$boxcolor: green;
+$color2: red;
 
 h2 {
   color: $textcolor;
@@ -11,6 +11,9 @@ ul {
   li {
     display: inline-block;
     color: $textcolor;
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -18,18 +21,17 @@ ul {
   display: flex;
   gap: 10px;
 }
-
-@mixin func($w, $h, $bgClr) {
+@mixin deneme($w, $h, $bgColor) {
   width: $w;
   height: $h;
-  background-color: $bgClr;
+  background-color: $bgColor;
 }
+
 .box1 {
-  @include func(100px, 50px, $bgColor);
+  @include deneme(100px, 150px, $boxcolor);
 }
 .box2 {
-  @include func(200px, 150px, $color2);
-  padding: 10px;
+  @include deneme(50px, 100px, $textcolor);
 }
 .box3 {
   @extend .box2;

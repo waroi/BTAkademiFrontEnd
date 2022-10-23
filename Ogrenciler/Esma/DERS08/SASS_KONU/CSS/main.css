@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.section1 {
+  padding-bottom: 200px; }
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px; }
+
+.col1, .col2, .col3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 35%; }
+  .col1 ul, .col2 ul, .col3 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .col1 .imgbg, .col2 .imgbg, .col3 .imgbg {
+    width: 30%;
+    padding: 2em;
+    border-radius: 50%;
+    background-color: blue; }
+    .col1 .imgbg img, .col2 .imgbg img, .col3 .imgbg img {
+      width: 100%; }
+
+footer {
+  background-color: #3c3c3c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer a {
+    color: #ccc; }
+
+.section2 {
+  background-color: blue; }
+
+.bgwhite {
+  background-color: white; }
+
+@media (max-width: 750px) {
+  .row {
+    flex-direction: column; }
+  .col1, .col2, .col3 {
+    width: 100%;
+    padding: 1em; }
+    .col1 img, .col2 img, .col3 img {
+      width: 50%; }
+  .col3 div {
+    padding: 2em; } }

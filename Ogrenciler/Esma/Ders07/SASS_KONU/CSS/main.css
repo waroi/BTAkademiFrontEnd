@@ -1,12 +1,11 @@
-@charset "UTF-8";
 h2 {
-  color: red; }
+  color: orange; }
 
 ul {
   list-style: none; }
   ul li {
     display: inline-block;
-    color: red; }
+    color: orange; }
     ul li a {
       text-decoration: none; }
 
@@ -17,15 +16,12 @@ ul {
 .box1 {
   width: 100px;
   height: 150px;
-  background-color: #10b110; }
+  background-color: green; }
 
 .box2, .box3 {
   width: 50px;
   height: 100px;
-  background-color: red;
-  padding: 10px; }
+  background-color: orange; }
 
 .box3 {
-  /* extend = miras alma işlemi */
-  padding: 20px;
-  /*yukarıdan miras alma işlemini yeni bir değer girerek ezmiş oluruz.*/ }
+  padding: 20px; }

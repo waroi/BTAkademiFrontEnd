@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w sass -o css"
-
   },
   "keywords": [],
-  "author": "Hurkan",
-  "license": "ISC",
+  "author": "Hazal",
+  "license": "ISC", 
   "dependencies": {
     "node-sass": "^7.0.3"
   }
