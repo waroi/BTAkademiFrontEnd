@@ -1,0 +1,72 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.box{
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /* transition-property: backfround-color;
+    transition-duration: 2s; */
+    /* transition: background-color 25, border-radius 1s ease-in-out; */
+    /* transition: all 2s ease-in-out; */
+    /* animation-name: aaa;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+    /* animation-delay: 2s;
+    animation-timing-function: ease-in-out; */
+
+animation: aaa 3s forwards 0s ease-in-out;
+
+
+}
+
+.box:hover{
+/* 
+background-color: cyan;
+border-radius: 50%;
+/* transform: scale(2); */
+/* transform: translateX(-100px); */
+/* transform: rotate(180deg); */
+/* transform: translateY(-100px); */
+/* transform: skew(30deg);
+transform: translate(-100px, -100px); */ 
+
+animation: rotateIn;
+animation-duration: 2s;
+
+}
+
+
+/* @keyframes aaa{
+25% {     
+width: 50px;
+
+    } */
+
+    /* 100%1oo verdiğimiz box,un widthini %25 e gelince 50px yap demek */
+
+
+/* 50% {
+    width: 150px;
+}
+
+75%{
+    width: 75px;
+}
+100%{
+    width: 200px;
+}
+
+    to{
+        width: 300px;
+    } */
+
+
+
+/* } */
