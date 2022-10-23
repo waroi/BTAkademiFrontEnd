@@ -41,8 +41,8 @@ html{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
-    gap: 0,1em;
+    align-items: flex-end;
+    gap: 0,2em;
     height: 100%;
     width: 100%;
 
@@ -57,13 +57,14 @@ html{
     align-items: center;
     gap: 0,1em;
     height: 100%;
-    width: 60%;
+    width: 50%;
 
 }
 
 .navimg{
     height: 35%;
     width: 35%;
+    padding: 10px;
 }
 
 a{
@@ -84,7 +85,7 @@ a{
     font-size: 20px;
 }
 .navbar ul li:hover{
-    background-color: rgb(58, 180, 180);
+    background-color: rgba(167, 182, 182, 0.99);
     border-radius: 2px;
 }
 
@@ -93,7 +94,7 @@ a{
     height: 30px;
     width: 15%;
     color: grey;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     font-size: 25px;
     gap: 10px;
@@ -106,9 +107,9 @@ a{
 
 .resim{
     grid-area: resim;
-    height: 35vh;
+    height: 40vh;
     background-color: antiquewhite;
-    background-image: url("https://cdn.pixabay.com/photo/2016/09/18/14/21/swimmer-1678307_960_720.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/26/08/43/ribblehead-viaduct-2443085_960_720.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
@@ -124,7 +125,7 @@ a{
 
 
 .header, .footer, .resim, .blog{
-    border:1px solid coral;
+    border:1px solid rgb(255, 255, 255);
 
 }
 .metin{
@@ -132,8 +133,8 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 10px;
-    color: rgb(235, 131, 131);
-    font-size: 25px;
+    padding: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
     
 }

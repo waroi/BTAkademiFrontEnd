@@ -1,0 +1,37 @@
+$textcolor: #1f1fdf;
+$bgColor: #e63838;
+$color2: #cccc2b;
+
+h2 {
+  color: $textcolor;
+}
+
+ul {
+  list-style: none;
+  li {
+    display: inline-block;
+    color: $textcolor;
+  }
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+@mixin func($w, $h, $bgClr) {
+  width: $w;
+  height: $h;
+  background-color: $bgClr;
+}
+.box1 {
+  @include func(100px, 50px, $bgColor);
+}
+.box2 {
+  @include func(200px, 150px, $color2);
+  padding: 10px;
+}
+.box3 {
+  @extend .box2;
+  padding: 20px;
+}
