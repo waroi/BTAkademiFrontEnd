@@ -1,0 +1,141 @@
+body{
+    background: linear-gradient(to left,#0ff, #8a2be2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+   
+}
+article{
+    width: 100%;
+    margin:auto;
+}
+.navbar{
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #3c3c3c;
+    border-radius: 100px 0 0 100px;
+    position: fixed;
+    top: 0px;
+    
+}
+.logo{
+    border-radius: 150px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.menu{
+    height: 10%;
+    float: right;
+    min-width: 10%;
+    width: 50%;
+}
+
+.menu a {
+    display: block;
+    float: right;
+
+}
+
+div a{
+    padding-left: 0.5em;
+    text-decoration: none;
+    color: #fff;
+}
+.container{
+    width: 85%;
+    margin:auto;
+    padding: 5px;
+}
+.card{
+    background-color: white;
+    border-radius: 1em;
+    padding:0;
+    margin:1.5em;
+    float: left;
+    width: 28%;
+}
+.card-context{
+    padding: 1em;
+}
+.card-img img{
+    border-radius: 1em 1em 0 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.card-tag{
+    width: 25%;
+    padding: 1em;
+    margin: 10px 10px 0 10px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom,brown,red);
+    font-size: 12px;
+    color: white;
+    text-align: center;
+
+}
+.personal{
+    padding: 5px;
+}
+.personalImg{
+    float: left;
+
+}
+.personalImg img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border-radius: 150px;
+}
+.personalInfo{
+    padding-left: 10px;
+    float: left;
+}
+.personalInfo h5, .personalInfo p{
+    margin: 0;
+    padding: 0;
+}
+.socialmedia{
+    float: left;
+    width: 50%;
+}
+.iletisim{
+    color: white;
+    text-align: right;
+    float: left;
+    width: 50%;
+}
+.socialmedia a{
+    text-decoration: none;
+    color: white;
+    }
+.socialmedia a img{
+    border-radius: 16px;
+}
+@media screen and (max-width:720px) {
+    .card{
+        width: 85%;
+        float: none;
+        
+    }
+    .container{
+        width: 100%;
+    }
+
+    
+<<<<<<< HEAD
+=======
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+>>>>>>> daf4075d45f14bbbe7b2780035a9cd54fc2b7261
+}
