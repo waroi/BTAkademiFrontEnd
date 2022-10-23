@@ -1,0 +1,30 @@
+h2 {
+  color: #998b25; }
+
+ul {
+  list-style: none; }
+  ul li {
+    display: inline-block;
+    color: #998b25; }
+  ul li {
+    display: inline-block;
+    color: #998b25; }
+    ul li a {
+      text-decoration: none; }
+
+.container {
+  display: flex;
+  gap: 10px; }
+
+.box1 {
+  width: 100px;
+  height: 150px;
+  background-color: #356874; }
+
+.box2, .box3 {
+  width: 50px;
+  height: 100px;
+  background-color: #998b25; }
+
+.box3 {
+  padding: 20px; }
