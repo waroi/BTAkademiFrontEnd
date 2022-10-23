@@ -1,0 +1,39 @@
+$textColor:#e99820;
+$boxcolor: #257563;
+$color2:red;
+h2{
+    color: $textColor;
+}  
+
+ul{
+    list-style: none;
+
+    li{
+        display: inline-block;
+        color: $textColor;
+    }
+}
+.container{
+    display: flex;
+    gap:10px;
+}
+
+@mixin deneme($w,$h,$bgcolor){
+    width: $w;
+    height: $h;
+    background-color:$bgcolor ;
+}
+.box1{
+    @include deneme(100px,50px,$boxcolor);
+}
+.box2{
+    @include deneme(50px,100px,$textColor);
+}
+.box3{
+    @include deneme(200px,50px,$color2);
+} 
+
+.card2 {
+    @extend .card;
+    
+}

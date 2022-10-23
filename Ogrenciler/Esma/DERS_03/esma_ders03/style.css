@@ -1,0 +1,40 @@
+.logo{
+    border-radius: 30%;
+    border-style: solid;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-bottom: 0px;
+}
+
+.menu{
+    height: 10%;
+    float: right;
+    min-width: 10%;
+    width: 25%;
+}
+
+div a{
+    font-size: 21px;
+    padding-left: 1em;
+    margin-bottom: 0px;
+    text-decoration: none;
+    color: rgb(228, 139, 97);
+}
+
+.container{
+    width: 85%;
+    float: left; /*float left'i kaldırınca neden üste çıkıyor, logonun yanına geliyor? z index kullanmak işe yarayabilir mi? Veya display'de değişiklik yapmak??*/
+    margin-left:150px;
+    margin-right:150px;
+    padding: 5px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 1em;
+    padding:0;
+    margin:1.5em;
+    float: left; /* burada float:left'i kaldırınca card divleri alt alta diziliyor. Float'un içinde float olduğu için mi birbiri ardına genişliğe göre yanyana dizilebiliyor?*/
+    width: 28%;
+}
