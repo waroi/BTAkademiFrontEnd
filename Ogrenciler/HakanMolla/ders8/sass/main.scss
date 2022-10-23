@@ -1,0 +1,118 @@
+$div1bg:white;
+$div2bg:rgb(32,186,202);
+$div3bg:rgb(51,51,51);
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(32,186,202);
+   
+    
+  }
+
+@mixin ortalama ($Texal,$aliit,$justcon){
+
+    text-align: $Texal;
+    align-items: $aliit;
+    justify-content: $justcon;
+}
+
+
+@mixin divboyut($w,$h,$bgcolor){
+    width: $w;
+    height: $h;
+    background-color:$bgcolor ;
+}
+
+.divbox1{
+    @include divboyut(100%,400px,$div1bg);
+    @include ortalama(center,center , center);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    h1{  margin: 30px 0px;
+        font-size: 3.75rem;
+
+    }
+
+
+}
+.divbox2{
+    @include divboyut(100%,200px,$div2bg);
+}
+.divbox3{
+    @include divboyut(100%,auto,$div3bg);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.ortadiv{
+   
+    
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    width: 75%;
+    height: 450px;
+    top: 75px;;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    // gap: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.divbox1-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+ 
+    //  display: flex;
+    //  flex-direction: column;
+    //  justify-content: center;
+    //  align-items: center;
+  text-align: center;
+    width: 100%;
+    
+    
+  }
+h4{
+    margin: 10px 0px;
+}

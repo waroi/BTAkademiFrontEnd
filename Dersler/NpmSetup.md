@@ -7,3 +7,4 @@
 7- actığımız dosyanın altına gidiyoruz. ( cd komutu dosya içine girmek için ) ( cd.. dosyadan cıkmak için) (dir dosya içindeki dosyaları listeliyor.)
 8- terminalde dosyanın içine girdiğimizde ( npm init --yes ) komutunu çalıştırıyoruz.
 9- terminalde daha sonrasında npm i node-sass komutunu çalıştıyoruz. 
+10 - npm run sass oluşturduğumuz dosyayı çalıştırmak
