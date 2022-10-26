@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  animation: fadeInUpBig;
+  animation-duration: 2s;
+}
+
+//DEĞİŞKENLER
+
+//RENK SKALASI
+$orange: #ff6f0f;
+$white: #fff;
+$grey: #838d90;
+$grey-light: rgb(240, 240, 240);
+$dark-blue: #001d23;
+$orange-light: #fff0e6;
+
+// BOYUTLAR
+$w-100: 100%;
+$w-75: 75%;
+$w-50: 50%;
+$w-30: 30%;
+$h-100: 100vh;
+$text-information-header: 3rem;
+$text-information-info: 1.2rem;
+$text-header: 2em;
+$text-info: 1em;
+
+// HİZALAMA
+$mx-auto: 0 auto;
+$p-1: 1em;
+$p-2: 2em;
+$p-3: 3em;
+$position-fixed: fixed;
+//PROP
+$transition: all 0.3s ease-in-out;
+
+//TANIMLAMALAR
+@mixin rowCol(
+  $display,
+  $flexDirection,
+  $wrap,
+  $justifyContent,
+  $alignItems,
+  $gap
+) {
+  display: $display;
+  flex-direction: $flexDirection;
+  flex-wrap: $wrap;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  gap: $gap;
+}
+@mixin button($bgColor, $textColor, $iconBgColor, $iconColor) {
+  background-color: $bgColor;
+  color: $textColor;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: $p-1;
+  transition: $transition;
+  border: 1px solid $orange;
+  i {
+    padding: p-1;
+    border-radius: 50%;
+    background-color: $iconBgColor;
+    color: $iconColor;
+    transition: $transition;
+  }
+  &:hover {
+    background-color: $textColor;
+    color: $bgColor;
+    i {
+      background-color: $iconColor;
+      color: $iconBgColor;
+    }
+  }
+}
+
+@mixin nav-link($textColor, $hoverTextColor) {
+  color: $textColor;
+  text-decoration: none;
+  padding: $p-1;
+  transition: $transition;
+  &:hover {
+    color: $hoverTextColor;
+  }
+}
+@mixin text($align, $headerColor, $textColor) {
+  text-align: $align;
+  h1 {
+    color: $headerColor;
+  }
+
+  h2 {
+    color: $headerColor;
+  }
+
+  h3 {
+    color: $headerColor;
+  }
+
+  h4 {
+    color: $headerColor;
+  }
+
+  h5 {
+    color: $headerColor;
+  }
+  p {
+    color: $textColor;
+  }
+}
+@mixin badgeInfo($bgColor, $textColor) {
+  background-color: $bgColor;
+  color: $textColor;
+}
+
+@mixin textSize($size) {
+  font-size: $size;
+}
+@mixin shadow($x, $y, $yayilma, $kalin, $color) {
+  box-shadow: $x $y $yayilma $kalin $color;
+}
+@mixin inputType {
+  padding: $p-1;
+  @include textSize(1em);
+  border: 0;
+  background-color: $grey-light;
+  outline: none;
+}
+
+@mixin visibility($visible) {
+  visibility: $visible;
+}
+// CLASSLAR
+
+// DÜZEN
+
+.container-fluid {
+  margin: $mx-auto;
+  width: $w-100;
+}
+
+.container {
+  @extend .container-fluid;
+  width: $w-75;
+}
+
+.row {
+  @include rowCol(flex, row, nowrap, space-between, center, 2em);
+  width: $w-100;
+}
+.col {
+  @include rowCol(flex, column, wrap, center, center, 2em);
+  width: $w-100;
+}
+
+.card {
+  @include rowCol(flex, column, wrap, center, center, 3em);
+  .badge {
+    @include badgeInfo($orange-light, orange);
+    @include text(center, $dark-blue, $grey);
+    border-radius: 25px;
+    padding: 5px $p-1;
+  }
+  .card-header {
+    @include textSize(2em);
+  }
+}
+.box {
+  @extend .card;
+  border-top: 5px solid $orange;
+  text-align: center;
+  .box-badge {
+    background-color: $orange;
+    color: $white;
+    padding: $p-1;
+    border-radius: 0 0 5px 5px;
+  }
+  h3 {
+    @include textSize(2em);
+  }
+  .box-icon {
+    color: $orange;
+    @include textSize(5em);
+  }
+  .box-price {
+    padding: $p-1;
+    background-color: $grey-light;
+    span {
+      color: $grey;
+    }
+  }
+  .box-info {
+    color: $grey;
+  }
+}
+#home {
+  @include text(center, $white, $grey);
+  img {
+    top: 0;
+    filter: brightness(0.3);
+  }
+  h1 {
+    font-size: $text-information-header;
+  }
+  p {
+    font-size: $text-information-info;
+  }
+}
+.form-group {
+  input[type="text"] {
+    @include inputType;
+    &:focus {
+      @include shadow(0, 0, 4px, 0, $orange);
+      border: 0;
+    }
+  }
+  input[type="radio"] {
+    @include inputType;
+    display: none;
+    &:checked + label {
+      @extend .btn-orange;
+    }
+  }
+  label {
+    cursor: pointer;
+  }
+}
+
+.team-card {
+  @extend .card;
+}
+
+section{
+  padding-top: 3em 0;
+}
+//LİSTE
+
+header {
+  z-index: 1;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      padding: 2px;
+    }
+  }
+}
+
+.list-type-none {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    padding: 0.5em;
+    &::before {
+      content: "\f105";
+    }
+  }
+}
+
+// BUTTONLAR
+
+.btn-orange {
+  @include button($orange, $white, $orange, $white);
+}
+.btn-white {
+  @include button($white, $orange, $white, $orange);
+}
+.btn-blue{
+  @include button($dark-blue,$orange ,$white ,$orange )
+}
+.nav-link {
+  @include nav-link($white, $orange);
+}
+.footer-link {
+  @include nav-link($grey, $white);
+}
+
+//TEXTLER
+.text-color-orange {
+  color: $orange;
+}
+.text-color-white {
+  color: $white;
+}
+.text-color-grey {
+  color: $grey;
+}
+.text-italic {
+  font-style: italic;
+}
+
+//BACKGROUND
+.bg-dark-blue {
+  background-color: $dark-blue;
+}
+.bg-grey {
+  background-color: $grey-light;
+}
+.bg-orange {
+  background-color: $orange;
+}
+.bg-image {
+  background: url("/Ogrenciler/Baris/0Workspace/ChariTeamClone/img/ana.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bg-white {
+  background-color: $white;
+}
+//DİĞER
+.position-fixed-top {
+  position: sticky;
+  top: 0;
+}
+.position-fixed-bottom {
+  position: $position-fixed;
+  bottom: 5em;
+  right: 1em;
+}
+.position-relative {
+  position: relative;
+  &:hover {
+    .position-absolute {
+      visibility: visible;
+      animation: fadeIn;
+      animation-duration: 2s;
+    }
+    .box-image {
+      transition: $transition;
+      filter: brightness(0.3);
+    }
+  }
+}
+.position-absolute {
+  position: absolute;
+  @include rowCol(flex, column, wrap, center, center, 1em);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+.visibility-visible{
+  visibility: visible;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-start {
+  align-items: baseline !important;
+}
+.align-items-left {
+  align-items: flex-start;
+}
+.w-100 {
+  width: $w-100;
+}
+.w-75 {
+  width: $w-75;
+}
+.w-50 {
+  width: $w-50;
+}
+.w-30 {
+  width: $w-30;
+}
+.p-1 {
+  padding: $p-1;
+}
+.p-2 {
+  padding: $p-2;
+}
+.pl-1 {
+  padding: $p-1 $p-2;
+}
+.p-t-b {
+  padding: $p-3 0;
+}
+.pt-1 {
+  padding-top: 1em;
+}
+.pb-1{
+  padding-bottom: $p-3 0;
+}
+.border-grey {
+  border: 0.1em solid rgb(59, 59, 59);
+}
+.border-orange {
+  border: 5px solid $orange;
+}
+.rounded-circle {
+  border-radius: 50%;
+}
+.rounded {
+  border-radius: 15px;
+}
+.shadow {
+  @include shadow(0, 0, 24px, 0, $grey-light);
+}
+
+
+
+
+@media (max-width:920px) {
+  section{
+    padding-bottom: $p-2;
+  }
+  .container{
+    width: $w-100;
+  }
+  .w-25,.w-30,.w-50,.w-75{
+    width: $w-100;
+  }
+  .row{
+    @include rowCol(flex, column, wrap, center, center, 1em);
+    padding: $p-3;
+  }
+  .form-group{
+    padding: $p-1;
+    width: $w-100;
+    .row{
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+  .position-fixed-top{
+    position: relative;
+  }
+  #address{
+    display: none;
+  }
+  .h-100{
+    height: $h-100;
+  }
+}

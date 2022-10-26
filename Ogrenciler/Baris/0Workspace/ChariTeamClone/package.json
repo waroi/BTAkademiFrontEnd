@@ -1,0 +1,15 @@
+{
+  "name": "chariteamclone",
+  "version": "1.0.0",
+  "description": "ChariTeam klon proje",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass -o css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Barış BENLİ",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
