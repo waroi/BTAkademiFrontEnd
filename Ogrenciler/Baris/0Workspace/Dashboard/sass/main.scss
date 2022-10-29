@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 $m: (
   auto: 0 auto,
@@ -21,27 +21,38 @@ $shadow: (
   medium: 0 0 12px 0 rgb(199, 199, 199),
   large: 0 0 18px 0 rgb(199, 199, 199),
 );
-$text-size:(
-  large:large, 
-  normal:normal,
-  small:small
+$text-size: (
+  large: large,
+  normal: normal,
+  small: small,
 );
-$text-weight:(
-  bold:bold,
-  normal:normal,
-  lighter:lighter
+$text-weight: (
+  bold: bold,
+  normal: normal,
+  lighter: lighter,
 );
-$color:(
-  primary:rgb(21, 61, 119),
-  secondary:rgb(244, 247, 252),
-  danger: rgb(220,53,69),
-  success:rgb(40,167,69),
-  warning:rgb(253,126,20),
-  link:rgba(255,255,255,0)
+$color: (
+  primary: rgb(21, 61, 119),
+  secondary: rgb(244, 247, 252),
+  light:rgb(255,255,255),
+  danger: rgb(220, 53, 69),
+  success: rgb(40, 167, 69),
+  warning: rgb(253, 126, 20),
+  link: rgba(255, 255, 255, 0),
+  black: rgba(0,0,0,.5)
 );
-$border:(
+$border: (
   rounded: 16px,
-  circle: 50%
+  circle: 50%,
+);
+
+$col:(
+  2:2/12*100%,
+  4:4/12*100%,
+  6:6/12*100,
+  8:8/12*100,
+  10:10/12*100,
+  12:12/12*100,
 );
 @each $key, $value in $m {
   .m-#{$key} {
@@ -58,53 +69,63 @@ $border:(
     box-shadow: $value;
   }
 }
-@each $key,$value in $text-size {
-  .text-#{$key}{
+@each $key, $value in $text-size {
+  .text-#{$key} {
     font-size: $value;
   }
 }
-@each $key,$value in $text-weight {
-  .text-#{$key}{
+@each $key, $value in $text-weight {
+  .text-#{$key} {
     font-weight: $value;
   }
 }
-@each $key,$value in $color {
-  .text-#{$key}{
-    color:$value;
+@each $key, $value in $color {
+  .text-#{$key} {
+    color: $value;
   }
 
-  .bg-#{$key}{
+  .bg-#{$key} {
     background-color: $value;
-  } 
-  
-  .btn-#{$key}{
+  }
+
+  .btn-#{$key} {
     display: flex;
     gap: 20px;
-    padding: .5em;
+    padding: 0.5em;
     text-decoration: none;
     align-items: center;
     background-color: $value;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     border-radius: 8px;
+    &:hover {
+      opacity: 0.8;
+      background-color: #cccc;
+    }
     @if $key==link or $key==warning {
       color: rgb(0, 0, 0);
     }
-    i{
+    i {
       color: rgb(56, 104, 173);
     }
   }
-  .badge-#{$key}{
+  .badge-#{$key} {
     background-color: $value;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     border-radius: 16px;
   }
 }
-@each $key,$value in $border {
-  .border-#{$key}{
+@each $key, $value in $border {
+  .border-#{$key} {
     border-radius: $value;
   }
 }
-
+@each $key,$value in $col {
+  .col-#{$key}{
+    width: $value;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @mixin flexRC($direction) {
   display: flex;
@@ -117,6 +138,15 @@ $border:(
   grid-template-rows: repeat($rowCount, 1fr);
 }
 
+.row{
+  @include flexRC(row);
+  gap: 10px;
+  align-items: center
+}
+.col{
+  @include flexRC(column);
+  gap: 10px;
+}
 
 .wrapper {
   @include flexRC(row);
@@ -131,32 +161,86 @@ $border:(
   margin: 0 auto;
   max-width: 250px;
   min-width: 250px;
-  .sidebar-logo-header{
+  .sidebar-logo-header {
     margin: 0;
     padding: 1em 1em;
   }
-  .sidebar-user{
+  .sidebar-user {
     @include flexRC(column);
     justify-content: center;
     align-items: center;
     padding: 2em;
-    img{
+    img {
       width: 75px;
       height: 75px;
     }
   }
-  .sidebar-nav{
+  .sidebar-nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    .sidebar-header{
-      padding: .5em 1.5em;
+    .sidebar-header {
+      padding: 0.5em 1.5em;
       font-size: smaller;
       color: #adb5bd;
     }
-    .sidebar-item{
-      padding: .3em 1.5em;
+    .sidebar-item {
+      padding: 0.3em 1.5em;
       width: 100%;
     }
   }
+}
+
+.dropdown {
+  position: relative;
+  
+  &:hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+  .dropdown-content {
+    right: 0;
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    background-color: #fff;
+    list-style: none;
+    width: 100%;
+    li{
+      border: 0.2px solid rgb(240, 240, 240);
+      padding: 1em 0;
+    }
+  }
+}
+
+.navbar{
+  padding: 1em;
+  img{
+    width: 50px;
+    height: 50px;
+  }
+}
+.justify-content-between{
+  display: flex;
+  justify-content: space-between;
+}
+.justify-content-end{
+  display: flex;
+  justify-content: flex-end;
+}
+.text-align-center{
+  text-align: center;
+}
+.list-style-none{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#SearchBox{
+  outline: 0;
+  border: 0;
+  background-color:rgba($color: #fff, $alpha: 0);
+  font-size: large;
+  
 }
