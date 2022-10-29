@@ -1,8 +1,49 @@
-$textcolor: rgb(63, 66, 61);
+$textcolor: rgb(37, 41, 34);
+$boxcolor: blue;
+$color2: red;
 
 h2 {
     color: $textcolor;
 
+}
+
+ul {
+    list-style: none;
+
+    li {
+        display: inline-block;
+        color: $textcolor;
+
+        a {
+            text-decoration: line-through;
+        }
+
+    }
 
 
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+@mixin deneme($w, $h, $bgcolor) {
+    width: $w;
+    height: $h;
+    background-color: $bgcolor;
+}
+
+.box1 {
+    @include deneme(100px, 150px, $boxcolor);
+}
+
+.box2 {
+    @include deneme(50px, 100px, $textcolor);
+    padding: 10px;
+}
+
+.box3 {
+    @extend .box1;
+    padding: 20px;
 }

@@ -1,2 +1,28 @@
 h2 {
-  color: #2f3a29; }
+  color: #252922; }
+
+ul {
+  list-style: none; }
+  ul li {
+    display: inline-block;
+    color: #252922; }
+    ul li a {
+      text-decoration: line-through; }
+
+.container {
+  display: flex;
+  gap: 10px; }
+
+.box1, .box3 {
+  width: 100px;
+  height: 150px;
+  background-color: blue; }
+
+.box2 {
+  width: 50px;
+  height: 100px;
+  background-color: #252922;
+  padding: 10px; }
+
+.box3 {
+  padding: 20px; }
