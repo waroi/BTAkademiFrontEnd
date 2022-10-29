@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar shadow-large">
+        <div class="sidebar-logo-header">
+          <a class="btn-link" href="#">
+            <i class="fa-solid fa-hand-holding-medical"></i>
+            <span class="text-bold">BB - Dashboard</span>
+          </a>
+        </div>
+        <div class="sidebar-user text-primary">
+          <img class="border-circle" src="img/profile.png" alt="profile" />
+          <p class="text-bold">Barış Benli</p>
+          <p class="text-small">Front-End Developer</p>
+        </div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-header">Main</li>
+          <li class="sidebar-item">
+            <a class="btn-link" href="">
+              <i class="fa-solid fa-house-chimney"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a class="btn-link" href="">
+              <i class="fa-solid fa-file"></i>
+              <span>Pages</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a class="btn-link" href="#">
+              <i class="fa-solid fa-right-from-bracket"></i>
+              <span>Auth</span>
+            </a>
+          </li>
+          <li class="sidebar-header">Elements</li>
+          <li class="sidebar-item">
+            <a class="btn-link" href="#">
+              <i class="fa-solid fa-table"></i>
+              <span>Table</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a class="btn-link" href="#">
+              <i class="fa-solid fa-square-check"></i>
+              <span>Forms</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a class="btn-link" href="#">
+              <i class="fa-regular fa-calendar"></i>
+              <span>Calendar</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="container-fluid bg-secondary">
+        <header>
+          <nav class="navbar row justify-content-between">
+            <div class="row">
+              <a class="text-black" href="#"><i class="fa-solid fa-bars"></i></a>
+              <form class="searchbar">
+                <input type="text" name="SearchBox" id="SearchBox" placeholder="Search projects" />
+              </form>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="dropdown">
+                  <a class="text-black" href="#"
+                    ><i class="fa-solid fa-envelope"></i
+                  ></a>
+                  <div class="dropdown-content">
+                    
+                    <ul class="list-style-none">
+                      <li class="text-align-center">4 News Messages</li>
+                      <li>
+                        <div class="row">
+                          <div class="col">
+                            <img
+                              class="border-circle"
+                              src="img/msg1.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col">
+                            <h5>Michelle Bilodeau</h5>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Consequuntur, et.
+                            </p>
+                            <span>5m ago</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row">
+                          <div class="col">
+                            <img
+                              class="border-circle"
+                              src="img/msg2.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col">
+                            <h5>Kathie Burton</h5>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Consequuntur, et.
+                            </p>
+                            <span>30m ago</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row">
+                          <div class="col">
+                            <img
+                              class="border-circle"
+                              src="img/msg3.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col">
+                            <h5>Alexander Groves</h5>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Consequuntur, et.
+                            </p>
+                            <span>2h ago</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="text-align-center">
+                        <a href="#">Show all messages</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="dropdown">
+                  <a class="text-black" href="#"
+                    ><i class="fa-solid fa-bell"></i></i
+                  ></a>
+                  <div class="dropdown-content">
+                    <ul class="list-style-none">
+                      <li class="text-align-center">4 News Messages</li>
+                      <li>
+                        <div class="row">
+                          <div class="col">
+                            <img
+                              class="border-circle"
+                              src="img/msg1.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col">
+                            <h5>Michelle Bilodeau</h5>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Consequuntur, et.
+                            </p>
+                            <span>5m ago</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row">
+                          <div class="col">
+                            <img
+                              class="border-circle"
+                              src="img/msg2.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col">
+                            <h5>Kathie Burton</h5>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Consequuntur, et.
+                            </p>
+                            <span>30m ago</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row">
+                          <div class="col">
+                            <img
+                              class="border-circle"
+                              src="img/msg3.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col">
+                            <h5>Alexander Groves</h5>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Consequuntur, et.
+                            </p>
+                            <span>2h ago</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="text-align-center">
+                        <a href="#">Show all messages</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="dropdown">
+                  <a class="text-black" href="#"
+                    ><i class="fa-solid fa-gear"></i></i
+                  ></a>
+                  <div class="dropdown-content">
+                    <ul class="list-style-none">
+                      <li class="text-align-center">4 News Messages</li>
+                      <li>
+                        <div class="row">
+                          <div class="col">
+                            <img
+                              class="border-circle"
+                              src="img/msg1.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col">
+                            <h5>Michelle Bilodeau</h5>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Consequuntur, et.
+                            </p>
+                            <span>5m ago</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row">
+                          <div class="col">
+                            <img
+                              class="border-circle"
+                              src="img/msg2.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col">
+                            <h5>Kathie Burton</h5>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Consequuntur, et.
+                            </p>
+                            <span>30m ago</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row">
+                          <div class="col">
+                            <img
+                              class="border-circle"
+                              src="img/msg3.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col">
+                            <h5>Alexander Groves</h5>
+                            <p>
+                              Lorem, ipsum dolor sit amet consectetur
+                              adipisicing elit. Consequuntur, et.
+                            </p>
+                            <span>2h ago</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="text-align-center">
+                        <a href="#">Show all messages</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <section>
+          <div class="container">
+            <h2>Welcome back, Barış!</h2>
+            <p>You have 24 new messages and 5 new notifications.</p>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Recent Movement</h5>
+                    <div class="card-action">
+                      <a href="#">Refresh</a>
+                      <div class="dropdown">
+                        <a href="#">Action</a>
+                        <div class="dropdown-content">
+                          <a href="#">Action</a>
+                          <a href="#">Another Action</a>
+                          <a href="#">Something Else</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content"></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="row">
+                  <div class="card">
+                    <div class="card-header">
+                      <h5>Sales Today</h5>
+                    </div>
+                    <div class="card-content">
+                      <h3>2.562</h3>
+                      <p>
+                        <span class="text-danger">-2.65%</span> Less sales than
+                        usual
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h5>Total Earnings</h5>
+                    </div>
+                    <div class="card-content">
+                      <h3>$24.300</h3>
+                      <p>
+                        <span class="text-success">8.35%</span> More earnings
+                        than usual
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h5>Visitors Today</h5>
+                    </div>
+                    <div class="card-content">
+                      <h3>17.212</h3>
+                      <p>
+                        <span class="text-success">5.50%</span> More visitors
+                        than usual
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h5>Pending Orders</h5>
+                    </div>
+                    <div class="card-content">
+                      <h3>43</h3>
+                      <p>
+                        <span class="text-danger">-4.25%</span> Less orders than
+                        usual
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Calendar</h5>
+                    <div class="card-action">
+                      <a href="#">Refresh</a>
+                      <div class="dropdown">
+                        <a href="#">Action</a>
+                        <div class="dropdown-content">
+                          <a href="#">Action</a>
+                          <a href="#">Another Action</a>
+                          <a href="#">Something Else</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Current Visitors</h5>
+                    <div class="card-action">
+                      <a href="#">Refresh</a>
+                      <div class="dropdown">
+                        <a href="#">Action</a>
+                        <div class="dropdown-content">
+                          <a href="#">Action</a>
+                          <a href="#">Another Action</a>
+                          <a href="#">Something Else</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Browser Usage</h5>
+                    <div class="card-action">
+                      <a href="#">Refresh</a>
+                      <div class="dropdown">
+                        <a href="#">Action</a>
+                        <div class="dropdown-content">
+                          <a href="#">Action</a>
+                          <a href="#">Another Action</a>
+                          <a href="#">Something Else</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Top Selling Products</h5>
+                    <div class="card-action">
+                      <a href="#">Refresh</a>
+                      <div class="dropdown">
+                        <a href="#">Action</a>
+                        <div class="dropdown-content">
+                          <a href="#">Action</a>
+                          <a href="#">Another Action</a>
+                          <a href="#">Something Else</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <table>
+                      <thead>
+                        <th>Name</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Status</th>
+                        <th>Assignee</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Project Apollo</td>
+                          <td>01/01/2018</td>
+                          <td>31/06/2018</td>
+                          <td>Done</td>
+                          <td>Carl Jenkins</td>
+                        </tr>
+                        <tr>
+                          <td>Project Fireball</td>
+                          <td>01/01/2018</td>
+                          <td>31/06/2018</td>
+                          <td>Cancelled</td>
+                          <td>Bertha Martin</td>
+                        </tr>
+                        <tr>
+                          <td>Project Nitro</td>
+                          <td>01/01/2018</td>
+                          <td>31/06/2018</td>
+                          <td>In progress</td>
+                          <td>Carl Jenkins</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-header">
+                    <h5>Monthly Sales</h5>
+                    <div class="card-action">
+                      <a href="#">Refresh</a>
+                      <div class="dropdown">
+                        <a href="#">Action</a>
+                        <div class="dropdown-content">
+                          <a href="#">Action</a>
+                          <a href="#">Another Action</a>
+                          <a href="#">Something Else</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <div class="col">
+              <ul>
+                <li>Support</li>
+                <li>Privacy</li>
+                <li>Terms of Service</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div class="col">
+              <p>&copy 2022 - BB Dashboard</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
