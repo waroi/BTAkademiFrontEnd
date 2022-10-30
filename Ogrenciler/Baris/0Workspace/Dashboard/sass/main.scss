@@ -48,6 +48,7 @@ $border: (
 
 $col:(
   2:2/12*100%,
+  3:3/12*100%,
   4:4/12*100%,
   6:6/12*100,
   8:8/12*100,
@@ -141,7 +142,7 @@ $col:(
 .row{
   @include flexRC(row);
   gap: 10px;
-  align-items: center
+  align-items: center;
 }
 .col{
   @include flexRC(column);
@@ -153,14 +154,17 @@ $col:(
 }
 .container,
 .container-fluid {
-  @include gridRC(1, 1);
+  @include flexRC(column)
   padding: 1em;
   width: 100%;
+  
 }
 .sidebar {
   margin: 0 auto;
   max-width: 250px;
   min-width: 250px;
+  height: 100vh;
+
   .sidebar-logo-header {
     margin: 0;
     padding: 1em 1em;
@@ -190,7 +194,9 @@ $col:(
     }
   }
 }
-
+.card{
+  
+}
 .dropdown {
   position: relative;
   
@@ -203,13 +209,14 @@ $col:(
     right: 0;
     position: absolute;
     display: none;
-    min-width: 160px;
+    min-width: 500px;
     background-color: #fff;
     list-style: none;
     width: 100%;
+    border-radius: 8px;
     li{
       border: 0.2px solid rgb(240, 240, 240);
-      padding: 1em 0;
+      padding: map-get($p, 1 );
     }
   }
 }
@@ -220,7 +227,7 @@ $col:(
     width: 50px;
     height: 50px;
   }
-}
+} 
 .justify-content-between{
   display: flex;
   justify-content: space-between;
@@ -240,7 +247,7 @@ $col:(
 #SearchBox{
   outline: 0;
   border: 0;
-  background-color:rgba($color: #fff, $alpha: 0);
+  background-color: map-get($color, secondary );
   font-size: large;
   
 }

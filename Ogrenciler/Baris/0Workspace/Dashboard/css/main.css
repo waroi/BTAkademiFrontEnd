@@ -278,6 +278,11 @@
   display: flex;
   flex-direction: column; }
 
+.col-3 {
+  width: 25%;
+  display: flex;
+  flex-direction: column; }
+
 .col-4 {
   width: 33.33333%;
   display: flex;
@@ -320,16 +325,16 @@
 
 .container,
 .container-fluid {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(200px, 1fr));
-  grid-template-rows: repeat(1, 1fr);
+  display: flex;
+  flex-direction: column;
   padding: 1em;
   width: 100%; }
 
 .sidebar {
   margin: 0 auto;
   max-width: 250px;
-  min-width: 250px; }
+  min-width: 250px;
+  height: 100vh; }
   .sidebar .sidebar-logo-header {
     margin: 0;
     padding: 1em 1em; }
@@ -362,13 +367,14 @@
     right: 0;
     position: absolute;
     display: none;
-    min-width: 160px;
+    min-width: 500px;
     background-color: #fff;
     list-style: none;
-    width: 100%; }
+    width: 100%;
+    border-radius: 8px; }
     .dropdown .dropdown-content li {
       border: 0.2px solid #f0f0f0;
-      padding: 1em 0; }
+      padding: 1em; }
 
 .navbar {
   padding: 1em; }
@@ -395,5 +401,5 @@
 #SearchBox {
   outline: 0;
   border: 0;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #f4f7fc;
   font-size: large; }
