@@ -50,11 +50,19 @@ $col:(
   2:2/12*100%,
   3:3/12*100%,
   4:4/12*100%,
-  6:6/12*100,
-  8:8/12*100,
-  10:10/12*100,
-  12:12/12*100,
+  6:6/12*100%,
+  8:8/12*100%,
+  10:10/12*100%,
+  12:12/12*100%,
 );
+
+$justify-content:(
+  center:center,
+  start:start,
+  end:end,
+  between:space-between,
+);
+
 @each $key, $value in $m {
   .m-#{$key} {
     margin: $value;
@@ -95,7 +103,6 @@ $col:(
     padding: 0.5em;
     text-decoration: none;
     align-items: center;
-    justify-content: center;
     background-color: $value;
     color: rgb(255, 255, 255);
     border-radius: 8px;
@@ -127,6 +134,27 @@ $col:(
     width: $value;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    padding: map-get($p, 0 ) map-get($p, 1 )
+    
+  }
+}
+
+@mixin card {
+  @include flexRC(column);
+  padding: map-get($p, 1 );
+  box-shadow: map-get($shadow, large );
+  border-radius: 8px;
+  .card-header{
+    @include flexRC(row);
+    justify-content: map-get($justify-content, between);
+    align-items: center;
+  }
+  .card-action{
+    @include flexRC(row);
+  }
+  .card-content{
+    padding: map-get($p, 1 );
   }
 }
 
@@ -145,8 +173,10 @@ $col:(
 }
 .row{
   @include flexRC(row);
+  flex-wrap: nowrap;
   gap: 10px;
   align-items: center;
+  padding: map-get($p , 1 ) map-get($p, 0)
 }
 .col{
   @include flexRC(column);
@@ -197,7 +227,30 @@ $col:(
       width: 100%;
     }
   }
+  .sidebar-link{
+    display: flex;
+    gap: 20px;
+    padding: 0.5em;
+    text-decoration: none;
+    align-items: center;
+    background-color: map-get($color, link );
+    color: map-get($color, black );
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      opacity: 0.8;
+      background-color: #cccc;
+    }
+    i {
+      color: rgb(56, 104, 173);
+    }
+  }
 }
+
+.card{
+  @include card;
+}
+
 .dropdown {
   position: relative;
   
@@ -253,6 +306,10 @@ $col:(
 .justify-content-end{
   display: flex;
   justify-content: flex-end;
+}
+.justify-content-center{
+  display: flex;
+  justify-content: center;
 }
 .text-align-center{
   text-align: center;
