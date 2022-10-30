@@ -98,6 +98,7 @@ $col:(
     background-color: $value;
     color: rgb(255, 255, 255);
     border-radius: 8px;
+    transition: all .3s ease-in-out;
     &:hover {
       opacity: 0.8;
       background-color: #cccc;
@@ -154,7 +155,7 @@ $col:(
 }
 .container,
 .container-fluid {
-  @include flexRC(column)
+  @include flexRC(column);
   padding: 1em;
   width: 100%;
   
@@ -194,15 +195,14 @@ $col:(
     }
   }
 }
-.card{
-  
-}
 .dropdown {
   position: relative;
   
   &:hover {
     .dropdown-content {
       display: block;
+      animation: fadeIn;
+      animation-duration: 1s;
     }
   }
   .dropdown-content {
