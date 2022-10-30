@@ -26,11 +26,13 @@ grid-template-rows: 100px, 1fr, 1fr;
    
 }
 */
-
-
 .container {
+height:1500px;
  background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
 background-repeat: no-repeat;
 background-size: cover;
-
+position:absolute;
+display: grid;
+grid-template-areas: "c1, c2, c3";
+grid-template-rows: 100px, 2fr, 10fr;
 }
