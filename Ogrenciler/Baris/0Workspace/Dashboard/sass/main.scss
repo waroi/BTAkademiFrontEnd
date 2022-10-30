@@ -95,6 +95,7 @@ $col:(
     padding: 0.5em;
     text-decoration: none;
     align-items: center;
+    justify-content: center;
     background-color: $value;
     color: rgb(255, 255, 255);
     border-radius: 8px;
@@ -139,7 +140,9 @@ $col:(
   grid-template-columns: repeat($colCount, minmax(200px, 1fr));
   grid-template-rows: repeat($rowCount, 1fr);
 }
-
+@mixin min-width($width){
+  min-width: $width;
+}
 .row{
   @include flexRC(row);
   gap: 10px;
@@ -199,18 +202,33 @@ $col:(
   position: relative;
   
   &:hover {
-    .dropdown-content {
+    .dropdown-list {
       display: block;
       animation: fadeIn;
-      animation-duration: 1s;
+      animation-duration: .5s;
+    }
+    .dropdown-button{
+      display: block;
+      animation: fadeIn;
+      animation-duration: .5s;
     }
   }
-  .dropdown-content {
+  .dropdown-button{
+    position: absolute;
+    right: 0;
+    display: none;
+    background-color: map-get($color, light );
+    list-style:none;
+    border-radius: 8px;
+    padding: map-get($p, 1 );
+    @include min-width(200px);
+  }
+  .dropdown-list {
+    @include min-width(500px);
     right: 0;
     position: absolute;
     display: none;
-    min-width: 500px;
-    background-color: #fff;
+    background-color: map-get($color, light );
     list-style: none;
     width: 100%;
     border-radius: 8px;
@@ -243,6 +261,9 @@ $col:(
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.divider{
+  border: 1px solid map-get($color, secondary );
 }
 #SearchBox{
   outline: 0;
