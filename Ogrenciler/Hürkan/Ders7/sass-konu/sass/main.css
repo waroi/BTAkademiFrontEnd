@@ -1,0 +1,38 @@
+@charset "UTF-8";
+h2 {
+  color: red;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  color: red;
+}
+ul li a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.box1 {
+  width: 100px;
+  height: 150px;
+  background-color: rgb(16, 177, 16);
+}
+
+.box2, .box3 {
+  width: 50px;
+  height: 100px;
+  background-color: red;
+  padding: 10px;
+}
+
+.box3 {
+  /* extend = miras alma işlemi */
+  padding: 20px; /*yukarıdan miras alma işlemini yeni bir değer girerek ezmiş oluruz.*/
+}/*# sourceMappingURL=main.css.map */

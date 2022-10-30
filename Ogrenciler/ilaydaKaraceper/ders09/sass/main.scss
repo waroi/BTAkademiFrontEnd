@@ -1,0 +1,46 @@
+$tema: rgb(255, 102, 0);
+
+.h1{
+    
+    color: $tema
+}
+
+ul{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items:center;
+    list-style: none;
+    margin: 35px;
+    padding: 35px;
+    gap: 55px;
+    
+   
+}
+.menu{
+    text-decoration: none;
+}
+.logo{
+    font-size: 35px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-direction: row;
+    
+
+}
+nav{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    border-radius: 12px;
+    width: auto;
+    height: auto;
+    background-color: $tema;
+    font-size: 25px;
+    
+}
