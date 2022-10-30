@@ -62,6 +62,13 @@ $justify-content:(
   end:end,
   between:space-between,
 );
+$order:(
+  1:1,
+  2:2,
+  3:3,
+  4:4,
+  5:5
+);
 
 @each $key, $value in $m {
   .m-#{$key} {
@@ -132,11 +139,13 @@ $justify-content:(
 @each $key,$value in $col {
   .col-#{$key}{
     width: $value;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: map-get($p, 0 ) map-get($p, 1 )
     
+  }
+}
+@each $key,$value in $order {
+  .order-#{$key}{
+    display: flex;
+    order: $value;
   }
 }
 
@@ -154,7 +163,9 @@ $justify-content:(
     @include flexRC(row);
   }
   .card-content{
-    padding: map-get($p, 1 );
+    @include flexRC(column);
+    height: 100%;
+    gap: 10px;
   }
 }
 
@@ -328,4 +339,24 @@ $justify-content:(
   background-color: map-get($color, secondary );
   font-size: large;
   
+}
+
+@media (max-width:1440px) {
+  .row{
+    @include flexRC(row);
+    flex-direction: wrap;
+  }
+  
+}
+@media (max-width:990px) {
+  .sidebar{
+    display: none;
+  }
+  .col-4,.col-6,.col-8{
+    width: map-get($col, 12 )
+  }
+  .row{
+    @include flexRC(row);
+    flex-direction: wrap;
+  }
 }
