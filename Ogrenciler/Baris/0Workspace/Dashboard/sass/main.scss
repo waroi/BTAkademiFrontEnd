@@ -50,11 +50,26 @@ $col:(
   2:2/12*100%,
   3:3/12*100%,
   4:4/12*100%,
-  6:6/12*100,
-  8:8/12*100,
-  10:10/12*100,
-  12:12/12*100,
+  6:6/12*100%,
+  8:8/12*100%,
+  10:10/12*100%,
+  12:12/12*100%,
 );
+
+$justify-content:(
+  center:center,
+  start:start,
+  end:end,
+  between:space-between,
+);
+$order:(
+  1:1,
+  2:2,
+  3:3,
+  4:4,
+  5:5
+);
+
 @each $key, $value in $m {
   .m-#{$key} {
     margin: $value;
@@ -98,6 +113,7 @@ $col:(
     background-color: $value;
     color: rgb(255, 255, 255);
     border-radius: 8px;
+    transition: all .3s ease-in-out;
     &:hover {
       opacity: 0.8;
       background-color: #cccc;
@@ -123,8 +139,33 @@ $col:(
 @each $key,$value in $col {
   .col-#{$key}{
     width: $value;
+    
+  }
+}
+@each $key,$value in $order {
+  .order-#{$key}{
     display: flex;
-    flex-direction: column;
+    order: $value;
+  }
+}
+
+@mixin card {
+  @include flexRC(column);
+  padding: map-get($p, 1 );
+  box-shadow: map-get($shadow, large );
+  border-radius: 8px;
+  .card-header{
+    @include flexRC(row);
+    justify-content: map-get($justify-content, between);
+    align-items: center;
+  }
+  .card-action{
+    @include flexRC(row);
+  }
+  .card-content{
+    @include flexRC(column);
+    height: 100%;
+    gap: 10px;
   }
 }
 
@@ -138,11 +179,15 @@ $col:(
   grid-template-columns: repeat($colCount, minmax(200px, 1fr));
   grid-template-rows: repeat($rowCount, 1fr);
 }
-
+@mixin min-width($width){
+  min-width: $width;
+}
 .row{
   @include flexRC(row);
+  flex-wrap: nowrap;
   gap: 10px;
   align-items: center;
+  padding: map-get($p , 1 ) map-get($p, 0)
 }
 .col{
   @include flexRC(column);
@@ -154,7 +199,7 @@ $col:(
 }
 .container,
 .container-fluid {
-  @include flexRC(column)
+  @include flexRC(column);
   padding: 1em;
   width: 100%;
   
@@ -193,24 +238,61 @@ $col:(
       width: 100%;
     }
   }
+  .sidebar-link{
+    display: flex;
+    gap: 20px;
+    padding: 0.5em;
+    text-decoration: none;
+    align-items: center;
+    background-color: map-get($color, link );
+    color: map-get($color, black );
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+    &:hover {
+      opacity: 0.8;
+      background-color: #cccc;
+    }
+    i {
+      color: rgb(56, 104, 173);
+    }
+  }
 }
+
 .card{
-  
+  @include card;
 }
+
 .dropdown {
   position: relative;
   
   &:hover {
-    .dropdown-content {
+    .dropdown-list {
       display: block;
+      animation: fadeIn;
+      animation-duration: .5s;
+    }
+    .dropdown-button{
+      display: block;
+      animation: fadeIn;
+      animation-duration: .5s;
     }
   }
-  .dropdown-content {
+  .dropdown-button{
+    position: absolute;
+    right: 0;
+    display: none;
+    background-color: map-get($color, light );
+    list-style:none;
+    border-radius: 8px;
+    padding: map-get($p, 1 );
+    @include min-width(200px);
+  }
+  .dropdown-list {
+    @include min-width(500px);
     right: 0;
     position: absolute;
     display: none;
-    min-width: 500px;
-    background-color: #fff;
+    background-color: map-get($color, light );
     list-style: none;
     width: 100%;
     border-radius: 8px;
@@ -236,6 +318,10 @@ $col:(
   display: flex;
   justify-content: flex-end;
 }
+.justify-content-center{
+  display: flex;
+  justify-content: center;
+}
 .text-align-center{
   text-align: center;
 }
@@ -244,10 +330,33 @@ $col:(
   margin: 0;
   padding: 0;
 }
+.divider{
+  border: 1px solid map-get($color, secondary );
+}
 #SearchBox{
   outline: 0;
   border: 0;
   background-color: map-get($color, secondary );
   font-size: large;
   
+}
+
+@media (max-width:1440px) {
+  .row{
+    @include flexRC(row);
+    flex-direction: wrap;
+  }
+  
+}
+@media (max-width:990px) {
+  .sidebar{
+    display: none;
+  }
+  .col-4,.col-6,.col-8{
+    width: map-get($col, 12 )
+  }
+  .row{
+    @include flexRC(row);
+    flex-direction: wrap;
+  }
 }

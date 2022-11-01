@@ -165,10 +165,10 @@ body {
     color: #ff6f06; }
 
 .animate__animated.animate__fadeInUpBig {
-  animation-duration: 2s; }
+  animation-duration: 3s; }
 
 .aside.animate__animated.animate__fadeInUpBig {
-  animation-duration: 3s; }
+  animation-duration: 4s; }
 
 .section2 {
   grid-area: section2;
@@ -212,7 +212,7 @@ body {
   .section1 {
     display: block;
     flex-direction: column;
-    margin-left: 5%; } }
+    margin-left: 10%; } }
 
 @media (max-width: 350px) {
   .header {
