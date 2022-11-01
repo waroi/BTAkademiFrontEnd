@@ -113,10 +113,13 @@ header {
     display:flex;
     flex-direction:row;
     margin-top:5%;
+
     margin-left:8%;
     margin-right:8%;
     margin-bottom:5%;
-    gap:5px;
+
+     
+    
 .c2_text {
     margin-left:7%;
 }
@@ -130,20 +133,61 @@ header {
         flex-direction: row;
         gap:20px;
     }
-    .learnmore, .contactus {
+    }
+
+
+     .contactus {
+        padding:7px 20px 7px 20px;
         @extend .donate;
          a {
         color:$textcolor !important;
         }
+        i {
+            background-color: $textcolor;
+        }
+        .fa-arrow-right {
+            color: $textcolor2;
+        }
+      
     }
+    .learnmore {
+        padding:7px 20px 7px 20px;
+        background-color: $textcolor;
+        @extend .donate;
+         a {
+        color:$textcolor2 !important;
+        }
+      
+    
+      }
     .aboutus {
         width: fit-content;
         background-color:$bgcolor2;
         color:$textcolor;
-        padding:5px;
-        border-radius:10%;
+        padding:7px 15px 7px 15px;
+        border-radius:20px;
     }
+    h2 {
+        font-size:37px;
+    }
+  
+  .c2_text2 {
+    background-color: rgb(243, 243, 243);
+    padding:20px;
+    padding-bottom:12px;
+    border-radius: 7px;
+    border-bottom: 5px solid $textcolor;
+
+     .title {
+        color: $textcolor;
+        padding:15px;
+        margin-left:-17px;
+    }
+
+
   }
+
+
   
 
 
