@@ -493,4 +493,7 @@
   .navbar .row {
     display: flex;
     flex-direction: row;
-    flex-direction: nowrap; } }
+    flex-direction: nowrap; }
+  .navbar .dropdown-list {
+    min-width: 200px;
+    right: initial; } }

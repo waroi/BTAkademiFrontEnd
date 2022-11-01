@@ -363,5 +363,9 @@ $order:(
       @include flexRC(row);
       flex-direction: nowrap;
     }
+    .dropdown-list{
+      min-width: 200px;
+      right: initial;
+    }
   }
 }
