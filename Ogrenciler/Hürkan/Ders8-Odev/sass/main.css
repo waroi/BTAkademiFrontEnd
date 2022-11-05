@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Saira", sans-serif;
+  line-height: 1.3;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "c1, c2, c3, c4, c5, c6, c7, c8";
+  grid-template-columns: repeat 3, 1fr;
+}
+
+.c1 {
+  background-color: rgba(43, 55, 87, 0.6);
+  width: 100%;
+  height: 750px;
+  background-image: url(https://technext.github.io/chariteam/img/carousel-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.c1 .bgcolor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(43, 55, 87, 0.6);
+  height: inherit;
+  flex-direction: column;
+}
+.c1 .learnmore {
+  background-color: #ff6f06;
+}
+.c1 .learnmore a {
+  color: white !important;
+}
+.c1 h2 {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+.c1 p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 17px;
+}
+
+header {
+  background-color: rgba(43, 55, 87, 0.6);
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  color: white;
+  width: 100%;
+  padding: 5px;
+}
+header span {
+  color: #ff6f06;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 25px;
+}
+header ul li.home {
+  color: #ff6f06;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.donate, .learnmore, .contactus, .c1 .learnmore {
+  border: 1px solid #ff6f06;
+  border-radius: 7px;
+  padding: 5px 15px 5px 15px;
+}
+.donate a, .learnmore a, .contactus a, .c1 .learnmore a {
+  text-decoration: none;
+  color: #ff6f06;
+}
+.donate i, .learnmore i, .contactus i, .c1 .learnmore i {
+  color: #ff6f06;
+  border-radius: 50%;
+  background-color: white;
+  padding: 7px;
+}
+
+.c2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 5%;
+}
+.c2 .c2_text {
+  margin-left: 7%;
+}
+.c2 img {
+  width: 500px;
+  height: 500px;
+}
+.c2 .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.contactus {
+  padding: 7px 20px 7px 20px;
+}
+.contactus a {
+  color: #ff6f06 !important;
+}
+.contactus i {
+  background-color: #ff6f06;
+}
+.contactus .fa-arrow-right {
+  color: white;
+}
+
+.learnmore {
+  padding: 7px 20px 7px 20px;
+  background-color: #ff6f06;
+}
+.learnmore a {
+  color: white !important;
+}
+
+.aboutus {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #FFF0E6;
+  color: #ff6f06;
+  padding: 7px 15px 7px 15px;
+  border-radius: 20px;
+}
+
+h2 {
+  font-size: 37px;
+}
+
+.c2_text2 {
+  background-color: rgb(243, 243, 243);
+  padding: 20px;
+  padding-bottom: 12px;
+  border-radius: 7px;
+  border-bottom: 5px solid #ff6f06;
+}
+.c2_text2 .title {
+  color: #ff6f06;
+  padding: 15px;
+  margin-left: -17px;
+}/*# sourceMappingURL=main.css.map */
