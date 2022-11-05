@@ -49,3 +49,18 @@ body {
       font: 20px Inter, sans-serif;
       padding: 10px;
       margin: 10px; }
+  body section .caption .anasayfa {
+    background-image: url("anasayfa1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  body section .caption .baslik {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px; }

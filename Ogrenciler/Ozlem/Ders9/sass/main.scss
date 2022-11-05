@@ -88,24 +88,44 @@ body{
     }
 
    section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: rgba($color: 0, 29, 35,.8);
-    font-size: 50px;
+  
     
-
     .caption{
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // text-align: center;
-        // background: rgba($color: 0, 29, 35,.8);
-        // font-size: 50px;
+        .anasayfa{
+            background-image: url("anasayfa1.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // text-align: center;
+            // background: rgba($color: 0, 29, 35,.8);
+
+        }
+
+        
+     
+        .baslik{
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-size: 30px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 100px;
+    
+    
+        }
 
     }
    
+
+
    }
         
 
