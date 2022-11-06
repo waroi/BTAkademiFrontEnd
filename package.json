@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/waroi/BTAkademiFrontEnd/issues"
   },
-  "homepage": "https://github.com/waroi/BTAkademiFrontEnd#readme"
+  "homepage": "https://github.com/waroi/BTAkademiFrontEnd#readme",
+  "dependencies": {
+    "init": "^0.1.2"
+  }
 }
