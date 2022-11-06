@@ -63,14 +63,14 @@ header {
   align-items: center;
   justify-content: space-around; }
 
-.donate, .c1 .learnmore, .c2 .learnmore, .c2 .contactus {
+.donate, .c1 .learnmore, .contactus, .learnmore {
   border: 1px solid #ff6f06;
   border-radius: 7px;
   padding: 5px 15px 5px 15px; }
-  .donate a, .c1 .learnmore a, .c2 .learnmore a, .c2 .contactus a {
+  .donate a, .c1 .learnmore a, .contactus a, .learnmore a {
     text-decoration: none;
     color: #ff6f06; }
-  .donate i, .c1 .learnmore i, .c2 .learnmore i, .c2 .contactus i {
+  .donate i, .c1 .learnmore i, .contactus i, .learnmore i {
     color: #ff6f06;
     border-radius: 50%;
     background-color: white;
@@ -82,8 +82,7 @@ header {
   margin-top: 5%;
   margin-left: 8%;
   margin-right: 8%;
-  margin-bottom: 5%;
-  gap: 5px; }
+  margin-bottom: 5%; }
   .c2 .c2_text {
     margin-left: 7%; }
   .c2 img {
@@ -93,11 +92,79 @@ header {
     display: flex;
     flex-direction: row;
     gap: 20px; }
-  .c2 .learnmore a, .c2 .contactus a {
+
+.contactus {
+  padding: 7px 20px 7px 20px; }
+  .contactus a {
     color: #ff6f06 !important; }
-  .c2 .aboutus {
-    width: fit-content;
-    background-color: #FFF0E6;
+  .contactus i {
+    background-color: #ff6f06; }
+  .contactus .fa-arrow-right {
+    color: white; }
+
+.learnmore {
+  padding: 7px 20px 7px 20px;
+  background-color: #ff6f06; }
+  .learnmore a {
+    color: white !important; }
+
+.aboutus {
+  width: fit-content;
+  background-color: #FFF0E6;
+  color: #ff6f06;
+  padding: 7px 15px 7px 15px;
+  border-radius: 20px; }
+
+h2 {
+  font-size: 37px; }
+
+.c2_text2 {
+  background-color: #f3f3f3;
+  padding: 20px;
+  padding-bottom: 12px;
+  border-radius: 7px;
+  border-bottom: 5px solid #ff6f06; }
+  .c2_text2 .title {
     color: #ff6f06;
+    padding: 15px;
+    margin-left: -17px; }
+
+.c3 {
+  background-color: #f3f3f3;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 100px; }
+  .c3 .c3_text1 {
+    text-align: center; }
+    .c3 .c3_text1 .aboutus {
+      margin: 0 auto; }
+  .c3 .features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .c3 img {
+    width: 350px;
+    height: 250px;
+    margin-left: 30px;
+    padding-top: 10px; }
+  .c3 .c3_button {
+    width: 100px;
+    background-color: #ff6f06;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
     padding: 5px;
-    border-radius: 10%; }
+    margin: 0 auto; }
+  .c3 .feature1, .c3 .feature2, .c3 .feature3 {
+    width: 33%;
+    margin: 15px;
+    border-top: 5px solid #ff6f06;
+    background-color: white;
+    border-radius: 15px;
+    padding-bottom: 50px; }
+  .c3 .progressbar {
+    background-color: #f3f3f3; }
+  .c3 .text1 {
+    text-align: center; }
+  .c3 .text2 {
+    color: gray; }
