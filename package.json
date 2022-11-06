@@ -1,0 +1,20 @@
+{
+  "name": "btakademifrontend",
+  "version": "1.0.0",
+  "description": "VSCode\r Github for desktop\r ### VSCode Eklentileri\r Live Server\r Prettier\r Html CSS Support\r Auto Rename Tag\r Auto Close Tag\r GitLens\r GitHistory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waroi/BTAkademiFrontEnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waroi/BTAkademiFrontEnd/issues"
+  },
+  "homepage": "https://github.com/waroi/BTAkademiFrontEnd#readme"
+}
