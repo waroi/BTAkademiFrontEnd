@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+$ana-renk:rgb(255, 253, 250);
+$tema:#FF6F0F;
+
+
+
+
+
+
+
+body{
+    background-color: $ana-renk;
+    .container{
+      
+        margin: 0px auto;
+        background-color: #2d3848;
+        nav{
+            height: 80px;
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+           
+        }
+
+        .logo{
+            margin: 10px;
+            padding: 50px;
+            font: 40px Saira, sans-serif;
+            color: rgb(255, 255, 255);
+
+            .h1{
+                color: $tema;
+            }
+ 
+         
+        }
+
+        ul{
+           
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            align-items:center;
+            list-style: none;
+            margin: 35px;
+            padding: 35px;
+            gap: 55px;
+            
+            
+           
+        }
+        .menu{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font: 20px Inter, sans-serif;
+        }
+        .logo{
+            font-size: 35px;
+            display: flex;
+            text-align: left;
+            align-items: center;
+            flex-direction: row;
+            
+        }
+      
+        .button{
+            border-radius: 12px;
+            border-collapse: collapse;
+            border-color: #FF6F0F;
+            background-color: transparent;
+            color: #FF6F0F;
+            font: 20px Inter, sans-serif;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+
+
+      
+
+    }
+
+   section{
+  
+    
+    .caption{
+        .anasayfa{
+            background-image: url("anasayfa1.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            // text-align: center;
+            // background: rgba($color: 0, 29, 35,.8);
+
+        }
+
+        
+     
+        .baslik{
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-size: 30px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 100px;
+    
+    
+        }
+
+    }
+   
+
+
+   }
+        
+
+
+
+
+}

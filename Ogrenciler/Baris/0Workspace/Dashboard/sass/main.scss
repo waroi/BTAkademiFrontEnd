@@ -341,22 +341,31 @@ $order:(
   
 }
 
-@media (max-width:1440px) {
-  .row{
-    @include flexRC(row);
-    flex-direction: wrap;
-  }
-  
-}
 @media (max-width:990px) {
   .sidebar{
     display: none;
   }
+  
+}
+@media (max-width:630px) {
   .col-4,.col-6,.col-8{
     width: map-get($col, 12 )
   }
   .row{
-    @include flexRC(row);
-    flex-direction: wrap;
+    @include flexRC(column);
+    flex-direction: nowrap;
+  }
+  .card-content{
+    overflow: scroll;
+  }
+  .navbar{
+    .row{
+      @include flexRC(row);
+      flex-direction: nowrap;
+    }
+    .dropdown-list{
+      min-width: 200px;
+      right: initial;
+    }
   }
 }

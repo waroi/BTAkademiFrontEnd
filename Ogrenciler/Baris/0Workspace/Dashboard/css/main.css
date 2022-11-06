@@ -477,18 +477,23 @@
   background-color: #f4f7fc;
   font-size: large; }
 
-@media (max-width: 1440px) {
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-direction: wrap; } }
-
 @media (max-width: 990px) {
   .sidebar {
-    display: none; }
+    display: none; } }
+
+@media (max-width: 630px) {
   .col-4, .col-6, .col-8 {
     width: 100%; }
   .row {
     display: flex;
+    flex-direction: column;
+    flex-direction: nowrap; }
+  .card-content {
+    overflow: scroll; }
+  .navbar .row {
+    display: flex;
     flex-direction: row;
-    flex-direction: wrap; } }
+    flex-direction: nowrap; }
+  .navbar .dropdown-list {
+    min-width: 200px;
+    right: initial; } }
