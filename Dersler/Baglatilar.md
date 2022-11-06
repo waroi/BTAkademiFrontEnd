@@ -24,3 +24,7 @@
 - [Flexbox Defense](http://www.flexboxdefense.com/)
 - [Flexbox Zombies](https://mastery.games/flexboxzombies/)
   [FrontEnd Challenges] https://www.frontendmentor.io/challenges
+
+## Odevler
+
+- [Bootstrap Starter](https://bootstrapmade.com/demo/templates/iPortfolio/)
