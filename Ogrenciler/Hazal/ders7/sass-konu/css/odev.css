@@ -8,8 +8,9 @@
 
     .container{
         display: grid;
-        grid-template-columns: repeat 3, 1fr; 
         grid-template-areas:"anasayfa","bölümiki","bölümüc";
+        grid-template-columns: repeat 3, 1fr; 
+        
        
  }
 .logo {
@@ -49,6 +50,7 @@ gap: 30px;
    border-color: #ff6f06;
   background: #ff6f06;
   color: aliceblue;
+  font-size: 16px;
  }
     
 
@@ -86,7 +88,7 @@ gap: 30px;
     
     h1{
         
-        font-size: 2em;
+        font-size: 44px;
         margin-top: 0.67em;
         margin-bottom: 0.67em;
         margin-left: 0;
@@ -94,9 +96,21 @@ gap: 30px;
         font-weight: bold;
         }
     p{
-        margin-top: 1em;
+        margin-top: 22px;
         margin-bottom: 1em;
         margin-left: 0;
         margin-right: 0;
+    }
+    .bölümiki{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+
+
+    }
+    .foto{
+        background-image: url(https://technext.github.io/chariteam/img/about-1.jpg)
     }
  
