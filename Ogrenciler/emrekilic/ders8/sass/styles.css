@@ -1,0 +1,475 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Saira:wght@600;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #787878;
+}
+
+header {
+  background-color: rgba(0, 29, 35, 0.8);
+}
+
+a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+section.gutter {
+  padding: 6rem 0;
+}
+
+.title {
+  font-weight: 700;
+  line-height: 1.2;
+}
+.title.big {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.title.dark {
+  color: #001D23;
+}
+.title.light {
+  color: #fff;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  border-color: #FF6F0F;
+}
+.button .circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.button .circle i {
+  font-size: 1rem;
+}
+.button.primary {
+  background-color: #FF6F0F;
+  color: #fff;
+}
+.button.primary .circle {
+  background-color: #fff;
+}
+.button.primary .circle i {
+  color: #FF6F0F;
+}
+.button.primary:hover {
+  background-color: transparent;
+  color: #FF6F0F;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+.button.outline {
+  background-color: transparent;
+  color: #FF6F0F;
+}
+.button.outline .circle {
+  background-color: #fff;
+}
+.button.outline .circle i {
+  color: #FF6F0F;
+}
+.button.outline:hover {
+  background-color: #FF6F0F;
+  color: #ffffff;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.bubble-title {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  background-color: #FFF0E6;
+  color: #FF6F0F;
+  font-size: 1rem;
+  border-radius: 20px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.quotation {
+  color: #001D23;
+  background-color: #F8F8F9;
+  border-radius: 6px;
+  padding: 1.5rem;
+  border-bottom: 5px solid #FF6F0F;
+}
+.quotation span {
+  display: block;
+  color: #FF6F0F;
+  margin-top: 0.5rem;
+}
+
+.container {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 0;
+}
+
+.main-middle {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 550px;
+  margin-bottom: 3rem;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 29, 35, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+header hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.header-container {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.top-line,
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-line {
+  height: 45px;
+  align-items: center;
+}
+.top-line small {
+  font-size: 0.875em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.top-line small i {
+  margin-right: 0.5rem;
+}
+
+.contact-info small {
+  margin-right: 1.5rem;
+}
+
+.social-media a {
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 1rem;
+}
+
+.navigation-container {
+  align-items: center;
+}
+.navigation-container .button {
+  margin-left: 1rem;
+}
+
+.logo {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #FF6F0F;
+}
+.logo span {
+  color: #fff;
+}
+
+.main-navigation ul {
+  display: flex;
+}
+.main-navigation ul li a {
+  font-size: 1rem;
+  color: #fff;
+  padding: 25px 0;
+  margin-left: 25px;
+  display: block;
+}
+.main-navigation ul li a:hover, .main-navigation ul li a.active {
+  color: #FF6F0F;
+}
+
+.highlight {
+  height: 100vh;
+  background-image: url("https://technext.github.io/chariteam/img/carousel-2.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.highlight .align-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.highlight .highlight-container {
+  max-width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.highlight h2 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.highlight p {
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+.about-us .cover {
+  position: relative;
+}
+.about-us .cover .big-image {
+  max-width: 100%;
+  padding-top: 3rem;
+  padding-right: 3rem;
+  box-sizing: border-box;
+}
+.about-us .cover .small-image {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 0.5rem solid #fff;
+  border-bottom: 0.5rem solid #fff;
+}
+.about-us .bubble-title {
+  margin-bottom: 1rem;
+}
+.about-us .title {
+  margin-bottom: 3rem;
+}
+.about-us .quotation {
+  margin-bottom: 1.5rem;
+}
+.about-us .actions {
+  margin-top: 3rem;
+  display: flex;
+}
+.about-us .actions .button {
+  margin-right: 1rem;
+}
+
+.main-middle .bubble-title {
+  margin-bottom: 1rem;
+}
+.main-middle h3 {
+  margin-bottom: 3rem;
+}
+
+.container.background {
+  background-color: #F8F8F9;
+}
+
+.inline-title {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-color: #FF6F0F;
+  color: #fff;
+  font-size: 1.25rem;
+  padding-bottom: 0.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.feature-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.feature-bottom .feature-box {
+  text-align: center;
+  border-width: 10px;
+  border-top: 5px solid #FF6F0F;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #fff;
+}
+.feature-bottom h4 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-family: "Saira", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #001D23;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.feature-bottom p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.causes-main {
+  background-color: #F8F8F9;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.causes {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding-top: 0.5rem;
+}
+.causes p {
+  padding-left: 0;
+  padding-right: 0;
+}
+.causes .progress {
+  background-color: #FF6F0F;
+  height: 5px;
+  width: 20px;
+}
+
+.feature-photo {
+  position: relative;
+}
+.feature-photo img {
+  max-width: 100%;
+  height: auto;
+}
+.feature-photo:hover .graph {
+  display: flex;
+}
+
+.graph {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: 5s;
+}
+
+.whatwedo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.whatwedo .whatwedo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.06);
+}
+.whatwedo .whatwedo-box img {
+  margin-bottom: 1.5rem;
+}
+.whatwedo h4 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-family: "Saira", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #001D23;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.whatwedo p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=styles.css.map */
