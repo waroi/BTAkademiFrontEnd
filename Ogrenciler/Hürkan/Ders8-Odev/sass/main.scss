@@ -3,6 +3,7 @@ $textcolor2: white;
 $textcolor3: rgba(255,255,255,0.5);
 $bgcolor1: rgba(43, 55, 87, 0.6);
 $bgcolor2: #FFF0E6;
+$bgcolor3: rgb(243, 243, 243);
 
 
 
@@ -139,10 +140,13 @@ header {
     display:flex;
     flex-direction:row;
     margin-top:5%;
+
     margin-left:8%;
     margin-right:8%;
     margin-bottom:5%;
-    gap:5px;
+
+     
+    
 .c2_text {
     margin-left:7%;
 }
@@ -156,20 +160,110 @@ header {
         flex-direction: row;
         gap:20px;
     }
-    .learnmore, .contactus {
+    }
+
+
+     .contactus {
+        padding:7px 20px 7px 20px;
         @extend .donate;
          a {
         color:$textcolor !important;
         }
+        i {
+            background-color: $textcolor;
+        }
+        .fa-arrow-right {
+            color: $textcolor2;
+        }
+      
     }
+    .learnmore {
+        padding:7px 20px 7px 20px;
+        background-color: $textcolor;
+        @extend .donate;
+         a {
+        color:$textcolor2 !important;
+        }
+      
+    
+      }
     .aboutus {
         width: fit-content;
         background-color:$bgcolor2;
         color:$textcolor;
-        padding:5px;
-        border-radius:10%;
+        padding:7px 15px 7px 15px;
+        border-radius:20px;
+    }
+    h2 {
+        font-size:37px;
+    }
+  
+  .c2_text2 {
+    background-color: $bgcolor3;
+    padding:20px;
+    padding-bottom:12px;
+    border-radius: 7px;
+    border-bottom: 5px solid $textcolor;
+
+     .title {
+        color: $textcolor;
+        padding:15px;
+        margin-left:-17px;
     }
   }
+.c3 {
+
+    background-color: $bgcolor3;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 100px;
+  .c3_text1 {
+    text-align: center;
+     .aboutus {
+    margin: 0 auto;
+    }
+  }
+  .features {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+  }
+  img {
+    width:350px;
+    height:250px;
+    margin-left:30px;
+    padding-top:10px;
+  }
+  .c3_button {
+ width:100px;
+ background-color: $textcolor;
+ border-radius:5px;
+ color:$textcolor2;
+ text-align: center;
+ padding:5px;
+ margin:0 auto;
+
+  }
+  .feature1, .feature2, .feature3 {
+   width:33%;
+   margin:15px;
+   border-top:5px solid $textcolor;
+   background-color: $textcolor2;
+   border-radius:15px;
+   padding-bottom:50px;
+  }
+
+  .progressbar {
+    background-color: $bgcolor3;
+  }
+  .text1 {
+   text-align: center;
+  }
+  .text2 {
+    color:gray;
+  }
+}
   
 
 
