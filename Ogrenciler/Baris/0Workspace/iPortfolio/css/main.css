@@ -8429,6 +8429,11 @@ textarea.form-control-lg {
   font-size: 4rem;
   color: #149ddd; }
 
+#servis i {
+  font-size: 2rem;
+  color: #f8f9fa;
+  border-radius: 50%; }
+
 #ozgecmis h4, #ozgecmis .h4 {
   position: relative; }
   #ozgecmis h4::before, #ozgecmis .h4::before {
@@ -8444,6 +8449,12 @@ textarea.form-control-lg {
 
 #portfolio .btn-check:checked + .btn {
   background-color: #f8f9fa; }
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: #149ddd !important;
+  border-radius: 50%; }
 
 #btnApp:checked .filter-card {
   display: none; }

@@ -49,14 +49,22 @@
   margin-left: 300px;
 }
 
-#durum {
+#durum{
   i {
     font-size: 4rem;
     color: $primary;
   }
 }
+#servis{
+  i{
+    font-size: 2rem;
+    color: $light;
+    border-radius: 50%;
+  }
+}
+
 #ozgecmis {
-  h4 {
+  h4 { 
     position: relative;
     &::before {
       content: "";
@@ -79,6 +87,12 @@
   }
 }
 
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: $primary !important;
+  border-radius: 50%;
+}
 // BAKILACAK BAŞLANGIÇ
 #btnApp {
   &:checked {
