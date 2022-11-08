@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/waroi/BTAkademiFrontEnd.git"
   },
+<<<<<<< HEAD
   "keywords": [],
+=======
+>>>>>>> bed2e1b8ddbb655fe2f57b734fee8349970e7de9
   "author": "",
   "license": "ISC",
   "bugs": {

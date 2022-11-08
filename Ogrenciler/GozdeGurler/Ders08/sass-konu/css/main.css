@@ -43,6 +43,7 @@ body {
   flex-wrap: wrap; }
   .section2 i {
     font-size: 80px;
+    color: white;
     background-color: #20baca;
     border-radius: 50%;
     width: 100px;

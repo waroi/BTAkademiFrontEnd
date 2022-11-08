@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.sayfabasi {
+  height: 300px;
+  background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
+  background-size: auto; }
+
+.bgimgsayfabasi {
+  background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  width: 1400px;
+  margin-top: -200px;
+  padding: 192px 12px 96px; }
+
+/* navbar'ı yaptıktan sonra margin top'ı değiştir!!*/
+h2 {
+  color: yellow; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  grid-template-areas: "header header header" "sidebar content content" "sidebar  . ." "box1 box1 box1" "footer footer footer"; }
+
+.baslikbtn {
+  background-color: #fadcc8;
+  border-radius: 30%;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 16px; }

@@ -871,9 +871,9 @@ footer {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 100%; }
-    .team-members .team-box {
-      max-width: 45%;
-      box-sizing: border-box; }
+  .team-box {
+    max-width: 45%;
+    box-sizing: border-box; }
   .footer-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
