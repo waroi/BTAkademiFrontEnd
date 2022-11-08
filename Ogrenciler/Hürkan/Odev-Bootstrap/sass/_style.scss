@@ -2,4 +2,36 @@
     img {
        max-width: 8rem; 
     }
+    width:300px;
+    
 }
+
+.b-link-hover {
+    i {
+        color: $text-muted;
+    }
+    &:hover {
+        i {
+           color:$primary;
+        }
+        span {
+            color:$light !important; 
+        }
+    }
+}
+
+.social-links {
+    a {
+       font-size:0.9rem;
+       border-radius:50%;
+       padding:0.5em;
+       width:36px;
+       height:36px;
+       text-align: center;
+     &:hover {
+        background-color: $primary !important;
+     }
+    }
+
+}
+

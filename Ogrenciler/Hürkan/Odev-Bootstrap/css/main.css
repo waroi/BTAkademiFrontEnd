@@ -8386,5 +8386,26 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-#menu img {
-  max-width: 8rem; }
+#menu {
+  width: 300px; }
+  #menu img {
+    max-width: 8rem; }
+
+.b-link-hover i {
+  color: #6c757d; }
+
+.b-link-hover:hover i {
+  color: #149ddd; }
+
+.b-link-hover:hover span {
+  color: #f8f9fa !important; }
+
+.social-links a {
+  font-size: 0.9rem;
+  border-radius: 50%;
+  padding: 0.5em;
+  width: 36px;
+  height: 36px;
+  text-align: center; }
+  .social-links a:hover {
+    background-color: #149ddd !important; }
