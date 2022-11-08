@@ -1,0 +1,142 @@
+$mainColor: #040b14;
+$titleColor: #173b6c;
+$color2:#2c2f3f;
+$color3:#149ddd;
+$color4:#a8a9b4;
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+header{
+    background-color:$mainColor;
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    z-index: 2;
+
+    img{
+        width: 120px;
+        border: 8px solid $color2;
+       
+    }
+    .icons {
+        i {
+            color:$secondary;
+            font-size: 18px;
+            background-color: $color2;
+            padding: 8px;
+            border-radius: 50%;
+        }
+    }
+     
+    .icons i:hover {
+        background-color: $color3;
+        
+    }
+
+    h2 {
+        color: $secondary;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    ul {
+        list-style: none;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: $secondary;
+    }
+    
+    nav {
+        
+        i {
+            color: $color4;        
+            padding-right: 8px;
+        }
+
+       
+        .home {
+            color: $secondary;
+            padding: 12px;
+        }
+        .home i{
+            color: $color3 !important;
+        }
+
+       
+        ul a {
+            color: $color4;
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            font-size: 15px;
+        }
+
+        ul li:hover {
+            a{
+                color: $secondary;
+            }
+
+            i {
+                color: $color3;
+            }
+        }
+    }
+}
+
+main {
+    .mainPart {
+        position: relative;
+    }
+    img {
+        width: 100%;
+        filter: brightness(70%);
+    }
+    
+    .text {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        color: $secondary;
+
+        h1 {
+            font-size: 64px;
+            font-weight: 700;  
+        }
+
+        p {
+            font-size: 26px;
+    
+        }
+
+        p span {
+            border-bottom: 3px solid $color3;
+            padding-bottom: 4px;
+        }
+        .animate__fadeInLeft{
+            transition-duration: 2s;
+        }
+    }
+
+   
+
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-color: $mainColor;
+    color: $secondary;
+    width: 300px;
+    font-size: 14px;
+    padding: 15px;
+    text-align: center;
+    z-index: 3;
+   
+}
+
