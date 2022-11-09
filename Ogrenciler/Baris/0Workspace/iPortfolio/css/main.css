@@ -8402,7 +8402,8 @@ textarea.form-control-lg {
   color: #f8f9fa !important; }
 
 #head {
-  width: 300px; }
+  width: 300px;
+  display: block; }
 
 .social-links a {
   font-size: 0.9rem;
@@ -8410,9 +8411,23 @@ textarea.form-control-lg {
   padding: 0.5em;
   width: 36px;
   height: 36px;
-  text-align: center; }
+  text-align: center;
+  transition: .5s all ease-in-out; }
   .social-links a:hover {
     background-color: #149ddd !important; }
+
+.contact-info i {
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 0.5em;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background-color: #e4edf9;
+  color: #149ddd; }
+  .contact-info i:hover {
+    background-color: #149ddd !important;
+    color: #f8f9fa; }
 
 #anasayfa {
   background-image: url("https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/hero-bg.jpg");
@@ -8494,6 +8509,17 @@ textarea.form-control-lg {
 
 @media (max-width: 1200px) {
   #head {
+    animation: fadeOutLeft;
+    animation-duration: 1s;
     display: none; }
   #main {
     margin-left: auto; } }
+
+.progress-bar-doldur {
+  animation: doldur forwards 1s ease-in-out; }
+
+@keyframes doldur {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }

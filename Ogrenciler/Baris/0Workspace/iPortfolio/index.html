@@ -8,11 +8,13 @@
   <title>iPortfolio Bootstrap</title>
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
 </head>
 
 <body>
+
   <header class="bg-dark text-light vh-100 position-fixed" id="head">
-    <aside class="d-flex flex-column gap-5 pt-5">
+    <aside class="d-flex flex-column gap-5 pt-5" id="offcanvasMenu">
       <div class="d-flex flex-column align-items-center gap-3">
         <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/profile-img.jpg" alt=""
           class="img-fluid rounded-circle border border-5 border-secondary" style="max-width: 8rem" />
@@ -31,7 +33,7 @@
             <a class="nav-link bg-secondary rounded-circle" href="#"><i class="bi bi-linkedin text-light"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link bg-secondary rounded-circle" href="#"><i class="bi bi-github text-light"></i></a>
+            <a class="nav-link bg-secondary rounded-circle" href="https://github.com/bbssyl" target="_blank"><i class="bi bi-github text-light"></i></a>
           </li>
         </ul>
       </div>
@@ -69,9 +71,9 @@
   </header>
   <div class="container-fluid p-0">
     <section id="anasayfa" class="d-flex flex-column justify-content-center align-items-center">
-      <div class="w-25 text-light">
+      <div class="text-center text-light animate__animated animate__fadeIn">
         <p class="display-2">Barış Benli</p>
-        <p class="h1">I'm Front-End-Developer</p>
+        <p class="h1">Front-End-Developer</p>
       </div>
     </section>
   </div>
@@ -79,11 +81,11 @@
     <section class="container mt-5 mb-5" id="hakkinda">
       <h2 class="border-bottom border-4 border-primary w-25">Hakkında</h2>
       <div class="row pt-5">
-        <div class="col-lg-4">
+        <div class="col-lg-4 animate__animated animate__fadeInLeft">
           <img src="https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/profile-img.jpg" alt=""
             class="img-fluid" />
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 animate__animated animate__fadeInRight">
           <h2>Front-End Developer</h2>
           <div class="row">
             <div class="col-lg-6">
@@ -144,7 +146,7 @@
     </section>
     <section class="container mt-5 mb-5" id="durum">
       <h2 class="border-bottom border-4 border-primary w-25">Durum</h2>
-      <div class="row pt-5">
+      <div class="row pt-5 animate__animated animate__fadeInUp">
         <div class="col-lg-3 col-md-6">
           <div class="card mb-3" style="max-width: 540px">
             <div class="row g-0 d-md-flex">
@@ -219,12 +221,12 @@
     <section class="container-fluid mt-5 mb-5 bg-light" id="yetenek">
       <div class="container pt-5 pb-5">
         <h2 class="border-bottom border-4 border-primary w-25">Yetenekler</h2>
-        <div class="row pt-5">
+        <div class="row pt-5 animate__animated animate__fadeInUp">
           <div class="col-lg-6">
             <span class="d-block">HTML</span>
             <div class="progress">
-              <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar"
-                aria-label="Example with label" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+              <div class="progress-bar progress-bar-animated progress-bar-striped progress-bar-doldur" role="progressbar"
+                style="width: 100%" aria-valuenow="100" aria-valuemin="0"
                 aria-valuemax="100">
                 100%
               </div>
@@ -232,7 +234,7 @@
             <span class="d-block">CSS</span>
             <div class="progress">
               <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" role="progressbar"
-                aria-label="Example with label" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                style="width: 90%" aria-valuenow="90" aria-valuemin="0"
                 aria-valuemax="100">
                 90%
               </div>
@@ -240,7 +242,7 @@
             <span class="d-block">Sass</span>
             <div class="progress">
               <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning text-bg-light"
-                role="progressbar" aria-label="Example with label" style="width: 90%" aria-valuenow="75"
+                role="progressbar" style="width: 90%" aria-valuenow="75"
                 aria-valuemin="0" aria-valuemax="100">
                 90%
               </div>
@@ -249,14 +251,14 @@
           <div class="col-lg-6">
             <span class="d-block">JavaScript</span>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%"
+              <div class="progress-bar" role="progressbar" style="width: 0%"
                 aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                 0%
               </div>
             </div>
             <span class="d-block">ReactJS</span>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 0%"
+              <div class="progress-bar" role="progressbar" style="width: 0%"
                 aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                 90%
               </div>
@@ -264,7 +266,7 @@
             <span class="d-block">Java 101</span>
             <div class="progress">
               <div class="progress-bar progress-bar-animated progress-bar-striped bg-secondary" role="progressbar"
-                aria-label="Example with label" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                style="width: 95%" aria-valuenow="95" aria-valuemin="0"
                 aria-valuemax="100">
                 95%
               </div>
@@ -277,7 +279,7 @@
     <section class="container-fluid mt-5 mb-5" id="ozgecmis">
       <div class="container pt-5 pb-5">
         <h2 class="border-bottom border-4 border-primary w-25">Özgeçmiş</h2>
-        <div class="row pt-5">
+        <div class="row pt-5 animate__animated animate__fadeInUp">
           <div class="col-lg-6">
             <h3>Özet</h3>
             <div class="border-start border-3 border-secondary ps-3">
@@ -354,161 +356,53 @@
           </div>
         </div>
         <div class="row g-3">
-          <div class="col-lg-4 col-md-6 filter-app">
+          <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp filter-app">
             <a href="#" data-bs-toggle="modal" data-bs-target="#app1">
               <img
                 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
                 alt="" class="img-fluid rounded" />
             </a>
-            <!-- Modal -->
-            <div class="modal fade" id="app1" tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="app1Label">
-                      Uygulama 1
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body justify-content-center align-content-center d-flex">
-                    <img
-                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
-                      alt="" class="img-fluid rounded" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal -->
+
           </div>
-          <div class="col-lg-4 col-md-6 filter-web">
+          <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp filter-web">
             <a href="#" data-bs-toggle="modal" data-bs-target="#app2">
               <img
                 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
                 alt="" class="img-fluid rounded" />
             </a>
-            <!-- Modal -->
-            <div class="modal fade" id="app2" tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="app2Label">
-                      Uygulama 2
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body justify-content-center align-content-center d-flex">
-                    <img
-                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
-                      alt="" class="img-fluid rounded" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal -->
+
           </div>
-          <div class="col-lg-4 col-md-6 filter-card">
+          <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp filter-card">
             <a href="#" data-bs-toggle="modal" data-bs-target="#app3">
               <img
                 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
                 alt="" class="img-fluid rounded" />
             </a>
-            <!-- Modal -->
-            <div class="modal fade" id="app3" tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="app3Label">
-                      Uygulama 3
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body justify-content-center align-content-center d-flex">
-                    <img
-                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
-                      alt="" class="img-fluid rounded" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal -->
+
           </div>
-          <div class="col-lg-4 col-md-6 filter-web">
+          <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp filter-web">
             <a href="#" data-bs-toggle="modal" data-bs-target="#app4">
               <img
                 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
                 alt="" class="img-fluid rounded" />
             </a>
-            <!-- Modal -->
-            <div class="modal fade" id="app4" tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="app4Label">
-                      Uygulama 4
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body justify-content-center align-content-center d-flex">
-                    <img
-                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
-                      alt="" class="img-fluid rounded" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal -->
+
           </div>
-          <div class="col-lg-4 col-md-6 filter-app">
+          <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp filter-app">
             <a href="#" data-bs-toggle="modal" data-bs-target="#app5">
               <img
                 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
                 alt="" class="img-fluid rounded" />
             </a>
-            <!-- Modal -->
-            <div class="modal fade" id="app5" tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="app5Label">
-                      Uygulama 5
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body justify-content-center align-content-center d-flex">
-                    <img
-                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
-                      alt="" class="img-fluid rounded" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal -->
+
           </div>
-          <div class="col-lg-4 col-md-6 filter-card">
+          <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp filter-card">
             <a href="#" data-bs-toggle="modal" data-bs-target="#app6">
               <img
                 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
                 alt="" class="img-fluid rounded" />
             </a>
-            <!-- Modal -->
-            <div class="modal fade" id="app6" tabindex="-1">
-              <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="app6Label">
-                      Uygulama 6
-                    </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body justify-content-center align-content-center d-flex">
-                    <img
-                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
-                      alt="" class="img-fluid rounded" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Modal -->
+
           </div>
         </div>
       </div>
@@ -517,7 +411,7 @@
     <section class="container mt-5 mb-5 pt-5 pb-5" id="servis">
       <h2 class="border-bottom border-4 border-primary w-25">Servisler</h2>
 
-      <div class="row">
+      <div class="row animate__animated animate__fadeInUp">
         <div class="col-lg-4 col-md-6">
 
           <div class="row g-0">
@@ -650,7 +544,8 @@
     <section class="container-fluid bg-light pt-5 pb-5" id="testimonials">
       <div class="container pt-5 pb-5">
         <h2 class="border-bottom border-4 border-primary w-25">Testimonials</h2>
-        <div id="slider" class="carousel carousel-dark slide bg-light" data-bs-ride="false">
+        <div id="slider" class="carousel carousel-dark slide bg-light animate__animated animate__fadeInUp"
+          data-bs-ride="false">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
@@ -768,17 +663,211 @@
 
     </section>
 
-    <section class="container" id="iletisim">
-      <h2 class="border-bottom border-4 border-primary w-25">Contact</h2>
-      <p>
-        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-        aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-        fugiat sit in iste officiis commodi quidem hic quas.
-      </p>
+    <section class="container pt-5 pb-5 mt-5 mb-5" id="iletisim">
+      <h2 class="border-bottom border-4 border-primary w-25">İletişim</h2>
+      <div class="row animate__animated animate__fadeIn animate__delay-1s">
+        <div class="col-lg-6">
+          <div class="container pt-5 mt-5 p-5 shadow">
+            <ul class="nav gap-2 flex-column contact-info">
+              <li class="row">
+                <div class="col-lg-2">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="col-lg-10">
+                  <h3>Location</h3>
+                  <p>Bahçelievler Mah. Cizre Cad. Şehr-i Nuh Apart, Şırnak, TR</p>
+                </div>
+              </li>
+              <li class="row">
+                <div class="col-lg-2">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="col-lg-10">
+                  <h3>E-mail</h3>
+                  <p>bbenli@pm.me</p>
+                </div>
+              </li>
+              <li class="row">
+                <div class="col-lg-2">
+                  <i class="bi bi-phone"></i>
+                </div>
+                <div class="col-lg-10">
+                  <h3>Call</h3>
+                  <p>+90 545 223 91 17</p>
+                </div>
+              </li>
+            </ul>
+            <div class="mapouter container">
+              <div class="gmap_canvas container"><iframe width="600" height="300" id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=%C5%9F%C4%B1rnak&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                  }
+                </style>
+                <style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-5 shadow">
+          <form class="row pt-5 p-3 g-3">
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Ad Soyad">
+                <label for="name">Ad Soyad</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="E-Mail">
+                <label for="email">E-Mail</label>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="konu" id="konu" placeholder="Konu">
+                <label for="konu">Konu</label>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-floating mb-3">
+                <textarea name="mesaj" id="mesaj" class="form-control" placeholder="Mesaj"
+                  style="height: 250px;"></textarea>
+                <label for="mesaj">Mesaj</label>
+              </div>
+            </div>
+            <div class="d-flex justify-content center align-items-center">
+              <button type="submit" class="btn btn-primary text-light mx-auto">Mesajı Gönder</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="app1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="app1Label">
+            Uygulama 1
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-center align-content-center d-flex">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
+            alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="app2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="app2Label">
+            Uygulama 2
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-center align-content-center d-flex">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
+            alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="app3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="app3Label">
+            Uygulama 3
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-center align-content-center d-flex">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
+            alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="app4" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="app4Label">
+            Uygulama 4
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-center align-content-center d-flex">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
+            alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="app5" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="app5Label">
+            Uygulama 5
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-center align-content-center d-flex">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
+            alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="app6" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg bg-transparent">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="app6Label">
+            Uygulama 6
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body justify-content-center align-content-center d-flex">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fb5%2F1b%2F78%2Fb51b78ecc9e5711274931774e433b5e6.png&f=1&nofb=1&ipt=ea8c4988f17c3acbd40ad79cab5333e9fca509dd42c64cf77fee8a628fce644a&ipo=images"
+            alt="" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
