@@ -4,3 +4,11 @@ $secondary:#212431;
 $progress-height:1.5rem;
 $card-border-width:0;
 $info:#e4edf9;
+$nav-pills-link-active-bg:rgba(0,0,0,0);
+$nav-link-color:rgb(160, 160, 160);
+
+.nav-pills .nav-link.active{
+    i{
+        color:$primary;
+    }
+}
