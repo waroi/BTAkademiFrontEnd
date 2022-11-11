@@ -8447,10 +8447,10 @@ main .text {
   left: 35%;
   color: white; }
   main .text h1, main .text .h1 {
-    font-size: 64px;
+    font-size: 4em;
     font-weight: 700; }
   main .text p {
-    font-size: 26px; }
+    font-size: 2em; }
   main .text p span {
     border-bottom: 3px solid #149ddd;
     padding-bottom: 4px; }
@@ -8468,3 +8468,47 @@ footer {
   padding: 15px;
   text-align: center;
   z-index: 3; }
+
+section {
+  margin-left: 300px; }
+  section .about, section .facts {
+    width: 88%; }
+  section .txt h2, section .txt .h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color: #173b6c; }
+  section .border-bottom {
+    border-color: #149ddd !important; }
+  section div h3, section div .h3 {
+    color: #173b6c;
+    font-weight: 500; }
+  section .row ul {
+    list-style: none; }
+  section .bi-chevron-right {
+    color: #149ddd; }
+  section .facts .count-box {
+    padding: 30px;
+    width: 100%; }
+    section .facts .count-box i {
+      font-size: 40px;
+      color: #149ddd; }
+    section .facts .count-box span {
+      font-size: 40px; }
+    section .facts .count-box p {
+      color: #122f57;
+      font-size: 14px; }
+
+@media (max-width: 991px) {
+  main .text {
+    text-align: center !important; }
+  main .text h1, main .text .h1 {
+    font-size: 2em; }
+  main .text p {
+    font-size: 1em; }
+  footer {
+    position: static !important;
+    width: auto !important; }
+  section {
+    margin-left: 20px; } }
