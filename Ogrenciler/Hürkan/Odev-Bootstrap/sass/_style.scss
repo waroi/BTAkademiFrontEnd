@@ -32,6 +32,17 @@
         background-color: $primary !important;
      }
     }
+}
+.bg-image {
 
+    background-image: url("https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#main {
+    margin-left: 300px;
 }
 
