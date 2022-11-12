@@ -144,7 +144,7 @@ footer {
 section {
     margin-left: 300px;
     
-    .about,.facts {
+    .about,.facts, .skills {
         width: 88%;
     }
     .txt h2 {
@@ -191,8 +191,21 @@ section {
             font-size: 14px;
         }
     }
-    
 
+    
+    .skills .progress .progress-bar {
+        transition: 0.4 linear;
+        transition-property: width;
+        animation: progressAnimationStrike 4s;
+
+        
+    }
+
+}
+
+@keyframes progressAnimationStrike {
+    from { width: 0 }
+    to   { width: 100% }
 }
 
 
@@ -202,7 +215,7 @@ section {
         text-align: center !important;
     }
     main .text h1 {
-        font-size: 2em ;
+        font-size: 2em;
     }
     main .text p {
         font-size: 1em ;
