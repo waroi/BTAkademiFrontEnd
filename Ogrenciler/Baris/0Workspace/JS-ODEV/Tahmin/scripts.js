@@ -7,7 +7,7 @@ function calistir() {
   alert(`
 Oyun Başlıyor...
 Başlamadan önceki toplam puanınız: ${puan}
-
+Toplam hakkın: 20
 *** 0 ile 100 arasındaki bir sayıyı tahmin etmeye çalış.
 *** Konsol ekranındaki ne yöne gitmen gereken uyarıları dikkate almayı unutma!
 `);
@@ -15,6 +15,7 @@ Başlamadan önceki toplam puanınız: ${puan}
     tahmin = Number(
       prompt(`
   Kalan tahmin hakkı: ${20 - tahminSayi}
+  Puan:${puan}
   Tahmin: `)
     );
     if (rastgeleSayi == tahmin) {
