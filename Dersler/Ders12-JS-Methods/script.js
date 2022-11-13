@@ -278,17 +278,74 @@
 //   console.log(lang, i);
 // });
 
-const users = [
-  { name: "Varol", age: 36 },
-  { name: "Hakan", age: 20 },
-  { name: "Barış", age: 25 },
-  { name: "Ersan", age: 23 },
-];
+// const kisiler = [
+//   { name: "Varol", age: 36 },
+//   { name: "Hakan", age: 20 },
+//   { name: "Barış", age: 25 },
+//   { name: "Ersan", age: 23 },
+// ];
 
-const names = users.map(function (user) {
-  return user.name; // names = ["Varol", "Hakan", "Barış", "Ersan"]
-});
+// const names = users.map(function (user) {
+//   return user.name; // names = ["Varol", "Hakan", "Barış", "Ersan"]
+// });
 
-names.map(function (a) {
-  console.log(a);
-});
+// names.map(function (a) {
+//   console.log(a);
+// });
+
+// kisiler.sort(function (f, z) {
+//   return f.age - z.age;
+// });
+
+// kisiler.map(function (user) {
+//   console.log(user.name, user.age);
+// });
+
+// let a = prompt("Bir yazı girin");
+// console.log(a);
+// console.log(typeof a);
+
+// let sayi = Number(prompt("Bir sayı giriniz."));
+// let faktoriyel = 1;
+
+// if (sayi >= 0) {
+//   for (let i = 1; i <= sayi; i++) {
+//     faktoriyel = faktoriyel * i;
+//   }
+// }
+
+// console.log(faktoriyel);
+
+// 6 bir mükemmel sayıdır = 1+2+3 = 6
+
+// let sayi = Number(prompt("Bir sayı giriniz."));
+// let toplam = 0;
+// for (i = 1; i < sayi; i++) {
+//   if (sayi % i == 0) {
+//     toplam = toplam + i; // 1+2+3
+//   }
+// }
+// if (sayi == toplam) {
+//   console.log(sayi + " Sayısı Mükemmel Sayıdır");
+// } else {
+//   console.log(sayi + " Sayısı Mükemmel Sayı Değildir");
+// }
+
+// Örneğin 10 sayısı 1, 2, 5 ve 10 sayıları ile bölünebilirken,
+// 11 sayısı sadece 1 ve 11 yani kendisi ile bölünebilir.
+// Pozitif tam sayılar kümesinde bu şekilde kendisinden ve 1'den başka böleni olmayan birçok sayı vardır.
+// Bu özellikteki sayılara “asal sayı” denir.
+
+// let sayi = Number(prompt("Bir sayı giriniz."));
+// let toplam = 0;
+
+// for (let i = 2; i < sayi; i++) {
+//   if (sayi % i == 0) {
+//     toplam++;
+//   }
+// }
+// if (toplam == 0) {
+//   console.log("Girilen sayı asaldır.");
+// } else {
+//   console.log("Girilen sayı asal değildir.");
+// }
