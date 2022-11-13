@@ -99,6 +99,7 @@
 // console.log(a);
 // console.log(b);
 
+// Tip Dönüşümleri
 // let value;
 // let a = 123;
 // a = 1.14;
