@@ -99,6 +99,9 @@
 //console.log(a);
 //console.log(b);
 
+
+//Tip dönüşümleri
+
 // let value;
 //let a = 123;
 //a = 1.14;
@@ -131,15 +134,15 @@
 // s = a * b; // Çarpma operatörü
 // s = a / b; // Bölme operatörü
 // s = a % b; // Mod operatörü
+
+// s = Math.PI;
+// s = Math.round(a / b); //Duruma göre yuvarlama
+// s = Math.ceil (a / b); // Her türlü yukarı yuvarlama
+// s = Math.floor(a / b); // her türlü aşağı yuvarlama
+// s = Math.sqrt(a); // Karesini alma
+// s = Math.pow (a, b) // a üssü b'yi alma.
+// s = Math.random() // 0-1 arasında random bir sayı alır.
+// s = Math.random() * 100 // 0-100 arasında random bir sayı alır.
+// s = Math.floor(Math.random()* 100) // 0-100 arasında random bir Tamsayı alır.
+
 // console.log(s);
-
-
-
-
-
-
-
-
-
-
-
