@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #424447, $alpha: 0.2);
+
+
+
+}
+
+.relative {
+    position: relative;
+}
+
+.title-1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #149ddd;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+header {
+    height: 100%;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: #040b14;
+    overflow-y: auto;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        & {
+            display: block !important;
+        }
+    }
+}
+
+.nav-hamburger {
+    right: 30px;
+    top: 30px;
+    z-index: 1;
+
+    @media screen and (min-width: 1200px) {
+        & {
+            display: none !important;
+        }
+    }
+
+}
+
+header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+
+}
+
+.profile h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.profile .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+
+}
+
+.nav-menu a {
+
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+.nav-menu ul {
+    list-style: none;
+}
+
+#hero {
+    background: url(https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/hero-bg.jpg);
+
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+
+    & h1 {
+
+        margin: 0 0 10px 0;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #fff;
+    }
+
+    & span {
+        color: #fff;
+        padding-bottom: 4px;
+        letter-spacing: 1px;
+        border-bottom: 3px solid #149ddd;
+        margin-bottom: 50px;
+        font-size: 26px;
+        font-family: "Poppins", sans-serif;
+
+    }
+
+
+}
+
+.marginleft {
+    margin-left: 300px;
+}
+
+.personel-info ul {
+    list-style: none;
+}
+
+#facts {
+    .fixing {
+        font-size: 44px;
+        color: #149ddd;
+        float: left;
+        line-height: 0;
+
+    }
+
+    span {
+        font-size: 48px;
+        line-height: 40px;
+        font-weight: 700;
+
+    }
+
+    & .col-lg-3 p {
+
+        margin-left: 60px;
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        color: #122f57;
+    }
+}
+
+#skills {
+    background: #f5f8fd;
+
+
+
+    .progress {
+        height: 60px;
+        display: block;
+        background: none;
+        border-radius: 0;
+    }
+
+    .progress .skill,
+    .val {
+        padding: 0;
+        margin: 0 0 6px 0;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: #050d18;
+    }
+
+    .progress-bar-wrap {
+        background: #dce8f8;
+        height: 10px;
+    }
+
+
+    .progress-bar {
+        width: 1px;
+        height: 10px;
+        transition: 0.9s;
+        background-color: #149ddd;
+    }
+}
+
+
+
+
+.resume-item {
+
+    border-left: 2px solid #1f5297;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50px;
+        left: -9px;
+        top: 0;
+        background: #fff;
+        border: 2px solid #1f5297;
+
+    }
+
+}
+
+#portfolio {
+
+    background: #F5F8FD;
+}
+
+
+
+.fixing {
+    list-style: none;
+    margin: 0 auto 35px auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 2px 15px;
+}
