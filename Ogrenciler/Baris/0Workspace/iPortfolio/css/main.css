@@ -1,3 +1,6 @@
+.nav-pills .nav-link.active i {
+  color: #149ddd; }
+
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -2908,7 +2911,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-color: #a0a0a0;
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
@@ -2970,7 +2973,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: 0.375rem;
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #149ddd; }
+  --bs-nav-pills-link-active-bg: rgba(0, 0, 0, 0); }
   .nav-pills .nav-link {
     background: none;
     border: 0;
@@ -8402,7 +8405,8 @@ textarea.form-control-lg {
   color: #f8f9fa !important; }
 
 #head {
-  width: 300px; }
+  width: 300px;
+  display: block; }
 
 .social-links a {
   font-size: 0.9rem;
@@ -8410,9 +8414,23 @@ textarea.form-control-lg {
   padding: 0.5em;
   width: 36px;
   height: 36px;
-  text-align: center; }
+  text-align: center;
+  transition: .5s all ease-in-out; }
   .social-links a:hover {
     background-color: #149ddd !important; }
+
+.contact-info i {
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 0.5em;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background-color: #e4edf9;
+  color: #149ddd; }
+  .contact-info i:hover {
+    background-color: #149ddd !important;
+    color: #f8f9fa; }
 
 #anasayfa {
   background-image: url("https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/hero-bg.jpg");
@@ -8429,6 +8447,11 @@ textarea.form-control-lg {
   font-size: 4rem;
   color: #149ddd; }
 
+#servis i {
+  font-size: 2rem;
+  color: #f8f9fa;
+  border-radius: 50%; }
+
 #ozgecmis h4, #ozgecmis .h4 {
   position: relative; }
   #ozgecmis h4::before, #ozgecmis .h4::before {
@@ -8444,6 +8467,12 @@ textarea.form-control-lg {
 
 #portfolio .btn-check:checked + .btn {
   background-color: #f8f9fa; }
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: #149ddd !important;
+  border-radius: 50%; }
 
 #btnApp:checked .filter-card {
   display: none; }
@@ -8483,6 +8512,17 @@ textarea.form-control-lg {
 
 @media (max-width: 1200px) {
   #head {
+    animation: fadeOutLeft;
+    animation-duration: 1s;
     display: none; }
   #main {
     margin-left: auto; } }
+
+.progress-bar-doldur {
+  animation: doldur forwards 1s ease-in-out; }
+
+@keyframes doldur {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }

@@ -88,13 +88,15 @@ header{
     }
 }
 
+
+
 main {
     .mainPart {
         position: relative;
     }
     img {
         width: 100%;
-        filter: brightness(70%);
+        filter: brightness(70%);  
     }
     
     .text {
@@ -104,12 +106,12 @@ main {
         color: $secondary;
 
         h1 {
-            font-size: 64px;
+            font-size: 4em;
             font-weight: 700;  
         }
 
         p {
-            font-size: 26px;
+            font-size: 2em;
     
         }
 
@@ -121,8 +123,6 @@ main {
             transition-duration: 2s;
         }
     }
-
-   
 
 }
 
@@ -140,3 +140,94 @@ footer {
    
 }
 
+
+section {
+    margin-left: 300px;
+    
+    .about,.facts, .skills {
+        width: 88%;
+    }
+    .txt h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        color: $titleColor;  
+       
+    }
+
+    .border-bottom {
+        border-color: $color3 !important;
+    }
+
+    div h3 {
+        color: $titleColor;
+        font-weight: 500;
+    }
+
+    .row ul {
+        list-style: none;
+    }
+  
+    .bi-chevron-right {
+        color:$color3;
+    }
+
+    .facts .count-box {
+        padding: 30px;
+        width: 100%;
+
+        i {
+            font-size: 40px;
+            color: $color3;
+        }
+
+        span {
+            font-size: 40px;
+        }
+
+        p {
+            color:#122f57;
+            font-size: 14px;
+        }
+    }
+
+    
+    .skills .progress .progress-bar {
+        transition: 0.4 linear;
+        transition-property: width;
+        animation: progressAnimationStrike 4s;
+
+        
+    }
+
+}
+
+@keyframes progressAnimationStrike {
+    from { width: 0 }
+    to   { width: 100% }
+}
+
+
+@media (max-width:991px) {
+    
+    main .text {
+        text-align: center !important;
+    }
+    main .text h1 {
+        font-size: 2em;
+    }
+    main .text p {
+        font-size: 1em ;
+    }
+
+    footer {
+        position: static !important;
+        width: auto !important;
+    }
+
+    section {
+        margin-left: 20px;
+    }
+
+}

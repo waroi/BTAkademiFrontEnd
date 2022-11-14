@@ -1,4 +1,5 @@
 .b-link-hover {
+  
   i {
     color: $text-muted;
   }
@@ -19,8 +20,10 @@
     }
   }
 }
+
 #head {
   width: 300px;
+  display: block;
 }
 .social-links {
   a {
@@ -30,12 +33,28 @@
     width: 36px;
     height: 36px;
     text-align: center;
+    transition: .5s all ease-in-out;
     &:hover {
       background-color: $primary !important;
     }
   }
 }
-
+.contact-info {
+  i {
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background-color: $info;
+    color: $primary;
+    &:hover {
+      background-color: $primary !important;
+      color: $light;
+    }
+  }
+}
 #anasayfa {
   background-image: url("https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/hero-bg.jpg");
   background-position: center;
@@ -49,14 +68,22 @@
   margin-left: 300px;
 }
 
-#durum {
+#durum{
   i {
     font-size: 4rem;
     color: $primary;
   }
 }
+#servis{
+  i{
+    font-size: 2rem;
+    color: $light;
+    border-radius: 50%;
+  }
+}
+
 #ozgecmis {
-  h4 {
+  h4 { 
     position: relative;
     &::before {
       content: "";
@@ -79,6 +106,12 @@
   }
 }
 
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background-color: $primary !important;
+  border-radius: 50%;
+}
 // BAKILACAK BAŞLANGIÇ
 #btnApp {
   &:checked {
@@ -135,9 +168,23 @@
 // BAKILACAK SON
 @media (max-width: 1200px) {
   #head {
+    animation: fadeOutLeft;
+    animation-duration: 1s;
     display: none;
   }
   #main {
     margin-left: auto;
+  }
+}
+.progress-bar-doldur{
+  animation: doldur forwards 1s ease-in-out; }
+
+
+@keyframes doldur {
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
   }
 }
