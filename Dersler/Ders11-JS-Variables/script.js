@@ -6,7 +6,7 @@
 // Number - Sayısal ifadeler
 // var firstNumber = 20;
 // var secondNumber = 30;
-// console.log(firstNumber + secondNumber);
+// console.log("Sayıların toplamı: ", firstNumber + secondNumber);
 
 // Stringler - Yazılı ifadeler - Karakter dizileri
 // var userName = "Hakan";
@@ -112,8 +112,8 @@
 // value = a + " bir sayıdır";
 
 // let b = "123";
-// b = "Varol";
-// b = "1.75";
+// // b = "Varol";
+// // b = "1.75";
 // value = Number(b);
 
 // Otomatik tip dönüşümü
@@ -124,23 +124,23 @@
 // console.log(typeof value);
 
 // Operatörler
-let s;
-const a = 10;
-const b = 4;
-s = a + b; // Toplama operatörü
-s = a - b; // Cıkarma operatörü
-s = a * b; // Çarpma operatörü
-s = a / b; // Bölme Operatörü
-s = a % b; // Mod Operatörü
+// let s;
+// const a = 10;
+// const b = 4;
+// s = a + b; // Toplama operatörü
+// s = a - b; // Cıkarma operatörü
+// s = a * b; // Çarpma operatörü
+// s = a / b; // Bölme Operatörü
+// s = a % b; // Mod Operatörü
 
-s = Math.PI;
-s = Math.round(a / b);
-s = Math.ceil(a / b);
-s = Math.floor(a / b);
-s = Math.sqrt(a);
-s = Math.pow(a, b);
-s = Math.sqrt(a / b);
-s = Math.floor(Math.random() * 100);
-s = (Math.random() * 100).toFixed(2);
+// s = Math.PI;
+// s = Math.round(a / b);
+// s = Math.ceil(a / b);
+// s = Math.floor(a / b);
+// s = Math.sqrt(a);
+// s = Math.pow(a, b);
+// s = Math.sqrt(a / b);
+// s = Math.floor(Math.random() * 100);
+// s = (Math.random() * 100).toFixed(2);
 
-console.log(s);
+// console.log(s);
