@@ -12,17 +12,18 @@ if (tahmin == rastgele) {
     if (tahmin > rastgele) {
       alert("Aşağı!");
       var tahmin2 = Number(prompt("Sayıyı tahmin ediniz!", "1"));
-      let tahmin = tahmin2;
+      tahmin = tahmin2;
     } else if (tahmin < rastgele) {
       alert("Yukarı!");
       var tahmin2 = Number(prompt("Sayıyı tahmin ediniz!", "1"));
-      let tahmin = tahmin2;
+      tahmin = tahmin2;
     } else if (tahmin == rastgele) {
       alert(
         "Tebrikler sayıyı doğru tahmin ettiniz! Seçilen sayı " +
           rastgele +
           " idi!"
       );
+      break;
     }
   }
 }
