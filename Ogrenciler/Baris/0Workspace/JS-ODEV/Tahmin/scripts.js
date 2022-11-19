@@ -1,6 +1,6 @@
 let tahminSayi = 0;
 let puan = 100;
-let rastgeleSayi = Math.floor(Math.random() * 100);
+let rastgeleSayi = Math.round(Math.random() * 100);
 let tahmin;
 
 function calistir() {
@@ -24,18 +24,17 @@ Toplam hakkın: 20
           Puan: ${puan}
           `);
       break;
-    } else {
-      tahminSayi++;
-      puan -= 5;
-
-      if (rastgeleSayi < tahmin) {
-        console.log("Aşağı");
-      } else if (puan == 0) {
-        alert(`Maalesef sayıyı gerekli puan içinde tahmin edemediniz
+    } else if (puan == 0) {
+      alert(`Maalesef sayıyı gerekli puan içinde tahmin edemediniz
       Tahmin sayısı: ${tahminSayi}
       Puan: ${puan}
       `);
-        break;
+      break;
+    } else {
+      tahminSayi++;
+      puan -= 5;
+      if (rastgeleSayi < tahmin) {
+        console.log("Aşağı");
       } else {
         console.log("Yukarı");
       }
