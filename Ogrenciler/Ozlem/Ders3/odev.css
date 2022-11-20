@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display:grid;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    grid-template-areas: "header" 
+                         "resim"
+                         "blog"
+                         "footer";
+
+   
+}
+.header{
+    grid-area: header;
+    background-color: rgb(245, 245, 245);
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+
+}
+.navbar{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 0,2em;
+    height: 100%;
+    width: 100%;
+
+}
+.navmenu{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0,1em;
+    height: 100%;
+    width: 50%;
+
+}
+
+.navimg{
+    height: 35%;
+    width: 35%;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+.navbar ul li:hover{
+    background-color: rgba(167, 182, 182, 0.99);
+    border-radius: 2px;
+}
+
+.navicon{
+    display: flex;
+    height: 30px;
+    width: 15%;
+    color: grey;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 25px;
+    gap: 10px;
+}
+
+
+
+
+
+
+.resim{
+    grid-area: resim;
+    height: 40vh;
+    background-color: antiquewhite;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/26/08/43/ribblehead-viaduct-2443085_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+.blog{
+    grid-area: blog;
+    background-color: blueviolet;
+}
+.footer{
+    grid-area: footer;
+    background-color: aqua;
+}
+
+
+.header, .footer, .resim, .blog{
+    border:1px solid rgb(255, 255, 255);
+
+}
+.metin{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    
+}

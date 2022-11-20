@@ -75,8 +75,14 @@
 // Array Methodları
 let value;
 const numbers = [45, 78, 34, 79, 23, 5];
+<<<<<<< HEAD
 const langs = ["Python", "C++", "Javascript"];
 value = numbers.length;
+=======
+// const langs = ["Python", "C++", "Javascript"];
+
+// value = numbers.length;
+>>>>>>> 6b957fd552f03658414c959537d8ff396d69e6e3
 // value = numbers[3];
 // value = numbers[numbers.length - 1];
 // // numbers.push(200);
@@ -88,18 +94,27 @@ value = numbers.length;
 
 // value = numbers.sort();
 // value = numbers.sort(function (x, y) {
-//   return x - y; // Küçükten Büyüğe Sıralama
+//   return x - y; // Küçükten Büyüğe Sıralama // true / false
 // });
 
-// value = numbers.sort(function (x, y) {
-//   return y - x; // Byüykten Küçüğe Sıralama
-// });
+// // value = numbers.sort(function (x, y) {
+// //   return y - x; // Byüykten Küçüğe Sıralama
+// // });
 
-// value = numbers.indexOf(25);
-// value = numbers.includes(7);
+// // value = numbers.indexOf(25);
+// // value = numbers.includes(7);
 
 // console.log(value);
 // console.log(typeof value);
+
+// Fonksiyondaki return
+
+// function kare(a) {
+//   console.log(a * a);
+//   return a * a;
+// }
+
+// console.log(kare(2) + 1);
 
 // Object Props.
 
@@ -269,9 +284,9 @@ value = numbers.length;
 
 // const langs = ["Python", "C++", "Javascript", "Go"];
 
-// // for (let i = 0; i < langs.length; i++) {
-// //   console.log(langs[i]);
-// // }
+// for (let a = 0; a < langs.length; a++) {
+//   console.log(langs[a]);
+// }
 
 // langs.forEach(function (lang, i) {
 //   console.log(lang, i);
@@ -335,16 +350,16 @@ value = numbers.length;
 // Pozitif tam sayılar kümesinde bu şekilde kendisinden ve 1'den başka böleni olmayan birçok sayı vardır.
 // Bu özellikteki sayılara “asal sayı” denir.
 
-// let sayi = Number(prompt("Bir sayı giriniz."));
-// let toplam = 0;
+let sayi = Number(prompt("Bir sayı giriniz."));
+let toplam = 0;
 
-// for (let i = 2; i < sayi; i++) {
-//   if (sayi % i == 0) {
-//     toplam++;
-//   }
-// }
-// if (toplam == 0) {
-//   console.log("Girilen sayı asaldır.");
-// } else {
-//   console.log("Girilen sayı asal değildir.");
-// }
+for (let i = 2; i < sayi; i++) {
+  if (sayi % i == 0) {
+    toplam++;
+  }
+}
+if (toplam == 0) {
+  console.log("Girilen sayı asaldır.");
+} else {
+  console.log("Girilen sayı asal değildir.");
+}
