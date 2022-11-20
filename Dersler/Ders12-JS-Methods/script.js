@@ -75,9 +75,14 @@
 // Array Methodları
 let value;
 const numbers = [45, 78, 34, 79, 23, 5];
+<<<<<<< HEAD
+const langs = ["Python", "C++", "Javascript"];
+value = numbers.length;
+=======
 // const langs = ["Python", "C++", "Javascript"];
 
 // value = numbers.length;
+>>>>>>> 6b957fd552f03658414c959537d8ff396d69e6e3
 // value = numbers[3];
 // value = numbers[numbers.length - 1];
 // // numbers.push(200);
