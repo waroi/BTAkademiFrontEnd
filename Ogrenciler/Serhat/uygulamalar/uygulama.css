@@ -1,0 +1,71 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+
+      }
+      .item1{
+        grid-column: 1/4;
+      }
+    .item4{
+        grid-column: 1 / 4;
+    }
+    .item5{
+        grid-column: 1 / 4;
+    }
+    .icon1{
+        font-size: 50px;
+        margin-left: 50px;
+    }
+    .icon2{
+        font-size: 30px;
+        margin-left:50%;
+        margin-top: 20px;
+        
+    }
+    .item2{
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        font-style:italic;
+                 }
+    .Home{
+        color: white;
+        background-color: orange;
+         }
+    .yazi{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-left: 50px;    }
+        .img1{
+            width: 140%;
+        }
+        .Sports{
+            background-color: #70c770;
+            width: 60px;
+            border-radius: 10px;
+            height: 25px;
+            color: white;
+            font-size: 21px;
+
+        }
+        .buton{
+            width: fit-content;
+            letter-spacing: 1px;
+            outline: none;
+            padding: 8px 20px;
+            color: white;
+            background-color: orange;
+            text-decoration: none;
+            transition: all 0.3s;
+            border-radius: 6px;
+
+        }
+        .foto{
+            position:relative!important;
+            
+        }
+        .container{
+            background-size: cover !important;
+        }
