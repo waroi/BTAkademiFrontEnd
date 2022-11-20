@@ -73,11 +73,10 @@
 // console.log(typeof value);
 
 // Array Methodları
-// let value;
-// const numbers = [45, 78, 34, 79, 23, 5];
-// const langs = ["Python", "C++", "Javascript"];
-
-// value = numbers.length;
+let value;
+const numbers = [45, 78, 34, 79, 23, 5];
+const langs = ["Python", "C++", "Javascript"];
+value = numbers.length;
 // value = numbers[3];
 // value = numbers[numbers.length - 1];
 // // numbers.push(200);
