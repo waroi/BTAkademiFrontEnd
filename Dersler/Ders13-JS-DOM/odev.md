@@ -1,0 +1,1 @@
+- bootstrap'deki tab yapısını kullanarak farklı paragrafları gösterme.

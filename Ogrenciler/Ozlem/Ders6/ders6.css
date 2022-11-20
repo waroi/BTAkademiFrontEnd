@@ -5,7 +5,7 @@ body {
 .container {
     background-color: #898c8e;
     padding: 20px;
-    display:: grid;
+    display: grid;
  /* grid-template-columns: 200px 100px 150px 1fr; */
   /* grid-template-columns: 1fr 3fr 1fr 1fr; */
   /* grid-template-columns: 1fr 3fr;
@@ -24,7 +24,7 @@ body {
 .item:first-child{
     align-self:flex-start;
 }
-}
+
 .item {
     background-color: #f7786b;
     padding: 20px;
