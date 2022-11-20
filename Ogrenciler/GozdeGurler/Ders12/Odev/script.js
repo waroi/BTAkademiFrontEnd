@@ -3,8 +3,8 @@
 
 let islem = prompt("Yapmak istediğiniz işlemi seçiniz.(+, -, *, /)")
 
-let sayi1 = prompt("İşlem yapmak istediğiniz ilk sayıyı giriniz.")
-let sayi2 = prompt("İşlem yapmak istediğiniz ikinci sayıyı giriniz.")
+let sayi1 = parseInt(prompt("İşlem yapmak istediğiniz ilk sayıyı giriniz."))
+let sayi2 = parseInt(prompt("İşlem yapmak istediğiniz ikinci sayıyı giriniz."))
 
 
 switch (islem) {
