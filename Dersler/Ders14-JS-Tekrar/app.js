@@ -223,6 +223,32 @@ ekle.appendChild(ekleText);
 value.appendChild(ekle);
 
 value = document.getElementById("inner");
-value.innerHTML = `<a class="btn btn-primary m-3" href="https://www.hepsiburada.com/" target="_blank">Kaydet</a>`;
+value.innerHTML = `<button class="btn btn-primary m-3" id="kaydet">Kaydet</button>`;
 
 console.log(value);
+
+// DOM Eventleri
+
+const kaydetButton = document.getElementById("kaydet");
+
+// kaydetButton.addEventListener("click", function () {
+//   console.log("Çalıştı");
+// });
+
+kaydetButton.addEventListener("click", deneme); // submit, focus, keypress
+
+function deneme() {
+  console.log(document);
+}
+
+const textInput = document.getElementById("text-input");
+textInput.addEventListener("keyup", konsol);
+textInput.addEventListener("focus", clearValue);
+
+function konsol() {
+  console.log(textInput.value);
+}
+
+function clearValue() {
+  textInput.value = "";
+}
