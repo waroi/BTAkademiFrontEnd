@@ -401,18 +401,28 @@ user();*/
 
 // console.log(value);
 
-const textinput = document.getElementById("text-input");
-textinput.addEventListener("keyup", konsol);
-textinput.addEventListener("focus", clearvalue);
-function konsol() {
+// const textinput = document.getElementById("text-input");
+// textinput.addEventListener("keyup", konsol);
+// textinput.addEventListener("focus", clearvalue);
+// function konsol() {
 
-  console.log(textinput.value);
-}
+//   console.log(textinput.value);
+// }
 
-function clearvalue() {
+// function clearvalue() {
 
-  textinput.value = "";
-}
+//   textinput.value = "";
+// }
+
+const todoInput = document.getElementById("fname");
+const submit = document.getElementById('submit');
+
+addButton.addEventListener("submit", function () {
+ 
+  
+
+
+)
 
 
 
