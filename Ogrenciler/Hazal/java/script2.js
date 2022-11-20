@@ -1,10 +1,10 @@
-const ekle = document.createElement ("a");
-ekle.className = "btn btn-section";
-ekle.href = "www.google.com";
-ekle.target="_blank";
-const ekleText = document.createTextNode("Ekle");
-ekle.appendChild(ekleText);
-value.appendChild(ekle);
+const button = document.createElement ("a");
+button.className = "btn btn-section";
+button.href = "www.google.com";
+button.target="_blank";
+const buttonText = document.createTextNode("Ekle");
+button.appendChild(buttonText);
+value.appendChild(button);
 console.log(value);
 
 
