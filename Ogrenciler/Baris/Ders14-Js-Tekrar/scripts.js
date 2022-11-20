@@ -46,7 +46,29 @@ value.appendChild(ekle);
 
 value = document.getElementById("inner");
 value.innerHTML = `
-<a class="btn btn-primary m-3" target="_blank" href="https://udemy.com">Kaydet</a>
+<a class="btn btn-primary m-3" id="kaydet" href="#">Kaydet</a>
 `;
 
 console.log(value);
+
+//DOM eventleri
+
+const kaydetBtn = document.getElementById("kaydet");
+// kaydetBtn.addEventListener("click", function () {
+//   console.log("çalıştı");
+// });
+
+kaydetBtn.addEventListener("click", fncKaydet); //submit,focus,keypress
+function fncKaydet() {
+  console.log(document);
+}
+
+const textInput = document.getElementById("text-input");
+textInput.addEventListener("keyup", konsol);
+textInput.addEventListener("focus", clearValue);
+function konsol() {
+  console.log(textInput.value);
+}
+function clearValue() {
+  textInput.value = "";
+}

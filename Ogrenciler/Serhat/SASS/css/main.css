@@ -1,0 +1,175 @@
+.container .birinci {
+  display: flex;
+  background-color: rgba(17, 16, 16, 0.8);
+  flex-direction: row;
+  justify-content: space-around; }
+  .container .birinci .solbaslik .c {
+    color: orange; }
+  .container .birinci .solbaslik .t {
+    color: #f3e7e7; }
+  .container .birinci .menu {
+    color: #f3e7e7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    gap: 50px; }
+  .container .birinci .button {
+    display: flex;
+    align-items: center;
+    border: 1px solid orange;
+    border-radius: 10px;
+    height: 60px;
+    width: 200px; }
+    .container .birinci .button .Donate {
+      color: orange;
+      font-size: 30px; }
+
+.container .resim {
+  background-image: url("https://technext.github.io/chariteam/img/carousel-1.jpg");
+  height: 800px; }
+  .container .resim .overlay {
+    display: flex;
+    background-color: rgba(17, 16, 16, 0.8);
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .container .resim .overlay h2 {
+      color: #f3e7e7;
+      font-size: 50px; }
+    .container .resim .overlay p {
+      color: rgba(170, 159, 159, 0.8);
+      font-size: 30px; }
+    .container .resim .overlay .button2 .learnmore {
+      color: #f3e7e7;
+      background-color: orange;
+      font-size: 20px;
+      border: 1px solid orange;
+      border-radius: 10px; }
+
+.container .ikinci {
+  display: flex;
+  flex-direction: row; }
+  .container .ikinci .resim2 {
+    position: relative;
+    margin-top: 50px;
+    margin-right: 80px;
+    margin-left: 120px; }
+    .container .ikinci .resim2 .small {
+      margin-bottom: 500px;
+      margin-right: 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      border: 10px solid white; }
+    .container .ikinci .resim2 .big {
+      width: 600px;
+      height: 600px;
+      margin-top: 60px;
+      margin-right: 80px; }
+  .container .ikinci .metin {
+    background-color: #e9e3e3;
+    height: 100px;
+    width: 600px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-bottom: 5px solid orange;
+    border-radius: 5px; }
+  .container .ikinci .yazi {
+    margin-top: 50px; }
+    .container .ikinci .yazi .Buttoniki .button {
+      border-radius: 20px;
+      font-size: small;
+      color: orange;
+      background-color: orange;
+      color: white; }
+
+.ucuncu .uc-container {
+  background-color: #e4e4e4;
+  text-align: center !important; }
+  .ucuncu .uc-container .uc-yazi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 100px; }
+    .ucuncu .uc-container .uc-yazi p {
+      font-size: 50px;
+      text-align: center;
+      justify-content: center; }
+    .ucuncu .uc-container .uc-yazi .Feature {
+      color: orange;
+      background-color: #FFF0E6 !important;
+      border-radius: 20px;
+      width: 160px;
+      height: 30px;
+      padding-left: 30px;
+      padding-top: 10px;
+      font-size: 20px; }
+  .ucuncu .uc-container .uc-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; }
+    .ucuncu .uc-container .uc-box .uc-first {
+      background-color: #fff;
+      width: 600px;
+      height: 220px;
+      border-top: 10px solid orange;
+      border-radius: 10px; }
+    .ucuncu .uc-container .uc-box .uc-second {
+      background-color: #fff;
+      width: 600px;
+      height: 220px;
+      border-top: 10px solid orange;
+      border-radius: 10px; }
+    .ucuncu .uc-container .uc-box .uc-third {
+      background-color: #fff;
+      width: 600px;
+      height: 220px;
+      border-top: 10px solid orange;
+      border-radius: 10px; }
+    .ucuncu .uc-container .uc-box .EC {
+      color: white;
+      background-color: orange;
+      font-size: 20px;
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-top: 10px;
+      width: 110px;
+      height: 40px;
+      margin-top: 0px;
+      margin-left: 30%; }
+    .ucuncu .uc-container .uc-box .PW {
+      color: white;
+      background-color: orange;
+      font-size: 20px;
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-top: 10px;
+      width: 110px;
+      height: 40px;
+      margin-top: 0px;
+      margin-left: 30%; }
+    .ucuncu .uc-container .uc-box .HL {
+      color: white;
+      background-color: orange;
+      font-size: 20px;
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-top: 10px;
+      width: 120px;
+      height: 40px;
+      margin-top: 0px;
+      margin-left: 30%; }
+    .ucuncu .uc-container .uc-box h4 {
+      font-size: 20px;
+      color: black;
+      font-family: I "Arial Narrow Bold"; }
+    .ucuncu .uc-container .uc-box p {
+      text-align: start !important;
+      font-size: 20px; }

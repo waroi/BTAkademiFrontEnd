@@ -3,8 +3,12 @@ paragrafs.forEach(function (p) {
   p.className = "visually-hidden";
 });
 
-let pLinks = [parg1, parg2, parg3, parg4];
-pLinks.forEach(function (link) {});
+let pLinks = document.querySelectorAll(".nav-link");
+pLinks.forEach(function (link) {
+  let showParg = [showParg1, showParg2, showParg3, showParg4, showAll];
+
+  link.addEventListener("click");
+});
 // let p1Link = document.querySelector("#parg1");
 // p1Link.addEventListener("click", showParg1);
 

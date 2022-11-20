@@ -365,24 +365,65 @@ user();*/
 
 // last ders tekrar //
 
-let value;
-value = document.body;
+// let value;
+// value = document.body;
 
 
 
-//id ye gore
+// //id ye gore
 
-value = document.getElementById("title");
-value.style.color = "red";
+// value = document.getElementById("title");
+// value.style.color = "red";
 
-value = document.getElementsByClassName("text")
+// value = document.getElementsByClassName("text")
 
-for (let i = 0; i < value.length; i++) {
-  value[i].style.color = "blue";
-}
-console.log(value);
+// for (let i = 0; i < value.length; i++) {
+//   value[i].style.color = "blue";
+// }
+// console.log(value);
 
-value = document.getElementsByTagName("p");
+
+
+
+
+// const button = document.createElement("a");
+// button.id = "clear-todos";
+// button.className = "btn btn-danger ms-3";
+// button.href = "https://www.google.com/";
+// button.target = "_blank";
+// const text = document.createTextNode("Temizle");
+// button.appendChild(text);
+// document.body.appendChild(button);
+
+
+// value = document.getElementById("inner");
+// value.innerHTML = `<a class="btn btn-primary m-3" href="https://www.hepsiburada.com/" target="_blank">Kaydet</a>`;
+
+// console.log(value);
+
+// const textinput = document.getElementById("text-input");
+// textinput.addEventListener("keyup", konsol);
+// textinput.addEventListener("focus", clearvalue);
+// function konsol() {
+
+//   console.log(textinput.value);
+// }
+
+// function clearvalue() {
+
+//   textinput.value = "";
+// }
+
+const todoInput = document.getElementById("fname");
+const submit = document.getElementById('submit');
+
+addButton.addEventListener("submit", function () {
+ 
+  
+
+
+)
+
 
 
 
