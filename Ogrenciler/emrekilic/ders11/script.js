@@ -414,21 +414,25 @@ user();*/
 //   textinput.value = "";
 // }
 
-const todoInput = document.getElementById("fname");
-const submit = document.getElementById('submit');
+const todoInput = document.getElementById("myInput");
+const addButton = document.getElementById('addButton');
 
-addButton.addEventListener("submit", function () {
- 
-  
-
-
-)
-
-
+addButton.addEventListener("click", function () {
+  document.getElementById('myUL').innerHTML = `
+    ${document.getElementById('myUL').innerHTML}
+    <li>${todoInput.value}</li>
+  `;
+});
 
 
 
 
+
+
+const ekle = document.createElement("li");
+const text = document.createTextNode("Temizle");
+ekle.appendChild(text);
+document.body.appendChild(ekle);
 
 
 
