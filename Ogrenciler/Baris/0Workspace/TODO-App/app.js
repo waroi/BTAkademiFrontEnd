@@ -4,6 +4,8 @@ const txtSearch = document.getElementById("txtToDoSearch");
 const lstToDo = document.getElementById("lstToDo");
 const lstCard = document.getElementById("cardList");
 const btnClear = document.getElementById("btnClear");
+const tarih = new Date();
+const saat = `${tarih.getHours()}:${tarih.getMinutes()}`;
 
 eventListeners();
 function eventListeners() {
@@ -19,6 +21,7 @@ function addToDo(e) {
     console.log("Lütfen yapılacak bir şey girin!");
   } else {
     addToDoToUI(newToDo);
+    showInfoDialog();
   }
   e.preventDefault();
 }
@@ -47,6 +50,7 @@ function clearAllList() {
   while (lstToDo.firstElementChild != null) {
     lstToDo.removeChild(lstToDo.firstElementChild);
   }
+  localStorage.clear();
 }
 
 function searchToDo() {
@@ -60,4 +64,16 @@ function searchToDo() {
       li[i].className = "d-none";
     }
   }
+}
+
+function showInfoDialog() {
+  const dialogInfo = document.getElementById("dialogInformation");
+  const dialogTitle = document.getElementById("infoHead");
+  const dialogTime = document.getElementById("infoTime");
+  const dialogBody = document.querySelector(".toast-body");
+  dialogTitle.innerText = "Başarılı";
+  dialogTime.innerText = saat;
+  dialogBody.innerText = "Todo başaryıla eklendi!";
+  const toast = new bootstrap.Toast(dialogInfo);
+  toast.show();
 }
