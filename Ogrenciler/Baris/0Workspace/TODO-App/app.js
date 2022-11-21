@@ -33,7 +33,7 @@ function addToDoToUI(newToDo) {
 
   deleteItem.href = "#";
   deleteItem.innerHTML = "<i class='fa-solid fa-trash-can'>";
-  deleteItem.className = "delete-item";
+  deleteItem.className = "delete-item text-danger";
   listItem.className = "list-group-item d-flex justify-content-between";
   listItem.appendChild(document.createTextNode(newToDo));
   listItem.appendChild(deleteItem);
@@ -44,6 +44,7 @@ function addToDoToUI(newToDo) {
 function deleteToDo(e) {
   if (e.target.className === "fa-solid fa-trash-can") {
     e.target.parentElement.parentElement.remove();
+    showInfoDialog("Başarılı", "Silindi!");
   }
 }
 
