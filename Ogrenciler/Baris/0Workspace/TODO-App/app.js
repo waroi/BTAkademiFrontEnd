@@ -18,10 +18,11 @@ function eventListeners() {
 function addToDo(e) {
   const newToDo = txtTodo.value;
   if (newToDo === "") {
+    showInfoDialog("HATA", "Alanlar boş bırakılamaz");
     console.log("Lütfen yapılacak bir şey girin!");
   } else {
     addToDoToUI(newToDo);
-    showInfoDialog();
+    showInfoDialog("Başarılı", "Todo başarıyla eklendi.");
   }
   e.preventDefault();
 }
@@ -66,14 +67,14 @@ function searchToDo() {
   }
 }
 
-function showInfoDialog() {
+function showInfoDialog(title, body) {
   const dialogInfo = document.getElementById("dialogInformation");
   const dialogTitle = document.getElementById("infoHead");
   const dialogTime = document.getElementById("infoTime");
   const dialogBody = document.querySelector(".toast-body");
-  dialogTitle.innerText = "Başarılı";
+  dialogTitle.innerText = title;
   dialogTime.innerText = saat;
-  dialogBody.innerText = "Todo başaryıla eklendi!";
+  dialogBody.innerText = body;
   const toast = new bootstrap.Toast(dialogInfo);
   toast.show();
 }
