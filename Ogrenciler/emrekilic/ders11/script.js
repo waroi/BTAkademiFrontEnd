@@ -414,15 +414,26 @@ user();*/
 //   textinput.value = "";
 // }
 
-const todoInput = document.getElementById("fname");
-const submit = document.getElementById('submit');
+const form = document.getElementById("todo-form");
+const todoInput = document.getElementById("todo");
+const todoList = document.querySelector("#myUL");
 
-addButton.addEventListener("submit", function () {
+form.addEventListener("submit", function (e) {
+  console.log(todoInput.value)
+  const ekle = document.createElement("li");
+const text = document.createTextNode(todoInput.value);
+ekle.appendChild(text);
+document.body.appendChild(ekle);
+  e.preventDefault();
+});
+
+
+
  
   
 
 
-)
+
 
 
 
