@@ -87,7 +87,7 @@ function clearValue() {
 //     listItems.forEach(function(listItem){
 //       const text = listItem.textContent.toLowerCase();
 //       if (text.indexOf(filterValue) === -1){
-//         // Bulamadı
+
 //         listItem.setAttribute("style","display:none !important");
 //       }
 //       else {

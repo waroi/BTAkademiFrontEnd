@@ -3,12 +3,14 @@ const todoInput = document.getElementById("todo");
 const todoList = document.querySelector(".list-group");
 const secondCardBody = document.querySelectorAll(".card-body")[1];
 const clearButton = document.getElementById("clear-todos");
+const filter = document.getElementById("filter");
 
 eventListeners();
 function eventListeners() {
   form.addEventListener("submit", addTodo);
   secondCardBody.addEventListener("click", deleteTodo);
   clearButton.addEventListener("click", clearAllTodos);
+  filter.addEventListener("keyup", filterTodo);
 }
 function clearAllTodos() {
   // todoList.innerHTML = ""; // Yavaş çalışıyor
