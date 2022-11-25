@@ -3,12 +3,14 @@ const todoInput = document.getElementById("todo");
 const todoList = document.querySelector(".list-group");
 const secondCardBody = document.querySelectorAll(".card-body")[1];
 const clearButton = document.getElementById("clear-todos");
+const filter = document.getElementById("filter");
 
 eventListeners();
 function eventListeners() {
   form.addEventListener("submit", addTodo);
   secondCardBody.addEventListener("click", deleteTodo);
   clearButton.addEventListener("click", clearAllTodos);
+  filter.addEventListener("keyup", filterTodo);
 }
 function clearAllTodos() {
   // todoList.innerHTML = ""; // Yavaş çalışıyor
@@ -46,4 +48,18 @@ function addTodoToUI(newTodo) {
   listItem.appendChild(link);
   todoList.appendChild(listItem);
   todoInput.value = "";
+}
+
+function filterTodo(e) {
+  const filterValue = e.target.value.toLowerCase();
+  const listItems = document.querySelectorAll(".list-group-item");
+
+  listItems.forEach(function (listItem) {
+    const text = listItem.textContent.toLowerCase();
+    if (text.indexOf(filterValue) === -1) {
+      listItem.setAttribute("style", "display:none !important");
+    } else {
+      listItem.setAttribute("style", "display:block");
+    }
+  });
 }
