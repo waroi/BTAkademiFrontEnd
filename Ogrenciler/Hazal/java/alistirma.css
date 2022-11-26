@@ -1,0 +1,32 @@
+body{
+    height: 100%;
+    background: #155823;
+    margin-left: 20px;
+}
+
+.container{
+    width: 40%;
+    position: relative;
+    top: auto;
+    background: rgba(233, 225, 225, 0);
+    border: 20px;
+    border-radius: 50px;
+    
+}
+#myInput input{
+    position: relative;
+    padding: 30px 20px;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+}
+.container2 {
+    position: relative;
+    border-radius: 10px;
+    background: wheat;
+    width: 45%;
+    height: 25%;
+    padding: 12px;
+    list-style-type: none;
+    margin-top: 12px;
+   
+}

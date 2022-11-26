@@ -414,6 +414,28 @@ user();*/
 //   textinput.value = "";
 // }
 
+<<<<<<< HEAD
+const form = document.getElementById("todo-form");
+const todoInput = document.getElementById("todo");
+const todoList = document.querySelector("#myUL");
+
+form.addEventListener("submit", function (e) {
+  console.log(todoInput.value)
+  const ekle = document.createElement("li");
+const text = document.createTextNode(todoInput.value);
+ekle.appendChild(text);
+document.body.appendChild(ekle);
+  e.preventDefault();
+});
+
+
+
+ 
+  
+
+
+
+=======
 const todoInput = document.getElementById("myInput");
 const addButton = document.getElementById('addButton');
 
@@ -423,6 +445,7 @@ addButton.addEventListener("click", function () {
     <li>${todoInput.value}</li>
   `;
 });
+>>>>>>> f92d5485511531e0e8141d5f290df3d80f0cf3bf
 
 
 

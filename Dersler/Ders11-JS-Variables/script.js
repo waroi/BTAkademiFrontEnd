@@ -89,6 +89,12 @@
 // deneme();
 // console.log(a);
 
+// if (true) {
+//   console.log("dflksjf");
+//   var a = 10;
+// }
+// var a = 10;
+// console.log(a);
 // {
 //   let a = 10; // Blog Scope
 //   const b = 20; // Blog Scope
@@ -112,14 +118,14 @@
 // value = a + " bir sayıdır";
 
 // let b = "123";
-// // b = "Varol";
-// // b = "1.75";
+// b = "Varol";
+// // // b = "1.75";
 // value = Number(b);
 
-// Otomatik tip dönüşümü
-// value = 34 + "6"; // 346
-// value = 34 - "6"; // 28
-// value = 34 + Number("6"); // 40
+// // Otomatik tip dönüşümü
+// // value = 34 + "6"; // 346
+// // value = 34 - "6"; // 28
+// // value = 34 + Number("6"); // 40
 // console.log(value);
 // console.log(typeof value);
 
