@@ -74,3 +74,5 @@ const arr = [1, 2, 3, 4];
 localStorage.setItem("array", JSON.stringify(arr));
 const gelenArray = JSON.parse(localStorage.getItem("array"));
 console.log(gelenArray);
+
+document.addEventListener("DOMContentLoaded", loadAllTodos);
