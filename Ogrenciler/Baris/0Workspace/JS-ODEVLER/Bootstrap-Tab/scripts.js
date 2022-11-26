@@ -5,9 +5,11 @@ paragrafs.forEach(function (p) {
 
 let pLinks = document.querySelectorAll(".nav-link");
 pLinks.forEach(function (link) {
-  let showParg = [showParg1, showParg2, showParg3, showParg4, showAll];
-
-  link.addEventListener("click");
+  // let showPargs = [showParg1, showParg2, showParg3, showParg4, showAll];
+  link.addEventListener("click", showParg);
+  function showParg(e) {
+    e.target.className = "nav-link active";
+  }
 });
 // let p1Link = document.querySelector("#parg1");
 // p1Link.addEventListener("click", showParg1);
@@ -25,63 +27,63 @@ pLinks.forEach(function (link) {
 // pAllLink.addEventListener("click", showAll);
 
 function showParg1() {
-  p1Link.className = "nav-link active";
+  // p1Link.className = "nav-link active";
   document.getElementById("p1").className = "";
-  p2Link.className = "nav-link";
+  // p2Link.className = "nav-link";
   document.getElementById("p2").className = "visually-hidden";
-  p3Link.className = "nav-link";
+  // p3Link.className = "nav-link";
   document.getElementById("p3").className = "visually-hidden";
-  p4Link.className = "nav-link";
+  // p4Link.className = "nav-link";
   document.getElementById("p4").className = "visually-hidden";
-  pAllLink.className = "nav-link";
+  // pAllLink.className = "nav-link";
 }
 
 function showParg2() {
-  p1Link.className = "nav-link";
+  // p1Link.className = "nav-link";
   document.getElementById("p1").className = "visually-hidden";
-  p2Link.className = "nav-link active";
+  // p2Link.className = "nav-link active";
   document.getElementById("p2").className = "";
-  p3Link.className = "nav-link";
+  // p3Link.className = "nav-link";
   document.getElementById("p3").className = "visually-hidden";
-  p4Link.className = "nav-link";
+  // p4Link.className = "nav-link";
   document.getElementById("p4").className = "visually-hidden";
-  pAllLink.className = "nav-link";
+  // pAllLink.className = "nav-link";
 }
 
 function showParg3() {
-  p1Link.className = "nav-link";
+  // p1Link.className = "nav-link";
   document.getElementById("p1").className = "visually-hidden";
-  p2Link.className = "nav-link";
+  // p2Link.className = "nav-link";
   document.getElementById("p2").className = "visually-hidden";
-  p3Link.className = "nav-link active";
+  // p3Link.className = "nav-link active";
   document.getElementById("p3").className = "";
-  p4Link.className = "nav-link";
+  // p4Link.className = "nav-link";
   document.getElementById("p4").className = "visually-hidden";
-  pAllLink.className = "nav-link";
+  // pAllLink.className = "nav-link";
 }
 
 function showParg4() {
-  p1Link.className = "nav-link";
+  // p1Link.className = "nav-link";
   document.getElementById("p1").className = "visually-hidden";
-  p2Link.className = "nav-link";
+  // p2Link.className = "nav-link";
   document.getElementById("p2").className = "visually-hidden";
-  p3Link.className = "nav-link";
+  // p3Link.className = "nav-link";
   document.getElementById("p3").className = "visually-hidden";
-  p4Link.className = "nav-link active";
+  // p4Link.className = "nav-link active";
   document.getElementById("p4").className = "";
-  pAllLink.className = "nav-link";
+  // pAllLink.className = "nav-link";
 }
 
 function showAll() {
-  p1Link.className = "nav-link";
+  // p1Link.className = "nav-link";
   document.getElementById("p1").className = "";
-  p2Link.className = "nav-link";
+  // p2Link.className = "nav-link";
   document.getElementById("p2").className = "";
-  p3Link.className = "nav-link";
+  // p3Link.className = "nav-link";
   document.getElementById("p3").className = "";
-  p4Link.className = "nav-link";
+  // p4Link.className = "nav-link";
   document.getElementById("p4").className = "";
-  pAllLink.className = "nav-link active";
+  // pAllLink.className = "nav-link active";
 }
 
 /*

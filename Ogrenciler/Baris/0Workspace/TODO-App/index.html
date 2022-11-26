@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Uygulaması</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="card text-bg-light mb-3">
+            <div class="card-header text-center">To Do Uygulaması</div>
+            <div class="card-body">
+                <form id="frmToDo">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtToDo" placeholder="Yapılacak bir şey ekleyin">
+                        <label for="txtToDo">Yapılacak bir şey ekleyin</label>
+                    </div>
+                    <button class="btn btn-primary"><i class="fa-solid fa-circle-plus"></i> Ekle</button>
+                </form>
+            </div>
+        </div>
+        <div class="card text-bg-light mb-3">
+            <div class="card-header text-center">Yapılacaklar Listesi</div>
+            <div id="cardList" class="card-body">
+                <form id="frmSearch">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtToDoSearch" placeholder="Ara">
+                        <label for="txtToDoSearch">Ara</label>
+                    </div>
+                </form>
+                <button id="btnClear" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Tümünü Sil</button>
+                <ul id="lstToDo" class="list-group mt-3">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+        <div id="dialogInformation" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i id="infoLogo" class="fa-solid fa-square-check me-2 text-success"></i>
+                <strong id="infoHead" class="me-auto"></strong>
+                <small id="infoTime"></small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
