@@ -3,13 +3,30 @@ const todoInput = document.getElementById("todo");
 const todoList = document.querySelector(".list-group");
 const secondCardBody = document.querySelectorAll(".card-body")[1];
 const clearButton = document.getElementById("clear-todos");
+const filter = document.getElementById("filter");
 
 eventListeners();
 function eventListeners() {
   form.addEventListener("submit", addTodo);
   secondCardBody.addEventListener("click", deleteTodo);
   clearButton.addEventListener("click", clearAllTodos);
+  filter.addEventListener("keyup", filterTodos);
 }
+
+function filterTodos(e) {
+  const filterText = e.target.value.toLowerCase();
+  const listItems = document.querySelectorAll(".list-group-item");
+  // console.log(listItems);
+  listItems.forEach(function (listItem) {
+    const text = listItem.textContent.toLocaleLowerCase();
+    if (text.indexOf(filterText) !== -1) {
+      listItem.className = "list-group-item d-flex justify-content-between"; //TODO: burayı düzenle
+    } else {
+      listItem.className = "d-none";
+    }
+  });
+}
+
 function clearAllTodos() {
   // todoList.innerHTML = ""; // Yavaş çalışıyor
   while (todoList.firstElementChild != null) {
@@ -47,3 +64,13 @@ function addTodoToUI(newTodo) {
   todoList.appendChild(listItem);
   todoInput.value = "";
 }
+
+// Local Storage
+localStorage.setItem("DenemeKey", "DenemeValue");
+const lst = localStorage.getItem("DenemeKey");
+console.log(lst);
+
+const arr = [1, 2, 3, 4];
+localStorage.setItem("array", JSON.stringify(arr));
+const gelenArray = JSON.parse(localStorage.getItem("array"));
+console.log(gelenArray);
