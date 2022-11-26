@@ -10,13 +10,11 @@ function eventListeners() {
   form.addEventListener("submit", addTodo);
   secondCardBody.addEventListener("click", deleteTodo);
   clearButton.addEventListener("click", clearAllTodos);
-  filter.addEventListener("keyup", filterTodo);
+  filter.addEventListener("keyup",filterTodo);
 }
-
 function clearAllTodos() {
   // todoList.innerHTML = ""; // Yavaş çalışıyor
   while (todoList.firstElementChild != null) {
-    console.log(todoList.firstElementChild);
     todoList.removeChild(todoList.firstElementChild);
   }
 }
@@ -37,8 +35,9 @@ function addTodo(e) {
     console.log("Todo Başarıyla Eklendi");
   }
   e.preventDefault();
-  todoInput.value = '';
 }
+
+
 
 function addTodoToUI(newTodo) {
   const listItem = document.createElement("li");
@@ -50,21 +49,22 @@ function addTodoToUI(newTodo) {
   listItem.appendChild(document.createTextNode(newTodo));
   listItem.appendChild(link);
   todoList.appendChild(listItem);
-
+  todoInput.value = "";
 }
 
-function filterTodo(e) {
+function filterTodo(e){
+  debugger;
   const filterValue = e.target.value.toLowerCase();
   const listItems = document.querySelectorAll(".list-group-item");
   console.log(listItems);
-  listItems.forEach(function (listItem) {
+  listItems.forEach(function(listItem){
     const text = listItem.textContent.toLowerCase();
-    if (text.indexOf(filterValue) === -1) {
+    if (text.indexOf(filterValue) === -1){
       // Bulamadı
-      listItem.setAttribute("style", "display:none !important");
+      listItem.setAttribute("style","display:none !important");
     }
     else {
-      listItem.setAttribute("style", "display:block");
+      listItem.setAttribute("style","display:block");
     }
   })
 }
