@@ -68,3 +68,20 @@ function filterTodo(e) {
     }
   })
 }
+// // Local Storage
+// localStorage.setItem("DenemeKey", "DenemeValue");
+// const lst = localStorage.getItem("DenemeKey");
+// console.log(lst);
+
+// const arr = [1, 2, 3, 4];
+// localStorage.setItem("array", JSON.stringify(arr));
+// const gelenArray = JSON.parse(localStorage.getItem("array"));
+// console.log(gelenArray);
+
+// document.addEventListener("DOMContentLoaded", loadAllTodos);
+const arr = [1, 2];
+localStorage.setItem("array", JSON.stringify(arr));
+
+const gelenArray = JSON.parse(localStorage.getItem("array"));
+console.log(gelenArray);
+
