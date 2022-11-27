@@ -414,38 +414,38 @@ user();*/
 //   textinput.value = "";
 // }
 
-<<<<<<< HEAD
-const form = document.getElementById("todo-form");
-const todoInput = document.getElementById("todo");
-const todoList = document.querySelector("#myUL");
+// <<<<<<< HEAD
+// const form = document.getElementById("todo-form");
+// const todoInput = document.getElementById("todo");
+// const todoList = document.querySelector("#myUL");
 
-form.addEventListener("submit", function (e) {
-  console.log(todoInput.value)
-  const ekle = document.createElement("li");
-const text = document.createTextNode(todoInput.value);
-ekle.appendChild(text);
-document.body.appendChild(ekle);
-  e.preventDefault();
-});
-
-
-
- 
-  
+// form.addEventListener("submit", function (e) {
+//   console.log(todoInput.value)
+//   const ekle = document.createElement("li");
+// const text = document.createTextNode(todoInput.value);
+// ekle.appendChild(text);
+// document.body.appendChild(ekle);
+//   e.preventDefault();
+// });
 
 
 
-=======
-const todoInput = document.getElementById("myInput");
-const addButton = document.getElementById('addButton');
 
-addButton.addEventListener("click", function () {
-  document.getElementById('myUL').innerHTML = `
-    ${document.getElementById('myUL').innerHTML}
-    <li>${todoInput.value}</li>
-  `;
-});
->>>>>>> f92d5485511531e0e8141d5f290df3d80f0cf3bf
+
+
+
+
+// =======
+// const todoInput = document.getElementById("myInput");
+// const addButton = document.getElementById('addButton');
+
+// addButton.addEventListener("click", function () {
+//   document.getElementById('myUL').innerHTML = `
+//     ${document.getElementById('myUL').innerHTML}
+//     <li>${todoInput.value}</li>
+//   `;
+// });
+// >>>>>>> f92d5485511531e0e8141d5f290df3d80f0cf3bf
 
 
 
@@ -456,6 +456,13 @@ const ekle = document.createElement("li");
 const text = document.createTextNode("Temizle");
 ekle.appendChild(text);
 document.body.appendChild(ekle);
+
+
+
+let langs = ["python", "c++", "go", "ruby", "javascript",];
+const numbers = [1, 4 7, 23, 44];
+console.log(numbers);
+
 
 
 
