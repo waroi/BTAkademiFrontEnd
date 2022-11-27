@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="https://static8.depositphotos.com/1010782/858/i/600/depositphotos_8581842-stock-photo-fire-alphabets-w.jpg"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="card row">
+          <div class="card-header">Film List</div>
+          <div class="card-body">
+            <form id="film-form" name="form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="filmId">Film Adı: </label><br>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="filmName"
+                    id="filmId"
+                    placeholder="Filmin adını giriniz."
+                  />
+                  <br>
+                  <label for="yonetmenId">Yönetmenin Adı: </label><br>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="yonetmenName"
+                    id="yonetmenId"
+                    placeholder="Yönetmenin adını giriniz."
+                  />
+                  <br>
+                  <label for="yilId">Film Yılı: </label><br>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="yilName"
+                    id="yilId"
+                    placeholder="Filmin yılını giriniz."
+                  />
+                  <br>
+                  <label for="turId">Film Türü: </label><br>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="turName"
+                    id="turId"
+                    placeholder="Filmin türünü giriniz."
+                  />
+                  <br>
+                  <label for="UrlId">Film URL'si: </label><br>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="UrlName"
+                    id="UrlId"
+                    placeholder="Filmin URL'sini giriniz."
+                  />
+                 
+                </div>
+              </div>
+              <button id="kaydetbtn" type="submit" class="btn btn-danger mt-3">
+                Kaydet
+              </button>
+              
+            </form>           
+            <table class="table" style="margin-top:10%">
+                <thead>
+                  <tr>                   
+                    <th scope="col">No</th>
+                    <th scope="col">Afiş</th>
+                    <th scope="col">Film Adı</th>
+                    <th scope="col">Yönetmenin Adı</th>
+                    <th scope="col">Film Yılı</th>
+                    <th scope="col">Film Türü</th>                    
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                  <tr>
+                    <th scope="row" id="thNo"></th>
+                    <td id="tdAfis"></td>
+                    <td id="tdFilmAdı"></td>
+                    <td id="tdYönadı"></td>
+                    <td id="tdYıl"></td>
+                    <td id="tdTür"></td>
+                  </tr>
+                </tbody>
+              </table>
+            
+          </di>     
+                  
+          
+        </div>
+        
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
