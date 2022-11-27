@@ -68,4 +68,23 @@ function filterTodo(e) {
     }
   })
 }
+<<<<<<< HEAD:Dersler/Ders14-JS-Tekrar/TodoApp/app.js
+// // Local Storage
+// localStorage.setItem("DenemeKey", "DenemeValue");
+// const lst = localStorage.getItem("DenemeKey");
+// console.log(lst);
+
+// const arr = [1, 2, 3, 4];
+// localStorage.setItem("array", JSON.stringify(arr));
+// const gelenArray = JSON.parse(localStorage.getItem("array"));
+// console.log(gelenArray);
+
+// document.addEventListener("DOMContentLoaded", loadAllTodos);
+const arr = [1, 2];
+localStorage.setItem("array", JSON.stringify(arr));
+
+const gelenArray = JSON.parse(localStorage.getItem("array"));
+console.log(gelenArray);
+=======
+>>>>>>> a13df07b2161b88690779a610269894d5f91049d:Ogrenciler/Ozlem/Ders14-uyg/app.js
 
