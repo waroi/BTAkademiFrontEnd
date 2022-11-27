@@ -53,11 +53,12 @@ function deleteTodo(e) {
 }
 
 function deleteTodoFromStorage(deleteTodo) {
+  // "merhaba"
   let todos = getTodosFromStorage(); // [] yada ["deneme", "merhaba", "kitap oku"]
   todos.forEach(function (todo, index) {
     // ["todo1", "todo2", "todo3"];
     if (todo === deleteTodo) {
-      todos.splice(index, 1);
+      todos.splice(index, 1); // ["deneme", "kitap oku"]
     }
   });
   localStorage.setItem("todos", JSON.stringify(todos));
