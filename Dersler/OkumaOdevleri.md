@@ -6,3 +6,5 @@
 - [Javascript'te "this" parametresi nedir?]
 - [Event bubbling ve capturing nedir?](http://www.yucelalkan.com/javascript-event-bubbling-ve-capturing)
 - [Localstorage nedir?]
+- [Map methodu](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+- [Set methodu](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
