@@ -1,0 +1,24 @@
+ /* body{ 
+    background-image: url("https://www.shutterstock.com/image-photo/old-brick-black-color-wall-260nw-1605128917.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ } 
+ */
+
+ .golgeliKutu {
+    
+    
+	background: white;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 8px 6px -6px black;
+	border:1px solid rgb(2, 2, 2);
+
+}
+
+.form-control-plaintext::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(19, 150, 84);
+    opacity: 1; /* Firefox */
+}
+  
