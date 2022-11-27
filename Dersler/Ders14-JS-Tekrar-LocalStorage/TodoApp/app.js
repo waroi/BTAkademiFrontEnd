@@ -53,7 +53,7 @@ function deleteTodo(e) {
 }
 
 function deleteTodoFromStorage(deleteTodo) {
-  let todos = getTodosFromStorage();
+  let todos = getTodosFromStorage(); // [] yada ["deneme", "merhaba", "kitap oku"]
   todos.forEach(function (todo, index) {
     // ["todo1", "todo2", "todo3"];
     if (todo === deleteTodo) {
@@ -106,7 +106,7 @@ function getTodosFromStorage() {
   if (localStorage.getItem("todos") === null) {
     todos = [];
   } else {
-    todos = JSON.parse(localStorage.getItem("todos"));
+    todos = JSON.parse(localStorage.getItem("todos")); // ["merhaba", "todo", "deneme"]
   }
   return todos;
 }
@@ -114,8 +114,8 @@ function getTodosFromStorage() {
 // local storage'a veri yazma
 function addTodoToStorage(newTodo) {
   let todos = getTodosFromStorage();
-  todos.push(newTodo);
-  localStorage.setItem("todos", JSON.stringify(todos));
+  todos.push(newTodo); // ["merhaba", "todo", "deneme"]
+  localStorage.setItem("todos", JSON.stringify(todos)); // "["merhaba", "todo", "deneme"]"
 }
 
 // local storage verileri alıp sayfa açıldığında ui'a yazma
