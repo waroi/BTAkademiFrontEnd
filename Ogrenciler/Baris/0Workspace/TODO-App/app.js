@@ -55,17 +55,30 @@ function clearAllList() {
   localStorage.clear();
 }
 
-function searchToDo() {
-  let li = document.getElementsByTagName("li");
-  let search = txtSearch.value.toLowerCase();
-  for (let i = 0; i < li.length; i++) {
-    let txtValue = li[i].textContent || li[i].innerText;
-    if (txtValue.indexOf(search) > -1) {
-      li[i].className = "list-group-item d-flex justify-content-between";
+function searchToDo(e) {
+  // let li = document.getElementsByTagName("li");
+  // let search = txtSearch.value.toLowerCase();
+  // for (let i = 0; i < li.length; i++) {
+  //   let txtValue = li[i].textContent || li[i].innerText;
+  //   if (txtValue.indexOf(search) > -1) {
+  //     li[i].className = "list-group-item d-flex justify-content-between";
+  //   } else {
+  //     li[i].className = "d-none";
+  //   }
+  // }
+
+  // 2.YONTEM
+  const txtSearch = e.target.value.toLowerCase();
+  const listItems = document.querySelectorAll(".list-group-item");
+
+  listItems.forEach(function (listItem) {
+    const text = listItem.textContent.toLowerCase();
+    if (text.indexOf(txtSearch) !== -1) {
+      listItem.className = "d-none";
     } else {
-      li[i].className = "d-none";
+      listItem.className = "list-group-item d-flex justify-content-between";
     }
-  }
+  });
 }
 
 function showInfoDialog(title, body) {
@@ -79,3 +92,16 @@ function showInfoDialog(title, body) {
   const toast = new bootstrap.Toast(dialogInfo);
   toast.show();
 }
+
+//Local Storage
+// localStorage.setItem("DenemeKey", "DenemeValue");
+// const lst = localStorage.getItem("DenemeKey");
+// console.log(lst);
+
+// const arr = [1, 2, 3];
+// localStorage.setItem("array", JSON.stringify(arr));
+
+// const gelenArray = JSON.parse(localStorage.getItem("array"));
+// console.log(gelenArray);
+
+// document.addEventListener("DOMContentLoaded", loadAllToDos);

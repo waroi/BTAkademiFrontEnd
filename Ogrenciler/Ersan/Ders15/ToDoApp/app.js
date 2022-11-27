@@ -10,13 +10,27 @@ function eventListeners() {
   form.addEventListener("submit", addTodo);
   secondCardBody.addEventListener("click", deleteTodo);
   clearButton.addEventListener("click", clearAllTodos);
-  filter.addEventListener("keyup", filterTodo);
+  filter.addEventListener("keyup", filterTodos);
+  document.addEventListener("DOMContentLoaded", loadAllTodos);
+}
+
+function filterTodos(e) {
+  const filterText = e.target.value.toLowerCase();
+  const listItems = document.querySelectorAll(".list-group-item");
+  // console.log(listItems);
+  listItems.forEach(function (listItem) {
+    const text = listItem.textContent.toLocaleLowerCase();
+    if (text.indexOf(filterText) !== -1) {
+      listItem.className = "list-group-item d-flex justify-content-between"; //TODO: burayı düzenle
+    } else {
+      listItem.className = "d-none";
+    }
+  });
 }
 
 function clearAllTodos() {
   // todoList.innerHTML = ""; // Yavaş çalışıyor
   while (todoList.firstElementChild != null) {
-    console.log(todoList.firstElementChild);
     todoList.removeChild(todoList.firstElementChild);
   }
 }
@@ -37,8 +51,9 @@ function addTodo(e) {
     console.log("Todo Başarıyla Eklendi");
   }
   e.preventDefault();
-  todoInput.value = '';
 }
+
+const yeniArray = [];
 
 function addTodoToUI(newTodo) {
   const listItem = document.createElement("li");
@@ -50,25 +65,21 @@ function addTodoToUI(newTodo) {
   listItem.appendChild(document.createTextNode(newTodo));
   listItem.appendChild(link);
   todoList.appendChild(listItem);
-
+  yeniArray.push(todoInput.value);
+  localStorage.setItem("addedTodos", yeniArray);
+  todoInput.value = "";
 }
 
-function filterTodo(e) {
-  const filterValue = e.target.value.toLowerCase();
-  const listItems = document.querySelectorAll(".list-group-item");
-  console.log(listItems);
-  listItems.forEach(function (listItem) {
-    const text = listItem.textContent.toLowerCase();
-    if (text.indexOf(filterValue) === -1) {
-      // Bulamadı
-      listItem.setAttribute("style", "display:none !important");
-    }
-    else {
-      listItem.setAttribute("style", "display:block");
-    }
-  })
+function loadAllTodos() {
+  console.log(yeniArray);
+  document.getElementsByClassName("list-group-item").innerHTML =
+    localStorage.getItem("addedTodos");
 }
-// // Local Storage
+
+// const todoArray = [];
+// todoArray.push(todoInput.value);
+// console.log(todoArray);
+// Local Storage
 // localStorage.setItem("DenemeKey", "DenemeValue");
 // const lst = localStorage.getItem("DenemeKey");
 // console.log(lst);
@@ -78,10 +89,4 @@ function filterTodo(e) {
 // const gelenArray = JSON.parse(localStorage.getItem("array"));
 // console.log(gelenArray);
 
-// document.addEventListener("DOMContentLoaded", loadAllTodos);
-const arr = [1, 2];
-localStorage.setItem("array", JSON.stringify(arr));
-
-const gelenArray = JSON.parse(localStorage.getItem("array"));
-console.log(gelenArray);
-
+//
