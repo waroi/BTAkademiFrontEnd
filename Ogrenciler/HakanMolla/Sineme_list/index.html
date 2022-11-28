@@ -19,22 +19,22 @@
 
         <form>
             <div class="  mb-2 mt-2">
-              <input type="text" class="form-control  " id="filimadi" placeholder="Filimin Adını Girinz...">
+              <input type="text" class="form-control  " id="filimadi" placeholder="Filimin Adını Giriniz...">
             </div>
             <div class="mb-2">
-                <input type="text" class="form-control" id="yonetmen" placeholder="Filimin Yönetmenini Girinz...">
+                <input type="text" class="form-control" id="yonetmen" placeholder="Filimin Yönetmenini Giriniz...">
             </div>
             <div class="mb-2">
-                <input type="text" class="form-control" id="turu" placeholder="Filim Türünü Girinz...">
+                <input type="text" class="form-control" id="turu" placeholder="Filim Türünü Giriniz...">
             </div>
             <div class="mb-2">
-                <input type="text" class="form-control" id="yili" placeholder="Filimin Yılını Girinz...">
+                <input type="text" class="form-control" id="yili" placeholder="Filimin Yılını Giriniz...">
             </div>
             <div class="mb-2">
-                <input type="text" class="form-control" id="imdb" placeholder="Filimin IMDB Puanı Girinz...">
+                <input type="text" class="form-control" id="imdb" placeholder="Filimin IMDB Puanı Giriniz...">
             </div>
             <div class="mb-2">
-                <input type="text" class="form-control" id="afis" placeholder="Filimin Afişinş Girinz...">
+                <input type="text" class="form-control" id="afis" placeholder="Filimin Afişini Giriniz...">
             </div>     
         <hr>
             <button type="submit" id="kaydet" class=" btn btn-primary mb-2">Kaydet</button>
@@ -66,6 +66,7 @@
         <thead>
           <tr>
             <th scope="col">Filmin Adı:</th>
+            <th scope="col">Yönetmen</th>
             <th scope="col">Filmin Türü</th>
             <th scope="col">Filim yılı</th>
             <th scope="col">Filim IMDB Puanı</th>
@@ -73,18 +74,7 @@
             <th scope="col">Sil & Düzenle</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>Otto</td>
-          
-          </tr>
-          
-        </tbody>
+        <tbody id="tablelist" class="tableslist"></tbody>
       </table>
 
 </section>
