@@ -1,0 +1,92 @@
+:root{
+    --dark:#374151;
+    --darkest: #1F2937;
+    --light: #EEE;
+    --gray:#6B7280;
+    --pink:#Ec4899;
+    --purple:#8B5Cf6;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Fira Sans',sans-serif;
+}
+
+body{
+  
+  min-height: 100vh;
+  background: var(--dark);
+  color: #FFF;
+}
+
+ input,button,a{
+    appearance: none !important;
+    border: none !important;
+    outline: none !important;
+    background: none !important;
+  } 
+  .card{
+    appearance: none !important;
+    border: none !important;
+    outline: none !important;
+    background: none !important;
+
+  }
+
+  .card{
+    background-color: var(--darkest) !important;
+    /* padding:1rem !important; */
+    border-radius: 1rem !important;
+    margin-right: 1rem !important;
+    color: var(--light) !important;
+    /* font-size: 1.25rem !important; */
+
+  }
+  
+  .ginput {
+
+   
+    background-color: var(--darkest) !important;
+    /* padding:1rem !important; */
+    border-radius: 1rem !important;
+    margin-right: 1rem !important;
+    color: var(--light) !important;
+    /* font-size: 1.25rem !important; */
+
+  }
+
+  .ginput::placeholder{
+    color: var(--pink) !important;
+    /* font-size: 1.25rem !important; */
+   /* // font-weight: 100 !important; */
+
+  }
+
+
+  
+  .ksubmit, .baslik, a{
+
+    color:var(--pink) !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    background-image: linear-gradient(to right,var(--pink),var(--purple)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    cursor:pointer !important;
+    transition: 0.4s !important;
+
+
+  }
+
+  .ksubmit:hover{
+
+    opacity: 0.2 !important
+
+
+  }
+
+  .ksubmit:active{
+    opacity: 0.6 !important; 
+  }
