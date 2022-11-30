@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 7px;
+  
+  }
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem; /* rem olayı çarpan olayıdır tek hamlede oranlama yapabilirsin tüm sayfada kolayca */
+    line-height: 1.5; /* line-height özelliği satır araları boşluğu gibi bi şey */
+    text-align: center; /* texti ortaladık*/
+    background-color: #333; /* arkaplan rengi verdik */
+    color: #fff; /* yazı rengi verdik */
+
+}
+a{
+    text-decoration: none; /*linkin altındaki çizgiyi sildik*/
+}
+p{
+    padding: 1.6rem 0; /*paragrafa 16 px üst ve alttan 0 px sağ ve soldan iç boşluk sağladık */
+}
+img{
+    width: 100%;
+    height: auto;   
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header{
+    height: 36rem;
+}
+header .bg-image{
+    position: absolute;
+    background-image: url(/Ogrenciler/ilaydaKaraceper/webFotograflar/bgg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1;
+
+}
+header h1 {
+    padding: 12rem;
+    padding-bottom: 0;
+}
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    transition: all 0.6s;
+
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #333;
+}
+#section-a{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+}
+#section-b {
+    padding: 2rem;
+}
+#section-b ul {
+    list-style: none;
+}
+#section-b li {
+    background: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.col-content {
+    padding: 1.5rem;
+}
+#section-c{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+}
+#section-d .box{
+    padding: 5rem;
+}
+#section-d .box:first-child {
+    background-color: darkslategray;
+}
+footer{
+    padding: 4rem;
+    background: black;
+}
+footer a {
+    color: yellowgreen;
+}
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 9px;
+    }
+}
+@media screen and (min-width: 900px) {
+    html {
+        font-size: 11px;
+    }
+    #section-b li {
+        width: 28%;
+        margin: 1%;
+        display:inline-block;
+        
+    }
+   
+    .box{
+        width: 50%;
+        float: left;
+    }
+    
+}

@@ -1,0 +1,24 @@
+
+.kutu{
+    width: 150px;
+    height: 150px;
+    float: left;
+    
+
+}
+#kutu1{
+    background: lightpink;
+    margin: 50px 100px 50px 20px;
+
+
+}
+#kutu2{
+    background: lightsalmon;
+
+
+}
+#kutu3{
+    background: lightcoral;
+
+}
+ /* margin: auto dersen kutuyu sayfanın ortasına ortalar float özelliğini silmelisin ama.*/

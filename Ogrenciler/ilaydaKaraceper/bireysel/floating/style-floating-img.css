@@ -1,0 +1,10 @@
+img{
+    width: 300px;
+    float: left;
+    margin: 25px;
+}
+#bolum1{
+    border: 1px solid olive;
+    overflow: auto;
+    padding: 20px;
+}

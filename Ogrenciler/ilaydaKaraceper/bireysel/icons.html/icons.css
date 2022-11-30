@@ -1,0 +1,30 @@
+#moon{
+    font-size: 100px;
+    color: blueviolet;
+    background-color: aliceblue;
+    
+    float:left;
+    
+
+
+}
+
+#astronot{
+    font-size: 100px;
+    background-color: darkblue;
+    color: aliceblue;
+    
+    margin-left: 25px;
+    float:left;
+    
+}
+body{
+    
+    font-size: 30px;
+    
+}
+p{
+    
+    float:left;
+    
+}

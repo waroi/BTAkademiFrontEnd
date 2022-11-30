@@ -1,0 +1,14 @@
+div{
+    width: 400px;
+    height: 100px;
+    background: lightgoldenrodyellow;
+    margin: 5px;
+    display: inline-block;
+}
+span{
+    display: block;
+}
+a{
+    display: block;
+}
+
