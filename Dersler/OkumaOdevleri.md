@@ -8,3 +8,4 @@
 - [Localstorage nedir?]
 - [Map methodu](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 - [Set methodu](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+- [Prototype nedir ve prototype ile kalıtım nasıl yapılır?]

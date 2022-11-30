@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <title>Sinema Koleksiyonu</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="row text-center">
+        <div class="col-6">
+          <form>
+            <div class="mb-1">
+              <label for="filmAdi" class="form-label">Film Adı:</label>
+              <input
+                type="text"
+                id="filmAdi"
+                class="form-control border border-secondary"
+              />
+            </div>
+            <div class="mb-1">
+              <label for="filmYonetmen" class="form-label">Yönetmeni: </label>
+              <input
+                type="text"
+                id="filmYonetmen"
+                class="form-control border border-secondary"
+              />
+            </div>
+            <div class="mb-1">
+              <label for="filmTuru" class="form-label">Film Türü</label>
+              <input
+                type="text"
+                id="filmTuru"
+                class="form-control border border-secondary"
+              />
+            </div>
+            <div class="mb-1">
+              <label for="filmYili" class="form-label">Film Yılı:</label>
+              <input
+                type="text"
+                id="filmYili"
+                class="form-control border border-secondary"
+              />
+            </div>
+
+            <div class="mb-1">
+              <label for="imdb" class="form-label">Film IMDB Puanı:</label>
+              <input
+                type="text"
+                id="imdb"
+                class="form-control border border-secondary"
+              />
+            </div>
+            <div class="mb-1">
+              <label for="filmAfisi" class="form-label">Film Afişi:</label>
+              <input
+                type="text"
+                id="filmAfisi"
+                class="form-control border border-secondary"
+              />
+            </div>
+            <div class="justify-content-end">
+              <button type="submit" class="kaydet btn btn-primary">
+                Kaydet
+              </button>
+              <button type="submit" class="guncelle btn btn-primary">
+                Güncelle
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <section>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+              alt=""
+              width="50%"
+            />
+          </section>
+        </div>
+      </div>
+      <hr />
+      <div class="text-center mt-2 mb-5">
+        <h1>Film Listesi</h1>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Sıra No:</th>
+                  <th scope="col">Film Adı</th>
+                  <th scope="col">Yönetmen</th>
+                  <th scope="col">Film Türü</th>
+                  <th scope="col">Film Yılı</th>
+                  <th scope="col">Film Puanı</th>
+                  <th scope="col">Film Afişi</th>
+                  <th scope="col">Düzenle</th>
+                </tr>
+              </thead>
+              <tbody class="tbody">
+                <!-- <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td><button class="btn btn-success">Düzenle</button></td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

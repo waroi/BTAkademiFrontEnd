@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>TodoList</title>
+</head>
+<body>
+    <!-- my todo list head tag Start -->
+    <header>
+        <h1>Hakan Todo List</h1>
+    </header>
+    <!-- my todo list head tag End -->
+
+
+    <!-- My todo List Main Tag Start -->
+    <form action="">
+        <div class="search">
+            <input type="text" class="todo-input" placeholder="Add..." name="" id="">
+            <button class="todo-button " type="submit">
+                <i class="fas fa-plus-circle" ></i>
+            </button>
+        </div>
+            <div class="select">
+                <select name="todos" class="filter-todo" id="">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+
+                </select>
+            </div>
+
+       
+    </form>
+
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+    <!-- My todo List Main Tag End -->
+
+
+    <!-- Alert Box Start -->
+
+    <div class="alert-wrapper">
+        <div class="alert-success">
+            <div>Ekelme Başarılı</div>
+        </div>
+        <div class="alert-warning">
+            <div>Input Alanı Boş Geçilemez !!!</div>
+        </div>
+    </div>
+
+
+     <!-- Alert Box End -->
+<script src="index.js"></script>
+</body>
+</html>
