@@ -1,0 +1,43 @@
+
+/*
+h1{
+    font-size: 40px;
+}
+@media screen and (max-width: 700px) {
+    h1{
+        font-size: 30px;
+        color: blue;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    h1{
+       font-size: 10px;
+       color: red;
+    }    
+}
+*/
+*{
+    box-sizing:border-box;
+}
+.kutu{
+    width: 25%;
+    height: 250px;
+    background: lightblue;
+    float:left;
+    border: 1px solid black;
+}
+ @media screen and (max-width: 700px) {
+
+    .kutu{
+        width: 50%;
+    }
+    
+ }
+ @media screen and (max-width: 400px) {
+    .kutu{
+        width: 100%;
+    }
+    
+ }
+ 

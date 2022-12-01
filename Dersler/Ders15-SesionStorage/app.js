@@ -16,11 +16,13 @@ clear.addEventListener("click", clearItems);
 // SesionStorage Ekleme işlemi
 function addItem() {
   sessionStorage.setItem(addkey.value, addvalue.value);
+  console.log(sessionStorage.getItem(addkey.value));
 }
 
 // SesionStorage Silme işlemi
 function deleteItem() {
   sessionStorage.removeItem(deletekey.value);
+  console.log(deletekey.value);
 }
 
 // SesionStorage Hepsini silme işlemi

@@ -1,0 +1,29 @@
+
+.kutu{
+
+    height: 150px;
+
+}
+#kutu1{
+    background: lightpink;
+    padding: 50px 100px;
+    
+
+
+}
+#kutu2{
+    background: lightsalmon;
+
+
+}
+#kutu3{
+    background: lightcoral;
+
+}
+span{
+    background: lightgreen;
+    display: inline-block;
+    padding: 50px;
+    margin:15px;
+    width: 200px;
+}
