@@ -17,6 +17,7 @@ else{
 //     console.log("yaşınız = 20");
 // }
 
+
 if (isStudent){
     console.log("hangi bölümde okuyorsun?")
 }
