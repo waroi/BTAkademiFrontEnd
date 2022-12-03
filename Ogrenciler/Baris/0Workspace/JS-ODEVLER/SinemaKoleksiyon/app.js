@@ -41,7 +41,7 @@ function eventListener() {
   document.addEventListener("DOMContentLoaded", filmCardlariOlustur);
   document.addEventListener("click", filmSil);
   btnTemizle.addEventListener("click", filmleriTemizle);
-  document.addEventListener("click", filmBilgileriAl);
+  document.addEventListener("click", filmIndexAl);
   btnGuncelle.addEventListener("click", filmGuncelle);
   txtAra.addEventListener("keyup", filmAra);
 }
@@ -86,36 +86,37 @@ function filmleriTemizle() {
   location.reload();
 }
 
-function filmBilgileriAl(event) {
-  let filmler = filmleriGetir();
+function filmIndexAl(event) {
   if (event.target.className === "fa-solid fa-square-pen fs-2") {
     const filmID = Number(
       event.target.parentElement.parentElement.parentElement.parentElement.id
     );
-    filmler.map((film, index) => {
-      if (index === filmID) {
-        txtFilmAdi.value = film.filmAdi;
-        txtTur.value = film.tur;
-        txtYil.value = film.yil;
-        txtYonetmen.value = film.yonetmen;
-        txtAfisUrl.value = film.afisUrl;
-        txtFragmanUrl.value = film.fragmanUrl;
-        imgAfis.src = film.afisUrl;
-        body.style.background = `url(${film.afisUrl})`;
-        body.style.backgroundRepeat = "no-repeat";
-        body.style.backgroundSize = "cover";
-        body.style.backgroundAttachment = "fixed";
-        body.style.backgroundPosition = "center";
-        body.style.transition = "all 2s ease-in-out";
-        return index;
-      }
-    });
   }
 }
-function filmGuncelle() {
-  let filmID = filmBilgileriAl();
+
+//İNDEX'İ DIŞARI AL SONRASINDA BAŞKA BİR FONKSİYON İLE BİLGİLERİ AL SONRASINDA
+//GÜNCELLEME İŞLEMİ YAP
+function filmGuncelle(filmIndex) {
   let filmler = filmleriGetir();
-  console.log(filmID);
+  console.log(filmIndex);
+  // filmler.map((film, index) => {
+  //   if (index === filmID) {
+  //     txtFilmAdi.value = film.filmAdi;
+  //     txtTur.value = film.tur;
+  //     txtYil.value = film.yil;
+  //     txtYonetmen.value = film.yonetmen;
+  //     txtAfisUrl.value = film.afisUrl;
+  //     txtFragmanUrl.value = film.fragmanUrl;
+  //     imgAfis.src = film.afisUrl;
+  //     body.style.background = `url(${film.afisUrl})`;
+  //     body.style.backgroundRepeat = "no-repeat";
+  //     body.style.backgroundSize = "cover";
+  //     body.style.backgroundAttachment = "fixed";
+  //     body.style.backgroundPosition = "center";
+  //     body.style.transition = "all 2s ease-in-out";
+  //     console.log(index);
+  //   }
+  // });
   // const updateFilm = {
   //   filmAdi: txtFilmAdi.value.trim(),
   //   tur: txtTur.value.trim(),
