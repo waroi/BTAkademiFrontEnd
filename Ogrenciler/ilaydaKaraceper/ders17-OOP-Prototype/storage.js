@@ -30,6 +30,6 @@ Storage.prototype.getFilmsFromStorage = function() {
 
 Storage.prototype.clearFilmsFromStorage = function(){
   let films = this.getFilmsFromStorage();
-  films.splice(newFilm);
-  localStorage.clear("films", JSON.stringify(films));
+  localStorage.removeItem();
+
 };
