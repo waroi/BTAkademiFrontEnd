@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript For Of Loop</h2>
+    <p>The for of statement loops through the values of any iterable object:</p>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+      const cars2 = ["BMW2", "Volvo2", "Mini2"];
+
+      let text2 = "";
+      for (let x of cars2) {
+        text2 += x + "<br>";
+      }
+
+      const cars = ["BMW", "Volvo", "Mini"];
+
+      let text = "";
+      for (let x of cars) {
+        text += x + "<br>";
+      }
+
+      document.getElementById("demo").innerHTML = text;
+      document.getElementById("demo2").innerHTML = text2;
+
+      const companies = ["Google", "Facebook", "Amazon", "Oracle", "Microsoft"];
+      setOfCompanies = new Set();
+      for (const company of companies) {
+        setOfCompanies.add(company);
+        console.log(setOfCompanies);
+      }
+    </script>
+  </body>
+</html>

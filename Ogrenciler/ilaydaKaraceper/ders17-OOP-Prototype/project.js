@@ -6,6 +6,7 @@ const cardbody = document.querySelectorAll(".card-body")[1];
 const clear = document.getElementById("clear-films");
 
 const ui = new UI();
+const storage = new Storage();
 eventListeners();
 function eventListeners() {
   form.addEventListener("submit", addFilm);
@@ -20,6 +21,8 @@ function addFilm(e) {
   } else {
     const newFilm = new Film(title, director, url);
     ui.addFilmToUI(newFilm);
+    storage.addFilmToStorage(newFilm);
+    storage.clearFilmsFromStorage(newFilm); // yorum satırı
     ui.displayMessage("Film başarılı bir şekilde eklendi", "success");
   }
   e.preventDefault();
