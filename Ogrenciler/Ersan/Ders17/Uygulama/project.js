@@ -5,8 +5,6 @@ const urlElement = document.getElementById("url");
 const cardbody = document.querySelectorAll(".card-body")[1];
 const clear = document.getElementById("clear-films");
 
-const ui = new UI();
-const storage = new Storage();
 eventListeners();
 function eventListeners() {
   form.addEventListener("submit", addFilm);
@@ -15,12 +13,12 @@ function eventListeners() {
   clear.addEventListener("click", clearAll);
 }
 function clearAll(e) {
-  ui.cleatAllFilmsFromUI();
-  storage.deleteFilmsFromStorage();
+  UI.cleatAllFilmsFromUI();
+  Storage.deleteFilmsFromStorage();
 }
 function loadAllFilms() {
-  let filmler = storage.getFilmsFromStorage();
-  filmler.forEach((film) => ui.addFilmToUI(film));
+  let filmler = Storage.getFilmsFromStorage();
+  filmler.forEach((film) => UI.addFilmToUI(film));
 }
 
 function addFilm(e) {
@@ -28,12 +26,12 @@ function addFilm(e) {
   const director = directorElement.value;
   const url = urlElement.value;
   if (title === "" || director === "" || url === "") {
-    ui.displayMessage("Tüm alanları doldrurun.", "danger");
+    UI.displayMessage("Tüm alanları doldrurun.", "danger");
   } else {
     const newFilm = new Film(title, director, url);
-    ui.addFilmToUI(newFilm);
-    storage.addFilmToStorage(newFilm);
-    ui.displayMessage("Film başarılı bir şekilde eklendi", "success");
+    UI.addFilmToUI(newFilm);
+    Storage.addFilmToStorage(newFilm);
+    UI.displayMessage("Film başarılı bir şekilde eklendi", "success");
   }
   e.preventDefault();
 }
@@ -43,8 +41,8 @@ function deleteFilm(e) {
       .textContent;
 
   if (e.target.id === "delete-film") {
-    ui.deleteFilmFromUI(e.target);
-    storage.deleteFilmFromStorage(filmAdi);
-    ui.displayMessage("Film silme başarılı", "success");
+    UI.deleteFilmFromUI(e.target);
+    Storage.deleteFilmFromStorage(filmAdi);
+    UI.displayMessage("Film silme başarılı", "success");
   }
 }
