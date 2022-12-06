@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="odev.css" />
+
+    <link rel="icon" type="image/x-icon"
+        href="https://static8.depositphotos.com/1010782/858/i/600/depositphotos_8581842-stock-photo-fire-alphabets-w.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <title>Film Arsivi</title>
+</head>
+
+<body class="bg-secondary">
+    <div class=" container mt-3">
+        <div class="row sticky-top mb-3 ">
+            <div class="col  bg-dark border  ">
+                <h2 class="text-center fs-4 text-white "><i>Film Arsivi</i> </h2>
+                <form class="film-form" id="film-form">
+                    <div class="row">
+                        <div class="form-floating col-lg-3 col-md-6 mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="enter the movie's name">
+
+                            <label for="name">Film Adi</label>
+                        </div>
+                        <div class="form-floating  col-lg-3 col-md-6 mb-3">
+                            <input type="text" class="form-control" id="date" placeholder="filmin tarihi">
+                            <label for="date">Yapim Yili</label>
+                        </div>
+                        <div class="form-floating col-lg-3 col-md-6  mb-3">
+                            <input type="text" class="form-control" id="director" placeholder="enter the movie's name">
+                            <label for="director">Yonetmen</label>
+                        </div>
+                        <div class="form-floating col-lg-3 col-md-6 mb-3">
+                            <input type="text" class="form-control" id="image" placeholder="filmin linki">
+                            <label for="image">Film Linki</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-success mb-3 inline-flex" type="submit">Filmi Ekleyin </button>
+                    <button id="clear-allfilm" class="btn btn-danger mb-3 inline-flex" type="button">Tum filmleri sil
+                    </button>
+
+                </form>
+
+                <form class="row g-3">
+
+
+                    <div class="col-auto">
+
+                        <input type="text" class="form-control" id="floatingInput" placeholder="enter the movie's name">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">filmi bul </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" id="filmList">
+
+
+
+
+        </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</html>
