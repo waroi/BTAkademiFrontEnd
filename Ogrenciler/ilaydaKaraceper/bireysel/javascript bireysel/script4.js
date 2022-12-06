@@ -1,11 +1,11 @@
-// DÖNGÜLER 3'E AYRILIR (while, do while, for)
+// DÖNGÜLER 3'E AYRILIR (while, do while, for) // birden fazla kez çalışmalarını istediğimiz komutlardır
 
 // while loop
 
 // let i = 0;
 // while (i<10){ //sonsuz döngü
 //     console.log(i);
-//     i++; // i= i + 1 veya i+=1 de aynı anlama gelir birer birer artmasını istediğimiz anlamına geliyor baby
+//     i++; // i= i + 1 veya i+=1 de aynı anlama gelir birer birer artmasını istediğimiz anlamına geliyor baby i-- de geriye doğru
 // }
 
 // let i = 10;

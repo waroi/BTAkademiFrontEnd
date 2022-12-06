@@ -13,25 +13,136 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
   </head>
   <body>
-    <nav class="navbar bg-dark bg-gradient">
+    <nav class="navbar bg-dark bg-opacity-75 shadow sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand text-white fs-4">CineCollect</a>
+        <a class="navbar-brand text-white fs-4">
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimages_k%2Fmovie-reel-transparent-background%2Fmovie-reel-transparent-background-13.png&f=1&nofb=1&ipt=0c9a9fea6514dc2ac0dcda08c07c1b37faeac8a7bd63f627351671a386e2e37c&ipo=images"
+            alt=""
+            width="50"
+          />
+          CineCollect</a
+        >
         <form class="d-flex" role="search">
-          <div class="form-floating me-3">
-            <input
-              id="txtSearch"
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <label for="txtSearch">Arama</label>
-          </div>
+          <input
+            id="txtAra"
+            class="form-control me-2"
+            type="search"
+            placeholder="Ara"
+          />
         </form>
       </div>
     </nav>
+    <section>
+      <div
+        id="frmDiv"
+        class="container d-flex flex-column justify-content-center mt-5 mb-5 bg-dark p-3 rounded-3 bg-opacity-75 shadow-lg"
+      >
+        <h2 class="text-center text-bg-dark bg-transparent">Film Bilgileri</h2>
+
+        <form id="frmFilm">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtFilmAdi"
+                  placeholder="Film Adı"
+                />
+                <label for="txtFilmAdi">Film Adı</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtTur"
+                  placeholder="Tür"
+                />
+                <label for="txtTur">Tür</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtYil"
+                  placeholder="Yıl"
+                />
+                <label for="txtYil">Yıl</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtYonetmen"
+                  placeholder="Yönetmen"
+                />
+                <label for="txtYonetmen">Yönetmen</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtAfisUrl"
+                  placeholder="Afiş URL"
+                />
+                <label for="txtAfisUrl">Afiş URL</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtFragmanUrl"
+                  placeholder="Fragman URL"
+                />
+                <label for="txtFragmanUrl">Fragman URL</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img
+                id="imgAfis"
+                class="img-fluid mb-3 rounded"
+                src="https://i.ytimg.com/vi/yOKqsdWAJFA/maxresdefault.jpg"
+                alt=""
+              />
+              <div class="d-grid">
+                <button
+                  id="btnKaydet"
+                  class="btn btn-success bg-gradient rounded-0"
+                >
+                  Kaydet
+                </button>
+                <button
+                  id="btnGuncelle"
+                  type="button"
+                  class="btn btn-secondary bg-gradient rounded-0"
+                >
+                  Güncelle
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="filmDiv">
+      <div id="cardFilms" class="container">
+        <div
+          class="container d-flex flex-column justify-content-center mb-5 gap-3"
+        >
+          <button
+            id="btnTemizle"
+            type="submit"
+            class="btn btn-danger bg-gradient"
+          >
+            Tümünü Temizle
+          </button>
+        </div>
+      </div>
+    </section>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="app.js"></script>
