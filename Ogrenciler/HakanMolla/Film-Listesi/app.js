@@ -7,9 +7,10 @@ const yil = document.querySelector("#yili");
 const puan = document.querySelector("#puan");
 const afis = document.querySelector("#afis");
 const buttonKaydet = document.querySelector(".ksubmit");
-const buttonGuncelle = document.querySelector(".guncelle");
+const editcards = document.querySelector("#cards");
 const onizlepicture = document.getElementById("onizle");
 const cardSil = document.querySelector("#cards");
+const filter = document.getElementById("filter");
 eventListeners();
 
 //Events
@@ -18,7 +19,9 @@ function eventListeners(){
     buttonKaydet.addEventListener("click",addFilm);
     afis.addEventListener("keyup",onizlemepic);
     cardSil.addEventListener("click",delFilm);
+    editcards.addEventListener("click",edit);
     document.addEventListener("DOMContentLoaded", loadAllFilms);
+    filter.addEventListener("keyup", filterCards);
   
 }
 
@@ -108,11 +111,11 @@ let cards=document.querySelector("#cards");
                 <div class="card-body">
                          <h5 class="card-title film-adi"> ${filmArrayObj.filmAdi} </h5>
                          <p class="card-text">
-                            <strong>Yönetmen :</strong> ${filmArrayObj.yonetmen}</p>
-                            <strong>Filmin Türü :</strong> ${filmArrayObj.turu} </p>
-                            <strong>Filim Yılı :</strong>${filmArrayObj.yil}</p>
-                           <strong>Filim IMDB Puanı</strong> ${filmArrayObj.puan}</p>
-                         <a href="#" class="btn btn-primary">Edit</a>
+                            <strong ">Yönetmen :</strong> <p class="yonetmen"> ${filmArrayObj.yonetmen}</p></p>
+                            <strong  >Filmin Türü :</strong> <p class="turu"> ${filmArrayObj.turu}</p> </p>
+                            <strong ">Filim Yılı :</strong> <p class="yili"> ${filmArrayObj.yil}</p></p>
+                           <strong >Filim IMDB Puanı</strong> <p class="puan"> ${filmArrayObj.puan}</p></p>
+                         <a href="#" class="edit btn btn-primary">Edit</a>
                           <a  id="delete"  class="delete btn btn-primary ">Sil</a>
                           
                  </div>
@@ -176,24 +179,25 @@ function removestorage(remo){
         // let hakan = item.toString();
         // console.log(hakan)
         // JSON.stringify(item);
-
+      
         const objearry = Object.values(item);
-       
+        //objearry.toLocaleLowerCase();
 
     if(objearry.indexOf(text2.trim()) !== -1){
         
         // console.log(item)
         // console.log(index)
         // console.log("filmAdi")
-      
+       // todos=  todos.filter(x=>x.filmAdi!==text2.trim())
       todos.splice(index,1);
       //console.log(todos)
     }else{
         // debugger;
-        // todos=  todos.filter(x=>x.filmAdi!=text2.trim())
+        // 
         //todos.splice(index,1);
-        console.log("buradasın")
-        console.log(text2)
+        //  console.log(objearry);
+        //  console.log(text2)
+        //  console.log("buradasın")
 
     }
 
@@ -204,3 +208,93 @@ function removestorage(remo){
     }
     
 // Silme İşlemi End
+
+
+// Edit İşlemi Start
+
+function edit (e){
+
+    const filmAdiClasName = e.target.parentElement.parentElement;
+    let film = filmAdiClasName.querySelector(".film-adi");
+     let filmvalue = film.textContent.toLocaleLowerCase();
+
+     const yonetmenClasName = e.target.parentElement.parentElement;
+    let yonetmen = yonetmenClasName.querySelector(".yonetmen");
+     let yonetmenvalue = yonetmen.textContent.toLocaleLowerCase();
+
+     const turuClasName =e.target.parentElement.parentElement;
+     let turu = turuClasName.querySelector(".turu");
+      let turuvalue = turu.textContent.toLocaleLowerCase();
+
+      const yiliClasName = e.target.parentElement.parentElement;
+      let yili = yiliClasName.querySelector(".yili");
+      let yilivalue = yili.textContent.toLocaleLowerCase();
+
+      const puanClasName = e.target.parentElement.parentElement;
+     let puan = puanClasName.querySelector(".puan");
+      let puanvalue = puan.textContent.toLocaleLowerCase();
+      
+
+      const imgClasName = e.target.parentElement.parentElement;
+     let img = imgClasName.querySelector(".imglist").getAttribute("src");
+   
+
+
+
+let editArrayObj = {
+    filmAdi: filmvalue,
+     yonetmen: yonetmenvalue,
+     turu : turuvalue,
+     yil : yilivalue,
+     puan : puanvalue,
+     afis : img,
+    }
+
+editpage(editArrayObj)
+
+delFilm(e)
+   
+}
+
+function editpage(editArrayObj) {
+    filmAdi.value=editArrayObj.filmAdi;
+    yonetmen.value=editArrayObj.yonetmen;
+    turu.value=editArrayObj.turu;
+    yil.value=editArrayObj.yil;
+    puan.value=editArrayObj.puan;
+    afis.value = editArrayObj.afis;
+    
+    let onizleresim=document.querySelector("#resim");
+        onizlepicture.setAttribute("src","${editArrayObj.afis}");
+
+        //console.log(editArrayObj);
+        
+    }
+
+
+//Edit İşlemi End
+
+
+// Arama İşlemi Start
+function filterCards(e){
+    const filterText = e.target.value.toLowerCase();
+    const cards = document.getElementById("cards");
+
+    const imgClasName = e.target.parentElement.parentElement;
+    let img = imgClasName.querySelector(".deneme")
+  
+    
+    
+     //let filmvalue = film.textContent.toLocaleLowerCase();
+
+
+
+
+console.log(filterText);
+console.log(cards);
+console.log(img);
+//console.log(deneme);
+
+}
+
+// Arama İşlemi End
