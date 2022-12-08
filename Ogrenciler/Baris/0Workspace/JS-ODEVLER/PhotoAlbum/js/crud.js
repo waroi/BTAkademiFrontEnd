@@ -23,23 +23,16 @@ class Request {
     this.xhr.open("POST", this.url);
     this.xhr.send(JSON.stringify(item));
   }
-  put(id, item) {
-    ///KONTROL EDİLECEK
-    this.xhr.open("PUT", `${this.xhr.url}/${id}`);
-    this.xhr.setRequestHeader("Content-Type", "application/json");
-    this.xhr.onload = () => {
-      if (this.xhr.status == 200) {
-        const parsedList = JSON.parse(this.xhr.responseText);
-        parsedList.map((data) => {
-          item = data.url;
-        });
-      }
-    };
-    this.xhr.send(JSON.stringify(item));
-  }
   delete(id) {
     this.xhr.open("DELETE", `${this.url}/${id}`);
     this.xhr.send();
+  }
+  put(id, imgUrl) {
+    const updatePhoto = { id: id, url: imgUrl };
+    console.log(updatePhoto);
+    this.xhr.open("PUT", `${this.xhr.url}/${id}`);
+    this.xhr.setRequestHeader("Content-Type", "application/json");
+    this.xhr.send(JSON.stringify(updatePhoto));
   }
 }
 

@@ -46,13 +46,15 @@ function deletePhoto(e) {
   }
 }
 function updatePhoto(e) {
-  const updateUrl = { url: e.clipboardData.getData("text") };
+  const updateUrl = e.clipboardData.getData("text");
   if (e.target.className == "form-control imgUrl") {
     e.target.parentElement.parentElement.parentElement.previousSibling.firstChild.src =
       e.clipboardData.getData("text");
     req.put(
-      e.target.parentElement.parentElement.parentElement.previousSibling
-        .firstChild.id,
+      Number(
+        e.target.parentElement.parentElement.parentElement.previousSibling
+          .firstChild.id
+      ),
       updateUrl
     );
   }
