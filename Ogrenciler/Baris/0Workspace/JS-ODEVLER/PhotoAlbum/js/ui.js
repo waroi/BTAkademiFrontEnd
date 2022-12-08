@@ -8,6 +8,9 @@ class UI {
     const img = document.createElement("img");
     const cardBody = document.createElement("div");
     const cardText = document.createElement("p");
+    const imgUrl = document.createElement("input");
+    const btnRemove = document.createElement("button");
+    const divUrl = document.createElement("div");
 
     link.href = "#";
     link.className = "nav-link";
@@ -22,14 +25,21 @@ class UI {
     img.src = url;
     img.alt = title;
 
-    cardHeader.className = "card-header d-flex justify-content-end";
-    cardHeader.innerHTML = `<button class="btn btn-light" id="btnSil">
-    <i class="fa-solid fa-trash-can"></i></button>`;
+    cardHeader.className = "card-header";
+    cardHeader.innerHTML = `<strong>Title:</strong> ${title}`;
 
     cardBody.className = "card-body";
 
     cardText.className = "card-text";
-    cardText.textContent = title;
+
+    divUrl.className = "input-group mb-3";
+    imgUrl.value = url;
+    imgUrl.type = "text";
+    imgUrl.className = "form-control imgUrl";
+
+    btnRemove.className = "btn btn-danger";
+    btnRemove.id = "btnSil";
+    btnRemove.innerHTML = `<i class="fa-solid fa-trash-can">`;
 
     divPhotos.appendChild(col);
     col.appendChild(card);
@@ -38,8 +48,11 @@ class UI {
     card.appendChild(link);
     card.appendChild(cardBody);
     cardBody.appendChild(cardText);
+    cardText.appendChild(divUrl);
+    divUrl.appendChild(imgUrl);
+    divUrl.appendChild(btnRemove);
   }
-  static createModalUI(title, url) {
+  static createModalUI(id, title, url) {
     let modalWrap = null;
 
     if (modalWrap !== null) {
@@ -60,19 +73,7 @@ class UI {
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body"><img src="${url}" class="img-fluid"
-          <form>
-            <div class="form-floating m-3">
-              <input type="text" class="form-control" id="modalImgUrl" placeholder="" value="${url}">
-              <label for="modalImgUrl">URL</label>
-            </div>
-          </form>
-          </div>
-          <div class="modal-footer">
-            <button id="btnGuncelle" type="button" class="btn btn-primary">
-              Güncelle
-            </button>
-          </div>
+          <div class="modal-body"><img id="${id}" src="${url}" class="img-fluid"</div>
         </div>
       </div>
     </div>`;

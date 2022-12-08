@@ -41,7 +41,6 @@ function eventListener() {
   document.addEventListener("DOMContentLoaded", filmCardlariOlustur);
   document.addEventListener("click", filmSil);
   btnTemizle.addEventListener("click", filmleriTemizle);
-  document.addEventListener("click", filmIndexAl);
   btnGuncelle.addEventListener("click", filmGuncelle);
   txtAra.addEventListener("keyup", filmAra);
 }
@@ -84,14 +83,6 @@ function localStorageSil(sil) {
 function filmleriTemizle() {
   localStorage.removeItem("filmler");
   location.reload();
-}
-
-function filmIndexAl(event) {
-  if (event.target.className === "fa-solid fa-square-pen fs-2") {
-    const filmID = Number(
-      event.target.parentElement.parentElement.parentElement.parentElement.id
-    );
-  }
 }
 
 //İNDEX'İ DIŞARI AL SONRASINDA BAŞKA BİR FONKSİYON İLE BİLGİLERİ AL SONRASINDA

@@ -5,6 +5,8 @@ function eventListeners() {
   document.addEventListener("DOMContentLoaded", showAllPhotos);
   document.addEventListener("click", showModal);
   document.addEventListener("click", deletePhoto);
+  document.addEventListener("paste", updatePhoto);
+
   frmNewPhoto.addEventListener("submit", addPhoto);
 }
 function addPhoto(e) {
@@ -36,15 +38,28 @@ function addPhoto(e) {
 }
 function deletePhoto(e) {
   if (e.target.className == "fa-solid fa-trash-can") {
-    req.delete(e.target.parentElement.parentElement.nextSibling.firstChild.id);
-    e.target.parentElement.parentElement.parentElement.parentElement.remove();
+    req.delete(
+      e.target.parentElement.parentElement.parentElement.parentElement
+        .previousSibling.firstChild.id
+    );
+    e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
   }
 }
-function showAllPhotos() {
-  console.log(req.get());
+function updatePhoto(e) {
+  const updateUrl = { url: e.clipboardData.getData("text") };
+  if (e.target.className == "form-control imgUrl") {
+    e.target.parentElement.parentElement.parentElement.previousSibling.firstChild.src =
+      e.clipboardData.getData("text");
+    req.put(
+      e.target.parentElement.parentElement.parentElement.previousSibling
+        .firstChild.id,
+      updateUrl
+    );
+  }
 }
+
 function showModal(e) {
   if (e.target.className === "card-img") {
-    UI.createModalUI(e.target.alt, e.target.src);
+    UI.createModalUI(e.target.id, e.target.alt, e.target.src);
   }
 }
