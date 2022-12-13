@@ -22,7 +22,12 @@ function addFilm(e) {
     UI.displayMessage("Film başarılı bir şekilde eklendi", "success");
   }
   e.preventDefault();
+
+
 }
+
+
+
 function deleteFilm(e) {
   if (e.target.id === "delete-film") {
     UI.deleteFilmFromUI(e.target);
