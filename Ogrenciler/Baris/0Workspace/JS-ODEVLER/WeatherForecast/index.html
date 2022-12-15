@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Hava Durumu Uygulaması</title>
+  </head>
+  <body>
+    <nav class="navbar bg-light bg-gradient bg-opacity-75">
+      <div class="container-fluid">
+        <form class="d-flex">
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-transparent border-0"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+            <input
+              id="searchCity"
+              type="text"
+              class="form-control form-control-lg bg-transparent border-0 rounded-0"
+              placeholder="Şehir adı girin"
+            />
+          </div>
+        </form>
+        <a class="navbar-brand">Hava Durumu API Uygulaması</a>
+      </div>
+    </nav>
+    <div id="container" class="container"></div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/city.js"></script>
+  </body>
+</html>
