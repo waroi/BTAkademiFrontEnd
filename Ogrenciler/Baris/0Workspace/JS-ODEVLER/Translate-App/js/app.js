@@ -59,8 +59,8 @@ function translateTo(e) {
   const nativeSelectBox = document.getElementById("nativeLanguageSelect");
   const targetSelectBox = document.getElementById("targetLanguageSelect");
   const text = nativeInput.value;
-  const native = nativeSelectBox.textContent;
-  const target = targetSelectBox.textContent;
+  const native = nativeSelectBox.value;
+  const target = targetSelectBox.value;
   const data = `q=${text}&target=${target}&source=${native}`;
   app.post(data);
 }
