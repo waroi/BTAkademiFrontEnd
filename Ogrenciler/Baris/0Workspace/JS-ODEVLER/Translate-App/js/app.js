@@ -27,6 +27,15 @@ class App {
     this.xhr.send();
   }
   post(data) {
+    this.xhr.onload = () => {
+      if (this.xhr.status == 200) {
+        const targetInput = document.getElementById("targetInput");
+        const parsedData = JSON.parse(this.xhr.responseText);
+        parsedData.data.translations.forEach((element) => {
+          targetInput.value = element.translatedText;
+        });
+      }
+    };
     this.xhr.open("POST", this.translateUrl);
     this.xhr.setRequestHeader(
       "content-type",
@@ -55,7 +64,6 @@ function eventListener() {
 function translateTo(e) {
   e.preventDefault();
   const nativeInput = document.getElementById("nativeInput");
-  const targetInput = document.getElementById("targetInput");
   const nativeSelectBox = document.getElementById("nativeLanguageSelect");
   const targetSelectBox = document.getElementById("targetLanguageSelect");
   const text = nativeInput.value;
