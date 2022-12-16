@@ -1,6 +1,12 @@
 class UI {
   static getCityInfotoUI(city) {
     const container = document.querySelector(".container");
+    container.classList.add(
+      "animate__animated",
+      "animate__fadeIn",
+      "container"
+    );
+
     const weatherInfoCards = document.createElement("div");
     weatherInfoCards.className = "container mt-5";
     const row = document.createElement("div");

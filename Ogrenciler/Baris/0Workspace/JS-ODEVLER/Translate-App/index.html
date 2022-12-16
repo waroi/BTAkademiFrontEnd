@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+    <title>Translate-App</title>
+  </head>
+  <body style="background-color: rgb(22, 22, 22)">
+    <div class="container mt-5">
+      <form class="row align-items-center">
+        <div class="col-md-5">
+          <div class="card bg-dark rounded-5 shadow">
+            <div class="card-header p-0 mx-auto">
+              <select
+                class="form-control rounded-bottom rounded-0 bg-dark border-0 text-warning text-center"
+                id="nativeLanguageSelect"
+                style="width: 200px"
+              >
+                <option selected>Dil seçin</option>
+              </select>
+            </div>
+            <div class="card-body">
+              <textarea
+                class="form-control rounded-top rounded-4 bg-dark text-warning border-0"
+                type="text"
+                id="nativeInput"
+                placeholder="Çevrilecek Metin"
+                style="resize: none; height: 300px"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 d-grid">
+          <button id="translateButton" class="btn btn-outline-warning">
+            Çevir
+          </button>
+        </div>
+        <div class="col-md-5">
+          <div class="card bg-dark rounded-5 shadow">
+            <div class="card-header p-0 mx-auto">
+              <select
+                class="form-control rounded-bottom rounded-0 bg-dark border-0 text-warning text-center"
+                id="targetLanguageSelect"
+                style="width: 200px"
+              >
+                <option selected>Dil seçin</option>
+              </select>
+            </div>
+            <div class="card-body">
+              <form>
+                <textarea
+                  class="form-control rounded-top rounded-4 bg-dark text-warning border-0"
+                  type="text"
+                  id="targetInput"
+                  placeholder="Çevrilen Metin"
+                  style="resize: none; height: 300px"
+                  readonly
+                ></textarea>
+              </form>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/UI.js"></script>
+  </body>
+</html>
