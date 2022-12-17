@@ -27,7 +27,7 @@ fetch("https://jsonplaceholder.typicode.com/posts")
     let list = "";
     data.forEach((post) => {
       list += `
-      <div class="card m-5 w-25">
+      <div class="card m-5 ">
       <div class="card-body">
       <h5 class="card-title">${post.title}</h5>
       <p class="card-text">${post.body}</p>
