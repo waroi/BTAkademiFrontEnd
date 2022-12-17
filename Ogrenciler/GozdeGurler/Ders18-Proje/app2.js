@@ -14,7 +14,8 @@ function showAllPhotos() {
             <p class="text-center"><strong>Photo Title:</strong> ${photo.title}</p>
             <p class="text-center"><strong>Photo URL: </strong> <img src=${photo.url}/></p>
             <div class=" d-flex justify-content-center mb-5">
-            <button type="button" class="btn btn-primary ms-5">Düzenle</button>
+            <button type="button" class="btn btn-primary ms-5">Edit</button>
+            <button type="button" class="btn btn-danger ms-5">Delete</button>
             </div>`;
         }
       });

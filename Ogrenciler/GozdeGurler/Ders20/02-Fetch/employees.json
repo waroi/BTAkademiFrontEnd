@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Varol Maksutoğlu",
+      "department": "Yazılım",
+      "salary": "5500"
+    },
+    {
+      "name": "Hakan Mollaahmetoğlu",
+      "department": "IT",
+      "salary": "7500"
+    },
+    {
+      "name": "Barış Benli",
+      "department": "Güvenlik",
+      "salary": "8500"
+    }
+  ]
