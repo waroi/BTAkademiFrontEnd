@@ -35,9 +35,3 @@ class Request {
     this.xhr.send(JSON.stringify(updatePhoto));
   }
 }
-
-const request = new Request("https://jsonplaceholder.typicode.com/photos");
-
-function showAllPhotos() {
-  request.get();
-}

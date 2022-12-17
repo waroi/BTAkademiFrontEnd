@@ -1,5 +1,12 @@
 const req = new Request("https://jsonplaceholder.typicode.com/photos");
 const frmNewPhoto = document.getElementById("frmNewPhoto");
+
+// const request = new Request("https://jsonplaceholder.typicode.com/photos");
+
+function showAllPhotos() {
+  req.get();
+}
+
 eventListeners();
 function eventListeners() {
   document.addEventListener("DOMContentLoaded", showAllPhotos);
