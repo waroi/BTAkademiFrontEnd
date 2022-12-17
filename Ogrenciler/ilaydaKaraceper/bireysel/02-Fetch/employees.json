@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Varol",
+        "department":"Yazılım",
+        "salary":"5500"
+    },
+    {
+        "name":"Ahmet",
+        "department":"Yazılım",
+        "salary":"7500"
+    },
+    {
+        "name":"Barış",
+        "department":"Yazılım",
+        "salary":"8500"
+    }
+]
