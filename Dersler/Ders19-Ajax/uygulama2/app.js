@@ -45,7 +45,7 @@ class Request {
 
 const req = new Request("https://jsonplaceholder.typicode.com/posts");
 
-// req.get();
-req.post({ userId: 101, title: "Deneme", body: "Bu bir deneme yazısı" });
+req.get();
+// req.post({ userId: 101, title: "Deneme", body: "Bu bir deneme yazısı" });
 // req.put(1, { userId: 101, title: "Deneme", body: "Bu bir deneme yazısı" });
 // req.delete(1);
