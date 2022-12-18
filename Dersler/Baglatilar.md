@@ -14,6 +14,8 @@
 - [ w3Schools Grid](https://www.w3schools.com/css/css_grid.asp)
 - [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Bootstrap](https://getbootstrap.com/)
+- [RapidApi - Bedava API'ler](https://rapidapi.com/hub)
+- [Json Server] (https://github.com/typicode/json-server)
 
 ## Css Oyunları
 
@@ -23,7 +25,7 @@
 - [Css Battle](https://cssbattle.dev/)
 - [Flexbox Defense](http://www.flexboxdefense.com/)
 - [Flexbox Zombies](https://mastery.games/flexboxzombies/)
-  [FrontEnd Challenges] https://www.frontendmentor.io/challenges
+  [FrontEnd Challenges](https://www.frontendmentor.io/challenges)
 
 ## Odevler
 
