@@ -64,5 +64,4 @@ request
   .catch((err) => console.log(`Hata: ${err.message}`));
 request
   .delete("https://jsonplaceholder.typicode.com/posts", 1)
-  .then((data) => console.log("Silme işlemi başarılı"))
   .catch((err) => console.log(`Hata: ${err.message}`));
