@@ -41,8 +41,9 @@ class Request {
     if (!res.ok) {
       throw new Error(`Bir hata oluştu ${res.status}`);
     }
-    const data2 = await res.json();
-    return data2;
+    // const data = await res.json();
+    // return data;
+    return await res.json();
   }
 }
 
