@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Deneme({name}) {
+export default function Deneme({isim}) {
   return (
-    <div>Bu bir test componentidir. Merhaba {name}</div>
+    <div>Bu bir test componentidir. Merhaba {isim}</div>
   )
 }
