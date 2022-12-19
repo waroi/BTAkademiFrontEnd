@@ -15,6 +15,7 @@
 - [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Bootstrap](https://getbootstrap.com/)
 - [RapidApi - Bedava API'ler](https://rapidapi.com/hub)
+- [Json Server] (https://github.com/typicode/json-server)
 
 ## Css Oyunları
 
