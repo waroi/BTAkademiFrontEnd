@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+    <title>Github Clone</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-info" href="index.html">
+          <img src="img/logo.png" alt="logo" width="50" height="50" />
+          Github Clone
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggle"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarToggle"
+        >
+          <form id="frmSearch" class="d-flex" role="search">
+            <input
+              class="form-control me-2 rounded-pill text-info bg-dark bg-gradient border-0 border-bottom border-dark"
+              id="searchUser"
+              type="search"
+              placeholder="@username"
+              autocomplete="false"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid mt-3">
+      <div id="userContent" class="row g-3">
+        <!--
+        <div class="col-md-9 h-100">
+          <div class="row g-3 mt-1">
+            <div class="col-md-6">
+              <div class="card mb-3 shadow-lg h-100 rounded-0">
+                <div class="card-header">Repository About</div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card mb-3 shadow-lg h-100 rounded-0">
+                <div class="card-header">Repository Languages</div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/Github.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/App.js"></script>
+  </body>
+</html>
