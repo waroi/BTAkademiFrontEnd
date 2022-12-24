@@ -24,7 +24,6 @@ function getUserFromGithub(e) {
   github
     .getUserInfo()
     .then((data) => {
-      console.log(data);
       UI.createUserInfo(
         data.avatar_url,
         data.name,
@@ -47,8 +46,6 @@ function getUserFromGithub(e) {
     .then(
       (data) =>
         setTimeout(() => {
-          console.log(data);
-
           if (data.lenght !== 0) {
             data.forEach((item) => {
               UI.createUserRepo(
@@ -56,10 +53,12 @@ function getUserFromGithub(e) {
                 item.name,
                 item.html_url,
                 item.license,
-                item.updated_at.slice(0, 10)
+                item.updated_at.slice(0, 10),
+                item.forks
               );
             });
           }
+          searchInput.addEventListener("keyup", searchRepos);
         }, 500) // UI.createUserRepoUI fonksiyonu geçikmeli geldiğinde hata verebiliyor bu sebepten dolayı timeout kullanıldı
     )
     .catch((err) => console.log(err));

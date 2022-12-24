@@ -35,7 +35,7 @@ class UI {
     const cardTitle = document.createElement("h5");
     cardTitle.className = "card-title text-center";
     cardTitle.innerHTML = `
-    <a class="nav-link" target="_blank" href="${userGithubUrl}" title="${userGithubUrl}">@${login} - ${name}</a>
+    <a class="nav-link text-info" target="_blank" href="${userGithubUrl}" title="${userGithubUrl}">@${login} - ${name}</a>
     `;
     const cardDivFollow = document.createElement("div");
     cardDivFollow.className = "gap-3 d-flex flex-row justify-content-center";
@@ -45,9 +45,6 @@ class UI {
     const cardFollowing = document.createElement("p");
     cardFollowing.className = "card-text text-muted ";
     cardFollowing.innerHTML = `<i class="fa-solid fa-user-check text-info"></i> <strong class="text-light">Following:</strong> ${following}`;
-    const cardBioText = document.createElement("p");
-    cardBioText.className = "card-text text-muted   ";
-    cardBioText.innerHTML = `<i class="fa-solid fa-blog text-info"></i> <strong class="text-light">Bio:</strong> ${bio}`;
     const cardCreatedAt = document.createElement("p");
     cardCreatedAt.className = "card-text text-muted ";
     cardCreatedAt.innerHTML = `<i class="fa-regular fa-calendar-check text-info"></i> <strong class="text-light">Created At:</strong> ${createdAt.slice(
@@ -63,8 +60,13 @@ class UI {
     cardDivFollow.appendChild(cardFollowers);
     cardDivFollow.appendChild(cardFollowing);
     cardBody.appendChild(cardDivFollow);
-    cardBody.appendChild(cardBioText);
     cardBody.appendChild(cardCreatedAt);
+    if (bio !== null) {
+      const cardBioText = document.createElement("p");
+      cardBioText.className = "card-text text-muted   ";
+      cardBioText.innerHTML = `<i class="fa-solid fa-blog text-info"></i> <strong class="text-light">Bio:</strong> ${bio}`;
+      cardBody.appendChild(cardBioText);
+    }
     if (company !== null) {
       const cardCompanyText = document.createElement("p");
       cardCompanyText.className = "card-text text-muted";
@@ -93,7 +95,7 @@ class UI {
   static createUserRepoUI(repoOwner) {
     const row = document.getElementById("userContent");
     const col9 = document.createElement("div");
-    col9.className = "col-md-9 h-100";
+    col9.className = "col-md-9";
     const card = document.createElement("div");
     card.id = "userRepo";
     card.className = "card shadow-lg rounded-3 border-0 bg-dark";
@@ -121,16 +123,19 @@ class UI {
     repoName,
     repoUrl,
     repoLicense,
-    repoUpdateAt
+    repoUpdateAt,
+    repoFork
   ) {
     const card = document.getElementById("userRepo");
     const listDiv = document.createElement("div");
 
     listDiv.className = "list-group";
+    listDiv.id = "userList";
     const listItemLink = document.createElement("a");
     listItemLink.className =
       "list-group-item list-group-item-action bg-dark text-light";
     listItemLink.href = repoUrl;
+    listItemLink.target = "_blank";
     if (repoLicense !== null) {
       listItemLink.innerHTML = `
         <div class="d-flex w-100 justify-content-between">
@@ -138,7 +143,11 @@ class UI {
         
            <small class="badge bg-primary rounded-pill mt-2"> <i class="fa-solid fa-passport"></i> ${repoLicense.spdx_id}</small>
         </div>
-        <small class="text-secondary"><i class="fa-solid fa-user"></i>  @${repoOwner} - <i class="fa-solid fa-calendar-check"></i> Update: ${repoUpdateAt}</small>
+        <small class="text-secondary">
+          <i class="fa-solid fa-user"></i>  @${repoOwner} - 
+          <i class="fa-solid fa-calendar-check"></i> Update: ${repoUpdateAt} -
+          <i class="fa-solid fa-code-fork"></i> Forks: ${repoFork}
+        </small>
         `;
 
       card.appendChild(listDiv);
@@ -150,7 +159,11 @@ class UI {
           
              <small class="badge bg-secondary rounded-pill mt-2"> <i class="fa-solid fa-passport"></i> No License</small>
           </div>
-          <small class="text-secondary"><i class="fa-solid fa-user"></i>  @${repoOwner} - <i class="fa-solid fa-calendar-check"></i> Update: ${repoUpdateAt}</small>
+          <small class="text-secondary">
+            <i class="fa-solid fa-user"></i>  @${repoOwner} - 
+            <i class="fa-solid fa-calendar-check"></i> Update: ${repoUpdateAt}
+            <i class="fa-solid fa-code-fork"></i> Forks: ${repoFork}
+          </small>
           `;
 
       card.appendChild(listDiv);
