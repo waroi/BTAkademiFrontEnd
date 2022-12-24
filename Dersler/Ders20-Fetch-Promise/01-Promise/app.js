@@ -27,6 +27,7 @@ function x2(number) {
         // Olumlu
         resolve(number * number);
       } else {
+        // Olumsuz
         reject(new Error("Lütfen sayı girin"));
       }
     }, 2000);
@@ -34,6 +35,6 @@ function x2(number) {
 }
 x2(5)
   .then((response) => response * 2)
-  .then((res2) => (res2 < 100 ? "kaldın" : "geçtin"))
+  .then((res2) => (res2 < 50 ? "kaldın" : "geçtin"))
   .then((res3) => console.log(res3))
   .catch((error) => console.log(error));
