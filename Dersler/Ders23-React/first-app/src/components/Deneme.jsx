@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from "react";
 
-const Deneme = ({ isim, number }) => {
-  let [text, setText] = useState("Varol");
-  const changeButton = () => {
-    setText("Hakan");
-  };
+const Deneme = () => {
+  let [text, setText] = useState("");
   useEffect(() => {
-    console.log("Merhaba Varol Yüklendi");
-  }, []);
-  useEffect(() => {
-    console.log("Hakan Hoş Geldin");
+    setTimeout(function () {
+      setText("Varol");
+    }, 2000);
   }, [text]);
+  useEffect(() => {
+    setText("Varol");
+  }, []);
+  function changeButton() {
+    console.log("Tıklandı");
+    setText("Hakan");
+  }
   return (
     <div>
-      <h2>Bu bir test Componenti {number}</h2>
-      <p>Merhaba {isim}</p>
-      <button onClick={() => changeButton}>Değiştir</button>
+      <h1>Merhaba {text}</h1>
+      <button onClick={changeButton}>Değiştir</button>
     </div>
   );
 };
