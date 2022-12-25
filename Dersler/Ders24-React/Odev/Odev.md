@@ -9,3 +9,6 @@
 # Odev 3
 
 - Hava durumu uygulaması uygulaması yapılacak, react ile :) style-components kullanılacak, api barış tarafından tedarik edilecek :)
+
+API Tedarik edilmiştir. :)
+[WeatherAPI](https://rapidapi.com/weatherapi/api/weatherapi-com/)
