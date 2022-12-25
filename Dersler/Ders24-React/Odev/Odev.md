@@ -1,6 +1,7 @@
 # Odev 1
 
 - Github api kullanılacak, arattığım kullanıcı adının bütün bilgileri ekran görünütüsündeki gibi gelecek. react ile :) style-components kullanılacak
+  [GithubAPI](https://api.github.com/)
 
 # Odev 2
 
