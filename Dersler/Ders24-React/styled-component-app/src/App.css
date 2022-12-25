@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+.riskStatus{
+  color: fff;
+  font-size: 24px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.riskStatus.minimal{
+  background-color: greenyellow;
+}
+.riskStatus.medium{
+  background-color: rgb(245, 97, 17);
+}
+.riskStatus.high{
+  background-color: rgb(250, 5, 5);
+}

@@ -1,0 +1,33 @@
+.moduleCss{
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customButton{
+  background-color: rgb(17, 128, 225);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.success{
+  background-color: rgb(89, 241, 72);
+}
+.error{
+  background-color: rgb(242, 65, 38);
+}
+.primary{
+  background-color: rgb(54, 66, 242);
+}

@@ -8,4 +8,5 @@
 - [Localstorage nedir?]
 - [Map methodu](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 - [Set methodu](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
-- [Prototype nedir ve prototype ile kalıtım nasıl yapılır?]
+- [React Bileşenlerinin Re-render’ı üzerine Analizler] (https://medium.com/frontend-development-with-js/react-bile%C5%9Fen-re-render-%C3%BCzerine-analizler-1-76e2495fdc3b)
+- [JavaScript’in Tarihçesi] (https://medium.com/frontend-development-with-js/javascriptin-tarih%C3%A7esi-1789284fc09c)

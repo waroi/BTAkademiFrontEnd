@@ -7,7 +7,24 @@
   ],
   "profile": { "name": "typicode" },
 
-  "todo":[
-    {"id":"5","gorev":"kitap oku"}
+
+
+  "todos": [
+    {
+      "id": 1,
+      "isDone": true,
+      "text": "Deneme 1"
+    },
+    {
+      "id": 2,
+      "isDone": true,
+      "text": "Kitap Oku"
+    },
+    {
+      "id": 3,
+      "isDone": true,
+      "text": "Spor Yap"
+    }
   ]
 }
+
