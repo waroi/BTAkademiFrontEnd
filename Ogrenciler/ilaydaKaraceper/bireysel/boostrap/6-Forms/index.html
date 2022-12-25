@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body class="p-5">
+
+    <form>
+
+        <div class="form-group">
+            <label for="name">adınız:</label>
+            <input type="text" id="name" class="form-control" placeholder="adınızı giriniz">
+        </div>
+        <div class="form-group mt-3">
+            <label for="surname">soyadınız:</label>
+            <input type="text" id="name" class="form-control" placeholder="soyadınızı giriniz">
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="email">e-mail adresiniz:</label>
+            <input type="text" id="email" class="form-control" placeholder="e-mail adresinizi giriniz">
+            <small class="form-text text-muted">email adresi girmek zorunludur</small>
+        </div>
+        <div class="form-group mt-3">
+            <label for="password">parolanız:</label>
+            <input type="password" id="password" class="form-control" placeholder="parolanızı giriniz">
+            <small class="form-text text-muted">parola girmek zorunludur</small>
+        </div>
+
+        <div class="form-group">
+            <label for="city">doğum yeriniz</label>
+            <select name="city" id="city" class="form-control">
+                <option value="34">İstanbul</option>
+                <option value="6">Ankara</option>
+                <option value="35">İzmir</option>
+                <option value="24">Erzincan</option>
+            </select>
+
+        </div>
+        <div class="form-group mt-3">
+            <label for="message">mesajınız:</label>
+            <textarea name="message" id="message" cols="30" rows="5" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group mt-3">
+            <legend>hobileriniz:</legend>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="checkbox"> Basketbol
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox"> Tenis
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox"> Kitap Okuma
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox"> Atletizm
+                    </label>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="custom-control custom-checkbox mt-4">
+            <input type="checkbox" class="custom-control-input" id="cb">
+            <label class="custom-control-label" for="cb">okudum, onaylıyorum / checkbox</label>
+        </div>
+
+        <div class="custom-control custom-radio mt-4">
+            <input type="radio" class="custom-control-input" id="rb">
+            <label class="custom-control-label" for="rb">okudum, onaylıyorum / radio button</label>
+        </div>
+        <div class="input-group mt-3">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+                <span class="input-group-text" id="ig">@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="input-group mt-3">
+            
+            <div class="input-group-append">
+                <span class="input-group-text" id="ig">http://instagram.com</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

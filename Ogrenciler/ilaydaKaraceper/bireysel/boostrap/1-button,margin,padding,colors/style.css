@@ -1,0 +1,15 @@
+.btn {
+    border-radius: 15px;
+    border-style: none;
+    padding: 10 10 10 10px;
+}
+
+
+body {
+    /* padding: 50px; */
+}
+
+div {
+    width: 250px;
+    height: 250px;
+}
