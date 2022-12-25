@@ -59,7 +59,9 @@ function getUserFromGithub(e) {
             });
           }
           searchInput.addEventListener("keyup", searchRepos);
-        }, 500) // UI.createUserRepoUI fonksiyonu geçikmeli geldiğinde hata verebiliyor bu sebepten dolayı timeout kullanıldı
+        }, 500)
+      // UI.createUserRepoUI fonksiyonu geçikmeli geldiğinde
+      // hata verebiliyor bu sebepten dolayı timeout kullanıldı
     )
     .catch((err) => console.log(err));
 }
