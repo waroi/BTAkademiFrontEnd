@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Color from "./Color";
-const Button = styled.button`
+const Button = styled.a`
+  text-decoration: none;
   margin: 10px;
   padding: 8px 16px;
   font-size: 16px;

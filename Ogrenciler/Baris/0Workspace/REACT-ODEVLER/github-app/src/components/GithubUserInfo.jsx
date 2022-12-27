@@ -36,13 +36,20 @@ const GithubUserInfo = ({ username }) => {
             <CardImage src={userInfo.avatar_url} />
             <ButtonGroup>
               <Button secondary>
+                <i class="fa-solid fa-users text-info"></i>
                 Followers
                 <Badge>{userInfo.followers}</Badge>
               </Button>
 
               <Button primary>
+                <i class="fa-solid fa-user-check text-info"></i>
                 Following
                 <Badge>{userInfo.following}</Badge>
+              </Button>
+
+              <Button href={userInfo.html_url} target="_blank">
+                <i className="fa-brands fa-github"></i>
+                Github
               </Button>
             </ButtonGroup>
           </Column>

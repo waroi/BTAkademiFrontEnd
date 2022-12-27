@@ -16,7 +16,7 @@ function App() {
             <Image src={logo} width="50" />
             Github (ReactJS)
           </NavbarBrand>
-          {/* <SearchUser /> */}
+          <SearchUser />
         </Navbar>
         <Github user="waroi" />
       </Container>

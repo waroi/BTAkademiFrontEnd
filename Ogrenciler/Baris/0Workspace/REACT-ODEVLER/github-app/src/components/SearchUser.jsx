@@ -9,7 +9,8 @@ const SearchUser = () => {
     setValue(e.target.value);
   }
   return (
-    <SearchInput type="search" placeholder="örn:@bbssyl" onSubmit={getUser} />
+    <form onSubmit={getUser}></form>
+    //  <SearchInput type="search" placeholder="örn:@bbssyl" onSubmit={getUser} />
   );
 };
 
