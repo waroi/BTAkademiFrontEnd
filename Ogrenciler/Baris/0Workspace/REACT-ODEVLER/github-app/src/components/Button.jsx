@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Color from "./Color";
 const Button = styled.button`
+  margin: 10px;
   padding: 8px 16px;
   font-size: 16px;
   border: none;
@@ -8,8 +9,6 @@ const Button = styled.button`
   box-shadow: 0 0 4px 1px #3c3c3c;
   outline: none;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
   ${(props) => {
     if (props) {
       return Color.default;

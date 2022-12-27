@@ -7,7 +7,7 @@ const Input = styled.input`
   box-shadow: 0 0 8px 1px #6c757d;
   outline: 2px solid #6c757d;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 14px;
   ${(props) => {
     if (props) {
       return `

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const Column = styled.div`
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2rem;
-  width: 100%;
+  width: 90%;
 `;
 
 export default Column;
