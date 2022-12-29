@@ -23,7 +23,6 @@ function App() {
             Github (ReactJS)
           </NavbarBrand>
           <Input type="search" placeholder="ör: bbssyl" onChange={getUser} />
-          <SearchUser />
         </Navbar>
         <Github user={search !== null ? "bbssyl" : search} />
       </Container>
