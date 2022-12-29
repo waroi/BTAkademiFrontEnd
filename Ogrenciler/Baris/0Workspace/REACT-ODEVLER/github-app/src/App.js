@@ -6,11 +6,10 @@ import NavbarBrand from "./components/NavbarBrand";
 import logo from "./img/logo.png";
 import Github from "./components/Github";
 import { useState } from "react";
-import Input from "./components/Input";
 import SearchUser from "./components/SearchUser";
 
 function App() {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(null);
   function getUser(e) {
     setSearch(e.target.value);
   }
@@ -22,9 +21,9 @@ function App() {
             <Image src={logo} width="50" />
             Github (ReactJS)
           </NavbarBrand>
-          <Input type="search" placeholder="ör: bbssyl" onChange={getUser} />
+          <SearchUser props={getUser} />
         </Navbar>
-        <Github user={search !== null ? "bbssyl" : search} />
+        {/* <Github user={search == null ? "bbssyl" : search} /> */}
       </Container>
     </div>
   );

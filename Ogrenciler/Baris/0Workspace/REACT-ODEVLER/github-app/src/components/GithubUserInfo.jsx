@@ -14,6 +14,12 @@ import Column from "./Column";
 const GithubUserInfo = ({ username }) => {
   const [userInfo, setUserInfo] = useState([]);
   useEffect(() => {
+    // const option = {
+    //   method: "GET",
+    //   headers: {
+    //     Authorization: "Token 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",
+    //   },
+    // };
     fetch(`http://api.github.com/users/${username}`)
       .then((res) => res.json())
       .then(

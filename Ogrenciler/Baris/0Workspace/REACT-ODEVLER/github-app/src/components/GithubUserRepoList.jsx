@@ -8,6 +8,12 @@ import Link from "./Link";
 const GithubUserRepoList = ({ username }) => {
   const [userRepos, setUserRepos] = useState([]);
   useEffect(() => {
+    // const option = {
+    //   method: "GET",
+    //   headers: {
+    //     Authorization: "Token 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",
+    //   },
+    // };
     fetch(`https://api.github.com/users/${username}/repos?per_page=100`)
       .then((res) => res.json())
       .then(
@@ -31,10 +37,11 @@ const GithubUserRepoList = ({ username }) => {
                   <i className="fa-solid fa-folder"></i> {repo.name}
                 </Link>{" "}
                 <small>
-                  <i class="fa-solid fa-code-fork"></i>Fork: {repo.forks}{" "}
+                  <i className="fa-solid fa-code-fork"></i>Fork: {repo.forks}{" "}
                 </small>
                 <small>
-                  <i class="fa-solid fa-star"></i>Starz: {repo.stargazers_count}
+                  <i className="fa-solid fa-star"></i>Starz:{" "}
+                  {repo.stargazers_count}
                 </small>
               </ListItem>
             );
