@@ -62,20 +62,23 @@ const GithubUserInfo = ({ username }) => {
           <Column>
             <List>
               <ListItem>
-                <i className="fa-regular fa-calendar-check text-info"></i>
+                <i className="fa-solid fa-book-bookmark"></i>
+                <strong> Public Repositories:</strong> {userInfo.public_repos}
+              </ListItem>
+              <ListItem>
+                <i className="fa-regular fa-calendar-check"></i>
                 <strong> Created At:</strong> {userInfo.created_at}
               </ListItem>
-
               <ListItem>
-                <i className="fa-solid fa-blog text-info"></i>
+                <i className="fa-solid fa-blog"></i>
                 <strong> Bio:</strong> {userInfo.bio}
               </ListItem>
               <ListItem>
-                <i className="fa-solid fa-building text-info"></i>
+                <i className="fa-solid fa-building"></i>
                 <strong> Company:</strong> {userInfo.company}
               </ListItem>
               <ListItem>
-                <i className="fa-solid fa-location text-info"></i>
+                <i className="fa-solid fa-location"></i>
                 <strong> Location:</strong> {userInfo.location}
               </ListItem>
               <ListItem>

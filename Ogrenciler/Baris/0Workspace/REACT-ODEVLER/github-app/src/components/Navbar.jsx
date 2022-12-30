@@ -9,6 +9,9 @@ const Navbar = styled.nav`
   box-shadow: 0 0 10px 4px #5c5c5c;
   width: 90%;
   border-radius: 4px;
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
   ${(props) => {
     if (props) {
       return color.default;
