@@ -137,6 +137,12 @@
 // let zaman = new Date();
 // console.log(zaman);
 // console.log(typeof zaman);
+// console.log(zaman.getMonth());
+// console.log(zaman.getFullYear());
+// console.log(zaman.getMinutes());
+// console.log(zaman.getMilliseconds);
+
+
 
 
 // // Get Methods
@@ -151,7 +157,11 @@
 // console.log(zaman.getMilliseconds);
 
 // // Set Methods
+let zaman = new Date ();
 
+zaman.setDate(25);
+zaman.setMonth(3);
+ 
 // zaman.setDate(25);
 // zaman.setMonth(3);
 // zaman.setFullYear(2024);
@@ -203,7 +213,7 @@ veri += " Karaçeper";
 
 veri = 'Benim adım' + ' ' + firstname + ' soyadım ' + lastname + ' yaşım ' + age;
 
-
+ 
 // CONCAT metodu ile birleştirme
 
 //veri = firstname.concat(' ',lastname);
