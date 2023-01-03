@@ -5,9 +5,15 @@ import Image from "./components/Image";
 import NavbarBrand from "./components/NavbarBrand";
 import logo from "./img/logo.png";
 import Github from "./components/Github";
-import SearchUser from "./components/SearchUser";
+import { useState } from "react";
+import SearchUserInput from "./components/SearchUserInput";
 
 function App() {
+  const [search, setSearch] = useState(null);
+  function getUser(e) {
+    e.preventDefault();
+    setSearch(e.target.firstElementChild.value);
+  }
   return (
     <div className="App">
       <Container>
@@ -16,9 +22,9 @@ function App() {
             <Image src={logo} width="50" />
             Github (ReactJS)
           </NavbarBrand>
-          <SearchUser />
+          <SearchUserInput props={getUser} />
         </Navbar>
-        <Github user="waroi" />
+        <Github user={search == null ? "bbssyl" : search} />
       </Container>
     </div>
   );

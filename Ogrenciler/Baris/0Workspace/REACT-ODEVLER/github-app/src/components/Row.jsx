@@ -6,6 +6,9 @@ const Row = styled.div`
   flex-direction: row;
   gap: 2rem;
   width: 90%;
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
 `;
 
 export default Row;
