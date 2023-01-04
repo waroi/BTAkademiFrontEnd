@@ -1,10 +1,10 @@
 import "./App.css";
-import WeatherApi from "./components/WeatherApi";
-
+import "semantic-ui-css/semantic.min.css";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="App">
-      <WeatherApi />
+      <Navbar />
     </div>
   );
 }

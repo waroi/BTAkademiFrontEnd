@@ -2,6 +2,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "semantic-ui-css": "^2.5.0"
   }
 }
