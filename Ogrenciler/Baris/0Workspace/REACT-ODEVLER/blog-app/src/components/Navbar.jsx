@@ -3,7 +3,7 @@ import NavbarBrand from "./NavbarBrand";
 import logo from "../img/logo.png";
 import NavbarItem from "./NavbarItem";
 import NavbarLink from "./NavbarLink";
-const Navbar = () => {
+const Navbar = ({ showForm }) => {
   const Navbar = styled.nav`
     display: flex;
     flex-direction: row;
@@ -21,8 +21,8 @@ const Navbar = () => {
         Blog-App
       </NavbarBrand>
       <NavbarItem>
-        <NavbarLink href="#">
-          <i class="fa-solid fa-circle-plus"></i>
+        <NavbarLink href="#" onClick={showForm}>
+          <i className="fa-solid fa-circle-plus"></i>
           Yeni Gönderi
         </NavbarLink>
       </NavbarItem>
