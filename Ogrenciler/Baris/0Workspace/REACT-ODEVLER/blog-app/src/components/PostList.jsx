@@ -16,7 +16,7 @@ const PostList = () => {
         return (
           <Post
             key={element.id}
-            title={element.title}
+            subject={element.subject}
             text={element.text}
             author={element.author}
             date={element.date}

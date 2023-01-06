@@ -3,10 +3,10 @@ import CardHeader from "./CardHeader";
 import CardText from "./CardText";
 import CardBody from "./CardBody";
 import CardFooter from "./CardFooter";
-const Post = ({ title, text, author, date }) => {
+const Post = ({ subject, text, author, date }) => {
   return (
     <Card>
-      <CardHeader>{title}</CardHeader>
+      <CardHeader>{subject}</CardHeader>
       <CardBody>
         <CardText>{text}</CardText>
       </CardBody>

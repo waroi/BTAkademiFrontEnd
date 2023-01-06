@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Color from "./Color";
 
 const NavbarLink = styled.a`
   text-decoration: none;
@@ -10,7 +11,7 @@ const NavbarLink = styled.a`
   border-radius: 8px;
   color: #fff;
   transition: 0.4s ease-in-out;
-  background: linear-gradient(to bottom right, #227884, #002b5b);
+  ${Color.default}
   :hover {
     box-shadow: 0 0 8px 1px #3c3c3c;
     opacity: 0.8;

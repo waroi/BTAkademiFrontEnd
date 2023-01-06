@@ -3,22 +3,22 @@ import NavbarBrand from "./NavbarBrand";
 import logo from "../img/logo.png";
 import NavbarItem from "./NavbarItem";
 import NavbarLink from "./NavbarLink";
+import Color from "./Color";
 const Navbar = ({ showForm }) => {
   const Navbar = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
     box-shadow: 0 0 8px 1px #3c3c3c;
     position: sticky;
+    ${Color.primary}
   `;
 
   return (
     <Navbar>
       <NavbarBrand>
         <img src={logo} alt={logo} width="100px" />
-        Blog-App
       </NavbarBrand>
       <NavbarItem>
         <NavbarLink href="#" onClick={showForm}>
