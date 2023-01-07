@@ -1,0 +1,10 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "DENEME BAŞLIK",
+      "author": "DENEME YAZAR",
+      "text":"DENEME İÇERİK"
+    }
+  ]
+}
