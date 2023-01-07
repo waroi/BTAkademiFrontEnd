@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1673041497384,
+      "subject": null,
+      "text": null,
+      "author": "Barış",
+      "date": "2023-01-06T21:44:57.384Z"
+    },
+    {
+      "id": 1673041511194,
+      "subject": "Deneme Başlık",
+      "text": null,
+      "author": null,
+      "date": "2023-01-06T21:45:11.194Z"
+    },
+    {
+      "text": "REACT",
+      "id": 1673041511195
+    },
+    {
+      "text": "REACT",
+      "id": 1673041511196
+    },
+    {
+      "text": "asdsad",
+      "id": 1673041511197
+    },
+    {
+      "text": "REACT",
+      "id": 1673041511198
+    }
+  ]
+}
