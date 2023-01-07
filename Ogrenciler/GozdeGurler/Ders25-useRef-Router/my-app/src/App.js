@@ -1,9 +1,14 @@
 import "./App.css";
 import { useRef, useEffect } from "react";
+import { useState } from "react";
+import PortalSample from "./components/PortalSample";
 
 function App() {
   const inputRef = useRef();
   const itemsRef = useRef([]);
+  const customTarget = useRef();
+  const [target, setTarget] = useState(document.body);
+  const [targetText, setTargetText] = useState("Body'deyim");
 
   useEffect(() => {
     if (inputRef.current) {
@@ -22,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+      <div ref={customTarget}></div>
       <input type="text" ref={inputRef} />
       {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => {
         return (
@@ -50,6 +56,21 @@ function App() {
         }}
       >
         Show
+      </button>
+
+      <PortalSample target={target} text={targetText} />
+      <button
+        onClick={() => {
+          if (targetText === "Body'deyim") {
+            setTarget(customTarget.current);
+            setTargetText("customTarget'dayım");
+          } else {
+            setTarget(document.body);
+            setTargetText("Body'deyim");
+          }
+        }}
+      >
+        Hedef Değiştir
       </button>
     </div>
   );
