@@ -1,0 +1,31 @@
+
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Test 1",
+        "author": "Varol",
+        "text": "Deneme Yazısı 1"
+      },
+      {
+        "id": 1,
+        "title": "Test 2",
+        "author": "Varol",
+        "text": "Deneme Yazısı 1"
+      },
+      {
+        "id": 1,
+        "title": "Test 3",
+        "author": "Esma",
+        "text": "Deneme Yazısı 1"
+      },
+      {
+        "id": 1,
+        "title": "Test 4",
+        "author": "Hakan",
+        "text": "Deneme Yazısı 1"
+      }
+    ]
+  }
+
+  
