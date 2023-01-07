@@ -15,9 +15,9 @@ const SendPost = () => {
   // const [postAuthor, setPostAuthor] = useState();
   // const [postDate, setPostDate] = useState();
 
-  const handleChange = (e) => {
-    setPost({ [e.target.name]: e.target.value });
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // console.log(postSubject);
     //
     // setPost({
     //   id: Date.now(),
@@ -34,10 +34,6 @@ const SendPost = () => {
     // setPostAuthor(e.target.name === "author" ? e.target.value : null);
     // setPostDate(new Date());
   };
-
-  const handleSubmit = () => {
-    // console.log(postSubject);
-
     // const newPost = {
     //   id: postId,
     //   subject: postSubject,
@@ -61,26 +57,21 @@ const SendPost = () => {
         <Label htmlFor="subject">
           {<i className="fa-solid fa-heading"></i>} Konu
         </Label>
-        <Input
-          id="subject"
-          type="text"
-          name="subject"
-          onChange={handleChange}
-        />
+        <Input id="subject" type="text" name="subject" />
       </InputGroup>
 
       <InputGroup>
         <Label htmlFor="author">
           {<i className="fa-solid fa-at"></i>} Yazar
         </Label>
-        <Input id="author" type="text" name="author" onChange={handleChange} />
+        <Input id="author" type="text" name="author" />
       </InputGroup>
 
       <InputGroup>
         <Label htmlFor="text">
           {<i className="fa-solid fa-comment"></i>} Gönderilecek Post
         </Label>
-        <Textarea id="text" rows={10} name="text" onChange={handleChange} />
+        <Textarea id="text" rows={10} name="text" />
       </InputGroup>
       <ButtonGroup>
         <Button color="primary">

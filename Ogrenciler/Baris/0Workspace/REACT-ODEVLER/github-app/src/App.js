@@ -11,8 +11,8 @@ import SearchUserInput from "./components/SearchUserInput";
 function App() {
   const [search, setSearch] = useState(null);
   function getUser(e) {
-    e.preventDefault();
     setSearch(e.target.firstElementChild.value);
+    e.preventDefault();
   }
   return (
     <div className="App">
@@ -24,7 +24,7 @@ function App() {
           </NavbarBrand>
           <SearchUserInput props={getUser} />
         </Navbar>
-        <Github user={search == null ? "bbssyl" : search} />
+        {search && <Github user={search} />}
       </Container>
     </div>
   );
