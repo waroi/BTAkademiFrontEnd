@@ -1,0 +1,82 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Test 1",
+      "author": "Varol",
+      "test": "Deneme Yazısı 1"
+    },
+    {
+      "id": 2,
+      "title": "Test 2",
+      "author": "Gözde",
+      "test": "Deneme Yazısı 2"
+    },
+    {
+      "id": 3,
+      "title": "Test 3",
+      "author": "Esma",
+      "test": "Deneme Yazısı 3"
+    },
+    {
+      "id": 4,
+      "title": "Test 3",
+      "author": "Barış",
+      "test": "Deneme Yazısı 4"
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 1673084300883,
+      "test": ""
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 1673084318562,
+      "test": ""
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 1673084439004,
+      "test": ""
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 1673084522212,
+      "test": ""
+    },
+    {
+      "title": "",
+      "author": "",
+      "id": 1673084861888,
+      "test": ""
+    },
+    {
+      "id": 1673084861889
+    },
+    {
+      "id": 1673084861890
+    },
+    {
+      "title": "sds",
+      "author": "sds",
+      "id": 1673085155466,
+      "test": "sds"
+    },
+    {
+      "title": "adsa",
+      "author": "asd",
+      "id": 1673086309576,
+      "test": "asd"
+    },
+    {
+      "title": "asd",
+      "author": "asd",
+      "id": 1673086388614,
+      "test": "asd"
+    }
+  ]
+}
