@@ -7,10 +7,6 @@ const Homeview = () => {
     <div>
       <h1>Anasayfa</h1>
       <button onClick={() => navigate("/news")}>Haberler Sayfasına Git</button>
-      <button onClick={() => navigate("/user")}>User Sayfasına Git</button>
-      <button onClick={() => navigate("/parametre/1234")}>
-        Parametre Sayfasına Git
-      </button>
     </div>
   );
 };
