@@ -7,6 +7,7 @@ const NewView = () => {
     <div>
       <h1>Haberler</h1>
       <button onClick={() => navigate("/")}>Asayfa'ya Git</button>
+      <button onClick={() => navigate("/user")}>User Sayfasına Git</button>
     </div>
   );
 };
