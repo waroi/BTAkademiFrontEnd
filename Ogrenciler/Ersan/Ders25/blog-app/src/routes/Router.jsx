@@ -2,15 +2,19 @@ import React from "react";
 import { useRoutes, Navigate } from "react-router-dom";
 import HomeView from "../views/HomeView";
 import PostView from "../views/PostView";
-
+import AboutView from "../views/AboutView";
 import userRouter from "./userRouter";
 import ParametreView from "../views/ParametreView";
 
 const Router = () => {
+  <AboutView />;
+  <ParametreView />;
   const routes = useRoutes([
     { path: "/", element: <HomeView /> },
     userRouter,
-    { path: "/parametre/:id", element: <ParametreView /> },
+    { path: "/posts/parametre/:{id}", element: <ParametreView /> },
+    { path: "/about", element: <AboutView /> },
+    userRouter,
     {
       path: "/posts",
       element: <PostView />,
