@@ -6,6 +6,7 @@ import userRouter from "./userRouter";
 import ParametreView from "../views/ParametreView";
 import SportsNewView from "../views/SportsNewView";
 import EconomyNewView from "../views/EconomyNewView";
+import SportParam from "../views/SportParam";
 
 const Router = () => {
   const routes = useRoutes([
@@ -17,7 +18,11 @@ const Router = () => {
       element: <NewView />,
       children: [
         { index: true, element: <Navigate to="/news/sports" /> },
-        { path: "sports", element: <SportsNewView /> },
+        {
+          path: "sports",
+          element: <SportsNewView />,
+          children: [{ path: ":name", element: <SportParam /> }],
+        },
         { path: "economy", element: <EconomyNewView /> },
       ],
     },
