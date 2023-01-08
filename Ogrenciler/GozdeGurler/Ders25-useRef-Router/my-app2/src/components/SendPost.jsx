@@ -6,7 +6,11 @@ function SendPost({ postUpdate }) {
   const authorRef = useRef();
   const testRef = useRef();
 
-  const [, setPost] = useState({});
+  const [post, setPost] = useState({
+    title: "",
+    author: "",
+    test: "",
+  });
 
   const handleSubmit = (e) => {
     const newPost = {
@@ -22,33 +26,48 @@ function SendPost({ postUpdate }) {
       .then((res) => {
         setPost(res.data);
         postUpdate(!postUpdate);
-        console.log(res.data);
+
+        // console.log(res.data);
       })
       .catch((err) => console.log(err));
   };
   return (
     <div>
       <form onSubmit={handleSubmit}>
+        <h2 style={{ marginTop: "0" }}>Yeni Makale Ekle</h2>
         <p>
           <label>
-            Title:
-            <input name="title" type="text" ref={titleRef} />
+            Başlık:
+            <br />
+            <input name="title" type="text" ref={titleRef} className="input" />
           </label>
         </p>
         <p>
           <label>
-            Author:
-            <input name="author" type="text" ref={authorRef} />
+            Yazar:
+            <br />
+            <input
+              name="author"
+              type="text"
+              ref={authorRef}
+              className="input"
+            />
           </label>
         </p>
         <p>
           <label>
             Deneme Yazısı:
-            <input name="denemeText" type="text" ref={testRef} />
+            <br />
+            <textarea
+              name="denemeText"
+              type="text"
+              ref={testRef}
+              className="input"
+            />
           </label>
         </p>
         <p>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Gönder" />
         </p>
       </form>
     </div>

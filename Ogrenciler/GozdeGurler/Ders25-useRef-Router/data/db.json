@@ -2,81 +2,33 @@
   "posts": [
     {
       "id": 1,
-      "title": "Test 1",
-      "author": "Varol",
-      "test": "Deneme Yazısı 1"
+      "title": "YEDİGÖLLER MİLLİ PARKI – TABLO GİBİ BİR DOĞA KAÇAMAĞI",
+      "author": "BİZ EVDE YOKUZ",
+      "test": "İşte karşınızda İstanbul ve Ankara’ya  yakınlığı ile pratik mi pratik, alt yapı bulunması ile konforlu mu konforlu bir doğa kaçamağı. Üstelik her mevsimi de ayrı güzel. Kışın karlar altında, ilkbaharda yemyeşil haliyle, yazın çamlarının gölgesiyle kalpleri çalıyorsa da fotoğraf tutkunları için en fotojenik hali sarıdan kırmızıya tüm güz renklerini görebileceğiniz sonbahar hali."
     },
     {
       "id": 2,
-      "title": "Test 2",
-      "author": "Gözde",
-      "test": "Deneme Yazısı 2"
+      "title": "ZAKİNTOS ADASI’NDA GEZİLECEK YERLER – YUNANİSTAN",
+      "author": "BİZ EVDE YOKUZ",
+      "test": "Ada, sahilindeki meşhur gemi enkazı, camgöbeği suları, dünyaca ünlü plajı Navagio, kızıldan fuşyaya çalan gün batımları ile İtalya ve Yunanistan arasındaki İyon denizinde keşfedilmeyi bekleyen bir Yunan rüyası. Kartpostallık plajları, şemsiye saplamalık bakir koyları, leziz bütçe dostu sofraları ve birbirinden muhteşem manzaralara bakan villa kiralama opsiyonları ile Zakintos haklı olarak 6000 Yunan adası arasında en popülerlerinden."
     },
     {
       "id": 3,
-      "title": "Test 3",
-      "author": "Esma",
-      "test": "Deneme Yazısı 3"
+      "title": "BOZCAADA KOYLARI VE PLAJLARI – YÜZMEK İÇİN EN GÜZEL YERLER",
+      "author": "BİZ EVDE YOKUZ",
+      "test": "“Havlunu, şemsiyeni, katlanan sandalyeni getir kurul” gibi en temel keyiflerin bir gün bir lükse döneceğine kim inanırdı? Bozcaada medeni insanlarla, çöpsüz, bakımlı halk plajlarında yüzebileceğiniz son kalan yerlerden bir tanesi. Etrafta ne bir mangalcı var, ne de kenara çekip müziği ile keyfinize limon sıkan bir araba… Öte yandan işletmesiz rahat edemeyenler için salaş beach clublar da var. Ne yardan ne serden vazgeçebilenler ise sahil boyunca dizilmiş restoranların olduğu Ayazma Plajı’nı tercih edebilirler. Denizden çıkıp oturacağınız samimi mekanları, yaz sıcağına inat püfür püfür esen rüzgarı ile insana “oh be!” dedirten bir deniz kaçamağı için adanın en popüler plaj ve işletmelerini derledik."
     },
     {
-      "id": 4,
-      "title": "Test 3",
-      "author": "Barış",
-      "test": "Deneme Yazısı 4"
+      "title": "KUZEY IŞIKLARINI İZLEMEK İÇİN EN İYİ ÜLKELER & ZAMANLARI",
+      "author": "BİZ EVDE YOKUZ",
+      "id": 1673112335654,
+      "test": "Kuzey ışıkları nerede çıkıyor sorusu, aurora görmek isteyen herkesin ilk araştırdığı konu. Bu yazımızda hem hangi ülkelerde görüldüğünden, hem de ülkelerin birbirlerine göre avantaj ve dezavantajlarından bahsedeceğiz.\n\nAncak buradaki ülkelerden birindeki kuzey ışıklarının göründüğü şehirlerden birine gitmek yetmiyor. Her yıl, kuzey ışıklarını görmeye binlerce turist gidiyor ama çoğu eli boş dönüyor. Haliyle onca masraf, emek ve zaman boşa gidiyor. Görmenizi garantileyemeyiz ama İsveç ve Finlandiya’daki kuzey ışıkları maceramızdan zaferle dönmüş kişiler olarak, görme şansınızı maksimuma yükseltecek bilgiler içeren bir rehber hazırladık:"
     },
     {
-      "title": "",
-      "author": "",
-      "id": 1673084300883,
-      "test": ""
-    },
-    {
-      "title": "",
-      "author": "",
-      "id": 1673084318562,
-      "test": ""
-    },
-    {
-      "title": "",
-      "author": "",
-      "id": 1673084439004,
-      "test": ""
-    },
-    {
-      "title": "",
-      "author": "",
-      "id": 1673084522212,
-      "test": ""
-    },
-    {
-      "title": "",
-      "author": "",
-      "id": 1673084861888,
-      "test": ""
-    },
-    {
-      "id": 1673084861889
-    },
-    {
-      "id": 1673084861890
-    },
-    {
-      "title": "sds",
-      "author": "sds",
-      "id": 1673085155466,
-      "test": "sds"
-    },
-    {
-      "title": "adsa",
-      "author": "asd",
-      "id": 1673086309576,
-      "test": "asd"
-    },
-    {
-      "title": "asd",
-      "author": "asd",
-      "id": 1673086388614,
-      "test": "asd"
+      "title": "EcoTrails: Köyceğiz, Ortaca ve Dalaman Bisiklet Rotaları",
+      "author": "Pınar Pinzuti",
+      "id": 1673112495851,
+      "test": "Dalaman ve çevresindeki bisiklet rotalarına bu linkten ulaşabilirsiniz.\n\nKöyceğiz Gölü, Alagöl, Sülüklü göl, Sulungur Gölü, İztuzu Gölü, Kocagöl, Gökçeova göleti, Yuvarlakçay kanyonu, Kepez kanyonu, Çiçekbaba dağı, Çal dağı, Ölemez dağı, Eren tepesi, sığla ormanları gibi doğal güzellikler; Kaunos, Pisilis (Sarıgerme), Asar (Yangı), Lydae (Kapıdağı), Lissa (Namazla), Krya (Taşyaka), Kalynda (Şerefler), Daedala (İnlice), Oktapolis (Kızılkaya) antik kentleri; Sultaniye, Çandır, Dalyan, Gökbel, Marmarlı, Karadonlar, Fevziye, Kayadibi, Kızılkaya, İnlice’deki lahit ve kaya mezarları gibi tarihi ve arkeolojik alanlar keşfedilebilir. "
     }
   ]
 }
