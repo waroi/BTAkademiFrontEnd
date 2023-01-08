@@ -1,12 +1,10 @@
 import "./App.css";
-import { useRef, useEffect } from "react";
+import Router from "./routes/Router";
 
 function App() {
-  const inputRef=useRef();
-  useEffect(())
   return (
     <div className="App">
-      <input type="text" />
+      <Router />
     </div>
   );
 }
