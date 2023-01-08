@@ -12,7 +12,7 @@ const Router = () => {
   const routes = useRoutes([
     { path: "/", element: <HomeView /> },
     userRouter,
-    { path: "/posts/parametre/:{id}", element: <ParametreView /> },
+    { path: "/posts/parametre/:id", element: <ParametreView /> },
     { path: "/about", element: <AboutView /> },
     userRouter,
     {
