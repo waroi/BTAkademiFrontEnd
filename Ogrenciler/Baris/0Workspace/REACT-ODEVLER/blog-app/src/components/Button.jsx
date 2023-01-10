@@ -2,8 +2,11 @@ import styled from "styled-components";
 import Color from "./Color";
 
 export const Button = styled.button`
-  margin: 0 auto;
-  padding: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
   border-radius: 4px;
   ${(props) => {
     if (props.color === "primary") {
@@ -20,7 +23,19 @@ export const Button = styled.button`
       return Color.default;
     }
   }}
+`;
+
+export const Dropdown = styled.div`
+  position: relative;
+  display: block;
+`;
+
+export const DropdownMenu = styled.div`
+  min-width: 200px;
+  position: absolute;
+  display: none;
+  z-index: 1;
   :hover {
-    opacity: 0.8;
+    display: block;
   }
 `;

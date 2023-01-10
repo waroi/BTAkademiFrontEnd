@@ -1,0 +1,26 @@
+{
+  "designerInfo": [
+    {
+      "id": 1,
+      "name": "Barış BENLİ",
+      "email": "bb.sosyal@pm.me",
+      "job": "Front-End Developer",
+      "phoneNumber": "+905555555555",
+      "address": "Şırnak, TR",
+      "photo": "avatar.png"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1673386249783,
+      "title": "Deneme 3",
+      "img": "https://www.book530.com/paintingpic/1227b/12303776625487.jpg",
+      "text": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit eum ipsam porro deserunt nemo incidunt! Doloribus dolor esse, sunt ipsam labore ex itaque explicabo nobis sit eum neque modi beatae dolore ut dicta sequi optio soluta repellat! Officia qui laborum ea nemo, alias cumque harum ratione delectus similique sequi, odio dicta, quis eos suscipit sapiente corrupti amet? Optio doloremque, qui officiis natus, veniam quod eveniet laboriosam reprehenderit unde a libero perspiciatis et dolor quo dolorum nobis quis reiciendis quos vitae vero odio laudantium nostrum? Iste illo facere dolores pariatur molestiae, possimus tempora excepturi non debitis quam eligendi exercitationem quis voluptatibus architecto harum beatae temporibus illum. Est aspernatur dicta ipsam. Ipsam quod iure, recusandae perferendis dignissimos nemo, ad neque accusantium fugit, quo beatae ea. Exercitationem culpa nobis consequuntur? Fugiat autem libero ex totam omnis impedit, quidem voluptatum tempora perspiciatis, ab, possimus maiores ipsam sit eligendi eum dolores similique vitae. Vero minima molestiae repellendus incidunt a nesciunt architecto eligendi, ea doloremque, id dolorum recusandae sapiente odit temporibus possimus quasi numquam, ducimus natus accusamus accusantium reprehenderit veritatis rem pariatur. Reprehenderit molestiae laborum ipsa deleniti molestias id provident dignissimos animi adipisci facere quia voluptates dolor architecto explicabo laboriosam accusantium nesciunt saepe sapiente tempora sint esse, voluptatum quos illo? Animi unde eveniet tempore illo cumque reprehenderit cupiditate accusamus perspiciatis ducimus, incidunt eligendi ut aspernatur quia sit in distinctio voluptates vitae, enim iste similique, veniam neque provident esse a! Magni laborum blanditiis veritatis, nemo quaerat esse velit voluptas illum accusamus labore dolor repellat unde dolorem numquam consequatur ipsam neque quo libero ex a, facilis eum magnam et! Dolore officia provident distinctio sunt a! Voluptas, quia sit numquam pariatur optio ratione facere aspernatur quaerat aliquid, ut recusandae repudiandae. Sunt quaerat minima odit officia maxime inventore esse praesentium veniam expedita? Saepe praesentium distinctio rerum atque libero corporis deserunt.",
+      "author": "Barış",
+      "date": "11.01.2023"
+    }
+  ],
+  "contacts": [
+    {}
+  ]
+}

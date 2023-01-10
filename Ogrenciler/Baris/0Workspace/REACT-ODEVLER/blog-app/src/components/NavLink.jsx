@@ -5,9 +5,6 @@ import Color from "./Color";
 const NavLink = styled(Link)`
   padding: 0.5rem;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  gap: 0.2rem;
   text-decoration: none;
   border-radius: 4px;
   transition: 0.5s;

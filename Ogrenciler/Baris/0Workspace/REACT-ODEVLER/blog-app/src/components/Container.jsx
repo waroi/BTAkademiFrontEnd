@@ -2,8 +2,8 @@ import styled from "styled-components";
 import Color from "./Color";
 const Container = styled.div`
   width: fix-content;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 1rem;
   ${(props) => {
     if (props.color === "primary") {
       return Color.primary;

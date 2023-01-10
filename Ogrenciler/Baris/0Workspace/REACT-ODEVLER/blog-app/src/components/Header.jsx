@@ -21,22 +21,25 @@ const Header = () => {
       <Container color="dark">
         <NavList>
           <NavItem>
-            <NavLink href="#" color="link">
-              <i className="fa-brands fa-facebook-f"></i>
+            <NavLink href="mailto:bb.sosyal@pm.me" color="link">
+              <i className="fa-solid fa-envelope"></i>
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#" color="link">
-              <i className="fa-brands fa-twitter"></i>
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#" color="link">
+            <NavLink
+              href="https://github.com/bbssyl"
+              target="_blank"
+              color="link"
+            >
               <i className="fa-brands fa-github"></i>
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#" color="link">
+            <NavLink
+              href="linkedin.com/in/barış-benli-80230a259"
+              target="_blank"
+              color="link"
+            >
               <i className="fa-brands fa-linkedin"></i>
             </NavLink>
           </NavItem>

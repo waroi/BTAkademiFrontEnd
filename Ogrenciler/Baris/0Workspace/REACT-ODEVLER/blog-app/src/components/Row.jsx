@@ -5,7 +5,7 @@ const Row = styled.div`
   padding: 1rem;
   width: fix-content;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   gap: 0.5rem;
 `;
 export default Row;
