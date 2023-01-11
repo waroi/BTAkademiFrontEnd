@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import PostView from "./PostView";
-export const PostListView = () => {
+import GetPost from "./GetPost";
+const GetPostList = () => {
   const [getPosts, setPosts] = useState([]);
 
   const fetchPosts = async () => {
@@ -16,8 +16,9 @@ export const PostListView = () => {
     <>
       {getPosts.map((item) => {
         return (
-          <PostView
+          <GetPost
             key={item.id}
+            id={item.id}
             title={item.title}
             img={item.img}
             text={item.text}
@@ -29,3 +30,4 @@ export const PostListView = () => {
     </>
   );
 };
+export default GetPostList;

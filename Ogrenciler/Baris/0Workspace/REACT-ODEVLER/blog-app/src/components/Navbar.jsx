@@ -37,11 +37,6 @@ const Navbar = () => {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/about" color="link">
-            Hakkında
-          </NavLink>
-        </NavItem>
-        <NavItem>
           <NavLink to="/contact" color="link">
             İletişim
           </NavLink>

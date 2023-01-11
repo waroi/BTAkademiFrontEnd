@@ -23,14 +23,7 @@ const DesignerInfoView = () => {
     <>
       {getUser.map((item) => {
         return (
-          <Card
-            key={item.id}
-            style={{
-              boxShadow: "0 0 12px 1px #cccc",
-              borderRadius: "8px",
-              background: "linear-gradient(to bottom right, #F8F9FA,#cccc)",
-            }}
-          >
+          <Card key={item.id} color="primary">
             <CardBody>
               <Col>
                 <CardImage style={{ borderRadius: "50%" }} src={avatar} />

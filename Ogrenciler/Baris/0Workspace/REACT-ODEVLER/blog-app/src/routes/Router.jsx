@@ -1,14 +1,14 @@
 import { useRoutes } from "react-router-dom";
 import HomeView from "../views/HomeView";
-import AboutView from "../views/AboutView";
 import ContactView from "../views/ContactView";
 import NewPostView from "../views/NewPostView";
+import PostView from "../views/PostView";
 const Router = () => {
   const routes = useRoutes([
     { path: "/", element: <HomeView /> },
     { path: "/contact", element: <ContactView /> },
-    { path: "/about", element: <AboutView /> },
     { path: "/newPost", element: <NewPostView /> },
+    { path: "/post/:id/", element: <PostView /> },
   ]);
   return routes;
 };

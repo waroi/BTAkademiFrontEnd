@@ -5,6 +5,9 @@ const ButtonGroup = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  @media (max-width: 966px) {
+    flex-direction: column;
+  }
 `;
 
 export default ButtonGroup;

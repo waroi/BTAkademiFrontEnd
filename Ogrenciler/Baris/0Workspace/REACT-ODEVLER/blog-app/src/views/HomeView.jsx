@@ -1,22 +1,22 @@
 import Container from "../components/Container";
 import Row from "../components/Row";
-import Col from "../components/Col";
-import { PostListView } from "./PostListView";
+import GetPostList from "../utils/GetPostList";
 import DesignerInfo from "./DesignerInfoView";
 import NewPostButton from "../components/NewPostButton";
 const HomeView = () => {
   return (
     <Container>
+      <h2>Blog Anasayfa</h2>
       <Row>
-        <Col>
+        <div>
           <DesignerInfo />
-        </Col>
-        <Col>
-          <PostListView />
-        </Col>
+        </div>
+        <div style={{ width: "100%" }}>
+          <GetPostList />
+        </div>
       </Row>
       <NewPostButton to="/newPost" color="primary">
-        <i class="fa-solid fa-plus"></i>
+        <i className="fa-solid fa-plus"></i>
       </NewPostButton>
     </Container>
   );

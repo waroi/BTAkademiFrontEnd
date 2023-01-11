@@ -1,3 +1,5 @@
+import { useParams } from "react-router-dom";
+import Container from "../components/Container";
 import {
   Card,
   CardBody,
@@ -7,32 +9,39 @@ import {
   CardText,
   CardImage,
 } from "../components/Card";
-import NavLink from "../components/NavLink";
-const PostView = ({ title, img, text, author, date }) => {
+import { useEffect, useState } from "react";
+const PostView = () => {
+  const { id } = useParams();
+  const [getPost, setPost] = useState([]);
+  const fetchPost = async () => {
+    const data = await fetch("http://localhost:3000/posts/" + id);
+    const parsedData = await data.json();
+    setPost(parsedData);
+  };
+  useEffect(() => {
+    fetchPost();
+  }, []);
   return (
-    <>
+    <Container>
       <Card>
         <CardHeader>
-          <CardTitle>{title}</CardTitle>
+          <CardTitle>{getPost.title}</CardTitle>
         </CardHeader>
         <CardBody>
-          <CardImage src={img} style={{ borderRadius: "8px" }} />
-          <CardText>{text.slice(0, 500)}...</CardText>
-          <div>
-            <NavLink color="primary">Göster</NavLink>
-          </div>
+          <CardImage src={getPost.img} style={{ borderRadius: "8px" }} />
+          <CardText>{getPost.text}</CardText>
         </CardBody>
         <CardFooter>
           <small>
-            <i className="fa-thin fa-at"></i> Yazar: {author}
+            <i className="fa-thin fa-at"></i> Yazar: {getPost.author}
           </small>
           <small>
             <i className="fa-regular fa-calendar-days"></i> Yayınlanma Tarihi:{" "}
-            {date}
+            {getPost.date}
           </small>
         </CardFooter>
       </Card>
-    </>
+    </Container>
   );
 };
 

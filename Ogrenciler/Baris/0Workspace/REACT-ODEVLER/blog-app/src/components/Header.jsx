@@ -15,6 +15,9 @@ const Header = () => {
     display: flex;
     justify-content: center;
     align-items: end;
+    @media (max-width: 966px) {
+      height: 10rem;
+    }
   `;
   return (
     <>
