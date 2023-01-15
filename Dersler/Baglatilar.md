@@ -1,5 +1,7 @@
 # Bağlantılar
 
+## Kaynaklar
+
 - [JS için Mozilla dökümanları](https://developer.mozilla.org/en-US/)
 - [Html, Css, JS için temel dökümantasyon](https://www.w3schools.com)
 - [VsCode indirme linki](https://code.visualstudio.com/)
@@ -15,7 +17,7 @@
 - [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Bootstrap](https://getbootstrap.com/)
 - [RapidApi - Bedava API'ler](https://rapidapi.com/hub)
-- [Json Server] (https://github.com/typicode/json-server)
+- [Json Server](https://github.com/typicode/json-server)
 
 ## Css Oyunları
 
@@ -30,3 +32,16 @@
 ## Odevler
 
 - [Bootstrap Starter](https://bootstrapmade.com/demo/templates/iPortfolio/)
+
+## Extra Kaynaklar
+
+- [Code Image](https://app.codeimage.dev/)
+- [Javascript Design Patterns](https://www.patterns.dev/)
+
+## Haftasonu Okumaları
+
+- [Javascript Motoru Nedir, Nasıl çalışır ? Abstract Syntax Tree, Bytecode nasıl oluşturuluyor ?](https://medium.com/mol42/derinlemesine-javascript-javascript-motoru-nedir-nas%C4%B1l-%C3%A7al%C4%B1%C5%9F%C4%B1r-c129b49f089c)
+- [JavaScript’in Tarihçesi](https://medium.com/frontend-development-with-js/javascriptin-tarih%C3%A7esi-1789284fc09c)
+- [Execution Context, Lexical Environment, Scope ve Clousure Anlamak](https://medium.com/frontend-development-with-js/execution-context-lexical-environment-scope-ve-clousure-anlamak-407d1dba185c)
+- [JavaScript’te this Ne Anlama Geliyor ?](https://medium.com/frontend-development-with-js/javascript-this-ne-anlama-geliyor-77d548e969ae)
+- [React Bileşenlerinin Re-render’ı üzerine Analizler — 1](https://medium.com/frontend-development-with-js/react-bile%C5%9Fen-re-render-%C3%BCzerine-analizler-1-76e2495fdc3b)
