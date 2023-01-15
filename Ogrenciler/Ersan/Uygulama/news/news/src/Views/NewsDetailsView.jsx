@@ -27,16 +27,16 @@ const NewsDetailsView = () => {
       .then((response) => setNews(response))
       .catch((err) => console.error(err));
   }, []);
-  //   console.log(news.value && news.value[index]);
+  console.log(news.value && news.value[index]);
   return (
     <div>
       <Card>
         <CardHeader>
-          {/* <img
-            src={news.value && news.value[index].image}
+          <img
+            src={news.value && news.value[index].image?.thumbnail?.contentUrl}
             alt="Haber görseli"
-            width="100px"
-          /> */}
+            width="200px"
+          />
           <CardTitle>{news.value && news.value[index].name}</CardTitle>
         </CardHeader>
         <Button href={news.value && news.value[index].url} target="_blank">
@@ -44,7 +44,7 @@ const NewsDetailsView = () => {
         </Button>
         <p>{news.value && news.value[index].description}</p>
         <CardFooter>
-          <small>Kaynak: {news.value && news.value[index].providername}</small>
+          <small>Kaynak: {news.value && news.value.providername}</small>
         </CardFooter>
       </Card>
     </div>
