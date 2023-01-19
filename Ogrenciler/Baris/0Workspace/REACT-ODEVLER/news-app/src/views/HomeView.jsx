@@ -1,4 +1,3 @@
-import Container from "../components/Container";
 import GetNewsList from "../components/GetNewsList";
 
 const HomeView = () => {
@@ -11,9 +10,12 @@ const HomeView = () => {
   };
   fetchData();
   return (
-    <Container>
+    <>
+      <h2>
+        <i className="fa-solid fa-arrow-trend-up"></i> Popular News
+      </h2>
       <GetNewsList />
-    </Container>
+    </>
   );
 };
 
