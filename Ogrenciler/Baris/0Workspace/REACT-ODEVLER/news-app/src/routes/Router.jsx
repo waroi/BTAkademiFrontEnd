@@ -1,11 +1,11 @@
 import { useRoutes } from "react-router-dom";
-import ContactView from "../views/ContactView";
 import HomeView from "../views/HomeView";
+import NewsViews from "../views/NewsViews";
 
 const Router = () => {
   const routes = useRoutes([
     { path: "/", element: <HomeView /> },
-    { path: "/contact", element: <ContactView /> },
+    { path: "/news/:name", element: <NewsViews /> },
   ]);
   return routes;
 };

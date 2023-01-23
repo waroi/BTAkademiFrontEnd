@@ -29,6 +29,8 @@ const Navbar = () => {
   const NavbarBrand = styled.h1`
     margin: 0 auto;
     padding: 0.2rem;
+    display: flex;
+    align-items: center;
   `;
   const NavbarList = styled.ul`
     margin: 0;
@@ -46,7 +48,7 @@ const Navbar = () => {
   return (
     <NavbarLayout>
       <NavbarBrand>
-        <img src={logo} alt={logo} width="200" />
+        <img src={logo} alt={logo} width="30" /> News
       </NavbarBrand>
       <NavbarList>
         <NavbarItem>

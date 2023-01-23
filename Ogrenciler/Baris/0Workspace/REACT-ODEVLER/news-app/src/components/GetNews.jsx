@@ -1,48 +1,38 @@
+import { useNavigate } from "react-router-dom";
 import {
   Card,
   CardBody,
   CardImage,
   CardTitle,
   CardText,
-  CardFooter,
   CardHeader,
   CardSmallText,
-  CardBadge,
   CardLink,
 } from "./Card";
 
-const GetNews = () => {
+const GetNews = ({ title, description, image, date, author }) => {
+  const navigate = useNavigate();
   return (
-    <Card>
-      <CardImage src="https://static01.nyt.com/images/2023/01/02/multimedia/02nfl-bills-ambulance-1-a4d3/02nfl-bills-ambulance-1-a4d3-mediumThreeByTwo440.jpg" />
+    <Card style={{ maxWidth: "18rem" }}>
+      <CardImage src={image} />
       <CardHeader>
-        <CardTitle>
-          Damar Hamlin of Buffalo Bills in Critical Condition After Collapsing
-          During N.F.L. Game <CardBadge color="primary">Sport</CardBadge>
-        </CardTitle>
+        <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardBody>
         <CardSmallText>
-          <i className="fa-regular fa-calendar-days"></i> 2023-01-02
+          <i className="fa-regular fa-calendar-days"></i> {date.slice(0, 10)}
+        </CardSmallText>
+
+        <CardSmallText>
+          <i className="fa-solid fa-user-pen"></i> {author}
         </CardSmallText>
         <CardText>
-          Hamlin, a 24-year-old safety, went into cardiac arrest after being
-          hit, but his heartbeat was restored by medical personnel, the Bills
-          said. The game against the Cincinnati Bengals was postponed....
-          <CardLink
-            href="https://www.nytimes.com/2023/01/02/sports/football/damar-hamlin-bills-hit.html"
-            target="_blank"
-          >
-            Devamını Oku <i class="fa-solid fa-angles-right"></i>
+          {description.slice(0, 20)}...
+          <CardLink onClick={() => navigate(`/news/${title}`)}>
+            Devamını Oku <i className="fa-solid fa-angles-right"></i>
           </CardLink>
         </CardText>
       </CardBody>
-      <CardFooter>
-        <CardSmallText>
-          <i className="fa-solid fa-user-pen"></i> Emmanuel Morgan and Ken
-          Belson
-        </CardSmallText>
-      </CardFooter>
     </Card>
   );
 };
