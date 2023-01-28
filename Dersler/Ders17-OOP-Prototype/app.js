@@ -22,14 +22,17 @@ function Employee(name, age, salary) {
   this.name = name;
   this.age = age;
   this.salary = salary;
-  // this.showInfo = function () {
-  //   console.log("Bilgiler gösteriliyor");
-  // };
+  this.showInfo = function () {
+    console.log("Overrides employee");
+  };
 }
 // Yapıcı Fonksiyon - Constructor
 function Person(name, age) {
   this.name = name;
   this.age = age;
+  this.showInfo = function () {
+    console.log("Bilgiler gösteriliyor");
+  };
 }
 
 // Prototype

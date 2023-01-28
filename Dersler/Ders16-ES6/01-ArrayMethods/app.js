@@ -32,8 +32,8 @@ const numbers = [1, 4, 7, 23, 44];
 // });
 
 // forEach() Metodu
-// langs.forEach(function (e) {
-//   console.log(e);
+// langs.forEach(function (lang) {
+//   console.log(lang); // <li key={lang.id} >{lang.text}</li>
 // });
 
 // filter() Metodu
@@ -42,3 +42,14 @@ const numbers = [1, 4, 7, 23, 44];
 // });
 
 // console.log(result);
+
+
+// Reduce() Metodu
+// const totalCount = numbers.reduce((total, number) => total+=number, 0);
+
+// const langsCount = langs.reduce((total, lang) => {
+//   lang.length >= 4 ? total++: total
+//   return total;
+// } , 0);
+
+// console.log(langsCount);
