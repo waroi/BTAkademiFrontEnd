@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Appbar />
-      <Container fluid>
+      <Container fluid className="overflow-hidden" style={{ height: "400px" }}>
         <Row className="g-3 mt-5">
           <GetActors />
         </Row>
