@@ -67,7 +67,17 @@ function SendPost({ postUpdate }) {
           </label>
         </p>
         <p>
-          <input type="submit" value="Gönder" />
+          <input
+            type="submit"
+            value="Gönder"
+            onClick={() =>
+              setPost({
+                title: "",
+                author: "",
+                test: "",
+              })
+            }
+          />
         </p>
       </form>
     </div>
