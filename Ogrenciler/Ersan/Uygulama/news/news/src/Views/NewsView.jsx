@@ -23,7 +23,9 @@ const NewsView = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  return <div>{console.log(news.value && news.value[index])}</div>;
+  return <div>{console.log()}</div>;
 };
 
 export default NewsView;
+
+//news.value && news.value[index]
