@@ -25,33 +25,37 @@ const ActorDetails = () => {
       .catch((err) => console.error(err));
   }, []);
   return (
-    <Container className="mt-5 shadow-lg p-3" style={{ width: "700px" }}>
-      <Carousel fade>
+    <>
+      <Container className="mt-5 shadow-lg p-3" style={{ width: "500px" }}>
+        <Carousel fade>
+          {actor.resource?.images &&
+            actor.resource?.images.map((item) =>
+              item.createdOn === createdOn
+                ? item.relatedTitles.map((data) => {
+                    return (
+                      <Carousel.Item>
+                        <img
+                          height="400px"
+                          className="d-block w-100"
+                          src={data.image?.url}
+                          alt={data.title}
+                        />
+                      </Carousel.Item>
+                    );
+                  })
+                : null
+            )}
+        </Carousel>
+      </Container>
+      <Container>
         {actor.resource?.images &&
-          actor.resource?.images.map((item) =>
-            item.createdOn === createdOn
-              ? item.relatedTitles.map((data) => {
-                  return (
-                    <Carousel.Item>
-                      <img
-                        height="600px"
-                        className="d-block w-100"
-                        src={data.image?.url}
-                        alt={data.title}
-                      />
-                    </Carousel.Item>
-                  );
-                })
-              : null
+          actor.resource?.images.map((data) =>
+            data.createdOn === createdOn ? (
+              <GetActorDetails key={data.id} props={data} />
+            ) : null
           )}
-      </Carousel>
-      {actor.resource?.images &&
-        actor.resource?.images.map((data) =>
-          data.createdOn === createdOn ? (
-            <GetActorDetails key={data.id} props={data} />
-          ) : null
-        )}
-    </Container>
+      </Container>
+    </>
   );
 };
 
