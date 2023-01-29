@@ -4,9 +4,11 @@ import { useState, useEffect } from "react";
 import BEImage from "./BEImage";
 import BEText from "./BEText";
 import BECard from "./BECard";
+import { useNavigate } from "react-router-dom";
 
 const GetActors = () => {
   const [actors, setActors] = useState([]);
+  const navigate = useNavigate();
   useEffect(() => {
     const options = {
       method: "GET",
@@ -29,7 +31,11 @@ const GetActors = () => {
       {actors.resource?.images &&
         actors.resource?.images.map((actor) => {
           return (
-            <Col sm={2} key={actor.id}>
+            <Col
+              sm={2}
+              key={actor.id}
+              onClick={() => navigate(`actor/${actor.createdOn}`)}
+            >
               <BECard className="h-100 bg-dark text-white">
                 <BEImage url={actor.url} />
                 <BEText
