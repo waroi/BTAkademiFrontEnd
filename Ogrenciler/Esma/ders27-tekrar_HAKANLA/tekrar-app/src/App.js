@@ -29,34 +29,39 @@ function App() {
   };
 
   console.log("***");
-   console.log(data);
+  console.log(data);
   return (
     <div className="App">
- 
- 
       <div className="container  ">
         <div className="row align-self-start">
-     { data?.map((d) => (
-      
-         
-        <div className="card col-2  " key={d.id} style={{margin: "10px", height: "40rem",width: "18rem" }}>
-          <img src={d?.i?.imageUrl} className="card-img-top" alt="..." style={{margin: "auto", marginTop: "5px", height: "25rem",width: "16rem" }}/>
-          <div className="card-body">
-            <h5 className="card-title">{d?.l}</h5>
-            <p className="card-text">
-            {d?.s}
-            </p>
-            {/* <a href="#" className="btn btn-primary">
-              Go somewhere
-            </a> */}
-          </div>
-          
-          </div>
-       
-      )
-      )}
-       </div>
+          {data?.map((d) => (
+            <div
+              className="card col-2  "
+              key={d.id}
+              style={{ margin: "10px", height: "40rem", width: "18rem" }}
+            >
+              <img
+                src={d?.i?.imageUrl}
+                className="card-img-top"
+                alt="..."
+                style={{
+                  margin: "auto",
+                  marginTop: "5px",
+                  height: "25rem",
+                  width: "16rem",
+                }}
+              />
+              <div className="card-body">
+                <h5 className="card-title">{d?.l}</h5>
+                <p className="card-text">{d?.s}</p>
+                <a href="#" className="btn btn-primary">
+                  Go somewhere
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
+      </div>
     </div>
   );
 }
