@@ -14,9 +14,11 @@ const Appbar = () => {
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              Signed in as: <a href="#login">Barış BENLİ, Ersan KOCABIYIK</a>
-            </Navbar.Text>
+            <Nav className="me-auto">
+              <Navbar.Text>
+                Signed in as: <a href="#login">Barış BENLİ, Ersan KOCABIYIK</a>
+              </Navbar.Text>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
