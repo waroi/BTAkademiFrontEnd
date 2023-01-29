@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  height: 80vh;
+  background-color: aquamarine;
+  margin: 20px 5%;
+}
+
+.App img {
+  width: 350px;
+  height: 350px;
+  margin: 10px 0;
 }
 
 .App-logo {
