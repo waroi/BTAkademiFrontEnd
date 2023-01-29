@@ -37,6 +37,7 @@
 
 - [Code Image](https://app.codeimage.dev/)
 - [Javascript Design Patterns](https://www.patterns.dev/)
+- [30 Days Of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 
 ## Haftasonu Okumaları
 

@@ -8,7 +8,7 @@
 .header {
   width: 100vw;
   height: 100px;
-  background-color: #99c7c7;
+  background-color: #dcbaa9;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -29,7 +29,7 @@
 }
 
 form {
-  background-color: antiquewhite;
+  background-color: #d2e5d0;
   width: 75%;
   margin: 0 auto;
 }
@@ -38,5 +38,5 @@ form {
   width: 75%;
   margin: 10px auto;
   border: 1px solid rgb(48, 43, 43);
-  background-color: rgb(253, 250, 245);
+  background-color: #aad6a0;
 }
