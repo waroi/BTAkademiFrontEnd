@@ -2,6 +2,15 @@
 body {
  
 }
+
+
+h1 { font-size: 1.7rem;
+  font-family: 'Comfortaa', cursive;
+font-family: 'Quicksand', sans-serif;
+  color: darkgray;
+  border: solid 5px lightyellow;
+  font-style:normal;
+}
 .escontainer {
   justify-content: center;
   margin-top: 100px;
@@ -30,6 +39,7 @@ body {
   align-items: center;
   
 }
+
 
 
 @media screen and (max-width: 600px) {
