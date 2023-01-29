@@ -22,20 +22,20 @@ function App() {
     )
       .then((response) => response.json())
       .then((response) => {
-        console.log(response);
-        setData(response);
+        // console.log(response);
+        setData(response.d);
       })
       .catch((err) => console.error(err));
   };
 
   console.log("***");
-  //  console.log(options);
+   console.log(data);
   return (
     <div className="App">
-      data.map((d) => (
-    
-        <div className="card" style={{ width: "18rem" }}>
-          <img src="..." className="card-img-top" alt="..." />
+     { data?.map((d) => (
+      
+        <div className="card" key={d.id} style={{ width: "18rem" }}>
+          <img src={d?.i?.imageUrl} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">Card title</h5>
             <p className="card-text">
@@ -48,7 +48,7 @@ function App() {
           </div>
         </div>
       )
-      )
+      )}
     </div>
   );
 }
