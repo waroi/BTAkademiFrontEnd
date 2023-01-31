@@ -1,4 +1,186 @@
 {
-  "category": [],
-  "product": []
+  "categories": [
+    {
+      "name": "Kahvaltılık",
+      "id": 1
+    },
+    {
+      "name": "Tostlar",
+      "id": 2
+    },
+    {
+      "name": "Pizzalar",
+      "id": 3
+    },
+    {
+      "name": "Tavuk Yemekleri",
+      "id": 4
+    },
+    {
+      "name": "Et Yemekleri",
+      "id": 5
+    },
+    {
+      "name": "Sıcak İçecekler",
+      "id": 6
+    },
+    {
+      "name": "Soğuk İçecekler",
+      "id": 7
+    },
+    {
+      "name": "Tatlılar",
+      "id": 8
+    },
+    {
+      "name": "Dondurmalar",
+      "id": 9
+    },
+    {
+      "name": "Gözlemeler",
+      "id": 10
+    }
+  ],
+  "products": [
+    {
+      "categoryId": "1",
+      "name": "Serpme Kahvaltı",
+      "id": 1
+    },
+    {
+      "categoryId": "1",
+      "name": "Kahvaltı Tabağı",
+      "id": 2
+    },
+    {
+      "categoryId": "2",
+      "name": "Karışık Tost",
+      "id": 3
+    },
+    {
+      "categoryId": "2",
+      "name": "Sucuklu Tost",
+      "id": 4
+    },
+    {
+      "categoryId": "2",
+      "name": "Kaşarlı Tost",
+      "id": 5
+    },
+    {
+      "categoryId": "3",
+      "name": "Karışık Pizza",
+      "id": 6
+    },
+    {
+      "categoryId": "3",
+      "name": "Şefin Pizzası",
+      "id": 7
+    },
+    {
+      "categoryId": "3",
+      "name": "Ton Balıklı Pizza",
+      "id": 8
+    },
+    {
+      "categoryId": "3",
+      "name": "Dört Peynirli Pizza",
+      "id": 9
+    },
+    {
+      "categoryId": "4",
+      "name": "Güveçte Tavuk",
+      "id": 10
+    },
+    {
+      "categoryId": "4",
+      "name": "Tavuk Çökertme",
+      "id": 11
+    },
+    {
+      "categoryId": "5",
+      "name": "Biftek",
+      "id": 12
+    },
+    {
+      "categoryId": "5",
+      "name": "Et Çökertme",
+      "id": 13
+    },
+    {
+      "categoryId": "6",
+      "name": "Çay",
+      "id": 14
+    },
+    {
+      "categoryId": "6",
+      "name": "Kahve",
+      "id": 15
+    },
+    {
+      "categoryId": "6",
+      "name": "Nescafe",
+      "id": 16
+    },
+    {
+      "categoryId": "6",
+      "name": "Salep",
+      "id": 17
+    },
+    {
+      "categoryId": "7",
+      "name": "Pepsi",
+      "id": 18
+    },
+    {
+      "categoryId": "7",
+      "name": "Fanta",
+      "id": 19
+    },
+    {
+      "categoryId": "7",
+      "name": "Sprite",
+      "id": 20
+    },
+    {
+      "categoryId": "8",
+      "name": "Baklava",
+      "id": 21
+    },
+    {
+      "categoryId": "8",
+      "name": "Künefe",
+      "id": 22
+    },
+    {
+      "categoryId": "9",
+      "name": "Kase Dondurma",
+      "id": 23
+    },
+    {
+      "categoryId": "9",
+      "name": "Külah Dondurma",
+      "id": 24
+    },
+    {
+      "categoryId": "10",
+      "name": "Kaşarlı Gözleme",
+      "id": 25
+    },
+    {
+      "categoryId": "10",
+      "name": "Karışık Gözleme",
+      "id": 26
+    },
+    {
+      "categoryId": "10",
+      "name": "Ispanaklı Gözleme",
+      "id": 27
+    },
+    {
+      "categoryId": "10",
+      "name": "Peynirli Gözleme",
+      "id": 28
+    }
+  ]
 }
