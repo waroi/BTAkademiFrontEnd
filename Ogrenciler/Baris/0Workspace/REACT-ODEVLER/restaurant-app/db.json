@@ -45,142 +45,92 @@
     {
       "categoryId": "1",
       "name": "Serpme Kahvaltı",
+      "price": "140",
+      "description": "2 kişilik serpme kahvaltı",
+      "gr": "",
+      "visible": true,
       "id": 1
     },
     {
       "categoryId": "1",
       "name": "Kahvaltı Tabağı",
+      "price": "70",
+      "description": "Tek kişilik kahvaltı tabağı",
+      "gr": "",
+      "visible": true,
       "id": 2
     },
     {
       "categoryId": "2",
       "name": "Karışık Tost",
+      "price": "65",
+      "description": "Sucuklu ve kaşarlı tost",
+      "gr": "135",
+      "visible": true,
       "id": 3
     },
     {
       "categoryId": "2",
-      "name": "Sucuklu Tost",
+      "name": "Kaşarlı Tost",
+      "price": "65",
+      "description": "Sadece kaşar peyniri içermektedir",
+      "gr": "135",
+      "visible": true,
       "id": 4
     },
     {
       "categoryId": "2",
-      "name": "Kaşarlı Tost",
+      "name": "Sucuk Tost",
+      "price": "55",
+      "description": "Sadece sucuk peyniri içermektedir",
+      "gr": "135",
+      "visible": true,
       "id": 5
     },
     {
       "categoryId": "3",
       "name": "Karışık Pizza",
+      "price": "120",
+      "description": "Salam, sosis, sucuk, mozarella peyniri, zeytin, mısır içermektedir.",
+      "gr": "200",
+      "visible": true,
       "id": 6
     },
     {
       "categoryId": "3",
-      "name": "Şefin Pizzası",
+      "name": "Kavurmalı Pizza",
+      "price": "120",
+      "description": "Kavurma, pastırma, mozarella peyniri içermektedir.",
+      "gr": "200",
+      "visible": true,
       "id": 7
     },
     {
-      "categoryId": "3",
-      "name": "Ton Balıklı Pizza",
-      "id": 8
-    },
-    {
-      "categoryId": "3",
-      "name": "Dört Peynirli Pizza",
-      "id": 9
-    },
-    {
-      "categoryId": "4",
-      "name": "Güveçte Tavuk",
-      "id": 10
-    },
-    {
-      "categoryId": "4",
-      "name": "Tavuk Çökertme",
-      "id": 11
-    },
-    {
-      "categoryId": "5",
-      "name": "Biftek",
-      "id": 12
-    },
-    {
-      "categoryId": "5",
-      "name": "Et Çökertme",
-      "id": 13
-    },
-    {
-      "categoryId": "6",
-      "name": "Çay",
-      "id": 14
-    },
-    {
-      "categoryId": "6",
-      "name": "Kahve",
-      "id": 15
-    },
-    {
-      "categoryId": "6",
-      "name": "Nescafe",
-      "id": 16
-    },
-    {
-      "categoryId": "6",
-      "name": "Salep",
-      "id": 17
-    },
-    {
       "categoryId": "7",
-      "name": "Pepsi",
-      "id": 18
+      "name": "Kola",
+      "price": "20",
+      "description": "Coca-cola ve pepsi seçenekleri bulunmaktadır.",
+      "gr": "330",
+      "visible": true,
+      "id": 8
     },
     {
       "categoryId": "7",
       "name": "Fanta",
-      "id": 19
+      "price": "20",
+      "description": "Asitli portakal aromalı gazlı içecek",
+      "gr": "330",
+      "visible": true,
+      "id": 9
     },
     {
       "categoryId": "7",
       "name": "Sprite",
-      "id": 20
-    },
-    {
-      "categoryId": "8",
-      "name": "Baklava",
-      "id": 21
-    },
-    {
-      "categoryId": "8",
-      "name": "Künefe",
-      "id": 22
-    },
-    {
-      "categoryId": "9",
-      "name": "Kase Dondurma",
-      "id": 23
-    },
-    {
-      "categoryId": "9",
-      "name": "Külah Dondurma",
-      "id": 24
-    },
-    {
-      "categoryId": "10",
-      "name": "Kaşarlı Gözleme",
-      "id": 25
-    },
-    {
-      "categoryId": "10",
-      "name": "Karışık Gözleme",
-      "id": 26
-    },
-    {
-      "categoryId": "10",
-      "name": "Ispanaklı Gözleme",
-      "id": 27
-    },
-    {
-      "categoryId": "10",
-      "name": "Peynirli Gözleme",
-      "id": 28
+      "price": "20",
+      "description": "Asitli sade şekerli gazlı içecek",
+      "gr": "330",
+      "visible": false,
+      "id": 10
     }
   ]
 }
