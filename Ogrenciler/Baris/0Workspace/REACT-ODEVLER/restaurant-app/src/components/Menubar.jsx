@@ -16,7 +16,7 @@ const Menu = () => {
               Sipariş
             </NavLink>
             <Badge bg="primary" pill>
-              14
+              0
             </Badge>
           </ListGroup.Item>
           <ListGroup.Item>
