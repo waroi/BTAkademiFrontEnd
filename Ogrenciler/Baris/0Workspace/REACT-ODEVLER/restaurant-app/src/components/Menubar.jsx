@@ -13,7 +13,7 @@ const Menu = () => {
               to="/dashboard/orderlist"
               className="text-decoration-none text-secondary"
             >
-              Sipariş
+              <i className="fa-regular fa-folder-open"></i> Sipariş
             </NavLink>
             <Badge bg="primary" pill>
               0
@@ -24,7 +24,7 @@ const Menu = () => {
               to="/dashboard/menu"
               className="text-decoration-none text-secondary"
             >
-              Menü İşlemleri
+              <i className="fa-solid fa-book-open"></i> Menü İşlemleri
             </NavLink>
           </ListGroup.Item>
           <ListGroup.Item>
@@ -32,7 +32,7 @@ const Menu = () => {
               to="/dashboard/settings"
               className="text-decoration-none text-secondary"
             >
-              Ayarlar
+              <i className="fa-solid fa-gear"></i> Ayarlar
             </NavLink>
           </ListGroup.Item>
         </ListGroup>
