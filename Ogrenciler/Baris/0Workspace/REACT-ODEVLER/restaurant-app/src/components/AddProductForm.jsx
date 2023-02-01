@@ -87,7 +87,7 @@ function AddProductForm() {
       <Form.Group className="mb-3">
         <Form.Check
           type="switch"
-          label="Ürünü yayınla"
+          label="Ürün stokta var"
           ref={productVisibleRef}
         />
       </Form.Group>

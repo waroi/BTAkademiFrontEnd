@@ -131,6 +131,51 @@
       "gr": "330",
       "visible": false,
       "id": 10
+    },
+    {
+      "categoryId": "6",
+      "name": "Çay",
+      "price": "15",
+      "description": "Çay",
+      "gr": "",
+      "visible": true,
+      "id": 11
+    },
+    {
+      "categoryId": "6",
+      "name": "Dibek Kahvesi",
+      "price": "30",
+      "description": "Dibek Kahvesi",
+      "gr": "",
+      "visible": false,
+      "id": 12
+    },
+    {
+      "categoryId": "6",
+      "name": "Türk Kahvesi",
+      "price": "30",
+      "description": "Türk Kahvesi",
+      "gr": "",
+      "visible": true,
+      "id": 13
     }
-  ]
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "productId": 1,
+      "productName": "Çay",
+      "productPrice": 15,
+      "productQuantity": 1,
+      "isDone": false,
+      "customerRoom": 309,
+      "customerId": 1
+    },
+    {
+      "productName": "1",
+      "id": 2
+    }
+  ],
+  "customers": [],
+  "comments": []
 }

@@ -3,7 +3,8 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Badge from "react-bootstrap/Badge";
 import { NavLink } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-const Menu = () => {
+import { useOrder } from "../context/OrderContext";
+const Menubar = () => {
   return (
     <Card className="shadow-lg">
       <Card.Body>
@@ -15,9 +16,10 @@ const Menu = () => {
             >
               <i className="fa-regular fa-folder-open"></i> Sipariş
             </NavLink>
-            <Badge bg="primary" pill>
-              0
-            </Badge>
+
+            {/* <Badge key={item.wait.length} bg="primary" pill>
+              {item.wait.length}
+            </Badge> */}
           </ListGroup.Item>
           <ListGroup.Item>
             <NavLink
@@ -41,4 +43,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Menubar;

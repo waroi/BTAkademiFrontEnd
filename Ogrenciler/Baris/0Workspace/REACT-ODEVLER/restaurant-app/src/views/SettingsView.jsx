@@ -5,14 +5,19 @@ import GetCategory from "../components/GetCategory";
 
 const SettingsView = () => {
   return (
-    <Row>
-      <Col>
-        <GetCategory />
-      </Col>
-      <Col>
-        <GetProduct />
-      </Col>
-    </Row>
+    <>
+      <h4 className="p-3 text-center bg-light bg-gradient rounded shadow-lg">
+        Ayarlar Sayfası
+      </h4>
+      <Row>
+        <Col>
+          <GetCategory />
+        </Col>
+        <Col>
+          <GetProduct />
+        </Col>
+      </Row>
+    </>
   );
 };
 
