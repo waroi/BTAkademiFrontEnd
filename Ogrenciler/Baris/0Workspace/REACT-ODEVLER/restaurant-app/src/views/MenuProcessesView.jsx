@@ -1,4 +1,4 @@
-import { Badge, Card, Col, Row } from "react-bootstrap";
+import { Badge, Card, Col, Container, Row } from "react-bootstrap";
 
 import { useProduct } from "../context/ProductContext";
 
@@ -6,22 +6,20 @@ const MenuProcessesView = () => {
   const { products } = useProduct();
 
   return (
-    <>
-      <h4 className="text-center shadow-lg p-2 rounded bg-light bg-gradient">
-        Menu İşlemleri Sayfası
-      </h4>
-      <Row md={2} className="g-4">
+    <Container className="shadow-lg p-5 rounded">
+      <h4 className="text-center ">Menu İşlemleri Sayfası</h4>
+      <Row md={2} className="g-4 mt-5">
         {products.map((product) => {
           return (
             <Col key={product.id}>
-              <Card className="h-100 shadow-lg bg-light">
+              <Card className="h-100 ">
                 <Card.Body>
                   <Card.Title>{product.name}</Card.Title>
                   <Card.Text className="fw-light fst-italic">
                     {product.description}
                   </Card.Text>
                 </Card.Body>
-                <Card.Footer className="d-flex justify-content-between">
+                <Card.Footer className="d-flex justify-content-between align-items-center">
                   <div>
                     <i className="fa-solid fa-cubes"></i> Stok Durumu:
                     {product.visible ? (
@@ -31,7 +29,7 @@ const MenuProcessesView = () => {
                     )}
                   </div>
 
-                  <div>
+                  <div className="bg-primary text-white rounded-pill p-2">
                     <i className="fa-solid fa-coins"></i> Fiyat:
                     <span className="fw-bolder">{product.price}</span>
                     <span>₺</span>
@@ -42,7 +40,7 @@ const MenuProcessesView = () => {
           );
         })}
       </Row>
-    </>
+    </Container>
   );
 };
 

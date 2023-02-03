@@ -4,6 +4,8 @@ import Dashboard from "../views/DashboardView";
 import OrderListView from "../views/OrderListView";
 import SettingsView from "../views/SettingsView";
 import MenuProcessesView from "../views/MenuProcessesView";
+import PageNotFoundView from "../views/PageNotFoundView";
+import StaticsAll from "../components/StaticsAll";
 const Router = () => {
   const routes = useRoutes([
     { path: "/", element: <HomeView /> },
@@ -11,6 +13,7 @@ const Router = () => {
       path: "/dashboard",
       element: <Dashboard />,
       children: [
+        { index: true, element: <StaticsAll /> },
         {
           path: "orderlist",
           element: <OrderListView />,
@@ -24,6 +27,10 @@ const Router = () => {
           element: <MenuProcessesView />,
         },
       ],
+    },
+    {
+      path: "*",
+      element: <PageNotFoundView />,
     },
   ]);
   return routes;

@@ -2,14 +2,13 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import GetProduct from "../components/GetProduct";
 import GetCategory from "../components/GetCategory";
+import { Container } from "react-bootstrap";
 
 const SettingsView = () => {
   return (
-    <>
-      <h4 className="p-3 text-center bg-light bg-gradient rounded shadow-lg">
-        Ayarlar Sayfası
-      </h4>
-      <Row>
+    <Container className="p-5 rounded shadow-lg">
+      <h4 className="text-center ">Ayarlar Sayfası</h4>
+      <Row className="mt-5">
         <Col>
           <GetCategory />
         </Col>
@@ -17,7 +16,7 @@ const SettingsView = () => {
           <GetProduct />
         </Col>
       </Row>
-    </>
+    </Container>
   );
 };
 

@@ -1,8 +1,9 @@
 import Appbar from "./components/Appbar";
-import Router from "./routes/Router";
 import { CategoryProvider } from "./context/CategoryContext";
 import { ProductProvider } from "./context/ProductContext";
 import { OrderProvider } from "./context/OrderContext";
+import Router from "./routes/Router";
+
 function App() {
   return (
     <OrderProvider>

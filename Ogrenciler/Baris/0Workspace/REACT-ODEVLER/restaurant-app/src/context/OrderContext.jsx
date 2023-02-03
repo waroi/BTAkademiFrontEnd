@@ -8,20 +8,32 @@ export const OrderProvider = ({ children }) => {
   const fetchData = async () => {
     await api()
       .get("/orders")
-      .then((response) => setOrders(response.data));
+      .then((response) => setOrders(response.data.sort((x, y) => y - x)));
   };
   useEffect(() => {
     fetchData();
   }, []);
-  const addOrder = async (productName) => {
-    const response = await api().post("/orders", { productName });
-    setOrders([...orders, response.data]);
-  };
-  const updateOrder = async (id, quantity, isDone) => {
-    const response = await api().put(`/orders/${id}`, {
-      quantity,
+  const addOrder = async (
+    productName,
+    productQuantity,
+    productPrice,
+    customerRoom,
+    customerSide,
+    isDone
+  ) => {
+    const response = await api().post("/orders", {
+      productName,
+      productQuantity,
+      productPrice,
+      customerRoom,
+      customerSide,
       isDone,
     });
+    setOrders([...orders, response.data]);
+  };
+  const isDoneOrder = async (id, isDone) => {
+    const response = await api().patch(`/orders/${id}`, { isDone });
+    //  orders.filter((order) => order.id !== id);
     setOrders([...orders, response.data]);
   };
   const deleteOrder = async (id) => {
@@ -33,7 +45,7 @@ export const OrderProvider = ({ children }) => {
     orders,
     setOrders,
     addOrder,
-    updateOrder,
+    isDoneOrder,
     deleteOrder,
   };
   return (

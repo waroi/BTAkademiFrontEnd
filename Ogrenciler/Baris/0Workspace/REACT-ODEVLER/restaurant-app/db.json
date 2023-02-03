@@ -162,18 +162,48 @@
   ],
   "orders": [
     {
-      "id": 1,
-      "productId": 1,
-      "productName": "Çay",
-      "productPrice": 15,
-      "productQuantity": 1,
+      "productName": "Serpme Kahvaltı",
+      "productQuantity": "1",
+      "productPrice": [
+        "140"
+      ],
+      "customerRoom": "309",
+      "customerSide": "Apart",
       "isDone": false,
-      "customerRoom": 309,
-      "customerId": 1
+      "id": 1
     },
     {
-      "productName": "1",
-      "id": 2
+      "productName": "Serpme Kahvaltı",
+      "productQuantity": "2",
+      "productPrice": [
+        "140"
+      ],
+      "customerRoom": "309",
+      "customerSide": "Apart",
+      "isDone": true,
+      "id": 3
+    },
+    {
+      "productName": "Kaşarlı Tost",
+      "productQuantity": "6",
+      "productPrice": [
+        "65"
+      ],
+      "customerRoom": "408",
+      "customerSide": "Otel",
+      "isDone": true,
+      "id": 4
+    },
+    {
+      "productName": "Karışık Pizza",
+      "productQuantity": "4",
+      "productPrice": [
+        "120"
+      ],
+      "customerRoom": "410",
+      "customerSide": "Apart",
+      "isDone": true,
+      "id": 5
     }
   ],
   "customers": [],

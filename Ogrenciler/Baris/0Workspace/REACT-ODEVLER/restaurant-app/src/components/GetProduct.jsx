@@ -8,7 +8,7 @@ import { useProduct } from "../context/ProductContext";
 const GetProduct = () => {
   const { products, deleteProduct } = useProduct();
   return (
-    <Card className="shadow-lg">
+    <Card>
       <Card.Header className="d-flex justify-content-between align-items-center">
         Ürün Listesi
         <AddProduct />

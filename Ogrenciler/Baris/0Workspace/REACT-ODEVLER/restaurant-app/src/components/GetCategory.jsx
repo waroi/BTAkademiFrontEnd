@@ -8,7 +8,7 @@ const GetCategory = () => {
   const { categories, deleteCategory } = useCategory();
 
   return (
-    <Card className="shadow-lg">
+    <Card>
       <Card.Header className="d-flex justify-content-between align-items-center">
         Kategori Listesi
         <AddCategory />
