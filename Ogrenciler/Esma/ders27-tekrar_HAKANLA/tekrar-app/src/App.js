@@ -1,3 +1,5 @@
+import { ThemeProvider } from "./context/ThemeContext";
+import Container from "./components/Container";
 import { useEffect, useState } from "react";
 import "./App.css";
 
@@ -32,6 +34,10 @@ function App() {
   console.log(data);
   return (
     <div className="App">
+      <ThemeProvider>
+        <Container />
+      </ThemeProvider>
+
       <div className="container  ">
         <div className="row align-self-start">
           {data?.map((d) => (
@@ -54,9 +60,9 @@ function App() {
               <div className="card-body">
                 <h5 className="card-title">{d?.l}</h5>
                 <p className="card-text">{d?.s}</p>
-                <a href="#" className="btn btn-primary">
-                  Go somewhere
-                </a>
+                {/* <a href="#" className="btn btn-primary">
+              Go somewhere
+            </a> */}
               </div>
             </div>
           ))}
