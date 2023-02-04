@@ -1,0 +1,45 @@
+.container {
+  background-color: rgb(226, 72, 72);
+  color: white;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tas1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card1 {
+  margin-top: 1em;
+  box-shadow: 1px solid black;
+}
+
+.cont1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.con11 {
+  display: flex;
+  flex-direction: row;
+}
+
+.con2 {
+  /* margin-left: 5%;
+  width: 50%;
+  align-items: center; */
+}
+
+.row1 {
+  align-items: center;
+}
+
+.t1 {
+  width: 90%;
+}

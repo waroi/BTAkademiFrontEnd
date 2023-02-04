@@ -10,10 +10,10 @@ const LoadableGetActors = Loadable({
   loading: () => <LoadingView />,
 });
 const HomeView = () => {
-  const theme = useTheme();
+  const { theme } = useTheme();
   return (
     <Container fluid className={`bg-${theme}`}>
-      <Row className="g-3 mt-5">
+      <Row className="g-3 pt-5">
         <LoadableGetActors />
       </Row>
     </Container>

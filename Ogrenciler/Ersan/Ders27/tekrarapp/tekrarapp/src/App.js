@@ -1,5 +1,6 @@
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "./context/ThemeContext";
 import "./App.css";
+import { APIProvider } from "./context/APIContext";
 
 import Appbar from "./components/Appbar";
 
@@ -8,8 +9,10 @@ import Router from "./routes/Router";
 function App() {
   return (
     <ThemeProvider>
-      <Appbar />
-      <Router />
+      <APIProvider>
+        <Appbar />
+        <Router />
+      </APIProvider>
     </ThemeProvider>
   );
 }

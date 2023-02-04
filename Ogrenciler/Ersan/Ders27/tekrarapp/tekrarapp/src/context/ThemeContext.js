@@ -6,6 +6,8 @@ export const ThemeProvider = ({ children }) => {
     localStorage.setItem("theme", theme);
   }, [theme]);
   const value = { theme, setTheme };
-  return <ThemeContext.Provider value={value}></ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  );
 };
 export const useTheme = () => useContext(ThemeContext);
