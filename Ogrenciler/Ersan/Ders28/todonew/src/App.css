@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.in1 {
+  width: 400px;
+}
+
 .tas1 {
   width: 50%;
   display: flex;
