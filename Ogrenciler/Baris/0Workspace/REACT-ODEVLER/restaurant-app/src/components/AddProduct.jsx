@@ -24,7 +24,7 @@ function AddProduct() {
           <Modal.Title>Ürün Ekle</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <AddProductForm />
+          <AddProductForm handleClose={handleClose} />
         </Modal.Body>
       </Modal>
     </>

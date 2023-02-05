@@ -39,6 +39,10 @@
     {
       "name": "Gözlemeler",
       "id": 10
+    },
+    {
+      "name": "Deneme",
+      "id": 11
     }
   ],
   "products": [
@@ -158,52 +162,35 @@
       "gr": "",
       "visible": true,
       "id": 13
+    },
+    {
+      "categoryId": "2",
+      "name": "1",
+      "price": "1",
+      "description": "1",
+      "gr": "1",
+      "visible": false,
+      "id": 14
+    },
+    {
+      "categoryId": "2",
+      "name": "2",
+      "price": "22",
+      "description": "2",
+      "gr": "2",
+      "visible": false,
+      "id": 15
     }
   ],
   "orders": [
     {
-      "productName": "Serpme Kahvaltı",
-      "productQuantity": "1",
-      "productPrice": [
-        "140"
-      ],
-      "customerRoom": "309",
+      "productName": "Kahvaltı Tabağı",
+      "productQuantity": "2",
+      "productPrice": "70",
+      "customerRoom": "13",
       "customerSide": "Apart",
       "isDone": false,
       "id": 1
-    },
-    {
-      "productName": "Serpme Kahvaltı",
-      "productQuantity": "2",
-      "productPrice": [
-        "140"
-      ],
-      "customerRoom": "309",
-      "customerSide": "Apart",
-      "isDone": true,
-      "id": 3
-    },
-    {
-      "productName": "Kaşarlı Tost",
-      "productQuantity": "6",
-      "productPrice": [
-        "65"
-      ],
-      "customerRoom": "408",
-      "customerSide": "Otel",
-      "isDone": true,
-      "id": 4
-    },
-    {
-      "productName": "Karışık Pizza",
-      "productQuantity": "4",
-      "productPrice": [
-        "120"
-      ],
-      "customerRoom": "410",
-      "customerSide": "Apart",
-      "isDone": true,
-      "id": 5
     }
   ],
   "customers": [],

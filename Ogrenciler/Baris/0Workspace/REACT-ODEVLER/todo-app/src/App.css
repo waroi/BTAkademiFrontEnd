@@ -1,0 +1,170 @@
+html,body{
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+form{
+    padding: 2rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+textarea{
+    font-family: apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        'Roboto',
+        'Oxygen',
+        'Ubuntu',
+        'Cantarell',
+        'Fira Sans',
+        'Droid Sans',
+        'Helvetica Neue',
+        sans-serif;
+}
+.d-flex{
+    display:flex;
+}
+.nav{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 4px 1px #ccc;
+
+}
+.row{
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.g-col-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+}
+.col{
+    flex-direction: column;
+}
+.mb-3{
+    margin-bottom: 2rem;
+}
+.mt-3{
+    margin-top: 2rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.text-end{
+    text-align: end;
+}
+.form-input{
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+.w-100{
+    width: fit-content;
+}
+.h-100{
+    height: 100vh;
+}
+.mx-auto{
+    margin: 0 auto !important;
+}
+.mx-auto {
+    margin: 0 auto !important;
+}
+.bg-primary{
+    background:rgb(255, 78, 78);
+    color: #fff;
+}
+.text-primary{
+    background:rgb(255, 78, 78);
+}
+.btn{
+    padding: .3rem;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0 0 12px 1px #ccc;
+    margin-left: 4px ;
+
+}
+.btn-primary{
+    background:rgb(255, 78, 78);
+    border: 1px solid #fff;;
+    color: #fff;
+
+}
+.btn-light{
+    background: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    color: #000;
+}
+.btn-success{
+    background: rgb(55, 255, 105);
+    border: 1px solid #ccc;
+    color: #000;
+}
+.btn-warning {
+    background: rgb(255, 236, 67);
+    border: 1px solid #ccc;
+    color: #000;
+}
+.btn-danger {
+    background: rgb(255, 0, 0);
+    border: 1px solid #ccc;
+    color: #fff;
+}
+.header {
+    font-size: large;
+    margin: 0;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.p-3{
+    padding: 2rem;
+}
+.pt-3 {
+    padding-top: 2rem ;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
+.rounded-circle{
+    border-radius: 50%;
+}
+.card{
+    box-shadow: 0 0 8px 1px #ccc;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+
+    
+}
+.card-header{
+    margin: 0;
+    padding: 0;
+}
+.card-body{
+    margin: 0;
+    padding:1rem;
+
+}
+.border-success{
+    border-left: 5px solid rgb(55, 255, 105);
+}
+.border-danger {
+    border-left: 5px solid rgb(255, 0, 0);
+}
+
+.align-content-stretch{
+    display: flex;
+    align-content: stretch;
+}
+
+.overflow{
+    overflow: auto;
+}

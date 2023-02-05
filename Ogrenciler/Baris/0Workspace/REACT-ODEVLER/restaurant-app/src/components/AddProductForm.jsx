@@ -5,7 +5,7 @@ import { InputGroup } from "react-bootstrap";
 import { useCategory } from "../context/CategoryContext";
 import { useProduct } from "../context/ProductContext";
 
-function AddProductForm() {
+function AddProductForm({ handleClose }) {
   const { addProduct } = useProduct();
   const { categories } = useCategory();
   const categoryIdRef = useRef();
@@ -25,6 +25,7 @@ function AddProductForm() {
       productGramRef.current.value,
       productVisibleRef.current.checked
     );
+    handleClose();
   };
   return (
     <Form onSubmit={handleSubmit}>
