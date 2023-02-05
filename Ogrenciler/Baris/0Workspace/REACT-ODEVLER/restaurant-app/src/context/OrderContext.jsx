@@ -32,9 +32,11 @@ export const OrderProvider = ({ children }) => {
     setOrders([...orders, response.data]);
   };
   const isDoneOrder = async (id, isDone) => {
-    const response = await api().patch(`/orders/${id}`, { isDone });
-    //  orders.filter((order) => order.id !== id);
-    setOrders([...orders, response.data]);
+    await api().patch(`/orders/${id}`, { isDone });
+    const response = orders.filter((order) => order.id !== id);
+    const responseOrder = orders.filter((order) => order.id === id);
+    responseOrder[0].isDone = isDone;
+    setOrders([...response, responseOrder]);
   };
   const deleteOrder = async (id) => {
     await api().delete(`/orders/${id}`);

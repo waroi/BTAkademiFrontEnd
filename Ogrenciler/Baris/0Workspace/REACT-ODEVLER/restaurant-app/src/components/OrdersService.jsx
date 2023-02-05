@@ -4,7 +4,6 @@ import {
   Tab,
   Table,
   Button,
-  Alert,
   Form,
   Col,
   Spinner,
@@ -51,11 +50,10 @@ export const WaitOrder = () => {
         </tr>
       </thead>
       <tbody>
-        {orders
-          .filter((order) => order.isDone !== true)
-          .map((order) =>
-            order.length !== 0 ? (
-              <tr key={order.id}>
+        {orders[0] &&
+          orders.map((order, index) =>
+            !order.isDone ? (
+              <tr key={index}>
                 <td>{order.id}</td>
                 <td>
                   {order.customerSide}-{order.customerRoom}
@@ -94,11 +92,7 @@ export const WaitOrder = () => {
                   </Button>
                 </td>
               </tr>
-            ) : (
-              <Alert key="success" variant="success">
-                Bekleyen herhangi bir sipariş bulunmamaktadır.
-              </Alert>
-            )
+            ) : null
           )}
       </tbody>
     </Table>
@@ -113,10 +107,9 @@ export const CompletedOrder = () => {
   }, [orders]);
   return (
     <Row xs={1} md={2} className="g-2">
-      {orders
-        .filter((order) => order.isDone !== false)
-        .map((order) =>
-          order.length !== 0 ? (
+      {orders.map(
+        (order) =>
+          order.isDone && (
             <Col key={order.id}>
               <Card className="h-100">
                 <Card.Body>
@@ -161,12 +154,8 @@ export const CompletedOrder = () => {
                 </Card.Body>
               </Card>
             </Col>
-          ) : (
-            <Alert key="success" variant="success">
-              Bekleyen herhangi bir sipariş bulunmamaktadır.
-            </Alert>
           )
-        )}
+      )}
     </Row>
   );
 };
@@ -183,11 +172,12 @@ export const AddOrder = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const productPrice = products
-      .filter((product) => product.name === productNameRef.current.value)
-      .map((product) => {
-        return product.price;
-      });
+
+    const productPrice = products.filter(
+      (product) => product.name === productNameRef.current.value
+    )[0].price;
+
+    console.log(productPrice);
     addOrder(
       productNameRef.current.value,
       productQuantityRef.current.value,
