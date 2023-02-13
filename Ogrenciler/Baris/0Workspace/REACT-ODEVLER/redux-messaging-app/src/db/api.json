@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Barış BENLİ",
+      "email": "bbenli@pm.me",
+      "phone": "+905000000000",
+      "families": [
+        {
+          "id": 2,
+          "name": "Varol Maksutoğlu",
+          "email": "waroi@example.com",
+          "phone": "+905000000000",
+          "messages": [
+            {
+              "messageId": 1,
+              "content": "VAROL Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis ab aut quis odio obcaecati accusamus et, itaque recusandae porro. Eum, ratione ducimus. Quam, ad amet eveniet aliquam quis facilis, cum aspernatur non fuga atque voluptate illo? Aliquam debitis at hic incidunt omnis, nesciunt facilis quae fuga necessitatibus nostrum amet.",
+              "date": "11.02.2023",
+              "isRead": false
+            },
+            {
+              "messageId": 2,
+              "content": "VAROL Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis ab aut quis odio obcaecati accusamus et, itaque recusandae porro. Eum, ratione ducimus. Quam, ad amet eveniet aliquam quis facilis, cum aspernatur non fuga atque voluptate illo? Aliquam debitis at hic incidunt omnis, nesciunt facilis quae fuga necessitatibus nostrum amet.",
+              "date": "11.02.2023",
+              "isRead": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Ülkü",
+          "email": "ulku@example.com",
+          "phone": "+905000000000",
+          "messages": [
+            {
+              "messageId": 3,
+              "content": "ÜLKÜ Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis ab aut quis odio obcaecati accusamus et, itaque recusandae porro. Eum, ratione ducimus. Quam, ad amet eveniet aliquam quis facilis, cum aspernatur non fuga atque voluptate illo? Aliquam debitis at hic incidunt omnis, nesciunt facilis quae fuga necessitatibus nostrum amet.",
+              "date": "08.02.2023",
+              "isRead": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
