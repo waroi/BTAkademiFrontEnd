@@ -1,14 +1,22 @@
-import { BsCheckAll } from "react-icons/bs";
+import { BsCheckAll, BsCheck } from "react-icons/bs";
 const Message = (props) => {
   return (
-    <div className="shadow-slate-500 shadow-sm p-4 rounded-xl flex flex-col w-fit from-slate-200 to-slate-500 bg-gradient-to-r ">
+    <div
+      key={props.messageId}
+      className="shadow-slate-400 shadow-sm p-4 rounded-xl flex flex-col w-fit from-slate-100 to-slate-200 bg-gradient-to-r "
+    >
       <p>{props.content}</p>
       <div className="flex justify-end gap-2">
-        <small className="font-bold text-white flex">
-          <BsCheckAll />
-          {props.isRead}
-        </small>
-        <small className="font-extralight italic text-white">
+        {props.isRead ? (
+          <p className="font-bold text-blue-700 flex ">
+            <BsCheckAll />
+          </p>
+        ) : (
+          <p className="font-bold text-gray-600 flex ">
+            <BsCheck />
+          </p>
+        )}
+        <small className="font-extralight italic text-gray-600">
           {props.date}
         </small>
       </div>

@@ -1,12 +1,12 @@
 import React from "react";
 
 const User = (props) => {
-  const setToMessage = () => {
+  const setToUser = () => {
     props.onClick(props.id);
   };
   return (
     <div
-      onClick={setToMessage}
+      onClick={setToUser}
       className="hover:bg-slate-200 p-2 ease-in-out duration-300 rounded-lg cursor-pointer"
     >
       <div>

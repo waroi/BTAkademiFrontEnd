@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchUsers, userMessagesDetail } from "../slices/usersSlice";
+import {
+  fetchUsers,
+  userDetail,
+  userMessagesDetail,
+} from "../slices/usersSlice";
 import User from "./User";
 
 const UsersList = () => {
@@ -11,10 +15,11 @@ const UsersList = () => {
     dispatch(fetchUsers(1));
   }, [dispatch]);
 
-  const handleSetMessages = (id) => {
+  const handleSetUser = (id) => {
     users.families.filter((user) =>
       user.id === id
-        ? user.messages.map((msg) => dispatch(userMessagesDetail(msg)))
+        ? dispatch(userDetail(user)) &&
+          dispatch(userMessagesDetail(user.messages))
         : null
     );
   };
@@ -30,7 +35,7 @@ const UsersList = () => {
                 name={f.name}
                 content={f.messages[0].content}
                 phone={f.phone}
-                onClick={handleSetMessages}
+                onClick={handleSetUser}
               />
             );
           })}

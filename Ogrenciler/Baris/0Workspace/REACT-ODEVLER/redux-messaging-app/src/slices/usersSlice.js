@@ -11,6 +11,19 @@ export const fetchUsers = createAsyncThunk("user/fetchUsers", async (id) => {
   );
   return response;
 });
+export const postMessage = createAsyncThunk(
+  "user/postMessage",
+  async ({ messageId, content, date, isRead }) => {
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ messageId, content, date, isRead }),
+    };
+    await fetch(`http://localhost:5000/users/`, options);
+  }
+);
 
 export const usersSlice = createSlice({
   name: "user",
@@ -26,6 +39,9 @@ export const usersSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(fetchUsers.fulfilled, (state, action) => {
       state.users = action.payload;
+    });
+    builder.addCase(postMessage.fulfilled, (state, action) => {
+      state.messages = action.payload;
     });
   },
 });

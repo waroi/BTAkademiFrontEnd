@@ -14,13 +14,13 @@
           "messages": [
             {
               "messageId": 1,
-              "content": "VAROL Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis ab aut quis odio obcaecati accusamus et, itaque recusandae porro. Eum, ratione ducimus. Quam, ad amet eveniet aliquam quis facilis, cum aspernatur non fuga atque voluptate illo? Aliquam debitis at hic incidunt omnis, nesciunt facilis quae fuga necessitatibus nostrum amet.",
+              "content": "Deneme İçerik 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis ab aut quis odio obcaecati accusamus et, itaque recusandae porro. Eum, ratione ducimus. Quam, ad amet eveniet aliquam quis facilis, cum aspernatur non fuga atque voluptate illo? Aliquam debitis at hic incidunt omnis, nesciunt facilis quae fuga necessitatibus nostrum amet.",
               "date": "11.02.2023",
-              "isRead": false
+              "isRead": true
             },
             {
               "messageId": 2,
-              "content": "VAROL Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis ab aut quis odio obcaecati accusamus et, itaque recusandae porro. Eum, ratione ducimus. Quam, ad amet eveniet aliquam quis facilis, cum aspernatur non fuga atque voluptate illo? Aliquam debitis at hic incidunt omnis, nesciunt facilis quae fuga necessitatibus nostrum amet.",
+              "content": "Deneme İçerik 2 - VAROL Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis ab aut quis odio obcaecati accusamus et, itaque recusandae porro. Eum, ratione ducimus. Quam, ad amet eveniet aliquam quis facilis, cum aspernatur non fuga atque voluptate illo? Aliquam debitis at hic incidunt omnis, nesciunt facilis quae fuga necessitatibus nostrum amet.",
               "date": "11.02.2023",
               "isRead": false
             }
@@ -34,7 +34,7 @@
           "messages": [
             {
               "messageId": 3,
-              "content": "ÜLKÜ Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis ab aut quis odio obcaecati accusamus et, itaque recusandae porro. Eum, ratione ducimus. Quam, ad amet eveniet aliquam quis facilis, cum aspernatur non fuga atque voluptate illo? Aliquam debitis at hic incidunt omnis, nesciunt facilis quae fuga necessitatibus nostrum amet.",
+              "content": "Deneme İçerik 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis ab aut quis odio obcaecati accusamus et, itaque recusandae porro. Eum, ratione ducimus. Quam, ad amet eveniet aliquam quis facilis, cum aspernatur non fuga atque voluptate illo? Aliquam debitis at hic incidunt omnis, nesciunt facilis quae fuga necessitatibus nostrum amet.",
               "date": "08.02.2023",
               "isRead": true
             }
