@@ -5,7 +5,7 @@ import loginImage from "../images/loginImage.jpg";
 const RegisterView = () => {
   return (
     <div className="mh-100">
-      <div className="container d-flex align-items-center justify-content-center mt-5 shadow-lg rounded-3">
+      <div className="container d-flex align-items-center justify-content-center mt-5 shadow-lg rounded-3 bg-light bg-gradient">
         <div className="row">
           <div className="col-md-6 p-4 d-flex flex-column justify-content-center  ">
             <h4 className="text-secondary mb-5">Kayıt Ol</h4>

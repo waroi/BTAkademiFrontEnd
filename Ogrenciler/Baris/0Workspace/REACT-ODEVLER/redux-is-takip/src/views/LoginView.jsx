@@ -6,7 +6,7 @@ import { loginSchemas } from "../schemas/loginSchemas";
 const LoginView = () => {
   return (
     <div className="mh-100">
-      <div className="container d-flex align-items-center justify-content-center mt-5 shadow-lg rounded-3">
+      <div className="container d-flex align-items-center justify-content-center mt-5 shadow-lg rounded-3 bg-light bg-gradient">
         <div className="row">
           <div className="col-md-6 p-4 d-flex flex-column justify-content-center  ">
             <h4 className="text-secondary mb-5">Giriş yap</h4>
@@ -28,7 +28,7 @@ const LoginView = () => {
                       className="form-control"
                       placeholder="Çalışan ID"
                     />
-                    <label htmlFor="employeeId">Çalışan ID</label>
+                    <label htmlFor="employeeId">ID</label>
 
                     <ErrorMessage
                       name="employeeId"
@@ -51,14 +51,15 @@ const LoginView = () => {
                       className="text-danger"
                     />
                   </div>
-
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="btn btn-outline-primary"
-                  >
-                    Giriş
-                  </button>
+                  <div className="d-grid">
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="btn btn-primary bg-gradient"
+                    >
+                      Giriş
+                    </button>
+                  </div>
                 </Form>
               )}
             </Formik>
@@ -67,7 +68,7 @@ const LoginView = () => {
             <img
               src={loginImage}
               alt={loginImage}
-              className="img-fluid rounded-end"
+              className="img-fluid rounded-end h-100"
             />
           </div>
         </div>
