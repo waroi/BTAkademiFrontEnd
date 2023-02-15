@@ -1,0 +1,52 @@
+{
+  "customers": [
+    {
+      "customerId": 1,
+      "firstName": "Varol",
+      "lastname": "MAKSUTOĞLU",
+      "phone": "+901234567890",
+      "address": "İstanbul,TR"
+    }
+  ],
+  "employees": [
+    {
+      "employeeId": 1,
+      "employeeFirstName": "Barış",
+      "employeeLastName": "BENLİ",
+      "employeeEmail": "bbenli@example.com",
+      "employeePassword": "12345",
+      "employeeStatus": "",
+      "employeeRating": []
+    }
+  ],
+  "products": [
+    {
+      "productId": 1,
+      "name": "Çamaşır Makinesi",
+      "price": 10000
+    },
+    {
+      "productId": 2,
+      "name": "Bulaşık Makinesi",
+      "price": 7000
+    },
+    {
+      "productId": 3,
+      "name": "Televizyon",
+      "price": 25000
+    }
+  ],
+  "works": [
+    {
+      "worksId": 1,
+      "productId": 1,
+      "customerId": 1,
+      "employeeId": 1,
+      "attention": "",
+      "info": "",
+      "payment": 0,
+      "message": "",
+      "isDone": ""
+    }
+  ]
+}
