@@ -2,6 +2,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import React from "react";
 import loginImage from "../images/loginImage.jpg";
 import { loginSchemas } from "../schemas/loginSchemas";
+import { CiLogin } from "react-icons/ci";
+import { FaUser } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
 
 const LoginView = () => {
   return (
@@ -28,7 +31,9 @@ const LoginView = () => {
                       className="form-control"
                       placeholder="Çalışan ID"
                     />
-                    <label htmlFor="employeeId">ID</label>
+                    <label htmlFor="employeeId">
+                      <FaUser /> ID
+                    </label>
 
                     <ErrorMessage
                       name="employeeId"
@@ -44,7 +49,9 @@ const LoginView = () => {
                       className="form-control"
                       placeholder="Şifre"
                     />
-                    <label htmlFor="employeePassword">Şifre</label>
+                    <label htmlFor="employeePassword">
+                      <RiLockPasswordFill /> Şifre
+                    </label>
                     <ErrorMessage
                       name="employeePassword"
                       component="small"
@@ -55,9 +62,10 @@ const LoginView = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="btn btn-primary bg-gradient"
+                      className="btn btn-primary bg-gradient d-flex align-items-center justify-content-center"
                     >
                       Giriş
+                      <CiLogin className="fs-3" />
                     </button>
                   </div>
                 </Form>

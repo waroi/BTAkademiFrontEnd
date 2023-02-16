@@ -15,7 +15,7 @@ const Navbar = () => {
             Giriş
           </button>
           <button
-            className="btn btn-primary btn-sm bg-gradient"
+            className="btn btn-primary btn-sm bg-gradient text-white"
             onClick={() => navigate("/register")}
           >
             Kayıt Ol
