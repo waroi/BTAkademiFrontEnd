@@ -18,8 +18,8 @@
       "employeePhone": "+901234567890",
       "employeeEmail": "bbenli@example.com",
       "employeePassword": "12345",
-      "employeeAddress": "",
-      "employeeStatus": "",
+      "employeeAddress": "Şırnak,TR",
+      "employeeStatus": "Front-End Developer",
       "employeeRating": []
     }
   ],

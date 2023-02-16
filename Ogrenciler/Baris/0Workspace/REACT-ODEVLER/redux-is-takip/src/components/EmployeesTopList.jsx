@@ -1,5 +1,3 @@
-import React from "react";
-
 const EmployeesTopList = () => {
   return (
     <div className="shadow table-responsive">

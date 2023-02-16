@@ -1,7 +1,15 @@
 import { useNavigate } from "react-router-dom";
-import avatar from "../images/avatar.png";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { deleteEmployee, fetchEmployees } from "../slices/employeesSlice";
 
 const Employees = () => {
+  const employees = useSelector((state) => state.employee.employees);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchEmployees());
+  }, [dispatch]);
   const navigate = useNavigate();
   return (
     <div>
@@ -20,7 +28,6 @@ const Employees = () => {
         <table className="table table-borderless align-middle">
           <thead>
             <tr>
-              <th></th>
               <th>Personel ID</th>
               <th>Ad Soyad</th>
               <th>E-posta</th>
@@ -28,39 +35,43 @@ const Employees = () => {
               <th className="text-center">Yaş</th>
               <th className="text-center">Cinsiyet</th>
               <th>Adres</th>
-              <th>Yetenek</th>
+              <th>Ünvan</th>
               <th className="text-center">Puan</th>
               <th style={{ width: "200px" }}></th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <img
-                  src={avatar}
-                  alt={avatar}
-                  width={50}
-                  className="rounded-circle"
-                />
-              </td>
-              <td>1</td>
-              <td>Barış BENLİ</td>
-              <td>bbenli@example.com</td>
-              <td className="text-center">+901234567890</td>
-              <td className="text-center">24</td>
-              <td className="text-center">Erkek</td>
-              <td>Şırnak,TR</td>
-              <td>Front-End Developer</td>
-              <td className="text-center">4.5</td>
-              <td className="text-center d-flex gap-2">
-                <button className="btn bg-gradient btn-warning btn-sm">
-                  Düzenle
-                </button>
-                <button className="btn bg-gradient btn-danger btn-sm">
-                  Sil
-                </button>
-              </td>
-            </tr>
+            {employees &&
+              employees.map((employee) => {
+                return (
+                  <tr key={employee.employeeId}>
+                    <td>{employee.employeeId}</td>
+                    <td>
+                      {employee.employeeFirstName} {employee.employeeLastName}
+                    </td>
+                    <td>{employee.employeeEmail}</td>
+                    <td className="text-center">{employee.employeePhone}</td>
+                    <td className="text-center">{employee.employeeAge}</td>
+                    <td className="text-center">{employee.employeeGender}</td>
+                    <td>{employee.employeeAddress}</td>
+                    <td>{employee.employeeStatus}</td>
+                    <td className="text-center">{employee.employeeRating}</td>
+                    <td className="text-center d-flex gap-2 justify-content-center">
+                      <button className="btn bg-gradient btn-warning btn-sm">
+                        Düzenle
+                      </button>
+                      <button
+                        className="btn bg-gradient btn-danger btn-sm"
+                        onClick={() =>
+                          dispatch(deleteEmployee(employee.employeeId))
+                        }
+                      >
+                        Sil
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
           </tbody>
         </table>
       </div>
