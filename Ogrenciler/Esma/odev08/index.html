@@ -5,73 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
-
-
     <!-- HEADER -->
     <header>
-      <div class="navbar">
-      <div class="navbarust">
-        <div class="navustsol"></div>
-        <div class="navustsag"></div>
-      </div>
-      <div class="navbaralt">
-        <div class="navaltlogo"></div>
-        <div class="navaltmenu">
-          <div class="menu">
-            
-              <a href="">Home</a>
-              <a href="">About</a>
-              <div><a href="" class="dropdownmenu">Pages</a> <!-- dropdown menuyu nasıl eklerim?-->
-              <div class="dropdownlink">
-                <a href="">Service</a>
-                <a href="">Donate</a>
-                <a href="">Our Team</a>
-                <a href="">Testimonial</a>
-              </div>
-              </div>
-              <a href="">Contact</a>
+      <div class="navbar bg-blue">
+        <div class="navbarust row justify-content-between textwhite">
+          <div class="navustsol row">
+            <p>123 Street, New York, USA</p>
+            <p>info@example.com</p>
+          </div>
+          <div class="navustsag row">
+            <span>Follow us:</span>
+            <a href=""><i class="fa-brands fa-facebook-f textwhite"></i></a>
+            <a href=""><i class="fa-brands fa-twitter textwhite"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in textwhite"></i></a>
+            <a href=""><i class="fa-brands fa-instagram textwhite"></i></a>
           </div>
         </div>
-        <div class="navaltdonate">
-          <a href="#donate">Donate Now</a> 
+        <div class="navbaralt row justify-content-between">
+          <div class="navaltlogo">
+            <h1 class="textorange">Chari<span class="textwhite">Team</span></h1>
+          </div>
+          <div class="navaltmenu">
+            <div class="menu row">
+              <a href="" class="navlink">Home</a>
+              <a href="" class="navlink">About</a>
+              <div class="dropdownmenu">
+                <a href="" class="navlink">Pages</a>
+                <!-- dropdown menuyu nasıl eklerim?-->
+                <div class="dropdownlink">
+                  <a href="" class="navlink-item">Service</a>
+                  <a href="" class="navlink-item">Donate</a>
+                  <a href="" class="navlink-item">Our Team</a>
+                  <a href="" class="navlink-item">Testimonial</a>
+                </div>
+              </div>
+              <a href="" class="navlink">Contact</a>
+              <a href="#donate" class="navlink">Donate Now</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
     </header>
 
     <!-- SECTION HOME -->
-     <section id="home" class="homecont"> 
-        <div class="hometext1"></div>
-        <div class="hometext2"></div>
-        <div class="homebutton"></div>
-      </section> <!-- Animasyon eklenecek 2 backgroun img var! textlerde de yukarıdan aşağı animasyon var-->
+    <section id="home" class="">
+      <div class="bg-img"></div>
+      <div class="overlay col justify-content-center align-item-center">
+        <h2 class="textlarge textwhite opacity">
+          Let's Save More Lifes With Our Helping Hand
+        </h2>
+        <p class="textwhite">
+          Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet lorem
+          sit clita duo justo erat amet
+        </p>
+        <a href="" class="btn btnorange">Learn More</a>
+      </div>
+    </section>
+    <!-- Animasyon eklenecek 2 background img var! textlerde de yukarıdan aşağı animasyon var-->
 
-<!-- SECTION ABOUT -->
-      <section id="aboutus" class="about">
-        <div class="sayfabasi">  <!-- sayfabasını hazırlayınca hepsine ekle  -->
-          <!--  BACKGROUND İMG nasıl küçülecek?? -->
-          <div class="h1about"></div>
-          <!--   -->
-          <div class="h1aboutlist"></div>
-          <!-- ol altında sırala home/pages/about  -->
+    <section>
+      <div class="row">
+        <div class="col">
+          <img src="" alt="" />
+          <img src="" alt="" />
         </div>
-        <div class="aboutus">  <!-- sayfayı 2ye böl -->
-
-          <div><img src="https://technext.github.io/chariteam/img/about-1.jpg" alt="yardımcı İnsanlar"></div>
-          <div class="baslikbtn">About Us</div>
+        <div class="col">
+          <p>About Us</p>
+          <h2 class="textlarge">We Help People In Need Around The World</h2>
+          <div>
+            <p>
+              Aliqu diam amet diam et eos. Clita erat ipsum et lorem sed stet
+              lorem sit clita duo justo erat amet
+            </p>
+            <p class="textorange">Jhon Doe, Founder</p>
+          </div>
+          <p>
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo magna dolore erat amet
+          </p>
         </div>
-        <div id="whatwedo" class="whatwedocont"></div>
-        <div id="ourteam" class="teammemberscont"></div>
-      </section>
 
-      <div id="causes" class="causescont"></div>
-      <div id="pages" class="pagescont"></div>
-      <div id="contact" class="contactcont"></div>
-      <div id="donate" class="donatecont"></div> <!-- donate pages'in içindeki donate'de-->
-      <div id="footer" class="footercont"></div>
-    </div>
+        <div class="row">
+          <a href="">Learn More<i class="fa fa-arrow-right"></i></a>
+          <a href="">Contact Us<i class="fa fa-arrow-right"></i> </a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

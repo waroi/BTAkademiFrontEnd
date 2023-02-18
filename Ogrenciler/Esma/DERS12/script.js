@@ -8,7 +8,22 @@
 //2- Önce konsolda işlemler numaralarla gösterilir kullanıcı bir işlem seçtiğinde iki adet sayı girmesi istenir
 // ve bu işlem uygulanarak kullanıcıya sonuç gösterilir.
 
+<<<<<<< Updated upstream
 					
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
 
 // String Methodları
 // let value;
