@@ -1,47 +1,138 @@
-$degisken1:yellow; 
-$degisken2:darkgrey; 
-
-.sayfabasi {
-
-   height: 300px;
-   background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
-   background-size: auto;
-   
+*{
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.bgimgsayfabasi {
-    background-image: url(https://technext.github.io/chariteam/img/carousel-1.jpg);
-    padding-top: 12rem;
-    padding-bottom: 6rem;
-    width: 1400px;
-    margin-top: -200px; 
-    padding: 192px 12px 96px;
+$orange: rgba(253,126,20,1) !important;
+$white:rgba(255,255,255,1) !important;
+$blue:darkblue;
+
+
+@mixin rowCol($direction)
+{
+display:flex;
+flex-direction: $direction;
+}
+
+@mixin btn {
+  padding: 0.5em 1em;
+text-decoration: none;
+border-radius: 8px;
+transition: all 0.5s ease-in-out;
+
+  
+}
+.textwhite {
+  color: $white;
 
 }
 
-/* navbar'ı yaptıktan sonra margin top'ı değiştir!!*/
+.textlarge {
+  font-size: xx-large;
+}
 
-         h2 {
-            color: $degisken1;
-        }
+.textorange {
+  color: $orange;
+}
+.bg-blue {
+  background-color: $blue;
+}
 
-        .container{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 5px;
-            grid-template-areas: "header header header"
-                                  "sidebar content content"
-                                  "sidebar  . ."
-                                  "box1 box1 box1"
-                                  "footer footer footer"
-          }
+.btnorange{
+  background-color:$orange;
+  color:$white;
+  &:hover{
+    background-color: $white;
+    color: $orange;
+  }
 
+  @include btn();
+}
+.navlink {
+  @include btn();
+  color: $white;
+  &:hover{
+    color: $orange;
+  }
+} 
 
-          .baslikbtn {
-            background-color: #fadcc8 ;
-            border-radius: 30%;
-            display: inline-block;
-            padding: 5px;
-            margin-bottom:16px;
+.navlink-item {
 
-          }
+@include btn();
+color: black;
+&:hover {
+  color: $orange;
+}
+}
+
+.row {
+  @include rowCol(row);
+  gap: 1em;
+  align-items: center;
+}
+
+.col {
+  @include rowCol(column);
+  gap: 1em;
+}
+
+.align-item-center {
+  display: flex;
+  align-items: center;
+}
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+.justify-content-between {
+display: flex;
+justify-content:space-between;
+}
+
+.dropdownmenu {
+position: relative;
+&:hover{
+  .dropdownlink {
+    display: block;
+  }
+}
+.dropdownlink {
+  position: absolute;
+  display: none;
+  background-color: white;
+  padding: 0.5em;
+  box-shadow: 0 0 18px 0 #ccc;
+  border-radius: 8px;
+
+}
+}
+
+.bg-img {
+  background-image: url("https://technext.github.io/chariteam/img/carousel-2.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0.4);
+  width: 100%;
+  height: 100%;
+}
+
+#home {
+  position: relative;
+  height: 100vh;
+
+}
+
+.opacity {
+  opacity: 1 !important;
+}
+
+.overlay{
+  position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+  
+}
+

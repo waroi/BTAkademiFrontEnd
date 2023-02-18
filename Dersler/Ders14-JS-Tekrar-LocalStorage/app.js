@@ -181,18 +181,20 @@
 let value;
 
 value = document.location;
+console.log(value);
 
 // ID'ye göre seçim
 value = document.getElementById("title");
 value.style.color = "red";
 
+
 // class'a göre seçim
 value = document.getElementsByClassName("text");
 
-for (let i = 0; i < value.length; i++) {
-  value[i].style.color = "blue";
-}
-
+// for (let i = 0; i < value.length; i++) {
+  // value[i].style.color = "blue";
+  value[1].style.color = "green"
+//}
 // Tag'e göre seçim
 value = document.getElementsByTagName("p");
 
