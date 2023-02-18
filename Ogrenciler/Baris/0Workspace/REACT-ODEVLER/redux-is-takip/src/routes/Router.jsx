@@ -6,6 +6,8 @@ import PageNotFound from "../views/PageNotFound";
 import Dashboard from "../components/Dashboard";
 import Employees from "../components/Employees";
 import EmployeeNewForm from "../components/EmployeeNewForm";
+import Products from "../components/Products";
+import Tasks from "../components/Tasks";
 
 const Router = () => {
   const routes = useRoutes([
@@ -26,6 +28,11 @@ const Router = () => {
         {
           path: "newEmployee",
           element: <EmployeeNewForm />,
+        },
+        { path: "products", element: <Products /> },
+        {
+          path: "tasks",
+          element: <Tasks />,
         },
       ],
     },

@@ -1,32 +1,57 @@
-import { Field, Form, Formik } from "formik";
+import { Field, Form, Formik, ErrorMessage } from "formik";
+import { useDispatch } from "react-redux";
+import { newEmployeeSchemas } from "../schemas/newEmployeeSchemas";
+import { addEmployee, postEmloyees } from "../slices/employeesSlice";
 
 const EmployeeNewForm = () => {
+  const dispatch = useDispatch();
+
   return (
     <div className="mh-100">
       <h4 className="text-center">Yeni Personel Kayıt Formu</h4>
       <div className="container d-flex align-items-center justify-content-center mt-5 bg-white rounded p-4 bg-gradient">
         <Formik
           initialValues={{
-            employeeId: null,
+            employeeId: "",
             employeeFirstName: "",
             employeeLastName: "",
-            employeeGender: "",
+            employeeGender: "...",
             employeeAge: "",
             employeePhone: "",
             employeeEmail: "",
             employeePassword: "",
             employeeAddress: "",
             employeeStatus: "",
+            employeeRating: [],
           }}
           onSubmit={(value, { setSubmitting }) => {
-            alert(value, null, 2);
+            dispatch(postEmloyees(value));
+            dispatch(addEmployee(value));
             setSubmitting(false);
           }}
+          validationSchema={newEmployeeSchemas}
         >
           {({ isSubmitting }) => {
             return (
               <Form>
                 <div className="row">
+                  <div className="col-md-12">
+                    <div className="form-floating mb-3">
+                      <Field
+                        type="number"
+                        id="employeeId"
+                        name="employeeId"
+                        className="form-control"
+                        placeholder="Personel ID"
+                      />
+                      <label htmlFor="">Personel ID</label>
+                      <ErrorMessage
+                        component="small"
+                        name="employeeId"
+                        className="text-danger"
+                      />
+                    </div>
+                  </div>
                   <div className="col-md-6">
                     <div className="form-floating mb-3">
                       <Field
@@ -37,6 +62,11 @@ const EmployeeNewForm = () => {
                         placeholder="Personel Ad"
                       />
                       <label htmlFor="">Personel Ad</label>
+                      <ErrorMessage
+                        component="small"
+                        name="employeeFirstName"
+                        className="text-danger"
+                      />
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -49,6 +79,11 @@ const EmployeeNewForm = () => {
                         placeholder="Personel Soyad"
                       />
                       <label htmlFor="employeeLastName">Personel Soyad</label>
+                      <ErrorMessage
+                        component="small"
+                        name="employeeLastName"
+                        className="text-danger"
+                      />
                     </div>
                   </div>
                   <div className="col-md-3">
@@ -59,10 +94,16 @@ const EmployeeNewForm = () => {
                         name="employeeGender"
                         className="form-control"
                       >
-                        <option value="male">Erkek</option>
-                        <option value="female">Kadın</option>
+                        <option>...</option>
+                        <option value="e">Erkek</option>
+                        <option value="k">Kadın</option>
                       </Field>
                       <label htmlFor="employeeGender">Cinsiyet</label>
+                      <ErrorMessage
+                        component="small"
+                        name="employeeGender"
+                        className="text-danger"
+                      />
                     </div>
                   </div>
                   <div className="col-md-3">
@@ -75,6 +116,11 @@ const EmployeeNewForm = () => {
                         placeholder="Yaş"
                       />
                       <label htmlFor="employeeAge">Yaş</label>
+                      <ErrorMessage
+                        component="small"
+                        name="employeeAge"
+                        className="text-danger"
+                      />
                     </div>
                   </div>
                   <div className="col-md-3">
@@ -87,6 +133,11 @@ const EmployeeNewForm = () => {
                         placeholder="Telefon Numarası"
                       />
                       <label htmlFor="employeePhone">Telefon Numarası</label>
+                      <ErrorMessage
+                        component="small"
+                        name="employeePhone"
+                        className="text-danger"
+                      />
                     </div>
                   </div>
                   <div className="col-md-3">
@@ -99,6 +150,11 @@ const EmployeeNewForm = () => {
                         placeholder="E-Posta"
                       />
                       <label htmlFor="employeeEmail">E-Posta</label>
+                      <ErrorMessage
+                        component="small"
+                        name="employeeEmail"
+                        className="text-danger"
+                      />
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -111,6 +167,11 @@ const EmployeeNewForm = () => {
                         placeholder="Adres"
                       />
                       <label htmlFor="employeeAddress">Adres</label>
+                      <ErrorMessage
+                        component="small"
+                        name="employeeAddress"
+                        className="text-danger"
+                      />
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -123,6 +184,11 @@ const EmployeeNewForm = () => {
                         placeholder="Ünvan"
                       />
                       <label htmlFor="employeeStatus">Ünvan</label>
+                      <ErrorMessage
+                        component="small"
+                        name="employeeStatus"
+                        className="text-danger"
+                      />
                     </div>
                   </div>
                   <div className="d-flex mx-auto gap-2 justify-content-center">

@@ -1,7 +1,7 @@
 {
   "customers": [
     {
-      "customerId": 1,
+      "id": 1,
       "firstName": "Varol",
       "lastname": "MAKSUTOĞLU",
       "phone": "+901234567890",
@@ -10,47 +10,41 @@
   ],
   "employees": [
     {
-      "employeeId": 1,
+      "employeeId": 123,
       "employeeFirstName": "Barış",
-      "employeeLastName": "BENLİ",
-      "employeeGender": "Erkek",
+      "employeeLastName": "Benli",
+      "employeeGender": "e",
       "employeeAge": 24,
-      "employeePhone": "+901234567890",
+      "employeePhone": "0500000000",
       "employeeEmail": "bbenli@example.com",
-      "employeePassword": "12345",
-      "employeeAddress": "Şırnak,TR",
-      "employeeStatus": "Front-End Developer",
-      "employeeRating": []
-    }
-  ],
-  "products": [
-    {
-      "productId": 1,
-      "name": "Çamaşır Makinesi",
-      "price": 10000
+      "employeePassword": "",
+      "employeeAddress": "Şırnak",
+      "employeeStatus": "Front End Developer",
+      "employeeRating": [],
+      "id": 1
     },
     {
-      "productId": 2,
-      "name": "Bulaşık Makinesi",
-      "price": 7000
-    },
-    {
-      "productId": 3,
-      "name": "Televizyon",
-      "price": 25000
+      "employeeId": 234,
+      "employeeFirstName": "Ali",
+      "employeeLastName": "Veli",
+      "employeeGender": "e",
+      "employeeAge": 24,
+      "employeePhone": "0500000000",
+      "employeeEmail": "aliveli@example.com",
+      "employeePassword": "",
+      "employeeAddress": "Şırnak",
+      "employeeStatus": "Front End Developer",
+      "employeeRating": [],
+      "id": 2
     }
   ],
-  "works": [
+  "products": [],
+  "tasks": [
     {
-      "worksId": 1,
-      "productId": 1,
-      "customerId": 1,
-      "employeeId": 1,
-      "attention": "",
-      "info": "",
-      "payment": 0,
-      "message": "",
-      "isDone": ""
+      "id": 1,
+      "title": "İş Takip Projesi",
+      "info": "Şirketlerde personel bazlı iş atamaları yapan ve bir program isteniyor",
+      "employeeId": 123
     }
   ]
 }
