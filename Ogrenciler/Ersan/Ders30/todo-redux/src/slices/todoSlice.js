@@ -16,7 +16,6 @@ export const todoSlice = createSlice({
     },
     updateTodo: (state, action) => {
       state.todos.map((todo) => {
-        console.log(todo, action.payload);
         return todo.id === action.payload.id
           ? (todo.completed = action.payload.completed)
           : todo;
